@@ -38,7 +38,7 @@ namespace Interface_Roteiros
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Clique aqui";
+            this.button1.Text = "ADKJSFKGFH";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
