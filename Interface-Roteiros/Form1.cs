@@ -15,7 +15,11 @@ namespace Interface_Roteiros
         public Form1()
         {
             InitializeComponent();
+            // Diminui a janela de interação com o usuário
             panRoteiros.Size = panRoteiros.MinimumSize;
+            // Traz ao formulário a nova tela
+            this.Controls.Add(new Roteiro1());
+            Controls[Controls.Count - 1].Location = new Point(0, 75);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -95,6 +99,41 @@ namespace Interface_Roteiros
             else
             {
                 panRoteiros.Size = new Size(90, 220);
+            }
+        }
+
+        // Abre a janela de roteiros 1
+        private void btnRoteiro1_Click(object sender, EventArgs e)
+        {
+            Controls[Controls.Count - 1].BringToFront();
+            panRoteiros.BringToFront();
+            panRoteiros.Size = panRoteiros.MinimumSize;
+        }
+
+        // Abri o menu de roteiros
+        private void abrirMenu_Tick(object sender, EventArgs e)
+        {
+            if (panRoteiros.Height <= panRoteiros.MaximumSize.Height)
+            {
+                panRoteiros.Height += 50;
+            }
+            else
+            {
+                panRoteiros.Height -= 50;
+            }
+        }
+
+        private void btnRoteiros_MouseEnter(object sender, EventArgs e)
+        {
+            var alturaMinima = panRoteiros.MinimumSize.Height;
+            var alturaMaxima = panRoteiros.MaximumSize.Height;
+            var altura = panRoteiros.Height;
+
+            abrirMenu.Start();
+
+            if (altura == alturaMaxima || altura == alturaMinima)
+            {
+                abrirMenu.Stop();
             }
         }
     }
