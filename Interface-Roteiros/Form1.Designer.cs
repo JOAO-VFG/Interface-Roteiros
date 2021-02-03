@@ -29,19 +29,12 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.panRoteiros = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnRoteiro1 = new System.Windows.Forms.Button();
-            this.btnRoteiros = new System.Windows.Forms.Button();
+            this.btnInicio = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panSimulador = new System.Windows.Forms.Panel();
@@ -61,10 +54,9 @@ namespace Interface_Roteiros
             this.lblSobre = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panGeral = new System.Windows.Forms.Panel();
-            this.abrirMenu = new System.Windows.Forms.Timer(this.components);
+            this.btnRoteiros = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panRoteiros.SuspendLayout();
             this.panSimulador.SuspendLayout();
             this.panSimulador2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -126,116 +118,23 @@ namespace Interface_Roteiros
             this.label1.TabIndex = 0;
             this.label1.Text = "Simulador Eletrônico";
             // 
-            // panRoteiros
+            // btnInicio
             // 
-            this.panRoteiros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.panRoteiros.Controls.Add(this.button5);
-            this.panRoteiros.Controls.Add(this.button4);
-            this.panRoteiros.Controls.Add(this.button3);
-            this.panRoteiros.Controls.Add(this.button2);
-            this.panRoteiros.Controls.Add(this.btnRoteiro1);
-            this.panRoteiros.Controls.Add(this.btnRoteiros);
-            this.panRoteiros.Location = new System.Drawing.Point(0, 35);
-            this.panRoteiros.MaximumSize = new System.Drawing.Size(90, 220);
-            this.panRoteiros.MinimumSize = new System.Drawing.Size(90, 40);
-            this.panRoteiros.Name = "panRoteiros";
-            this.panRoteiros.Size = new System.Drawing.Size(90, 220);
-            this.panRoteiros.TabIndex = 7;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(3, 187);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(91, 30);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Roteiro5";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(3, 151);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(91, 30);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Roteiro4";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(3, 115);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 30);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Roteiro3";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(3, 79);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 30);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Roteiro2";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // btnRoteiro1
-            // 
-            this.btnRoteiro1.BackColor = System.Drawing.Color.Transparent;
-            this.btnRoteiro1.FlatAppearance.BorderSize = 0;
-            this.btnRoteiro1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnRoteiro1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRoteiro1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRoteiro1.ForeColor = System.Drawing.Color.White;
-            this.btnRoteiro1.Location = new System.Drawing.Point(3, 43);
-            this.btnRoteiro1.Name = "btnRoteiro1";
-            this.btnRoteiro1.Size = new System.Drawing.Size(91, 30);
-            this.btnRoteiro1.TabIndex = 8;
-            this.btnRoteiro1.Text = "Roteiro1";
-            this.btnRoteiro1.UseVisualStyleBackColor = false;
-            this.btnRoteiro1.Click += new System.EventHandler(this.btnRoteiro1_Click);
-            // 
-            // btnRoteiros
-            // 
-            this.btnRoteiros.BackColor = System.Drawing.Color.Transparent;
-            this.btnRoteiros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnRoteiros.FlatAppearance.BorderSize = 0;
-            this.btnRoteiros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnRoteiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRoteiros.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRoteiros.ForeColor = System.Drawing.Color.White;
-            this.btnRoteiros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRoteiros.Location = new System.Drawing.Point(3, 7);
-            this.btnRoteiros.Name = "btnRoteiros";
-            this.btnRoteiros.Size = new System.Drawing.Size(91, 30);
-            this.btnRoteiros.TabIndex = 0;
-            this.btnRoteiros.Text = "Roteiros";
-            this.btnRoteiros.UseVisualStyleBackColor = false;
-            this.btnRoteiros.Click += new System.EventHandler(this.btnRoteiros_Click);
-            this.btnRoteiros.MouseEnter += new System.EventHandler(this.btnRoteiros_MouseEnter);
+            this.btnInicio.BackColor = System.Drawing.Color.Transparent;
+            this.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnInicio.FlatAppearance.BorderSize = 0;
+            this.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.Color.White;
+            this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInicio.Location = new System.Drawing.Point(0, 35);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(90, 40);
+            this.btnInicio.TabIndex = 0;
+            this.btnInicio.Text = "Inicio";
+            this.btnInicio.UseVisualStyleBackColor = false;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // panel8
             // 
@@ -444,9 +343,23 @@ namespace Interface_Roteiros
             this.panGeral.Size = new System.Drawing.Size(580, 402);
             this.panGeral.TabIndex = 8;
             // 
-            // abrirMenu
+            // btnRoteiros
             // 
-            this.abrirMenu.Tick += new System.EventHandler(this.abrirMenu_Tick);
+            this.btnRoteiros.BackColor = System.Drawing.Color.Transparent;
+            this.btnRoteiros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnRoteiros.FlatAppearance.BorderSize = 0;
+            this.btnRoteiros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnRoteiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRoteiros.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoteiros.ForeColor = System.Drawing.Color.White;
+            this.btnRoteiros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRoteiros.Location = new System.Drawing.Point(90, 35);
+            this.btnRoteiros.Name = "btnRoteiros";
+            this.btnRoteiros.Size = new System.Drawing.Size(90, 40);
+            this.btnRoteiros.TabIndex = 9;
+            this.btnRoteiros.Text = "Roteiros";
+            this.btnRoteiros.UseVisualStyleBackColor = false;
+            this.btnRoteiros.Click += new System.EventHandler(this.btnRoteiros_Click);
             // 
             // Form1
             // 
@@ -454,7 +367,8 @@ namespace Interface_Roteiros
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(67)))));
             this.ClientSize = new System.Drawing.Size(580, 474);
-            this.Controls.Add(this.panRoteiros);
+            this.Controls.Add(this.btnRoteiros);
+            this.Controls.Add(this.btnInicio);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panGeral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -464,7 +378,6 @@ namespace Interface_Roteiros
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panRoteiros.ResumeLayout(false);
             this.panSimulador.ResumeLayout(false);
             this.panSimulador2.ResumeLayout(false);
             this.panSimulador2.PerformLayout();
@@ -507,15 +420,9 @@ namespace Interface_Roteiros
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button btnRoteiros;
-        private System.Windows.Forms.Panel panRoteiros;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnRoteiro1;
+        private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Panel panGeral;
-        private System.Windows.Forms.Timer abrirMenu;
+        private System.Windows.Forms.Button btnRoteiros;
     }
 }
 
