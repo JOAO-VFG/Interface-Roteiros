@@ -17,9 +17,13 @@ namespace Interface_Roteiros
         public Form1()
         {
             InitializeComponent();
-            var roteiroTela = new TelaRoteiros();
-            Controls.Add(roteiroTela);
-            roteiroTela.Location = new Point(0, 75);
+
+            // Cria a seção de roteiros
+            telaRoteiro = new TelaRoteiros();
+            Controls.Add(telaRoteiro);
+            telaRoteiro.Location = new Point(0, 75);
+            telaRoteiro.BringToFront();
+            telaRoteiro.Hide();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -91,15 +95,13 @@ namespace Interface_Roteiros
         // Navega até a seção de roteiros
         private void btnRoteiros_Click(object sender, EventArgs e)
         {
-            var telaRoteiro = Controls[Controls.Count - 1];
-            telaRoteiro.BringToFront();
+            telaRoteiro.Show();
         }
-
 
         // Retorna a tela inicial
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            panGeral.BringToFront();
+            telaRoteiro.Hide();
         }
     }
 }

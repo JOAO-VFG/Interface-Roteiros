@@ -29,249 +29,260 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaRoteiros));
             this.panRoteiros = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panRoteiro6 = new System.Windows.Forms.Panel();
+            this.panRoteiro5 = new System.Windows.Forms.Panel();
+            this.lblRoteiro5 = new System.Windows.Forms.Label();
+            this.imgRoteiro5 = new System.Windows.Forms.PictureBox();
+            this.panRoteiro4 = new System.Windows.Forms.Panel();
+            this.lblRoteiro4 = new System.Windows.Forms.Label();
+            this.imgRoteiro4 = new System.Windows.Forms.PictureBox();
+            this.panRoteiro3 = new System.Windows.Forms.Panel();
+            this.lblRoteiro3 = new System.Windows.Forms.Label();
+            this.imgRoteiro3 = new System.Windows.Forms.PictureBox();
+            this.panRoteiro2 = new System.Windows.Forms.Panel();
+            this.lblRoteiro2 = new System.Windows.Forms.Label();
+            this.imgRoteiro2 = new System.Windows.Forms.PictureBox();
+            this.panRoteiro1 = new System.Windows.Forms.Panel();
+            this.lblRoteiro1 = new System.Windows.Forms.Label();
+            this.imgRoteiro1 = new System.Windows.Forms.PictureBox();
+            this.lblRoteiro6 = new System.Windows.Forms.Label();
+            this.imgRoteiro6 = new System.Windows.Forms.PictureBox();
             this.panRoteiros.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panRoteiro6.SuspendLayout();
+            this.panRoteiro5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro5)).BeginInit();
+            this.panRoteiro4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro4)).BeginInit();
+            this.panRoteiro3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro3)).BeginInit();
+            this.panRoteiro2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro2)).BeginInit();
+            this.panRoteiro1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro6)).BeginInit();
             this.SuspendLayout();
             // 
             // panRoteiros
             // 
             this.panRoteiros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
-            this.panRoteiros.Controls.Add(this.panel6);
-            this.panRoteiros.Controls.Add(this.panel5);
-            this.panRoteiros.Controls.Add(this.panel4);
-            this.panRoteiros.Controls.Add(this.panel3);
-            this.panRoteiros.Controls.Add(this.panel2);
-            this.panRoteiros.Controls.Add(this.panel1);
+            this.panRoteiros.Controls.Add(this.panRoteiro6);
+            this.panRoteiros.Controls.Add(this.panRoteiro5);
+            this.panRoteiros.Controls.Add(this.panRoteiro4);
+            this.panRoteiros.Controls.Add(this.panRoteiro3);
+            this.panRoteiros.Controls.Add(this.panRoteiro2);
+            this.panRoteiros.Controls.Add(this.panRoteiro1);
             this.panRoteiros.Location = new System.Drawing.Point(0, 0);
             this.panRoteiros.Name = "panRoteiros";
             this.panRoteiros.Size = new System.Drawing.Size(580, 402);
             this.panRoteiros.TabIndex = 0;
             // 
-            // panel1
+            // panRoteiro6
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(23, 21);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(163, 172);
-            this.panel1.TabIndex = 6;
+            this.panRoteiro6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))));
+            this.panRoteiro6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panRoteiro6.Controls.Add(this.lblRoteiro6);
+            this.panRoteiro6.Controls.Add(this.imgRoteiro6);
+            this.panRoteiro6.Location = new System.Drawing.Point(399, 212);
+            this.panRoteiro6.Name = "panRoteiro6";
+            this.panRoteiro6.Size = new System.Drawing.Size(163, 172);
+            this.panRoteiro6.TabIndex = 9;
             // 
-            // label1
+            // panRoteiro5
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(47, 140);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Cargas";
+            this.panRoteiro5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))));
+            this.panRoteiro5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panRoteiro5.Controls.Add(this.lblRoteiro5);
+            this.panRoteiro5.Controls.Add(this.imgRoteiro5);
+            this.panRoteiro5.Location = new System.Drawing.Point(210, 211);
+            this.panRoteiro5.Name = "panRoteiro5";
+            this.panRoteiro5.Size = new System.Drawing.Size(163, 172);
+            this.panRoteiro5.TabIndex = 8;
             // 
-            // pictureBox1
+            // lblRoteiro5
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(18, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lblRoteiro5.AutoSize = true;
+            this.lblRoteiro5.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoteiro5.ForeColor = System.Drawing.Color.White;
+            this.lblRoteiro5.Location = new System.Drawing.Point(13, 133);
+            this.lblRoteiro5.Name = "lblRoteiro5";
+            this.lblRoteiro5.Size = new System.Drawing.Size(145, 36);
+            this.lblRoteiro5.TabIndex = 1;
+            this.lblRoteiro5.Text = "Teorema de\r\nNorthon e Thevannin";
+            this.lblRoteiro5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel2
+            // imgRoteiro5
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.pictureBox7);
-            this.panel2.Location = new System.Drawing.Point(210, 21);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(163, 172);
-            this.panel2.TabIndex = 7;
+            this.imgRoteiro5.Image = global::Interface_Roteiros.Properties.Resources.circuito5;
+            this.imgRoteiro5.Location = new System.Drawing.Point(-1, 3);
+            this.imgRoteiro5.Name = "imgRoteiro5";
+            this.imgRoteiro5.Size = new System.Drawing.Size(163, 128);
+            this.imgRoteiro5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imgRoteiro5.TabIndex = 0;
+            this.imgRoteiro5.TabStop = false;
+            this.imgRoteiro5.MouseEnter += new System.EventHandler(this.imgRoteiro5_MouseEnter);
+            this.imgRoteiro5.MouseLeave += new System.EventHandler(this.imgRoteiro5_MouseLeave);
             // 
-            // label2
+            // panRoteiro4
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(29, 140);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Leis de Ohm";
+            this.panRoteiro4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))));
+            this.panRoteiro4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panRoteiro4.Controls.Add(this.lblRoteiro4);
+            this.panRoteiro4.Controls.Add(this.imgRoteiro4);
+            this.panRoteiro4.Location = new System.Drawing.Point(23, 212);
+            this.panRoteiro4.Name = "panRoteiro4";
+            this.panRoteiro4.Size = new System.Drawing.Size(163, 172);
+            this.panRoteiro4.TabIndex = 7;
             // 
-            // pictureBox7
+            // lblRoteiro4
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(18, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
+            this.lblRoteiro4.AutoSize = true;
+            this.lblRoteiro4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoteiro4.ForeColor = System.Drawing.Color.White;
+            this.lblRoteiro4.Location = new System.Drawing.Point(28, 132);
+            this.lblRoteiro4.Name = "lblRoteiro4";
+            this.lblRoteiro4.Size = new System.Drawing.Size(109, 38);
+            this.lblRoteiro4.TabIndex = 1;
+            this.lblRoteiro4.Text = "Super nós e\r\nSuper Malhas";
+            this.lblRoteiro4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel3
+            // imgRoteiro4
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))));
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(399, 21);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(163, 172);
-            this.panel3.TabIndex = 8;
+            this.imgRoteiro4.Image = global::Interface_Roteiros.Properties.Resources.circuito4;
+            this.imgRoteiro4.Location = new System.Drawing.Point(-1, 3);
+            this.imgRoteiro4.Name = "imgRoteiro4";
+            this.imgRoteiro4.Size = new System.Drawing.Size(163, 128);
+            this.imgRoteiro4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imgRoteiro4.TabIndex = 0;
+            this.imgRoteiro4.TabStop = false;
+            this.imgRoteiro4.MouseEnter += new System.EventHandler(this.imgRoteiro4_MouseEnter);
+            this.imgRoteiro4.MouseLeave += new System.EventHandler(this.imgRoteiro4_MouseLeave);
             // 
-            // label3
+            // panRoteiro3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(15, 140);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 19);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Leis de Kirchhoff";
+            this.panRoteiro3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))));
+            this.panRoteiro3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panRoteiro3.Controls.Add(this.lblRoteiro3);
+            this.panRoteiro3.Controls.Add(this.imgRoteiro3);
+            this.panRoteiro3.Location = new System.Drawing.Point(399, 21);
+            this.panRoteiro3.Name = "panRoteiro3";
+            this.panRoteiro3.Size = new System.Drawing.Size(163, 172);
+            this.panRoteiro3.TabIndex = 8;
             // 
-            // pictureBox2
+            // lblRoteiro3
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(18, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.lblRoteiro3.AutoSize = true;
+            this.lblRoteiro3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoteiro3.ForeColor = System.Drawing.Color.White;
+            this.lblRoteiro3.Location = new System.Drawing.Point(15, 140);
+            this.lblRoteiro3.Name = "lblRoteiro3";
+            this.lblRoteiro3.Size = new System.Drawing.Size(131, 19);
+            this.lblRoteiro3.TabIndex = 1;
+            this.lblRoteiro3.Text = "Leis de Kirchhoff";
             // 
-            // panel4
+            // imgRoteiro3
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))));
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Location = new System.Drawing.Point(23, 212);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(163, 172);
-            this.panel4.TabIndex = 7;
+            this.imgRoteiro3.Image = global::Interface_Roteiros.Properties.Resources.circuito3;
+            this.imgRoteiro3.Location = new System.Drawing.Point(-1, 3);
+            this.imgRoteiro3.Name = "imgRoteiro3";
+            this.imgRoteiro3.Size = new System.Drawing.Size(164, 128);
+            this.imgRoteiro3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imgRoteiro3.TabIndex = 0;
+            this.imgRoteiro3.TabStop = false;
+            this.imgRoteiro3.MouseEnter += new System.EventHandler(this.imgRoteiro3_MouseEnter);
+            this.imgRoteiro3.MouseLeave += new System.EventHandler(this.imgRoteiro3_MouseLeave);
             // 
-            // label4
+            // panRoteiro2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(28, 132);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 38);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Super nós e\r\nSuper Malhas";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panRoteiro2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))));
+            this.panRoteiro2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panRoteiro2.Controls.Add(this.lblRoteiro2);
+            this.panRoteiro2.Controls.Add(this.imgRoteiro2);
+            this.panRoteiro2.Location = new System.Drawing.Point(210, 21);
+            this.panRoteiro2.Name = "panRoteiro2";
+            this.panRoteiro2.Size = new System.Drawing.Size(163, 172);
+            this.panRoteiro2.TabIndex = 7;
             // 
-            // pictureBox3
+            // lblRoteiro2
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(18, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.lblRoteiro2.AutoSize = true;
+            this.lblRoteiro2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoteiro2.ForeColor = System.Drawing.Color.White;
+            this.lblRoteiro2.Location = new System.Drawing.Point(29, 140);
+            this.lblRoteiro2.Name = "lblRoteiro2";
+            this.lblRoteiro2.Size = new System.Drawing.Size(98, 19);
+            this.lblRoteiro2.TabIndex = 1;
+            this.lblRoteiro2.Text = "Leis de Ohm";
             // 
-            // panel5
+            // imgRoteiro2
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))));
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Location = new System.Drawing.Point(210, 211);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(163, 172);
-            this.panel5.TabIndex = 8;
+            this.imgRoteiro2.Image = global::Interface_Roteiros.Properties.Resources.circuito2;
+            this.imgRoteiro2.Location = new System.Drawing.Point(-1, 3);
+            this.imgRoteiro2.Name = "imgRoteiro2";
+            this.imgRoteiro2.Size = new System.Drawing.Size(163, 128);
+            this.imgRoteiro2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imgRoteiro2.TabIndex = 0;
+            this.imgRoteiro2.TabStop = false;
+            this.imgRoteiro2.MouseEnter += new System.EventHandler(this.imgRoteiro2_MouseEnter);
+            this.imgRoteiro2.MouseLeave += new System.EventHandler(this.imgRoteiro2_MouseLeave);
             // 
-            // label5
+            // panRoteiro1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(13, 133);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 36);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Teorema de\r\nNorthon e Thevannin";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panRoteiro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))));
+            this.panRoteiro1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panRoteiro1.Controls.Add(this.lblRoteiro1);
+            this.panRoteiro1.Controls.Add(this.imgRoteiro1);
+            this.panRoteiro1.Location = new System.Drawing.Point(23, 21);
+            this.panRoteiro1.Name = "panRoteiro1";
+            this.panRoteiro1.Size = new System.Drawing.Size(163, 172);
+            this.panRoteiro1.TabIndex = 6;
             // 
-            // pictureBox4
+            // lblRoteiro1
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(18, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.lblRoteiro1.AutoSize = true;
+            this.lblRoteiro1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoteiro1.ForeColor = System.Drawing.Color.White;
+            this.lblRoteiro1.Location = new System.Drawing.Point(47, 140);
+            this.lblRoteiro1.Name = "lblRoteiro1";
+            this.lblRoteiro1.Size = new System.Drawing.Size(61, 19);
+            this.lblRoteiro1.TabIndex = 1;
+            this.lblRoteiro1.Text = "Cargas";
             // 
-            // panel6
+            // imgRoteiro1
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))));
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Location = new System.Drawing.Point(399, 212);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(163, 172);
-            this.panel6.TabIndex = 9;
+            this.imgRoteiro1.Image = global::Interface_Roteiros.Properties.Resources.circuito1;
+            this.imgRoteiro1.Location = new System.Drawing.Point(18, 3);
+            this.imgRoteiro1.Name = "imgRoteiro1";
+            this.imgRoteiro1.Size = new System.Drawing.Size(128, 128);
+            this.imgRoteiro1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgRoteiro1.TabIndex = 0;
+            this.imgRoteiro1.TabStop = false;
+            this.imgRoteiro1.MouseEnter += new System.EventHandler(this.imgRoteiro1_MouseEnter);
+            this.imgRoteiro1.MouseLeave += new System.EventHandler(this.imgRoteiro1_MouseLeave);
             // 
-            // label6
+            // lblRoteiro6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(-1, 132);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(164, 32);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Teorema da Superposição\r\ne Transformação de Fontes";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRoteiro6.AutoSize = true;
+            this.lblRoteiro6.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoteiro6.ForeColor = System.Drawing.Color.White;
+            this.lblRoteiro6.Location = new System.Drawing.Point(-1, 132);
+            this.lblRoteiro6.Name = "lblRoteiro6";
+            this.lblRoteiro6.Size = new System.Drawing.Size(164, 32);
+            this.lblRoteiro6.TabIndex = 1;
+            this.lblRoteiro6.Text = "Teorema da Superposição\r\ne Transformação de Fontes";
+            this.lblRoteiro6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox5
+            // imgRoteiro6
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(18, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.imgRoteiro6.Image = global::Interface_Roteiros.Properties.Resources.circuito6;
+            this.imgRoteiro6.Location = new System.Drawing.Point(-1, 3);
+            this.imgRoteiro6.Name = "imgRoteiro6";
+            this.imgRoteiro6.Size = new System.Drawing.Size(163, 128);
+            this.imgRoteiro6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imgRoteiro6.TabIndex = 0;
+            this.imgRoteiro6.TabStop = false;
+            this.imgRoteiro6.MouseEnter += new System.EventHandler(this.imgRoteiro6_MouseEnter);
+            this.imgRoteiro6.MouseLeave += new System.EventHandler(this.imgRoteiro6_MouseLeave);
             // 
             // TelaRoteiros
             // 
@@ -281,24 +292,24 @@ namespace Interface_Roteiros
             this.Name = "TelaRoteiros";
             this.Size = new System.Drawing.Size(580, 402);
             this.panRoteiros.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panRoteiro6.ResumeLayout(false);
+            this.panRoteiro6.PerformLayout();
+            this.panRoteiro5.ResumeLayout(false);
+            this.panRoteiro5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro5)).EndInit();
+            this.panRoteiro4.ResumeLayout(false);
+            this.panRoteiro4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro4)).EndInit();
+            this.panRoteiro3.ResumeLayout(false);
+            this.panRoteiro3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro3)).EndInit();
+            this.panRoteiro2.ResumeLayout(false);
+            this.panRoteiro2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro2)).EndInit();
+            this.panRoteiro1.ResumeLayout(false);
+            this.panRoteiro1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -306,23 +317,23 @@ namespace Interface_Roteiros
         #endregion
 
         private System.Windows.Forms.Panel panRoteiros;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox imgRoteiro1;
+        private System.Windows.Forms.Panel panRoteiro1;
+        private System.Windows.Forms.Label lblRoteiro1;
+        private System.Windows.Forms.Panel panRoteiro6;
+        private System.Windows.Forms.Panel panRoteiro5;
+        private System.Windows.Forms.Label lblRoteiro5;
+        private System.Windows.Forms.PictureBox imgRoteiro5;
+        private System.Windows.Forms.Panel panRoteiro4;
+        private System.Windows.Forms.Label lblRoteiro4;
+        private System.Windows.Forms.PictureBox imgRoteiro4;
+        private System.Windows.Forms.Panel panRoteiro3;
+        private System.Windows.Forms.Label lblRoteiro3;
+        private System.Windows.Forms.PictureBox imgRoteiro3;
+        private System.Windows.Forms.Panel panRoteiro2;
+        private System.Windows.Forms.Label lblRoteiro2;
+        private System.Windows.Forms.PictureBox imgRoteiro2;
+        private System.Windows.Forms.Label lblRoteiro6;
+        private System.Windows.Forms.PictureBox imgRoteiro6;
     }
 }

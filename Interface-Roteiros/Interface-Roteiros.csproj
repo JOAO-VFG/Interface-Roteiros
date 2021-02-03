@@ -104,5 +104,23 @@
   <ItemGroup>
     <None Include="Resources\cancel.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito6.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
