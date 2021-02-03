@@ -15,6 +15,7 @@ namespace Interface_Roteiros
         public Form1()
         {
             InitializeComponent();
+            panRoteiros.Size = panRoteiros.MinimumSize;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
