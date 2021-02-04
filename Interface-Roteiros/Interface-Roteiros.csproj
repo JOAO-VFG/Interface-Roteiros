@@ -54,11 +54,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Roteiro1.cs">
+    <Compile Include="Roteiro.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Roteiro1.Designer.cs">
-      <DependentUpon>Roteiro1.cs</DependentUpon>
+    <Compile Include="Roteiro.Designer.cs">
+      <DependentUpon>Roteiro.cs</DependentUpon>
     </Compile>
     <Compile Include="SubRoteiro.cs">
       <SubType>UserControl</SubType>
@@ -85,8 +85,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Roteiro1.resx">
-      <DependentUpon>Roteiro1.cs</DependentUpon>
+    <EmbeddedResource Include="Roteiro.resx">
+      <DependentUpon>Roteiro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubRoteiro.resx">
       <DependentUpon>SubRoteiro.cs</DependentUpon>
@@ -130,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\circuito6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito7.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

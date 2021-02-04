@@ -42,7 +42,7 @@ namespace Interface_Roteiros
         {
             InitializeComponent();
 
-            this.Roteiro = new Roteiro1();
+            this.Roteiro = new Roteiro();
             Controls.Add(this.Roteiro);
         }
 

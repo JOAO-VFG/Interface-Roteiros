@@ -7,7 +7,7 @@ C:\Users\Gabri\source\repos\Interface-Roteiros\Interface-Roteiros\Interface-Rote
 C:\Users\Gabri\source\repos\Interface-Roteiros\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csproj.CoreCompileInputs.cache
 C:\Users\Gabri\source\repos\Interface-Roteiros\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.exe
 C:\Users\Gabri\source\repos\Interface-Roteiros\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.pdb
-C:\Users\Gabri\source\repos\Interface-Roteiros\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Roteiro1.resources
 C:\Users\Gabri\source\repos\Interface-Roteiros\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaRoteiros.resources
 C:\Users\Gabri\source\repos\Interface-Roteiros\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.SubRoteiro.resources
+C:\Users\Gabri\source\repos\Interface-Roteiros\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Roteiro.resources
 C:\Users\Gabri\source\repos\Interface-Roteiros\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csprojAssemblyReference.cache
