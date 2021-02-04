@@ -15,6 +15,10 @@ C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\In
 C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Form1.resources
 C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Properties.Resources.resources
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Roteiro_2.resources
+>>>>>>> Stashed changes
 =======
 C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Roteiro_2.resources
 >>>>>>> Stashed changes
