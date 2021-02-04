@@ -14,6 +14,10 @@ C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\bin\Debug\In
 C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csprojAssemblyReference.cache
 C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Form1.resources
 C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Properties.Resources.resources
+<<<<<<< Updated upstream
+=======
+C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Roteiro_2.resources
+>>>>>>> Stashed changes
 C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csproj.GenerateResource.cache
 C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csproj.CoreCompileInputs.cache
 C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.exe
