@@ -143,7 +143,7 @@ namespace Interface_Roteiros
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(0, 70);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(577, 123);
+            this.panel3.Size = new System.Drawing.Size(580, 123);
             this.panel3.TabIndex = 7;
             // 
             // pictureBox1
