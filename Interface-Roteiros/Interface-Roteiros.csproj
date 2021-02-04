@@ -54,6 +54,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Compile Include="Roteiro1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -71,6 +73,18 @@
     </Compile>
     <Compile Include="TelaRoteiros.Designer.cs">
       <DependentUpon>TelaRoteiros.cs</DependentUpon>
+=======
+=======
+>>>>>>> Stashed changes
+    <Compile Include="Roteiro-2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Roteiro-2.Designer.cs">
+      <DependentUpon>Roteiro-2.cs</DependentUpon>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -85,6 +99,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <EmbeddedResource Include="Roteiro1.resx">
       <DependentUpon>Roteiro1.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +109,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaRoteiros.resx">
       <DependentUpon>TelaRoteiros.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Roteiro-2.resx">
+      <DependentUpon>Roteiro-2.cs</DependentUpon>
+>>>>>>> Stashed changes
+=======
+    <EmbeddedResource Include="Roteiro-2.resx">
+      <DependentUpon>Roteiro-2.cs</DependentUpon>
+>>>>>>> Stashed changes
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
