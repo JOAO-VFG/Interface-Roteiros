@@ -48,5 +48,10 @@ namespace Interface_Roteiros
             this.Hide();
             this.SendToBack();
         }
+
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("VS2015Licensing.pdf");
+        }
     }
 }
