@@ -12,25 +12,22 @@ namespace Interface_Roteiros
 {
     public partial class TelaRoteiros : UserControl
     {
+        private Control telaRoteiro1;
+
         public TelaRoteiros()
         {
             InitializeComponent();
+            // Cria uma tela para o roteiro 1
+            telaRoteiro1 = subRoteiro1.Roteiro;
+            Controls.Add(telaRoteiro1);
+            telaRoteiro1.Hide();
+        }
 
-            // Leis de Ohm
-            subRoteiro2.ImagemRoteiro = Properties.Resources.circuito2;
-            subRoteiro2.TextoRoteiro = "Leis de Ohm";
-            // Leis de Kirchhof
-            subRoteiro3.ImagemRoteiro = Properties.Resources.circuito3;
-            subRoteiro3.TextoRoteiro = "Leis de Kirchhof";
-            // Super nós e super malhas
-            subRoteiro4.ImagemRoteiro = Properties.Resources.circuito4;
-            subRoteiro4.TextoRoteiro = "Super Nós e Super Malhas";
-            // Teorema de Thevennin e Norton
-            subRoteiro5.ImagemRoteiro = Properties.Resources.circuito5;
-            subRoteiro5.TextoRoteiro = "Teorema de\nNorthon e Thevannin";
-            // Teorema da Superposição e Transformação de Fontes
-            subRoteiro6.ImagemRoteiro = Properties.Resources.circuito6;
-            subRoteiro6.TextoRoteiro = "Teorema da Superposição";
+        // Mostra a janela do roteiro 1
+        private void subRoteiro1_Click(object sender, EventArgs e)
+        {
+            telaRoteiro1.BringToFront();
+            telaRoteiro1.Show();
         }
     }
 }

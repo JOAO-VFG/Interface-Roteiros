@@ -365,7 +365,7 @@ namespace Interface_Roteiros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(67)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(580, 474);
             this.Controls.Add(this.btnRoteiros);
             this.Controls.Add(this.btnInicio);

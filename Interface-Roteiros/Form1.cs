@@ -26,7 +26,7 @@ namespace Interface_Roteiros
             telaRoteiro.Hide();
 
             // Muda o fundo do botão de inicio
-            btnInicio.BackColor = Color.FromArgb(28, 28, 28);
+            btnInicio.BackColor = Color.FromArgb(18, 18, 16);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -102,14 +102,14 @@ namespace Interface_Roteiros
 
             // Muda o fundo dos botões
             btnRoteiros.BackColor = Color.FromArgb(55, 57, 79);
-            btnInicio.BackColor = Color.FromArgb(69, 68, 67);
+            btnInicio.BackColor = Color.FromArgb(18, 18, 16);
         }
 
         // Retorna a tela inicial
         private void btnInicio_Click(object sender, EventArgs e)
         {
             telaRoteiro.Hide();
-            btnRoteiros.BackColor = Color.FromArgb(69, 68, 67);
+            btnRoteiros.BackColor = Color.FromArgb(18, 18, 16);
             btnInicio.BackColor = Color.FromArgb(28, 28, 28);
         }
     }

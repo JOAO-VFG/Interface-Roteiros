@@ -60,6 +60,7 @@ namespace Interface_Roteiros
             // 
             // imgImagem
             // 
+            this.imgImagem.BackColor = System.Drawing.Color.Transparent;
             this.imgImagem.Image = global::Interface_Roteiros.Properties.Resources.circuito1;
             this.imgImagem.Location = new System.Drawing.Point(-1, 3);
             this.imgImagem.Name = "imgImagem";
@@ -67,6 +68,7 @@ namespace Interface_Roteiros
             this.imgImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgImagem.TabIndex = 0;
             this.imgImagem.TabStop = false;
+            this.imgImagem.Click += new System.EventHandler(this.imgImagem_Click);
             this.imgImagem.MouseEnter += new System.EventHandler(this.imgImagem_MouseEnter);
             this.imgImagem.MouseLeave += new System.EventHandler(this.imgImagem_MouseLeave);
             // 
