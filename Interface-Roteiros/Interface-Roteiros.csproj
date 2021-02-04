@@ -54,37 +54,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    <Compile Include="Roteiro1.cs">
+    <Compile Include="Roteiro-3.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Roteiro1.Designer.cs">
-      <DependentUpon>Roteiro1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SubRoteiro.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="SubRoteiro.Designer.cs">
-      <DependentUpon>SubRoteiro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TelaRoteiros.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="TelaRoteiros.Designer.cs">
-      <DependentUpon>TelaRoteiros.cs</DependentUpon>
-=======
-=======
->>>>>>> Stashed changes
-    <Compile Include="Roteiro-2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Roteiro-2.Designer.cs">
-      <DependentUpon>Roteiro-2.cs</DependentUpon>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+    <Compile Include="Roteiro-3.Designer.cs">
+      <DependentUpon>Roteiro-3.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -99,24 +73,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    <EmbeddedResource Include="Roteiro1.resx">
-      <DependentUpon>Roteiro1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SubRoteiro.resx">
-      <DependentUpon>SubRoteiro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TelaRoteiros.resx">
-      <DependentUpon>TelaRoteiros.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="Roteiro-2.resx">
-      <DependentUpon>Roteiro-2.cs</DependentUpon>
->>>>>>> Stashed changes
-=======
-    <EmbeddedResource Include="Roteiro-2.resx">
-      <DependentUpon>Roteiro-2.cs</DependentUpon>
->>>>>>> Stashed changes
+    <EmbeddedResource Include="Roteiro-3.resx">
+      <DependentUpon>Roteiro-3.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -136,24 +94,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\circuito1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\circuito2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\circuito3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\circuito4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\circuito5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\circuito6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
