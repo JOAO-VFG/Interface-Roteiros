@@ -97,10 +97,5 @@ namespace Interface_Roteiros
         {
             AbrirJanela(telaRoteiros[5]);
         }
-
-        private void subRoteiro2_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

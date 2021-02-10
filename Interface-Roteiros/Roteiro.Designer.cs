@@ -33,7 +33,7 @@ namespace Interface_Roteiros
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnPDF = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSimulador = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblTexto = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -65,7 +65,7 @@ namespace Interface_Roteiros
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(217)))), ((int)(((byte)(213)))));
             this.panel4.Controls.Add(this.btnPDF);
-            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.btnSimulador);
             this.panel4.Location = new System.Drawing.Point(0, 238);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(580, 164);
@@ -86,19 +86,20 @@ namespace Interface_Roteiros
             this.btnPDF.UseVisualStyleBackColor = false;
             this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
             // 
-            // button2
+            // btnSimulador
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(191)))), ((int)(((byte)(55)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(409, 98);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 43);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "SIMULADOR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSimulador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(191)))), ((int)(((byte)(55)))));
+            this.btnSimulador.FlatAppearance.BorderSize = 0;
+            this.btnSimulador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSimulador.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSimulador.ForeColor = System.Drawing.Color.White;
+            this.btnSimulador.Location = new System.Drawing.Point(409, 98);
+            this.btnSimulador.Name = "btnSimulador";
+            this.btnSimulador.Size = new System.Drawing.Size(150, 43);
+            this.btnSimulador.TabIndex = 3;
+            this.btnSimulador.Text = "SIMULADOR";
+            this.btnSimulador.UseVisualStyleBackColor = false;
+            this.btnSimulador.Click += new System.EventHandler(this.BtnSimulador_Click);
             // 
             // panel2
             // 
@@ -183,7 +184,7 @@ namespace Interface_Roteiros
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblTexto;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSimulador;
         private System.Windows.Forms.Button btnPDF;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.PictureBox imgImagem;

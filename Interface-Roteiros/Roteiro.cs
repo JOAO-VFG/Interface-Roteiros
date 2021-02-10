@@ -53,5 +53,11 @@ namespace Interface_Roteiros
         {
             System.Diagnostics.Process.Start("VS2015Licensing.pdf");
         }
+
+        private void BtnSimulador_Click(object sender, EventArgs e)
+        {
+            var novaTela = new TelaCircuito();
+            novaTela.Show();
+        }
     }
 }
