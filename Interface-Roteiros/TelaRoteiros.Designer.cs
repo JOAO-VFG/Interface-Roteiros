@@ -106,6 +106,7 @@ namespace Interface_Roteiros
             this.subRoteiro2.TabIndex = 10;
             this.subRoteiro2.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subRoteiro2.TextoRoteiro = "Leis de Ohm";
+            this.subRoteiro2.Load += new System.EventHandler(this.subRoteiro2_Load);
             this.subRoteiro2.Click += new System.EventHandler(this.subRoteiro2_Click);
             // 
             // subRoteiro1

@@ -66,6 +66,12 @@
     <Compile Include="SubRoteiro.Designer.cs">
       <DependentUpon>SubRoteiro.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaCircuito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaCircuito.Designer.cs">
+      <DependentUpon>TelaCircuito.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaRoteiros.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubRoteiro.resx">
       <DependentUpon>SubRoteiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaCircuito.resx">
+      <DependentUpon>TelaCircuito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaRoteiros.resx">
       <DependentUpon>TelaRoteiros.cs</DependentUpon>
