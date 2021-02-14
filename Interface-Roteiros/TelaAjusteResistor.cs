@@ -24,6 +24,9 @@ namespace Interface_Roteiros
         public static extern bool ReleaseCapture();
         // ================================================================================
 
+        public Resistor Resistor { get; set; }
+        public Label LabelResistor { get; set; }
+
         public TelaAjusteResistor()
         {
             InitializeComponent();
@@ -58,6 +61,16 @@ namespace Interface_Roteiros
         {
             // Posição inicial da tela
             this.Location = new Point(190, 35);
+            lblResistencia.Text = Resistor.Resistencia.ToString() + "Ω";
+            tckResistencia.Value = Resistor.Resistencia;
+        }
+
+        // Modifica o valor da resistência na GUI
+        private void tckResistencia_Scroll(object sender, EventArgs e)
+        {
+            var valor = tckResistencia.Value;
+            Resistor.Resistencia = valor;
+            LabelResistor.Text =  lblResistencia.Text = valor.ToString() + "Ω";
         }
     }
 }

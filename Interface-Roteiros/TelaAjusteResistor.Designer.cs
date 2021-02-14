@@ -145,7 +145,8 @@ namespace Interface_Roteiros
             this.tckResistencia.Size = new System.Drawing.Size(157, 45);
             this.tckResistencia.TabIndex = 27;
             this.tckResistencia.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.tckResistencia.Value = 1;
+            this.tckResistencia.Value = 20;
+            this.tckResistencia.Scroll += new System.EventHandler(this.tckResistencia_Scroll);
             // 
             // panel4
             // 
