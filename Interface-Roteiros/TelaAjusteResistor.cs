@@ -19,7 +19,7 @@ namespace Interface_Roteiros
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
         }
 
         private void btnSair_MouseEnter(object sender, EventArgs e)

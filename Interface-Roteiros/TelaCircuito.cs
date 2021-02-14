@@ -12,9 +12,20 @@ namespace Interface_Roteiros
 {
     public partial class TelaCircuito : Form
     {
+        private TelaAjusteResistor telaResistor1;
         public TelaCircuito()
         {
             InitializeComponent();
+        }
+
+        private void btnResistor1_Click(object sender, EventArgs e)
+        {
+            telaResistor1.Show();
+        }
+
+        private void TelaCircuito_Load(object sender, EventArgs e)
+        {
+            telaResistor1 = new TelaAjusteResistor();
         }
     }
 }
