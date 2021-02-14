@@ -16,6 +16,8 @@ namespace Interface_Roteiros
         private TelaAjusteResistor telaResistor1;
         private TelaAjusteResistor telaResistor2;
         private TelaAjusteResistor telaResistor3;
+        // Janela de configuração da fonte
+        private TelaAjusteBateria telaFonte;
 
         // Resistor 1
         private Resistor _resistor1;
@@ -26,9 +28,11 @@ namespace Interface_Roteiros
         // Resistor 3
         private Resistor _resistor3;
         public Resistor Resistor3 { get { return _resistor3; } }
+        // Fonte
 
         private void TelaCircuito_Load(object sender, EventArgs e)
         {
+            telaFonte = new TelaAjusteBateria() { Titulo = "Fonte", };
             //1
             _resistor1 = new Resistor(12);
             telaResistor1 = new TelaAjusteResistor()
@@ -70,6 +74,11 @@ namespace Interface_Roteiros
         private void btnResistor3_Click(object sender, EventArgs e)
         {
             telaResistor3.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            telaFonte.Show();
         }
     }
 }

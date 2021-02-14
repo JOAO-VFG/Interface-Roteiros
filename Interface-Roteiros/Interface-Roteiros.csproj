@@ -81,6 +81,18 @@
     <Compile Include="SubRoteiro.Designer.cs">
       <DependentUpon>SubRoteiro.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaAjustePadrao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaAjustePadrao.Designer.cs">
+      <DependentUpon>TelaAjustePadrao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaAjusteBateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaAjusteBateria.Designer.cs">
+      <DependentUpon>TelaAjusteBateria.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaAjusteResistor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +129,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubRoteiro.resx">
       <DependentUpon>SubRoteiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaAjustePadrao.resx">
+      <DependentUpon>TelaAjustePadrao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaAjusteBateria.resx">
+      <DependentUpon>TelaAjusteBateria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaAjusteResistor.resx">
       <DependentUpon>TelaAjusteResistor.cs</DependentUpon>
@@ -173,6 +191,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minimize_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resistor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
