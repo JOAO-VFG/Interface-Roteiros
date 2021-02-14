@@ -31,8 +31,10 @@ namespace Interface_Roteiros
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaAjusteResistor));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTitulo = new System.Windows.Forms.Label();
+            this.btnSair = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblResistencia = new System.Windows.Forms.Label();
             this.tckResistencia = new System.Windows.Forms.TrackBar();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -45,14 +47,12 @@ namespace Interface_Roteiros
             this.label2 = new System.Windows.Forms.Label();
             this.cpbResistencia = new XanderUI.XUICircleProgressBar();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSair = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tckResistencia)).BeginInit();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tckResistencia)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,24 +80,50 @@ namespace Interface_Roteiros
             this.panel1.Size = new System.Drawing.Size(410, 240);
             this.panel1.TabIndex = 0;
             // 
-            // lblTitulo
+            // btnSair
             // 
-            this.lblTitulo.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(0, 0);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(410, 36);
-            this.lblTitulo.TabIndex = 1;
-            this.lblTitulo.Text = "Resistor";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSair.BackgroundImage = global::Interface_Roteiros.Properties.Resources.cancel_hover;
+            this.btnSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSair.FlatAppearance.BorderSize = 0;
+            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.Location = new System.Drawing.Point(374, 5);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(24, 24);
+            this.btnSair.TabIndex = 31;
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            this.btnSair.MouseEnter += new System.EventHandler(this.btnSair_MouseEnter);
+            this.btnSair.MouseLeave += new System.EventHandler(this.btnSair_MouseLeave);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(171)))), ((int)(((byte)(142)))));
-            this.panel5.Location = new System.Drawing.Point(174, 125);
+            this.panel5.Location = new System.Drawing.Point(172, 125);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(236, 7);
             this.panel5.TabIndex = 26;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(186, 144);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 30;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(186, 87);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
             // 
             // lblResistencia
             // 
@@ -125,7 +151,7 @@ namespace Interface_Roteiros
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(171)))), ((int)(((byte)(142)))));
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(173, 39);
+            this.panel4.Location = new System.Drawing.Point(172, 39);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(237, 35);
             this.panel4.TabIndex = 25;
@@ -146,7 +172,7 @@ namespace Interface_Roteiros
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(19)))), ((int)(((byte)(38)))));
             this.panel3.Location = new System.Drawing.Point(166, 39);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(8, 204);
+            this.panel3.Size = new System.Drawing.Size(6, 204);
             this.panel3.TabIndex = 20;
             // 
             // label7
@@ -230,42 +256,17 @@ namespace Interface_Roteiros
             this.panel2.Size = new System.Drawing.Size(410, 4);
             this.panel2.TabIndex = 18;
             // 
-            // pictureBox2
+            // lblTitulo
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(186, 144);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 30;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(186, 87);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 29;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnSair
-            // 
-            this.btnSair.BackgroundImage = global::Interface_Roteiros.Properties.Resources.cancel_hover;
-            this.btnSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSair.FlatAppearance.BorderSize = 0;
-            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSair.Location = new System.Drawing.Point(374, 5);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(24, 24);
-            this.btnSair.TabIndex = 31;
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            this.btnSair.MouseEnter += new System.EventHandler(this.btnSair_MouseEnter);
-            this.btnSair.MouseLeave += new System.EventHandler(this.btnSair_MouseLeave);
+            this.lblTitulo.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(0, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(410, 36);
+            this.lblTitulo.TabIndex = 1;
+            this.lblTitulo.Text = "Resistor";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitulo_MouseDown);
             // 
             // TelaAjusteResistor
             // 
@@ -277,13 +278,14 @@ namespace Interface_Roteiros
             this.Name = "TelaAjusteResistor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "TelaAjusteResistor";
+            this.Load += new System.EventHandler(this.TelaAjusteResistor_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tckResistencia)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
