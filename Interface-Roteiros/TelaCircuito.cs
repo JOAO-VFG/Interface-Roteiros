@@ -32,7 +32,10 @@ namespace Interface_Roteiros
 
         private void TelaCircuito_Load(object sender, EventArgs e)
         {
-            telaFonte = new TelaAjusteBateria() { Titulo = "Fonte", };
+            telaFonte = new TelaAjusteBateria() {
+                Titulo = "Fonte",
+                ImagemTitulo = Properties.Resources.battery,
+            };
             //1
             _resistor1 = new Resistor(12);
             telaResistor1 = new TelaAjusteResistor()

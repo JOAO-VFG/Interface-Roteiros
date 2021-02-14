@@ -14,5 +14,12 @@ namespace Interface_Roteiros
         {
             InitializeComponent();
         }
+
+        private void tckTensao_Scroll(object sender, EventArgs e)
+        {
+            var valor = tckTensao.Value;
+            lblTensao.Text = valor.ToString() + "V";
+            cpbTensao.Percentage = valor;
+        }
     }
 }

@@ -60,5 +60,10 @@ namespace Interface_Roteiros
         {
             btnSair.BackgroundImage = Properties.Resources.cancel_hover;
         }
+
+        private void TelaAjustePadrao_Load(object sender, EventArgs e)
+        {
+            btnSair.BringToFront();
+        }
     }
 }
