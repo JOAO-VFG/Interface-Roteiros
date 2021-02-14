@@ -183,6 +183,16 @@ namespace Interface_Roteiros.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap power_danger {
+            get {
+                object obj = ResourceManager.GetObject("power_danger", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap resistor {
             get {
                 object obj = ResourceManager.GetObject("resistor", resourceCulture);

@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Interface_Roteiros
 {
-    public partial class TelaAjusteBateria : Interface_Roteiros.TelaAjustePadrao
+    public partial class TelaAjusteResistor : Interface_Roteiros.TelaAjustePadrao
     {
-        public TelaAjusteBateria()
+        public TelaAjusteResistor()
         {
             InitializeComponent();
         }

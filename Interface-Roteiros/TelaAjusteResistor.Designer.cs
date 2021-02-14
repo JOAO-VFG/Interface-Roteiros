@@ -1,7 +1,7 @@
 ﻿
 namespace Interface_Roteiros
 {
-    partial class TelaAjusteBateria
+    partial class TelaAjusteResistor
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -33,11 +33,16 @@ namespace Interface_Roteiros
             this.panPainel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TelaAjusteBateria
+            // lblTitulo
+            // 
+            this.lblTitulo.Text = "Resistor";
+            // 
+            // TelaAjusteResistor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(410, 240);
-            this.Name = "TelaAjusteBateria";
+            this.Name = "TelaAjusteResistor";
+            this.Titulo = "Resistor";
             ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).EndInit();
             this.panPainel.ResumeLayout(false);
             this.ResumeLayout(false);
