@@ -93,12 +93,6 @@
     <Compile Include="TelaAjusteBateria.Designer.cs">
       <DependentUpon>TelaAjusteBateria.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaAjusteResistor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaAjusteResistor.Designer.cs">
-      <DependentUpon>TelaAjusteResistor.cs</DependentUpon>
-    </Compile>
     <Compile Include="TelaCircuito.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,9 +129,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaAjusteBateria.resx">
       <DependentUpon>TelaAjusteBateria.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TelaAjusteResistor.resx">
-      <DependentUpon>TelaAjusteResistor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaCircuito.resx">
       <DependentUpon>TelaCircuito.cs</DependentUpon>

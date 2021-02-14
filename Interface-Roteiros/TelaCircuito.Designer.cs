@@ -39,8 +39,6 @@ namespace Interface_Roteiros
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnResistor3 = new System.Windows.Forms.Button();
-            this.btnResistor2 = new System.Windows.Forms.Button();
             this.btnResistor1 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -150,8 +148,6 @@ namespace Interface_Roteiros
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.btnResistor3);
-            this.panel1.Controls.Add(this.btnResistor2);
             this.panel1.Controls.Add(this.btnResistor1);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox3);
@@ -161,30 +157,6 @@ namespace Interface_Roteiros
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(731, 102);
             this.panel1.TabIndex = 0;
-            // 
-            // btnResistor3
-            // 
-            this.btnResistor3.BackColor = System.Drawing.Color.Transparent;
-            this.btnResistor3.FlatAppearance.BorderSize = 0;
-            this.btnResistor3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResistor3.Location = new System.Drawing.Point(592, 29);
-            this.btnResistor3.Name = "btnResistor3";
-            this.btnResistor3.Size = new System.Drawing.Size(75, 40);
-            this.btnResistor3.TabIndex = 5;
-            this.btnResistor3.UseVisualStyleBackColor = false;
-            this.btnResistor3.Click += new System.EventHandler(this.btnResistor3_Click);
-            // 
-            // btnResistor2
-            // 
-            this.btnResistor2.BackColor = System.Drawing.Color.Transparent;
-            this.btnResistor2.FlatAppearance.BorderSize = 0;
-            this.btnResistor2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResistor2.Location = new System.Drawing.Point(405, 29);
-            this.btnResistor2.Name = "btnResistor2";
-            this.btnResistor2.Size = new System.Drawing.Size(75, 40);
-            this.btnResistor2.TabIndex = 4;
-            this.btnResistor2.UseVisualStyleBackColor = false;
-            this.btnResistor2.Click += new System.EventHandler(this.btnResistor2_Click);
             // 
             // btnResistor1
             // 
@@ -285,7 +257,5 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label lblResistor2;
         private System.Windows.Forms.Label lblResistor1;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btnResistor2;
-        private System.Windows.Forms.Button btnResistor3;
     }
 }
