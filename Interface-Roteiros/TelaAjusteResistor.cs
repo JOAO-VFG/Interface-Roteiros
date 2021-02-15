@@ -10,9 +10,31 @@ namespace Interface_Roteiros
 {
     public partial class TelaAjusteResistor : Interface_Roteiros.TelaAjustePadrao
     {
+        public Resistor Resistor { get; set; }
+        public Label LabelTexto { get; set; }
+
         public TelaAjusteResistor()
         {
             InitializeComponent();
+        }
+
+        private void tckSlider_Scroll(object sender, EventArgs e)
+        {
+            var valor = tckSlider.Value;
+            LabelTexto.Text = valor.ToString() + "Ω";
+            AtualizarValores(valor);
+        }
+
+        private void TelaAjusteResistor_Load(object sender, EventArgs e)
+        {
+            AtualizarValores(Resistor.Resistencia);
+        }
+
+        // Atualiza os valores presentes na janela da interface
+        private void AtualizarValores(int valor)
+        {
+            lblValor.Text = valor.ToString() + "Ω";
+            cpbProgresso.Percentage = valor;
         }
     }
 }

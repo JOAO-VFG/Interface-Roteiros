@@ -31,9 +31,6 @@ namespace Interface_Roteiros
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaAjustePadrao));
             this.panPainel = new System.Windows.Forms.Panel();
-            this.imgImagem = new System.Windows.Forms.PictureBox();
-            this.btnSair = new System.Windows.Forms.Button();
-            this.lblTitulo = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblPotencia = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,12 +45,15 @@ namespace Interface_Roteiros
             this.tckSlider = new System.Windows.Forms.TrackBar();
             this.lblGrandeza = new System.Windows.Forms.Label();
             this.cpbProgresso = new XanderUI.XUICircleProgressBar();
+            this.imgImagem = new System.Windows.Forms.PictureBox();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.panPainel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tckSlider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).BeginInit();
             this.SuspendLayout();
             // 
             // panPainel
@@ -80,50 +80,6 @@ namespace Interface_Roteiros
             this.panPainel.Name = "panPainel";
             this.panPainel.Size = new System.Drawing.Size(410, 240);
             this.panPainel.TabIndex = 0;
-            // 
-            // imgImagem
-            // 
-            this.imgImagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(28)))), ((int)(((byte)(51)))));
-            this.imgImagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.imgImagem.Image = global::Interface_Roteiros.Properties.Resources.resistor;
-            this.imgImagem.Location = new System.Drawing.Point(7, 9);
-            this.imgImagem.Name = "imgImagem";
-            this.imgImagem.Size = new System.Drawing.Size(24, 24);
-            this.imgImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgImagem.TabIndex = 2;
-            this.imgImagem.TabStop = false;
-            // 
-            // btnSair
-            // 
-            this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(28)))), ((int)(((byte)(51)))));
-            this.btnSair.BackgroundImage = global::Interface_Roteiros.Properties.Resources.cancel_hover;
-            this.btnSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSair.FlatAppearance.BorderSize = 0;
-            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(28)))), ((int)(((byte)(51)))));
-            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSair.Location = new System.Drawing.Point(373, 7);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(24, 24);
-            this.btnSair.TabIndex = 1;
-            this.btnSair.UseVisualStyleBackColor = false;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            this.btnSair.MouseEnter += new System.EventHandler(this.btnSair_MouseEnter);
-            this.btnSair.MouseLeave += new System.EventHandler(this.btnSair_MouseLeave);
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(28)))), ((int)(((byte)(51)))));
-            this.lblTitulo.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(0, 0);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.lblTitulo.Size = new System.Drawing.Size(409, 39);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Título";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblTitulo_MouseMove);
             // 
             // pictureBox2
             // 
@@ -276,6 +232,50 @@ namespace Interface_Roteiros
             this.cpbProgresso.UnFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
             this.cpbProgresso.UnfilledThickness = 5;
             // 
+            // imgImagem
+            // 
+            this.imgImagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(28)))), ((int)(((byte)(51)))));
+            this.imgImagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.imgImagem.Image = global::Interface_Roteiros.Properties.Resources.resistor;
+            this.imgImagem.Location = new System.Drawing.Point(7, 9);
+            this.imgImagem.Name = "imgImagem";
+            this.imgImagem.Size = new System.Drawing.Size(24, 24);
+            this.imgImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgImagem.TabIndex = 2;
+            this.imgImagem.TabStop = false;
+            // 
+            // btnSair
+            // 
+            this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(28)))), ((int)(((byte)(51)))));
+            this.btnSair.BackgroundImage = global::Interface_Roteiros.Properties.Resources.cancel_hover;
+            this.btnSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSair.FlatAppearance.BorderSize = 0;
+            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(28)))), ((int)(((byte)(51)))));
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.Location = new System.Drawing.Point(373, 7);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(24, 24);
+            this.btnSair.TabIndex = 1;
+            this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            this.btnSair.MouseEnter += new System.EventHandler(this.btnSair_MouseEnter);
+            this.btnSair.MouseLeave += new System.EventHandler(this.btnSair_MouseLeave);
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(28)))), ((int)(((byte)(51)))));
+            this.lblTitulo.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(0, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.lblTitulo.Size = new System.Drawing.Size(409, 39);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Título";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblTitulo_MouseMove);
+            // 
             // TelaAjustePadrao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -289,12 +289,12 @@ namespace Interface_Roteiros
             this.Load += new System.EventHandler(this.TelaAjustePadrao_Load);
             this.panPainel.ResumeLayout(false);
             this.panPainel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tckSlider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -303,7 +303,6 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Button btnSair;
         protected System.Windows.Forms.Label lblTitulo;
         protected System.Windows.Forms.PictureBox imgImagem;
-        protected System.Windows.Forms.Panel panPainel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
@@ -318,5 +317,6 @@ namespace Interface_Roteiros
         protected System.Windows.Forms.TrackBar tckSlider;
         protected System.Windows.Forms.Label lblGrandeza;
         protected XanderUI.XUICircleProgressBar cpbProgresso;
+        protected System.Windows.Forms.Panel panPainel;
     }
 }

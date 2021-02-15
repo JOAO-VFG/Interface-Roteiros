@@ -31,7 +31,16 @@ namespace Interface_Roteiros
         {
             ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).BeginInit();
             this.panPainel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tckSlider)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblValor
+            // 
+            this.lblValor.Text = "20V";
+            // 
+            // lblGrandeza
+            // 
+            this.lblGrandeza.Text = "Tensão";
             // 
             // TelaAjusteBateria
             // 
@@ -40,6 +49,8 @@ namespace Interface_Roteiros
             this.Name = "TelaAjusteBateria";
             ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).EndInit();
             this.panPainel.ResumeLayout(false);
+            this.panPainel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tckSlider)).EndInit();
             this.ResumeLayout(false);
 
         }

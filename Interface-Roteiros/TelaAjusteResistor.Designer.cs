@@ -30,6 +30,7 @@ namespace Interface_Roteiros
         private void InitializeComponent()
         {
             ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tckSlider)).BeginInit();
             this.panPainel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -37,14 +38,21 @@ namespace Interface_Roteiros
             // 
             this.lblTitulo.Text = "Resistor";
             // 
+            // tckSlider
+            // 
+            this.tckSlider.Scroll += new System.EventHandler(this.tckSlider_Scroll);
+            // 
             // TelaAjusteResistor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(410, 240);
             this.Name = "TelaAjusteResistor";
             this.Titulo = "Resistor";
+            this.Load += new System.EventHandler(this.TelaAjusteResistor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tckSlider)).EndInit();
             this.panPainel.ResumeLayout(false);
+            this.panPainel.PerformLayout();
             this.ResumeLayout(false);
 
         }

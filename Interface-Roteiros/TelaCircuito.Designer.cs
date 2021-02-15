@@ -44,6 +44,8 @@ namespace Interface_Roteiros
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnResistor2 = new System.Windows.Forms.Button();
+            this.btnResitor3 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
@@ -148,6 +150,8 @@ namespace Interface_Roteiros
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.btnResitor3);
+            this.panel1.Controls.Add(this.btnResistor2);
             this.panel1.Controls.Add(this.btnResistor1);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox3);
@@ -217,6 +221,30 @@ namespace Interface_Roteiros
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // btnResistor2
+            // 
+            this.btnResistor2.BackColor = System.Drawing.Color.Transparent;
+            this.btnResistor2.FlatAppearance.BorderSize = 0;
+            this.btnResistor2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResistor2.Location = new System.Drawing.Point(404, 29);
+            this.btnResistor2.Name = "btnResistor2";
+            this.btnResistor2.Size = new System.Drawing.Size(75, 40);
+            this.btnResistor2.TabIndex = 4;
+            this.btnResistor2.UseVisualStyleBackColor = false;
+            this.btnResistor2.Click += new System.EventHandler(this.btnResistor2_Click);
+            // 
+            // btnResitor3
+            // 
+            this.btnResitor3.BackColor = System.Drawing.Color.Transparent;
+            this.btnResitor3.FlatAppearance.BorderSize = 0;
+            this.btnResitor3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResitor3.Location = new System.Drawing.Point(592, 29);
+            this.btnResitor3.Name = "btnResitor3";
+            this.btnResitor3.Size = new System.Drawing.Size(75, 40);
+            this.btnResitor3.TabIndex = 5;
+            this.btnResitor3.UseVisualStyleBackColor = false;
+            this.btnResitor3.Click += new System.EventHandler(this.btnResitor3_Click);
+            // 
             // TelaCircuito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,5 +285,7 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label lblResistor2;
         private System.Windows.Forms.Label lblResistor1;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btnResitor3;
+        private System.Windows.Forms.Button btnResistor2;
     }
 }
