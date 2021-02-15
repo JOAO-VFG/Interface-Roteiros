@@ -30,6 +30,13 @@ namespace Interface_Roteiros
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.botaoPersonalizado4 = new Interface_Roteiros.BotaoPersonalizado();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.botaoPersonalizado3 = new Interface_Roteiros.BotaoPersonalizado();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.botaoPersonalizado2 = new Interface_Roteiros.BotaoPersonalizado();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.botaoPersonalizado1 = new Interface_Roteiros.BotaoPersonalizado();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,6 +48,7 @@ namespace Interface_Roteiros
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,14 +67,81 @@ namespace Interface_Roteiros
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
+            this.panel1.Controls.Add(this.botaoPersonalizado4);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.botaoPersonalizado3);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.botaoPersonalizado2);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.botaoPersonalizado1);
             this.panel1.Location = new System.Drawing.Point(0, 310);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(715, 100);
             this.panel1.TabIndex = 4;
             // 
+            // botaoPersonalizado4
+            // 
+            this.botaoPersonalizado4.Image = global::Interface_Roteiros.Properties.Resources.resistor2;
+            this.botaoPersonalizado4.Location = new System.Drawing.Point(315, 0);
+            this.botaoPersonalizado4.Name = "botaoPersonalizado4";
+            this.botaoPersonalizado4.Size = new System.Drawing.Size(100, 100);
+            this.botaoPersonalizado4.TabIndex = 4;
+            this.botaoPersonalizado4.Texto = "3";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.panel5.Location = new System.Drawing.Point(310, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(5, 100);
+            this.panel5.TabIndex = 3;
+            // 
+            // botaoPersonalizado3
+            // 
+            this.botaoPersonalizado3.Image = global::Interface_Roteiros.Properties.Resources.resistor2;
+            this.botaoPersonalizado3.Location = new System.Drawing.Point(210, 0);
+            this.botaoPersonalizado3.Name = "botaoPersonalizado3";
+            this.botaoPersonalizado3.Size = new System.Drawing.Size(100, 100);
+            this.botaoPersonalizado3.TabIndex = 3;
+            this.botaoPersonalizado3.Texto = "2";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.panel4.Location = new System.Drawing.Point(205, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(5, 100);
+            this.panel4.TabIndex = 2;
+            // 
+            // botaoPersonalizado2
+            // 
+            this.botaoPersonalizado2.Image = global::Interface_Roteiros.Properties.Resources.resistor2;
+            this.botaoPersonalizado2.Location = new System.Drawing.Point(105, 0);
+            this.botaoPersonalizado2.Name = "botaoPersonalizado2";
+            this.botaoPersonalizado2.Size = new System.Drawing.Size(100, 100);
+            this.botaoPersonalizado2.TabIndex = 2;
+            this.botaoPersonalizado2.Texto = "1";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.panel3.Location = new System.Drawing.Point(100, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 100);
+            this.panel3.TabIndex = 1;
+            // 
+            // botaoPersonalizado1
+            // 
+            this.botaoPersonalizado1.Image = global::Interface_Roteiros.Properties.Resources.battery2;
+            this.botaoPersonalizado1.Location = new System.Drawing.Point(0, 0);
+            this.botaoPersonalizado1.Name = "botaoPersonalizado1";
+            this.botaoPersonalizado1.Size = new System.Drawing.Size(100, 100);
+            this.botaoPersonalizado1.TabIndex = 0;
+            this.botaoPersonalizado1.Texto = "Fonte";
+            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.panel2.Location = new System.Drawing.Point(0, 305);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(715, 7);
@@ -196,6 +271,7 @@ namespace Interface_Roteiros
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.label8, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -215,5 +291,12 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private BotaoPersonalizado botaoPersonalizado2;
+        private System.Windows.Forms.Panel panel3;
+        private BotaoPersonalizado botaoPersonalizado1;
+        private BotaoPersonalizado botaoPersonalizado4;
+        private System.Windows.Forms.Panel panel5;
+        private BotaoPersonalizado botaoPersonalizado3;
+        private System.Windows.Forms.Panel panel4;
     }
 }
