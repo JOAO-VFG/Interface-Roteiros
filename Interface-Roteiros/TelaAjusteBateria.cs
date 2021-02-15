@@ -12,6 +12,7 @@ namespace Interface_Roteiros
     {
         public Circuito Circuito { get; set; }
         public Label LabelTexto { get; set; }
+        public Label LabelV0 { get; set; }
         public TelaAjusteBateria()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace Interface_Roteiros
 
         private void TelaAjusteBateria_Load(object sender, EventArgs e)
         {
+            tckSlider.Value = Circuito.Fonte.Tensao;
             AtualizarValores(Circuito.Fonte.Tensao);
         }
 
@@ -32,6 +34,10 @@ namespace Interface_Roteiros
         {
             Circuito.Fonte.Tensao = valor;
             lblValor.Text = LabelTexto.Text = valor.ToString() + "V";
+            Circuito.ResolverCircuto();
+            lblCorrente.Text = FormatarValor(Circuito.Fonte.Corrente, "A");
+            lblPotencia.Text = FormatarValor(Circuito.Fonte.Potencia, "W");
+            LabelV0.Text = FormatarValor(Circuito.V0, "V");
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Interface_Roteiros
         public Resistor[] Resistores { get; set; }
         public double I0 { get; set; } = 0.125;
         public double V0 { get; set; }
-        public double V1 { get; set; }
+        private double V1 { get; set; }
         public double[] Correntes { get; set; } = new double[3];
 
         public Circuito(Resistor[] resistores, Bateria fonte)
@@ -24,26 +24,40 @@ namespace Interface_Roteiros
         // Calcula o circuito
         public void ResolverCircuto()
         {
-            double r1 = Resistores[0].Resistencia;
-            double r2 = Resistores[1].Resistencia;
-            double r3 = Resistores[2].Resistencia;
-            var fonte = Fonte.Tensao;
-
-            V1 = (r2 + r3) * 1 / 8;
-            V0 = fonte / V1;
-
-            var i1 = fonte / r1;
-            var i2 = fonte / r2;
-            var i3 = fonte / r3;
-
-            double[] correntes = { i1, i2, i3 };
-            var contador = 0;
-            foreach(var i in correntes)
+            CalcularCorrentes();
+            foreach(var resistor in Resistores)
             {
-                Resistores[contador].Corrente = i;
-                Resistores[contador].Potencia = fonte * i;
-                contador++;
+                resistor.CalcularPotencia();
             }
+            Fonte.CalcularPotencia();
+            var r2 = Resistores[1].Resistencia;
+            var r3 = Resistores[2].Resistencia;
+            V1 = (double)(r2 + r3) / 8;
+            V0 = Fonte.Tensao / V1;
+        }
+
+        /* Calcula as correntes que passam pelo circuito e 
+         * atribui o valor de cada uma ao elementos */
+        private void CalcularCorrentes()
+        {
+            var ddp = Fonte.Tensao;
+            // Corrente que passa pela bateria
+            Fonte.Corrente = Correntes[0] = (double)ddp / ResistenciaEquivalente();
+            // Corrente ramificada do meio
+            Resistores[0].Corrente =  Correntes[1] = (double)ddp / Resistores[0].Resistencia;
+            // Corrente ramificado do extremo
+            Correntes[2] = (double)ddp / (Resistores[1].Resistencia + Resistores[2].Resistencia);
+            Resistores[1].Corrente = Resistores[2].Corrente = Correntes[2];
+        }
+
+        private double ResistenciaEquivalente()
+        {
+            var r1 = Resistores[0].Resistencia;
+            var r2 = Resistores[1].Resistencia;
+            var r3 = Resistores[2].Resistencia;
+            var req = r2 + r3;
+
+            return (double)(r1 * req) / (r1 + req);
         }
     }
 }

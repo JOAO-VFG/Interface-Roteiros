@@ -54,6 +54,7 @@ namespace Interface_Roteiros
                 ImagemTitulo = Properties.Resources.battery,
                 LabelTexto = lblFonte,
                 Circuito = this.circuito,
+                LabelV0 = lblV0,
             };
         }
 

@@ -29,6 +29,7 @@ namespace Interface_Roteiros
 
         private void TelaAjusteResistor_Load(object sender, EventArgs e)
         {
+            tckSlider.Value = Resistor.Resistencia;
             AtualizarValores(Resistor.Resistencia);
         }
 
@@ -41,7 +42,7 @@ namespace Interface_Roteiros
             Circuito.ResolverCircuto();
             lblCorrente.Text = FormatarValor(Resistor.Corrente, "A");
             lblPotencia.Text = FormatarValor(Resistor.Potencia, "W");
-            LabelVo.Text = Circuito.V0.ToString() + "V";
+            LabelVo.Text = FormatarValor(Circuito.V0, "V");
         }
     }
 }
