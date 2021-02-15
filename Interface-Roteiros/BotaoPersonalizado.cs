@@ -47,5 +47,10 @@ namespace Interface_Roteiros
             panBotao.BackColor = cor;
             lblTexto.ForeColor = corTexto;
         }
+
+        private void btnPersonalizado_Click(object sender, EventArgs e)
+        {
+            this.OnClick(e);
+        }
     }
 }

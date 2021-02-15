@@ -14,5 +14,10 @@ namespace Interface_Roteiros
         {
             InitializeComponent();
         }
+
+        private void btnResistor1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello World!", "Título!");
+        }
     }
 }

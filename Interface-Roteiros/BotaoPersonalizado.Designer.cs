@@ -45,6 +45,7 @@ namespace Interface_Roteiros
             this.btnPersonalizado.Size = new System.Drawing.Size(100, 100);
             this.btnPersonalizado.TabIndex = 0;
             this.btnPersonalizado.UseVisualStyleBackColor = false;
+            this.btnPersonalizado.Click += new System.EventHandler(this.btnPersonalizado_Click);
             this.btnPersonalizado.MouseEnter += new System.EventHandler(this.btnPersonalizado_MouseEnter);
             this.btnPersonalizado.MouseLeave += new System.EventHandler(this.btnPersonalizado_MouseLeave);
             // 
