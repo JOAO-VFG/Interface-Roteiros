@@ -16,20 +16,20 @@ namespace Interface_Roteiros
         private TelaAjusteBateria telaFonte;
         // Janela de configuração do resistor
         private TelaAjusteResistor[] telaResistores = new TelaAjusteResistor[3];
-
-        // Resistores presentes no circuito
-        private Resistor[] resistores = new Resistor[3];
-        // Fonte do circuito
-        private Bateria fonte;
+        // Circuito
+        private Circuito circuito;
 
         private void TelaCircuito_Load(object sender, EventArgs e)
         {
+            Resistor[] resistores = new Resistor[3];
             // Cria a fonte
-            fonte = new Bateria(40);
+            var fonte = new Bateria(40);
             // Cria os resistores
-            resistores[0] = new Resistor(12);
-            resistores[1] = new Resistor(5);
+            resistores[0] = new Resistor(5);
+            resistores[1] = new Resistor(12);
             resistores[2] = new Resistor(8);
+            // Cria o circuito
+            circuito = new Circuito(resistores, fonte);
             // Armazena os labels para serem utlizados depois
             Label[] labelsResistores = { lblResistor1, lblResistor2, lblResistor3 };
             // Cria a janela de informações dos resistores
@@ -37,15 +37,16 @@ namespace Interface_Roteiros
             {
                 telaResistores[i] = new TelaAjusteResistor()
                 {
+                    Circuito = this.circuito,
                     LabelTexto = labelsResistores[i],
-                    Resistor = resistores[i],
+                    Resistor = this.circuito.Resistores[i],
                 };
             }
             // Cria janela de informações da bateria
             telaFonte = new TelaAjusteBateria() {
                 Titulo = "Fonte",
                 ImagemTitulo = Properties.Resources.battery,
-                Fonte = this.fonte,
+                Fonte = this.circuito.Fonte,
                 LabelTexto = lblFonte,
             };
         }

@@ -63,7 +63,19 @@ namespace Interface_Roteiros
 
         private void TelaAjustePadrao_Load(object sender, EventArgs e)
         {
+            // Por algum motivo o botão não fica na frente, embora no designer ele fique visivel...
             btnSair.BringToFront();
+        }
+
+        protected string FormatarValor(double valor, string unidade)
+        {
+            if (valor < 1 && valor > -1)
+            {
+                valor *= 1000;
+                unidade = "m" + unidade;
+            }
+
+            return Math.Round(valor, 2).ToString() + unidade;
         }
     }
 }

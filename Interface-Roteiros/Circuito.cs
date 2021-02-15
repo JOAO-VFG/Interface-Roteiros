@@ -32,14 +32,16 @@ namespace Interface_Roteiros
             V1 = (r2 + r3) * 1 / 8;
             V0 = fonte / V1;
 
-            var i1 = fonte / r1;
-            var i2 = fonte / r2;
-            var i3 = fonte / r3;
+            var i1 = (double)fonte / r1;
+            var i2 = (double)fonte / r2;
+            var i3 = (double)fonte / r3;
+
             double[] correntes = { i1, i2, i3 };
             var contador = 0;
             foreach(var i in correntes)
             {
-                Correntes[contador] = i;
+                Resistores[contador].Corrente = i;
+                Resistores[contador].Potencia = fonte * i;
                 contador++;
             }
         }

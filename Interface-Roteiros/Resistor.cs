@@ -12,8 +12,16 @@ namespace Interface_Roteiros
         private double _potencia;
         public int Resistencia { get; set; }
         public double Tensao { get; set; }
-        public double Corrente { get { return _corrente; } }
-        public double Potencia { get { return _potencia; } }
+        public double Corrente
+        {
+            get { return _corrente; }
+            set { _corrente = value; }
+        }
+        public double Potencia
+        {
+            get { return _potencia; }
+            set { _potencia = value; }
+        }
 
         public Resistor(int resistencia)
         {

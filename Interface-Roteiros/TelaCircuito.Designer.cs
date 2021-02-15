@@ -33,8 +33,8 @@ namespace Interface_Roteiros
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblResistor3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblResistor2 = new System.Windows.Forms.Label();
             this.lblResistor1 = new System.Windows.Forms.Label();
+            this.lblResistor2 = new System.Windows.Forms.Label();
             this.lblFonte = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -60,8 +60,8 @@ namespace Interface_Roteiros
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.lblResistor3);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.lblResistor2);
             this.panel2.Controls.Add(this.lblResistor1);
+            this.panel2.Controls.Add(this.lblResistor2);
             this.panel2.Controls.Add(this.lblFonte);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Location = new System.Drawing.Point(-5, 1);
@@ -91,27 +91,27 @@ namespace Interface_Roteiros
             this.label4.TabIndex = 4;
             this.label4.Text = "V0";
             // 
-            // lblResistor2
-            // 
-            this.lblResistor2.AutoSize = true;
-            this.lblResistor2.BackColor = System.Drawing.Color.Transparent;
-            this.lblResistor2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResistor2.Location = new System.Drawing.Point(338, 167);
-            this.lblResistor2.Name = "lblResistor2";
-            this.lblResistor2.Size = new System.Drawing.Size(32, 19);
-            this.lblResistor2.TabIndex = 3;
-            this.lblResistor2.Text = "5 Ω";
-            // 
             // lblResistor1
             // 
             this.lblResistor1.AutoSize = true;
             this.lblResistor1.BackColor = System.Drawing.Color.Transparent;
             this.lblResistor1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResistor1.Location = new System.Drawing.Point(430, 75);
+            this.lblResistor1.Location = new System.Drawing.Point(338, 167);
             this.lblResistor1.Name = "lblResistor1";
-            this.lblResistor1.Size = new System.Drawing.Size(36, 19);
-            this.lblResistor1.TabIndex = 2;
-            this.lblResistor1.Text = "12 Ω";
+            this.lblResistor1.Size = new System.Drawing.Size(32, 19);
+            this.lblResistor1.TabIndex = 3;
+            this.lblResistor1.Text = "5 Ω";
+            // 
+            // lblResistor2
+            // 
+            this.lblResistor2.AutoSize = true;
+            this.lblResistor2.BackColor = System.Drawing.Color.Transparent;
+            this.lblResistor2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistor2.Location = new System.Drawing.Point(430, 75);
+            this.lblResistor2.Name = "lblResistor2";
+            this.lblResistor2.Size = new System.Drawing.Size(36, 19);
+            this.lblResistor2.TabIndex = 2;
+            this.lblResistor2.Text = "12 Ω";
             // 
             // lblFonte
             // 
@@ -282,8 +282,8 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label lblFonte;
         private System.Windows.Forms.Label lblResistor3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblResistor2;
         private System.Windows.Forms.Label lblResistor1;
+        private System.Windows.Forms.Label lblResistor2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btnResitor3;
         private System.Windows.Forms.Button btnResistor2;
