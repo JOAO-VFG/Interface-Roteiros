@@ -29,12 +29,14 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCircuitoTeste));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.botaoPersonalizado4 = new Interface_Roteiros.BotaoPersonalizado();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.botaoPersonalizado3 = new Interface_Roteiros.BotaoPersonalizado();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.botaoPersonalizado2 = new Interface_Roteiros.BotaoPersonalizado();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.botaoPersonalizado1 = new Interface_Roteiros.BotaoPersonalizado();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,74 +67,81 @@ namespace Interface_Roteiros
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.botaoPersonalizado4);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.botaoPersonalizado3);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.botaoPersonalizado2);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.botaoPersonalizado1);
             this.panel1.Location = new System.Drawing.Point(0, 310);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(715, 100);
             this.panel1.TabIndex = 4;
             // 
-            // button4
+            // botaoPersonalizado4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(59)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(300, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 100);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = false;
+            this.botaoPersonalizado4.Image = global::Interface_Roteiros.Properties.Resources.resistor2;
+            this.botaoPersonalizado4.Location = new System.Drawing.Point(315, 0);
+            this.botaoPersonalizado4.Name = "botaoPersonalizado4";
+            this.botaoPersonalizado4.Size = new System.Drawing.Size(100, 100);
+            this.botaoPersonalizado4.TabIndex = 4;
+            this.botaoPersonalizado4.Texto = "3";
             // 
-            // button3
+            // panel5
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(59)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(200, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 100);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = false;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.panel5.Location = new System.Drawing.Point(310, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(5, 100);
+            this.panel5.TabIndex = 3;
             // 
-            // button2
+            // botaoPersonalizado3
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(59)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(100, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 100);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
+            this.botaoPersonalizado3.Image = global::Interface_Roteiros.Properties.Resources.resistor2;
+            this.botaoPersonalizado3.Location = new System.Drawing.Point(210, 0);
+            this.botaoPersonalizado3.Name = "botaoPersonalizado3";
+            this.botaoPersonalizado3.Size = new System.Drawing.Size(100, 100);
+            this.botaoPersonalizado3.TabIndex = 3;
+            this.botaoPersonalizado3.Texto = "2";
             // 
-            // button1
+            // panel4
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
-            this.button1.BackgroundImage = global::Interface_Roteiros.Properties.Resources.battery2;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(59)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 100);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.panel4.Location = new System.Drawing.Point(205, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(5, 100);
+            this.panel4.TabIndex = 2;
+            // 
+            // botaoPersonalizado2
+            // 
+            this.botaoPersonalizado2.Image = global::Interface_Roteiros.Properties.Resources.resistor2;
+            this.botaoPersonalizado2.Location = new System.Drawing.Point(105, 0);
+            this.botaoPersonalizado2.Name = "botaoPersonalizado2";
+            this.botaoPersonalizado2.Size = new System.Drawing.Size(100, 100);
+            this.botaoPersonalizado2.TabIndex = 2;
+            this.botaoPersonalizado2.Texto = "1";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.panel3.Location = new System.Drawing.Point(100, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 100);
+            this.panel3.TabIndex = 1;
+            // 
+            // botaoPersonalizado1
+            // 
+            this.botaoPersonalizado1.Image = global::Interface_Roteiros.Properties.Resources.battery2;
+            this.botaoPersonalizado1.Location = new System.Drawing.Point(0, 0);
+            this.botaoPersonalizado1.Name = "botaoPersonalizado1";
+            this.botaoPersonalizado1.Size = new System.Drawing.Size(100, 100);
+            this.botaoPersonalizado1.TabIndex = 0;
+            this.botaoPersonalizado1.Texto = "Fonte";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.panel2.Location = new System.Drawing.Point(0, 305);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(715, 7);
@@ -282,9 +291,12 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private BotaoPersonalizado botaoPersonalizado2;
+        private System.Windows.Forms.Panel panel3;
+        private BotaoPersonalizado botaoPersonalizado1;
+        private BotaoPersonalizado botaoPersonalizado4;
+        private System.Windows.Forms.Panel panel5;
+        private BotaoPersonalizado botaoPersonalizado3;
+        private System.Windows.Forms.Panel panel4;
     }
 }
