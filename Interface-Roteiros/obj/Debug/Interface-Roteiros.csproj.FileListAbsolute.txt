@@ -33,3 +33,4 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaAjusteResistor.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaInicialPadrao.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csprojAssemblyReference.cache
+C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaCircuitoTeste.resources

@@ -56,7 +56,7 @@ namespace Interface_Roteiros
 
         private void BtnSimulador_Click(object sender, EventArgs e)
         {
-            var novaTela = new TelaInicialPadrao();
+            var novaTela = new TelaCircuitoTeste();
             novaTela.Show();
         }
     }

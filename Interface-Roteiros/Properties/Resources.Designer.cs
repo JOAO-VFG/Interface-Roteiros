@@ -73,6 +73,16 @@ namespace Interface_Roteiros.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap battery2 {
+            get {
+                object obj = ResourceManager.GetObject("battery2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel {
             get {
                 object obj = ResourceManager.GetObject("cancel", resourceCulture);
@@ -236,6 +246,16 @@ namespace Interface_Roteiros.Properties {
         internal static System.Drawing.Bitmap resistor {
             get {
                 object obj = ResourceManager.GetObject("resistor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap resistor2 {
+            get {
+                object obj = ResourceManager.GetObject("resistor2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
