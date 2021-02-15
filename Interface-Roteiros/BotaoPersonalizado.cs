@@ -20,13 +20,13 @@ namespace Interface_Roteiros
 
         public string Texto
         {
-            get { return lblTexto.Text; }
-            set { lblTexto.Text = value; }
+            get { return btnPersonalizado.Text; }
+            set { btnPersonalizado.Text = value; }
         }
 
-        private Color corHover = Color.FromArgb(22, 32, 82);
-        private Color cor = Color.FromArgb(20, 25, 54);
-        private Color corTexto = Color.FromArgb(28, 178, 237);
+        private Color azulClaro = Color.FromArgb(22, 32, 82);
+        private Color fundo = Color.FromArgb(20, 25, 54);
+        private Color amarelo = Color.FromArgb(245, 241, 15);
 
         public BotaoPersonalizado()
         {
@@ -35,17 +35,16 @@ namespace Interface_Roteiros
 
         private void btnPersonalizado_MouseEnter(object sender, EventArgs e)
         {
-            lblTexto.BackColor = btnPersonalizado.BackColor = corHover;
-            panBotao.BackColor = Color.White;
-            lblTexto.ForeColor = Color.White;
+            btnPersonalizado.BackColor = azulClaro;
+            panBotao.BackColor = amarelo;
+            btnPersonalizado.ForeColor = Color.White;
         }
 
         private void btnPersonalizado_MouseLeave(object sender, EventArgs e)
         {
-            btnPersonalizado.BackColor = cor;
-            lblTexto.BackColor = cor;
-            panBotao.BackColor = cor;
-            lblTexto.ForeColor = corTexto;
+            btnPersonalizado.BackColor = fundo;
+            panBotao.BackColor = fundo;
+            btnPersonalizado.ForeColor = Color.White;
         }
 
         private void btnPersonalizado_Click(object sender, EventArgs e)
