@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Drawing;
 
 namespace Interface_Roteiros
 {
@@ -13,6 +14,14 @@ namespace Interface_Roteiros
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
+
+        // Imagem de minimizar
+        private Image minimizeOff = Properties.Resources.minimize2;
+        private Image minimizeOn = Properties.Resources.minimize;
+        // Imagem de fechar
+        private Image cancelOff = Properties.Resources.cancel_hover;
+        private Image cancelOn = Properties.Resources.cancel2;
+
         public TelaInicialPadrao()
         {
             InitializeComponent();
@@ -39,22 +48,22 @@ namespace Interface_Roteiros
 
         private void btnMinimizar_MouseEnter(object sender, EventArgs e)
         {
-            btnMinimizar.BackgroundImage = Properties.Resources.minimize_hover;
+            btnMinimizar.BackgroundImage = minimizeOn;
         }
 
         private void btnMinimizar_MouseLeave(object sender, EventArgs e)
         {
-            btnMinimizar.BackgroundImage = Properties.Resources.minimize;
+            btnMinimizar.BackgroundImage = minimizeOff;
         }
 
         private void btnSair_MouseEnter(object sender, EventArgs e)
         {
-            btnSair.BackgroundImage = Properties.Resources.cancel_hover;
+            btnSair.BackgroundImage = cancelOn;
         }
 
         private void btnSair_MouseLeave(object sender, EventArgs e)
         {
-            btnSair.BackgroundImage = Properties.Resources.cancel;
+            btnSair.BackgroundImage = cancelOff;
         }
     }
 }

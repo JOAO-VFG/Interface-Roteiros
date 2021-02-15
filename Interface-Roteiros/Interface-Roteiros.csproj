@@ -212,5 +212,17 @@
   <ItemGroup>
     <None Include="Resources\power_danger.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito_eletrico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito_eletrico1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
