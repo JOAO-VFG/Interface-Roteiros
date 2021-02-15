@@ -30,13 +30,17 @@ namespace Interface_Roteiros
         private void InitializeComponent()
         {
             ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).BeginInit();
-            this.panPainel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tckSlider)).BeginInit();
+            this.panPainel.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblValor
             // 
             this.lblValor.Text = "20V";
+            // 
+            // tckSlider
+            // 
+            this.tckSlider.Scroll += new System.EventHandler(this.tckSlider_Scroll);
             // 
             // lblGrandeza
             // 
@@ -47,10 +51,11 @@ namespace Interface_Roteiros
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(410, 240);
             this.Name = "TelaAjusteBateria";
+            this.Load += new System.EventHandler(this.TelaAjusteBateria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tckSlider)).EndInit();
             this.panPainel.ResumeLayout(false);
             this.panPainel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tckSlider)).EndInit();
             this.ResumeLayout(false);
 
         }

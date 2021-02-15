@@ -14,13 +14,18 @@ namespace Interface_Roteiros
     {
         // Janela de configuração da fonte
         private TelaAjusteBateria telaFonte;
-        // Janela de condnguração do resistor
+        // Janela de configuração do resistor
         private TelaAjusteResistor[] telaResistores = new TelaAjusteResistor[3];
 
+        // Resistores presentes no circuito
         private Resistor[] resistores = new Resistor[3];
+        // Fonte do circuito
+        private Bateria fonte;
 
         private void TelaCircuito_Load(object sender, EventArgs e)
         {
+            // Cria a fonte
+            fonte = new Bateria(40);
             // Cria os resistores
             resistores[0] = new Resistor(12);
             resistores[1] = new Resistor(5);
@@ -40,6 +45,8 @@ namespace Interface_Roteiros
             telaFonte = new TelaAjusteBateria() {
                 Titulo = "Fonte",
                 ImagemTitulo = Properties.Resources.battery,
+                Fonte = this.fonte,
+                LabelTexto = lblFonte,
             };
         }
 
