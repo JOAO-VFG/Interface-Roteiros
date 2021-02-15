@@ -113,12 +113,6 @@
     <Compile Include="TelaCircuito.Designer.cs">
       <DependentUpon>TelaCircuito.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaCircuitoTeste.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaCircuitoTeste.Designer.cs">
-      <DependentUpon>TelaCircuitoTeste.cs</DependentUpon>
-    </Compile>
     <Compile Include="TelaInicialPadrao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,9 +158,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaCircuito.resx">
       <DependentUpon>TelaCircuito.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TelaCircuitoTeste.resx">
-      <DependentUpon>TelaCircuitoTeste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaInicialPadrao.resx">
       <DependentUpon>TelaInicialPadrao.cs</DependentUpon>

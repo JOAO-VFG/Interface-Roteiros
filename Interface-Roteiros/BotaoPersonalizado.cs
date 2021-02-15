@@ -24,9 +24,9 @@ namespace Interface_Roteiros
             set { btnPersonalizado.Text = value; }
         }
 
-        private Color azulClaro = Color.FromArgb(22, 32, 82);
-        private Color fundo = Color.FromArgb(20, 25, 54);
-        private Color amarelo = Color.FromArgb(245, 241, 15);
+        private readonly Color azulClaro = Color.FromArgb(22, 32, 82);
+        private readonly Color fundo = Color.FromArgb(20, 25, 54);
+        private readonly Color amarelo = Color.FromArgb(245, 241, 15);
 
         public BotaoPersonalizado()
         {
@@ -35,9 +35,9 @@ namespace Interface_Roteiros
 
         private void btnPersonalizado_MouseEnter(object sender, EventArgs e)
         {
-            btnPersonalizado.BackColor = azulClaro;
             panBotao.BackColor = amarelo;
             btnPersonalizado.ForeColor = Color.White;
+            btnPersonalizado.BackColor = azulClaro;
         }
 
         private void btnPersonalizado_MouseLeave(object sender, EventArgs e)

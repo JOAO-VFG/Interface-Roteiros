@@ -18,7 +18,6 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Properties.Resources.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Roteiro.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.SubRoteiro.resources
-C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaCircuito.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaRoteiros.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csproj.GenerateResource.cache
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csproj.CoreCompileInputs.cache
@@ -32,6 +31,6 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaAjustePadrao.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaAjusteResistor.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaInicialPadrao.resources
-C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaCircuitoTeste.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.BotaoPersonalizado.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csprojAssemblyReference.cache
+C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaCircuito.resources
