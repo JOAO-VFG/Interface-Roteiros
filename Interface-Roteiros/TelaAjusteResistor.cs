@@ -13,6 +13,7 @@ namespace Interface_Roteiros
         public Circuito Circuito { get; set; }
         public Resistor Resistor { get; set; }
         public Label LabelTexto { get; set; }
+        public Label LabelVo { get; set; }
 
         public TelaAjusteResistor()
         {
@@ -40,6 +41,7 @@ namespace Interface_Roteiros
             Circuito.ResolverCircuto();
             lblCorrente.Text = FormatarValor(Resistor.Corrente, "A");
             lblPotencia.Text = FormatarValor(Resistor.Potencia, "W");
+            LabelVo.Text = Circuito.V0.ToString() + "V";
         }
     }
 }

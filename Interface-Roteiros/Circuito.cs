@@ -24,17 +24,17 @@ namespace Interface_Roteiros
         // Calcula o circuito
         public void ResolverCircuto()
         {
-            var r1 = Resistores[0].Resistencia;
-            var r2 = Resistores[1].Resistencia;
-            var r3 = Resistores[2].Resistencia;
+            double r1 = Resistores[0].Resistencia;
+            double r2 = Resistores[1].Resistencia;
+            double r3 = Resistores[2].Resistencia;
             var fonte = Fonte.Tensao;
 
             V1 = (r2 + r3) * 1 / 8;
             V0 = fonte / V1;
 
-            var i1 = (double)fonte / r1;
-            var i2 = (double)fonte / r2;
-            var i3 = (double)fonte / r3;
+            var i1 = fonte / r1;
+            var i2 = fonte / r2;
+            var i3 = fonte / r3;
 
             double[] correntes = { i1, i2, i3 };
             var contador = 0;

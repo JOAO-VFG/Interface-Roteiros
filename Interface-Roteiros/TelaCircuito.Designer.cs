@@ -32,7 +32,7 @@ namespace Interface_Roteiros
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCircuito));
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblResistor3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblV0 = new System.Windows.Forms.Label();
             this.lblResistor1 = new System.Windows.Forms.Label();
             this.lblResistor2 = new System.Windows.Forms.Label();
             this.lblFonte = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@ namespace Interface_Roteiros
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.lblResistor3);
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.lblV0);
             this.panel2.Controls.Add(this.lblResistor1);
             this.panel2.Controls.Add(this.lblResistor2);
             this.panel2.Controls.Add(this.lblFonte);
@@ -80,16 +80,16 @@ namespace Interface_Roteiros
             this.lblResistor3.TabIndex = 5;
             this.lblResistor3.Text = "8 Ω";
             // 
-            // label4
+            // lblV0
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(594, 167);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(27, 19);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "V0";
+            this.lblV0.AutoSize = true;
+            this.lblV0.BackColor = System.Drawing.Color.Transparent;
+            this.lblV0.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblV0.Location = new System.Drawing.Point(594, 167);
+            this.lblV0.Name = "lblV0";
+            this.lblV0.Size = new System.Drawing.Size(27, 19);
+            this.lblV0.TabIndex = 4;
+            this.lblV0.Text = "V0";
             // 
             // lblResistor1
             // 
@@ -281,7 +281,7 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Button btnResistor1;
         private System.Windows.Forms.Label lblFonte;
         private System.Windows.Forms.Label lblResistor3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblV0;
         private System.Windows.Forms.Label lblResistor1;
         private System.Windows.Forms.Label lblResistor2;
         private System.Windows.Forms.PictureBox pictureBox4;
