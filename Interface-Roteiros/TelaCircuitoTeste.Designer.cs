@@ -30,6 +30,7 @@ namespace Interface_Roteiros
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.btnResistor3 = new Interface_Roteiros.BotaoPersonalizado();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnResistor2 = new Interface_Roteiros.BotaoPersonalizado();
@@ -67,6 +68,7 @@ namespace Interface_Roteiros
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.btnResistor3);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.btnResistor2);
@@ -74,10 +76,18 @@ namespace Interface_Roteiros
             this.panel1.Controls.Add(this.btnResistor1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.btnFonte);
-            this.panel1.Location = new System.Drawing.Point(0, 310);
+            this.panel1.Location = new System.Drawing.Point(0, 350);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(715, 100);
             this.panel1.TabIndex = 4;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.panel6.Location = new System.Drawing.Point(415, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(5, 100);
+            this.panel6.TabIndex = 4;
             // 
             // btnResistor3
             // 
@@ -87,6 +97,7 @@ namespace Interface_Roteiros
             this.btnResistor3.Size = new System.Drawing.Size(100, 100);
             this.btnResistor3.TabIndex = 4;
             this.btnResistor3.Texto = "3";
+            this.btnResistor3.Click += new System.EventHandler(this.btnResistor3_Click);
             // 
             // panel5
             // 
@@ -104,6 +115,7 @@ namespace Interface_Roteiros
             this.btnResistor2.Size = new System.Drawing.Size(100, 100);
             this.btnResistor2.TabIndex = 3;
             this.btnResistor2.Texto = "2";
+            this.btnResistor2.Click += new System.EventHandler(this.btnResistor2_Click);
             // 
             // panel4
             // 
@@ -139,11 +151,12 @@ namespace Interface_Roteiros
             this.btnFonte.Size = new System.Drawing.Size(100, 100);
             this.btnFonte.TabIndex = 0;
             this.btnFonte.Texto = "Fonte";
+            this.btnFonte.Click += new System.EventHandler(this.btnFonte_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.panel2.Location = new System.Drawing.Point(0, 305);
+            this.panel2.Location = new System.Drawing.Point(0, 345);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(715, 7);
             this.panel2.TabIndex = 5;
@@ -243,7 +256,8 @@ namespace Interface_Roteiros
             // TelaCircuitoTeste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(715, 410);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(215)))));
+            this.ClientSize = new System.Drawing.Size(715, 450);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -256,6 +270,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "TelaCircuitoTeste";
+            this.Load += new System.EventHandler(this.TelaCircuitoTeste_Load);
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
@@ -299,5 +314,6 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Panel panel5;
         private BotaoPersonalizado btnResistor2;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel6;
     }
 }

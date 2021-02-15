@@ -40,6 +40,7 @@ namespace Interface_Roteiros
             this.btnRetornar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.imgImagem = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -48,7 +49,7 @@ namespace Interface_Roteiros
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(240)))), ((int)(((byte)(235)))));
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.lblTexto);
@@ -63,7 +64,8 @@ namespace Interface_Roteiros
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(217)))), ((int)(((byte)(213)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(185)))));
+            this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.btnPDF);
             this.panel4.Controls.Add(this.btnSimulador);
             this.panel4.Location = new System.Drawing.Point(0, 238);
@@ -103,7 +105,7 @@ namespace Interface_Roteiros
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(69)))), ((int)(((byte)(99)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
             this.panel2.Location = new System.Drawing.Point(201, 214);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(358, 5);
@@ -133,6 +135,7 @@ namespace Interface_Roteiros
             // 
             // btnRetornar
             // 
+            this.btnRetornar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
             this.btnRetornar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRetornar.BackgroundImage")));
             this.btnRetornar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnRetornar.FlatAppearance.BorderSize = 0;
@@ -141,11 +144,12 @@ namespace Interface_Roteiros
             this.btnRetornar.Name = "btnRetornar";
             this.btnRetornar.Size = new System.Drawing.Size(65, 54);
             this.btnRetornar.TabIndex = 2;
-            this.btnRetornar.UseVisualStyleBackColor = true;
+            this.btnRetornar.UseVisualStyleBackColor = false;
             this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
             // 
             // lblTitulo
             // 
+            this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
             this.lblTitulo.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTitulo.Location = new System.Drawing.Point(3, 0);
@@ -164,6 +168,14 @@ namespace Interface_Roteiros
             this.imgImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.imgImagem.TabIndex = 0;
             this.imgImagem.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(580, 2);
+            this.panel5.TabIndex = 4;
             // 
             // Roteiro
             // 
@@ -192,5 +204,6 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnRetornar;
+        private System.Windows.Forms.Panel panel5;
     }
 }
