@@ -29,6 +29,7 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCircuito));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnResistor3 = new Interface_Roteiros.BotaoPersonalizado();
@@ -64,6 +65,11 @@ namespace Interface_Roteiros
             this.btnMinimizar.FlatAppearance.BorderSize = 0;
             this.btnMinimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
+            // 
+            // imgIcone
+            // 
+            this.imgIcone.Image = ((System.Drawing.Image)(resources.GetObject("imgIcone.Image")));
+            this.imgIcone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             // 
             // panel1
             // 
@@ -273,6 +279,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaCircuito";
             this.Text = "S";
             this.Load += new System.EventHandler(this.TelaCircuitoTeste_Load);
