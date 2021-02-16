@@ -31,12 +31,16 @@ namespace Interface_Roteiros
         public BotaoPersonalizado()
         {
             InitializeComponent();
+            
+        }
+
+        private void BotaoPersonalizado_Load(object sender, EventArgs e)
+        {
         }
 
         private void btnPersonalizado_MouseEnter(object sender, EventArgs e)
         {
             panBotao.BackColor = amarelo;
-            btnPersonalizado.ForeColor = Color.White;
             btnPersonalizado.BackColor = azulClaro;
         }
 
@@ -44,7 +48,6 @@ namespace Interface_Roteiros
         {
             btnPersonalizado.BackColor = fundo;
             panBotao.BackColor = fundo;
-            btnPersonalizado.ForeColor = Color.White;
         }
 
         private void btnPersonalizado_Click(object sender, EventArgs e)
