@@ -4,7 +4,6 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\bin\Releas
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\bin\Release\MetroFramework.Design.dll
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\bin\Release\MetroFramework.dll
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\bin\Release\MetroFramework.Fonts.dll
-C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\bin\Release\XanderUI.dll
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.BotaoPersonalizado.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.Form1.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.Properties.Resources.resources

@@ -15,8 +15,8 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_142761741D94BEBF626F56DEC7493633"
-        "OwnerKey" = "8:_934E6C99E90249E3ABEF0AB9671D3777"
+        "MsmKey" = "8:_4EDF4BBCAACE4EA0B616351D153325C8"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -45,6 +45,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_9FA33E55B58E11CD57675F9014BAA01E"
+        "OwnerKey" = "8:_934E6C99E90249E3ABEF0AB9671D3777"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B0B4B42FD57047E6B552066039BDA58E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_CE385A62052289E6D683DA1A0B3975D9"
         "OwnerKey" = "8:_934E6C99E90249E3ABEF0AB9671D3777"
         "MsmSig" = "8:_UNDEFINED"
@@ -64,19 +76,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_DEFB4E24F75D4AB3DA6FDD0FE6F3D162"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_934E6C99E90249E3ABEF0AB9671D3777"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_142761741D94BEBF626F56DEC7493633"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -97,6 +97,18 @@
         "OwnerKey" = "8:_9F78011C76978BCE9F326BBF528627B4"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9FA33E55B58E11CD57675F9014BAA01E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_DEFB4E24F75D4AB3DA6FDD0FE6F3D162"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -115,6 +127,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -131,6 +151,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -160,21 +196,10 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_142761741D94BEBF626F56DEC7493633"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4EDF4BBCAACE4EA0B616351D153325C8"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:XanderUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_142761741D94BEBF626F56DEC7493633"
-                    {
-                    "Name" = "8:XanderUI.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:XanderUI.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\icone2.ico"
+            "TargetName" = "8:icone2.ico"
             "Tag" = "8:"
             "Folder" = "8:_1CDE471666884114B8FA5EB26D53F942"
             "Condition" = "8:"
@@ -188,7 +213,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9F78011C76978BCE9F326BBF528627B4"
@@ -220,6 +245,57 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9FA33E55B58E11CD57675F9014BAA01E"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:XanderUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_9FA33E55B58E11CD57675F9014BAA01E"
+                    {
+                    "Name" = "8:XanderUI.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:XanderUI.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_1CDE471666884114B8FA5EB26D53F942"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B0B4B42FD57047E6B552066039BDA58E"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\icone.ico"
+            "TargetName" = "8:icone.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_1CDE471666884114B8FA5EB26D53F942"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CE385A62052289E6D683DA1A0B3975D9"
@@ -372,7 +448,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Instalador"
         "ProductCode" = "8:{921EFD72-BAF4-4C5A-ADA7-004DC7D92373}"
-        "PackageCode" = "8:{BB06ACE5-A8FF-45ED-9D97-BB6D48DBCDA1}"
+        "PackageCode" = "8:{8F62E9E2-DE20-4B2E-9FAC-22F324FCC8F8}"
         "UpgradeCode" = "8:{C08FC81A-AB21-4E58-BA47-519003999F83}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -492,6 +568,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_418E6FB64849411DB3232B1F7729098F"
+            {
+            "Name" = "8:Simulador Eletrônico"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_934E6C99E90249E3ABEF0AB9671D3777"
+            "Folder" = "8:_E2B70753258D45EC8B2F5939D75E8C64"
+            "WorkingFolder" = "8:_1CDE471666884114B8FA5EB26D53F942"
+            "Icon" = "8:_4EDF4BBCAACE4EA0B616351D153325C8"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
