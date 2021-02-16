@@ -31,6 +31,7 @@ namespace Interface_Roteiros
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,8 +53,8 @@ namespace Interface_Roteiros
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblSobre = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panGeral = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnRoteiros = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -66,13 +67,14 @@ namespace Interface_Roteiros
             this.panSobre.SuspendLayout();
             this.panSobre2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panGeral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.label1);
@@ -80,6 +82,23 @@ namespace Interface_Roteiros
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(581, 35);
             this.panel1.TabIndex = 0;
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.BackgroundImage = global::Interface_Roteiros.Properties.Resources.minimize;
+            this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Location = new System.Drawing.Point(507, 5);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(24, 24);
+            this.btnMinimize.TabIndex = 8;
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            this.btnMinimize.MouseEnter += new System.EventHandler(this.btnMinimize_MouseEnter);
+            this.btnMinimize.MouseLeave += new System.EventHandler(this.btnMinimize_MouseLeave);
             // 
             // pictureBox2
             // 
@@ -200,10 +219,10 @@ namespace Interface_Roteiros
             this.lblSimulador.ForeColor = System.Drawing.Color.Black;
             this.lblSimulador.Location = new System.Drawing.Point(17, 36);
             this.lblSimulador.Name = "lblSimulador";
-            this.lblSimulador.Size = new System.Drawing.Size(164, 91);
+            this.lblSimulador.Size = new System.Drawing.Size(151, 91);
             this.lblSimulador.TabIndex = 1;
-            this.lblSimulador.Text = "Cada tópico dispõe de um circuito organizado para que o aluno possa manipular e t" +
-    "estar novos valores";
+            this.lblSimulador.Text = "Cada tópico dispõe de um circuito organizado para que o aluno possa testar seus c" +
+    "onhecimentos.";
             this.lblSimulador.MouseEnter += new System.EventHandler(this.lblSimulador_MouseEnter);
             this.lblSimulador.MouseLeave += new System.EventHandler(this.lblSimulador_MouseLeave);
             // 
@@ -318,17 +337,6 @@ namespace Interface_Roteiros
             this.lblSobre.MouseEnter += new System.EventHandler(this.lblSobre_MouseEnter);
             this.lblSobre.MouseLeave += new System.EventHandler(this.lblSobre_MouseLeave);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(581, 266);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // panGeral
             // 
             this.panGeral.BackColor = System.Drawing.Color.Silver;
@@ -342,6 +350,17 @@ namespace Interface_Roteiros
             this.panGeral.Name = "panGeral";
             this.panGeral.Size = new System.Drawing.Size(580, 402);
             this.panGeral.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Gray;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(581, 266);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // btnRoteiros
             // 
@@ -372,9 +391,10 @@ namespace Interface_Roteiros
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panGeral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Simulador Eletrônico";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -390,8 +410,8 @@ namespace Interface_Roteiros
             this.panSobre2.ResumeLayout(false);
             this.panSobre2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panGeral.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -423,6 +443,7 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Panel panGeral;
         private System.Windows.Forms.Button btnRoteiros;
+        private System.Windows.Forms.Button btnMinimize;
     }
 }
 

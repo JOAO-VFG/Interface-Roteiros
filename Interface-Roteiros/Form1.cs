@@ -112,5 +112,20 @@ namespace Interface_Roteiros
             btnRoteiros.BackColor = Color.FromArgb(18, 18, 16);
             btnInicio.BackColor = Color.FromArgb(28, 28, 28);
         }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMinimize_MouseEnter(object sender, EventArgs e)
+        {
+            btnMinimize.BackgroundImage = Properties.Resources.minimize_hover;
+        }
+
+        private void btnMinimize_MouseLeave(object sender, EventArgs e)
+        {
+            btnMinimize.BackgroundImage = Properties.Resources.minimize;
+        }
     }
 }

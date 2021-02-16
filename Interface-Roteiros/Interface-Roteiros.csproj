@@ -33,8 +33,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,8 +55,19 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="XanderUI">
+      <HintPath>..\..\..\..\Downloads\csharpui.comXanderUI_DLL\XanderUI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bateria.cs" />
+    <Compile Include="BotaoPersonalizado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BotaoPersonalizado.Designer.cs">
+      <DependentUpon>BotaoPersonalizado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Circuito.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,20 +76,58 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-    <Compile Include="Roteiro-3.cs">
+    <Compile Include="Resistor.cs" />
+    <Compile Include="Roteiro.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Roteiro-3.Designer.cs">
-      <DependentUpon>Roteiro-3.cs</DependentUpon>
-=======
-    <Compile Include="Roteiro-6.cs">
+    <Compile Include="Roteiro.Designer.cs">
+      <DependentUpon>Roteiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubRoteiro.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Roteiro-6.Designer.cs">
-      <DependentUpon>Roteiro-6.cs</DependentUpon>
->>>>>>> origin/Roteiro-6
+    <Compile Include="SubRoteiro.Designer.cs">
+      <DependentUpon>SubRoteiro.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaAjustePadrao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaAjustePadrao.Designer.cs">
+      <DependentUpon>TelaAjustePadrao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaAjusteBateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaAjusteBateria.Designer.cs">
+      <DependentUpon>TelaAjusteBateria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaAjusteResistor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaAjusteResistor.Designer.cs">
+      <DependentUpon>TelaAjusteResistor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaCircuito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaCircuito.Designer.cs">
+      <DependentUpon>TelaCircuito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaInicialPadrao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaInicialPadrao.Designer.cs">
+      <DependentUpon>TelaInicialPadrao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaRoteiros.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TelaRoteiros.Designer.cs">
+      <DependentUpon>TelaRoteiros.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BotaoPersonalizado.resx">
+      <DependentUpon>BotaoPersonalizado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,14 +141,31 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-<<<<<<< HEAD
-    <EmbeddedResource Include="Roteiro-3.resx">
-      <DependentUpon>Roteiro-3.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="Roteiro-6.resx">
-      <DependentUpon>Roteiro-6.cs</DependentUpon>
->>>>>>> origin/Roteiro-6
+    <EmbeddedResource Include="Roteiro.resx">
+      <DependentUpon>Roteiro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubRoteiro.resx">
+      <DependentUpon>SubRoteiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaAjustePadrao.resx">
+      <DependentUpon>TelaAjustePadrao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaAjusteBateria.resx">
+      <DependentUpon>TelaAjusteBateria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaAjusteResistor.resx">
+      <DependentUpon>TelaAjusteResistor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaCircuito.resx">
+      <DependentUpon>TelaCircuito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaInicialPadrao.resx">
+      <DependentUpon>TelaInicialPadrao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaRoteiros.resx">
+      <DependentUpon>TelaRoteiros.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -107,6 +184,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resistor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_danger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito_eletrico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito_eletrico1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resistor2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

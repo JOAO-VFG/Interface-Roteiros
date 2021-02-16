@@ -29,7 +29,6 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaRoteiros));
             this.panRoteiros = new System.Windows.Forms.Panel();
             this.subRoteiro6 = new Interface_Roteiros.SubRoteiro();
             this.subRoteiro5 = new Interface_Roteiros.SubRoteiro();
@@ -63,6 +62,7 @@ namespace Interface_Roteiros
             this.subRoteiro6.TabIndex = 14;
             this.subRoteiro6.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subRoteiro6.TextoRoteiro = "Teorema da Superposição";
+            this.subRoteiro6.Click += new System.EventHandler(this.subRoteiro6_Click);
             // 
             // subRoteiro5
             // 
@@ -73,6 +73,7 @@ namespace Interface_Roteiros
             this.subRoteiro5.TabIndex = 13;
             this.subRoteiro5.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subRoteiro5.TextoRoteiro = "Teorema de Northon e Thevannin";
+            this.subRoteiro5.Click += new System.EventHandler(this.subRoteiro5_Click);
             // 
             // subRoteiro4
             // 
@@ -83,6 +84,7 @@ namespace Interface_Roteiros
             this.subRoteiro4.TabIndex = 12;
             this.subRoteiro4.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subRoteiro4.TextoRoteiro = "Super Nós e Super Malhas";
+            this.subRoteiro4.Click += new System.EventHandler(this.subRoteiro4_Click);
             // 
             // subRoteiro3
             // 
@@ -93,6 +95,7 @@ namespace Interface_Roteiros
             this.subRoteiro3.TabIndex = 11;
             this.subRoteiro3.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subRoteiro3.TextoRoteiro = "Leis de Kirchhof";
+            this.subRoteiro3.Click += new System.EventHandler(this.subRoteiro3_Click);
             // 
             // subRoteiro2
             // 
@@ -103,10 +106,11 @@ namespace Interface_Roteiros
             this.subRoteiro2.TabIndex = 10;
             this.subRoteiro2.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subRoteiro2.TextoRoteiro = "Leis de Ohm";
+            this.subRoteiro2.Click += new System.EventHandler(this.subRoteiro2_Click);
             // 
             // subRoteiro1
             // 
-            this.subRoteiro1.ImagemRoteiro = ((System.Drawing.Image)(resources.GetObject("subRoteiro1.ImagemRoteiro")));
+            this.subRoteiro1.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito7;
             this.subRoteiro1.Location = new System.Drawing.Point(23, 21);
             this.subRoteiro1.Name = "subRoteiro1";
             this.subRoteiro1.Size = new System.Drawing.Size(163, 172);
