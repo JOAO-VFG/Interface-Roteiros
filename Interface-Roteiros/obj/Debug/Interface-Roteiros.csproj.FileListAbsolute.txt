@@ -34,3 +34,4 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.BotaoPersonalizado.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csprojAssemblyReference.cache
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaCircuito.resources
+C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\bin\Debug\XanderUI.dll
