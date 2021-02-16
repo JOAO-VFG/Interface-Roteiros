@@ -29,8 +29,8 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCircuito));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.botaoPersonalizado1 = new Interface_Roteiros.BotaoPersonalizado();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnResistor3 = new Interface_Roteiros.BotaoPersonalizado();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -66,6 +66,11 @@ namespace Interface_Roteiros
             this.btnMinimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             // 
+            // imgIcone
+            // 
+            this.imgIcone.Image = ((System.Drawing.Image)(resources.GetObject("imgIcone.Image")));
+            this.imgIcone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
@@ -81,16 +86,6 @@ namespace Interface_Roteiros
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(715, 100);
             this.panel1.TabIndex = 4;
-            // 
-            // botaoPersonalizado1
-            // 
-            this.botaoPersonalizado1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(54)))));
-            this.botaoPersonalizado1.Image = null;
-            this.botaoPersonalizado1.Location = new System.Drawing.Point(594, 203);
-            this.botaoPersonalizado1.Name = "botaoPersonalizado1";
-            this.botaoPersonalizado1.Size = new System.Drawing.Size(100, 100);
-            this.botaoPersonalizado1.TabIndex = 5;
-            this.botaoPersonalizado1.Texto = "Fonte";
             // 
             // panel6
             // 
@@ -273,7 +268,6 @@ namespace Interface_Roteiros
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(715, 450);
-            this.Controls.Add(this.botaoPersonalizado1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -285,6 +279,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaCircuito";
             this.Load += new System.EventHandler(this.TelaCircuitoTeste_Load);
             this.Controls.SetChildIndex(this.lblTitulo, 0);
@@ -302,7 +297,6 @@ namespace Interface_Roteiros
             this.Controls.SetChildIndex(this.label6, 0);
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.label8, 0);
-            this.Controls.SetChildIndex(this.botaoPersonalizado1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -332,6 +326,5 @@ namespace Interface_Roteiros
         private BotaoPersonalizado btnResistor2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
-        private BotaoPersonalizado botaoPersonalizado1;
     }
 }
