@@ -10,23 +10,12 @@ using System.Windows.Forms;
 
 namespace Interface_Roteiros
 {
-    public partial class Form1 : Form
+    public partial class TelaInicial : Form
     {
-        private Control telaRoteiro;
-
-        public Form1()
+        public TelaSimulador TelaSimulador { get; set; }
+        public TelaInicial()
         {
             InitializeComponent();
-
-            // Cria a seção de roteiros
-            telaRoteiro = new TelaRoteiros();
-            Controls.Add(telaRoteiro);
-            telaRoteiro.Location = new Point(0, 75);
-            telaRoteiro.BringToFront();
-            telaRoteiro.Hide();
-
-            // Muda o fundo do botão de inicio
-            btnInicio.BackColor = Color.FromArgb(18, 18, 16);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -95,24 +84,6 @@ namespace Interface_Roteiros
             PainelNormal(lblSimulador, panSimulador, panSimulador2, Color.FromArgb(146, 56, 224));
         }
 
-        // Navega até a seção de roteiros
-        private void btnRoteiros_Click(object sender, EventArgs e)
-        {
-            telaRoteiro.Show();
-
-            // Muda o fundo dos botões
-            btnRoteiros.BackColor = Color.FromArgb(55, 57, 79);
-            btnInicio.BackColor = Color.FromArgb(18, 18, 16);
-        }
-
-        // Retorna a tela inicial
-        private void btnInicio_Click(object sender, EventArgs e)
-        {
-            telaRoteiro.Hide();
-            btnRoteiros.BackColor = Color.FromArgb(18, 18, 16);
-            btnInicio.BackColor = Color.FromArgb(28, 28, 28);
-        }
-
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -126,6 +97,17 @@ namespace Interface_Roteiros
         private void btnMinimize_MouseLeave(object sender, EventArgs e)
         {
             btnMinimize.BackgroundImage = Properties.Resources.minimize;
+        }
+
+        private void lblSimulador_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TelaSimulador.Show();
+        }
+
+        private void TelaInicial_Load(object sender, EventArgs e)
+        {
+            TelaSimulador = new TelaSimulador() { Tela = this, };
         }
     }
 }

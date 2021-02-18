@@ -1,7 +1,7 @@
 ﻿
 namespace Interface_Roteiros
 {
-    partial class Form1
+    partial class TelaInicial
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -29,7 +29,7 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInicial));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -55,7 +55,6 @@ namespace Interface_Roteiros
             this.lblSobre = new System.Windows.Forms.Label();
             this.panGeral = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnRoteiros = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panSimulador.SuspendLayout();
@@ -139,7 +138,7 @@ namespace Interface_Roteiros
             // 
             // btnInicio
             // 
-            this.btnInicio.BackColor = System.Drawing.Color.Transparent;
+            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnInicio.FlatAppearance.BorderSize = 0;
             this.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -153,7 +152,6 @@ namespace Interface_Roteiros
             this.btnInicio.TabIndex = 0;
             this.btnInicio.Text = "Inicio";
             this.btnInicio.UseVisualStyleBackColor = false;
-            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // panel8
             // 
@@ -223,6 +221,7 @@ namespace Interface_Roteiros
             this.lblSimulador.TabIndex = 1;
             this.lblSimulador.Text = "Cada tópico dispõe de um circuito organizado para que o aluno possa testar seus c" +
     "onhecimentos.";
+            this.lblSimulador.Click += new System.EventHandler(this.lblSimulador_Click);
             this.lblSimulador.MouseEnter += new System.EventHandler(this.lblSimulador_MouseEnter);
             this.lblSimulador.MouseLeave += new System.EventHandler(this.lblSimulador_MouseLeave);
             // 
@@ -348,7 +347,7 @@ namespace Interface_Roteiros
             this.panGeral.Controls.Add(this.pictureBox1);
             this.panGeral.Location = new System.Drawing.Point(0, 75);
             this.panGeral.Name = "panGeral";
-            this.panGeral.Size = new System.Drawing.Size(580, 402);
+            this.panGeral.Size = new System.Drawing.Size(581, 402);
             this.panGeral.TabIndex = 8;
             // 
             // pictureBox1
@@ -362,39 +361,21 @@ namespace Interface_Roteiros
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // btnRoteiros
-            // 
-            this.btnRoteiros.BackColor = System.Drawing.Color.Transparent;
-            this.btnRoteiros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnRoteiros.FlatAppearance.BorderSize = 0;
-            this.btnRoteiros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnRoteiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRoteiros.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRoteiros.ForeColor = System.Drawing.Color.White;
-            this.btnRoteiros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRoteiros.Location = new System.Drawing.Point(90, 35);
-            this.btnRoteiros.Name = "btnRoteiros";
-            this.btnRoteiros.Size = new System.Drawing.Size(90, 40);
-            this.btnRoteiros.TabIndex = 9;
-            this.btnRoteiros.Text = "Roteiros";
-            this.btnRoteiros.UseVisualStyleBackColor = false;
-            this.btnRoteiros.Click += new System.EventHandler(this.btnRoteiros_Click);
-            // 
-            // Form1
+            // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(580, 474);
-            this.Controls.Add(this.btnRoteiros);
             this.Controls.Add(this.btnInicio);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panGeral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "TelaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Simulador Eletrônico";
+            this.Load += new System.EventHandler(this.TelaInicial_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -442,7 +423,6 @@ namespace Interface_Roteiros
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Panel panGeral;
-        private System.Windows.Forms.Button btnRoteiros;
         private System.Windows.Forms.Button btnMinimize;
     }
 }
