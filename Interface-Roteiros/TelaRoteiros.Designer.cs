@@ -29,7 +29,9 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaRoteiros));
             this.panRoteiros = new System.Windows.Forms.Panel();
+            this.btnRetornar = new System.Windows.Forms.Button();
             this.subRoteiro6 = new Interface_Roteiros.SubRoteiro();
             this.subRoteiro5 = new Interface_Roteiros.SubRoteiro();
             this.subRoteiro4 = new Interface_Roteiros.SubRoteiro();
@@ -42,6 +44,7 @@ namespace Interface_Roteiros
             // panRoteiros
             // 
             this.panRoteiros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
+            this.panRoteiros.Controls.Add(this.btnRetornar);
             this.panRoteiros.Controls.Add(this.subRoteiro6);
             this.panRoteiros.Controls.Add(this.subRoteiro5);
             this.panRoteiros.Controls.Add(this.subRoteiro4);
@@ -50,13 +53,27 @@ namespace Interface_Roteiros
             this.panRoteiros.Controls.Add(this.subRoteiro1);
             this.panRoteiros.Location = new System.Drawing.Point(0, 0);
             this.panRoteiros.Name = "panRoteiros";
-            this.panRoteiros.Size = new System.Drawing.Size(580, 402);
+            this.panRoteiros.Size = new System.Drawing.Size(580, 430);
             this.panRoteiros.TabIndex = 0;
+            // 
+            // btnRetornar
+            // 
+            this.btnRetornar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
+            this.btnRetornar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRetornar.BackgroundImage")));
+            this.btnRetornar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnRetornar.FlatAppearance.BorderSize = 0;
+            this.btnRetornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRetornar.Location = new System.Drawing.Point(265, 385);
+            this.btnRetornar.Name = "btnRetornar";
+            this.btnRetornar.Size = new System.Drawing.Size(50, 42);
+            this.btnRetornar.TabIndex = 15;
+            this.btnRetornar.UseVisualStyleBackColor = false;
+            this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
             // 
             // subRoteiro6
             // 
             this.subRoteiro6.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito6;
-            this.subRoteiro6.Location = new System.Drawing.Point(399, 211);
+            this.subRoteiro6.Location = new System.Drawing.Point(401, 210);
             this.subRoteiro6.Name = "subRoteiro6";
             this.subRoteiro6.Size = new System.Drawing.Size(163, 172);
             this.subRoteiro6.TabIndex = 14;
@@ -67,7 +84,7 @@ namespace Interface_Roteiros
             // subRoteiro5
             // 
             this.subRoteiro5.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito5;
-            this.subRoteiro5.Location = new System.Drawing.Point(210, 211);
+            this.subRoteiro5.Location = new System.Drawing.Point(212, 210);
             this.subRoteiro5.Name = "subRoteiro5";
             this.subRoteiro5.Size = new System.Drawing.Size(163, 172);
             this.subRoteiro5.TabIndex = 13;
@@ -78,7 +95,7 @@ namespace Interface_Roteiros
             // subRoteiro4
             // 
             this.subRoteiro4.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito4;
-            this.subRoteiro4.Location = new System.Drawing.Point(23, 211);
+            this.subRoteiro4.Location = new System.Drawing.Point(25, 210);
             this.subRoteiro4.Name = "subRoteiro4";
             this.subRoteiro4.Size = new System.Drawing.Size(163, 172);
             this.subRoteiro4.TabIndex = 12;
@@ -89,7 +106,7 @@ namespace Interface_Roteiros
             // subRoteiro3
             // 
             this.subRoteiro3.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito3;
-            this.subRoteiro3.Location = new System.Drawing.Point(399, 21);
+            this.subRoteiro3.Location = new System.Drawing.Point(401, 20);
             this.subRoteiro3.Name = "subRoteiro3";
             this.subRoteiro3.Size = new System.Drawing.Size(163, 172);
             this.subRoteiro3.TabIndex = 11;
@@ -100,7 +117,7 @@ namespace Interface_Roteiros
             // subRoteiro2
             // 
             this.subRoteiro2.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito2;
-            this.subRoteiro2.Location = new System.Drawing.Point(210, 21);
+            this.subRoteiro2.Location = new System.Drawing.Point(212, 20);
             this.subRoteiro2.Name = "subRoteiro2";
             this.subRoteiro2.Size = new System.Drawing.Size(163, 172);
             this.subRoteiro2.TabIndex = 10;
@@ -111,7 +128,7 @@ namespace Interface_Roteiros
             // subRoteiro1
             // 
             this.subRoteiro1.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito7;
-            this.subRoteiro1.Location = new System.Drawing.Point(23, 21);
+            this.subRoteiro1.Location = new System.Drawing.Point(25, 20);
             this.subRoteiro1.Name = "subRoteiro1";
             this.subRoteiro1.Size = new System.Drawing.Size(163, 172);
             this.subRoteiro1.TabIndex = 1;
@@ -125,7 +142,7 @@ namespace Interface_Roteiros
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panRoteiros);
             this.Name = "TelaRoteiros";
-            this.Size = new System.Drawing.Size(580, 402);
+            this.Size = new System.Drawing.Size(580, 430);
             this.panRoteiros.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -140,5 +157,6 @@ namespace Interface_Roteiros
         private SubRoteiro subRoteiro4;
         private SubRoteiro subRoteiro5;
         private SubRoteiro subRoteiro6;
+        private System.Windows.Forms.Button btnRetornar;
     }
 }

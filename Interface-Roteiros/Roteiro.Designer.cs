@@ -32,6 +32,7 @@ namespace Interface_Roteiros
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Roteiro));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.btnPDF = new System.Windows.Forms.Button();
             this.btnSimulador = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,7 +41,6 @@ namespace Interface_Roteiros
             this.btnRetornar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.imgImagem = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -58,7 +58,7 @@ namespace Interface_Roteiros
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(580, 402);
+            this.panel1.Size = new System.Drawing.Size(580, 430);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -68,10 +68,18 @@ namespace Interface_Roteiros
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.btnPDF);
             this.panel4.Controls.Add(this.btnSimulador);
-            this.panel4.Location = new System.Drawing.Point(0, 238);
+            this.panel4.Location = new System.Drawing.Point(0, 266);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(580, 164);
             this.panel4.TabIndex = 8;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(580, 2);
+            this.panel5.TabIndex = 4;
             // 
             // btnPDF
             // 
@@ -106,7 +114,7 @@ namespace Interface_Roteiros
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
-            this.panel2.Location = new System.Drawing.Point(201, 214);
+            this.panel2.Location = new System.Drawing.Point(201, 233);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(358, 5);
             this.panel2.TabIndex = 7;
@@ -169,21 +177,13 @@ namespace Interface_Roteiros
             this.imgImagem.TabIndex = 0;
             this.imgImagem.TabStop = false;
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(580, 2);
-            this.panel5.TabIndex = 4;
-            // 
             // Roteiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "Roteiro";
-            this.Size = new System.Drawing.Size(580, 402);
+            this.Size = new System.Drawing.Size(580, 430);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

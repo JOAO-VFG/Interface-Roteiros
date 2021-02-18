@@ -21,10 +21,10 @@ namespace Interface_Roteiros
             Application.Exit();
         }
 
-        private void btnRetornar_Click(object sender, EventArgs e)
+        private void TelaSimulador_Load(object sender, EventArgs e)
         {
-            this.Hide();
-            Tela.Show();
+            telaRoteiros1.TelaAtual = this;
+            telaRoteiros1.TelaInicio = Tela;
         }
     }
 }

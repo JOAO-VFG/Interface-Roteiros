@@ -29,9 +29,7 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaSimulador));
             this.telaRoteiros1 = new Interface_Roteiros.TelaRoteiros();
-            this.btnRetornar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,37 +57,24 @@ namespace Interface_Roteiros
             // 
             this.telaRoteiros1.Location = new System.Drawing.Point(0, 35);
             this.telaRoteiros1.Name = "telaRoteiros1";
-            this.telaRoteiros1.Size = new System.Drawing.Size(575, 390);
+            this.telaRoteiros1.Size = new System.Drawing.Size(575, 430);
             this.telaRoteiros1.TabIndex = 4;
-            // 
-            // btnRetornar
-            // 
-            this.btnRetornar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
-            this.btnRetornar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRetornar.BackgroundImage")));
-            this.btnRetornar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnRetornar.FlatAppearance.BorderSize = 0;
-            this.btnRetornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRetornar.Location = new System.Drawing.Point(254, 420);
-            this.btnRetornar.Name = "btnRetornar";
-            this.btnRetornar.Size = new System.Drawing.Size(70, 54);
-            this.btnRetornar.TabIndex = 6;
-            this.btnRetornar.UseVisualStyleBackColor = false;
-            this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
+            this.telaRoteiros1.TelaAtual = null;
+            this.telaRoteiros1.TelaInicio = null;
             // 
             // TelaSimulador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(575, 475);
-            this.Controls.Add(this.btnRetornar);
+            this.ClientSize = new System.Drawing.Size(575, 465);
             this.Controls.Add(this.telaRoteiros1);
             this.Name = "TelaSimulador";
+            this.Load += new System.EventHandler(this.TelaSimulador_Load);
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
             this.Controls.SetChildIndex(this.imgIcone, 0);
             this.Controls.SetChildIndex(this.telaRoteiros1, 0);
-            this.Controls.SetChildIndex(this.btnRetornar, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
             this.ResumeLayout(false);
 
@@ -98,6 +83,5 @@ namespace Interface_Roteiros
         #endregion
 
         private TelaRoteiros telaRoteiros1;
-        private System.Windows.Forms.Button btnRetornar;
     }
 }

@@ -13,6 +13,8 @@ namespace Interface_Roteiros
     public partial class TelaRoteiros : UserControl
     {
         private Control[] telaRoteiros = new Control[6];
+        public TelaInicial TelaInicio { get; set; }
+        public TelaSimulador TelaAtual { get; set; }
 
         public TelaRoteiros()
         {
@@ -96,6 +98,19 @@ namespace Interface_Roteiros
         private void subRoteiro6_Click(object sender, EventArgs e)
         {
             AbrirJanela(telaRoteiros[5]);
+        }
+
+        private void btnRetornar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                TelaAtual.Hide();
+                TelaInicio.Show();
+            }
+            catch(Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exceção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
