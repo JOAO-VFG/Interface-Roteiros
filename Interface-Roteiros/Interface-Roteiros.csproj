@@ -68,11 +68,11 @@
       <DependentUpon>BotaoPersonalizado.cs</DependentUpon>
     </Compile>
     <Compile Include="Circuito.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TelaInicial.Designer.cs">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,11 +125,17 @@
     <Compile Include="TelaRoteiros.Designer.cs">
       <DependentUpon>TelaRoteiros.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaSimulador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaSimulador.Designer.cs">
+      <DependentUpon>TelaSimulador.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BotaoPersonalizado.resx">
       <DependentUpon>BotaoPersonalizado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="TelaInicial.resx">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaRoteiros.resx">
       <DependentUpon>TelaRoteiros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaSimulador.resx">
+      <DependentUpon>TelaSimulador.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

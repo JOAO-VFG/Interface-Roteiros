@@ -72,7 +72,7 @@ namespace Interface_Roteiros
             this.subRoteiro5.Size = new System.Drawing.Size(163, 172);
             this.subRoteiro5.TabIndex = 13;
             this.subRoteiro5.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subRoteiro5.TextoRoteiro = "Teorema de Northon e Thevannin";
+            this.subRoteiro5.TextoRoteiro = "Teorema de Northon e Thévenin";
             this.subRoteiro5.Click += new System.EventHandler(this.subRoteiro5_Click);
             // 
             // subRoteiro4

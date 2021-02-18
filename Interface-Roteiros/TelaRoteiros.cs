@@ -42,7 +42,7 @@ namespace Interface_Roteiros
 
             telaRoteiros[4] = new Roteiro()
             {
-                TextoTitulo = "Teorema de Norton e Thevannin",
+                TextoTitulo = "Teorema de Norton e Thévenin",
                 ImagemRoteiro = Properties.Resources.circuito5,
             };
 
