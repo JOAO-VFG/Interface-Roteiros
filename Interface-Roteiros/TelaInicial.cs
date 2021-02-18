@@ -13,6 +13,7 @@ namespace Interface_Roteiros
     public partial class TelaInicial : Form
     {
         public TelaSimulador TelaSimulador { get; set; }
+        public TelaPDF TelaPdf { get; set; }
         public TelaInicial()
         {
             InitializeComponent();
@@ -108,6 +109,12 @@ namespace Interface_Roteiros
         private void TelaInicial_Load(object sender, EventArgs e)
         {
             TelaSimulador = new TelaSimulador() { Tela = this, };
+            TelaPdf = new TelaPDF();
+        }
+
+        private void lblPDF_Click(object sender, EventArgs e)
+        {
+            TelaPdf.Show(); 
         }
     }
 }

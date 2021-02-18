@@ -278,6 +278,7 @@ namespace Interface_Roteiros
             this.lblPDF.TabIndex = 1;
             this.lblPDF.Text = "Cada tópico dispõe de um PDF para auxiliar o aluno em seus estudos";
             this.lblPDF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPDF.Click += new System.EventHandler(this.lblPDF_Click);
             this.lblPDF.MouseEnter += new System.EventHandler(this.lblPDF_MouseEnter);
             this.lblPDF.MouseLeave += new System.EventHandler(this.lblPDF_MouseLeave);
             // 
