@@ -51,14 +51,14 @@ namespace Interface_Roteiros
             this.panel1.Controls.Add(this.imgRoteiro);
             this.panel1.Location = new System.Drawing.Point(0, 45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(396, 200);
+            this.panel1.Size = new System.Drawing.Size(595, 200);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(22, 166);
+            this.label1.Location = new System.Drawing.Point(146, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(343, 23);
             this.label1.TabIndex = 5;
@@ -68,7 +68,7 @@ namespace Interface_Roteiros
             // imgRoteiro
             // 
             this.imgRoteiro.Image = global::Interface_Roteiros.Properties.Resources.circuito_eletrico1;
-            this.imgRoteiro.Location = new System.Drawing.Point(22, 0);
+            this.imgRoteiro.Location = new System.Drawing.Point(146, 1);
             this.imgRoteiro.Name = "imgRoteiro";
             this.imgRoteiro.Size = new System.Drawing.Size(343, 171);
             this.imgRoteiro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -82,7 +82,7 @@ namespace Interface_Roteiros
             this.lblTitulo.Location = new System.Drawing.Point(0, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Padding = new System.Windows.Forms.Padding(35, 0, 0, 3);
-            this.lblTitulo.Size = new System.Drawing.Size(393, 40);
+            this.lblTitulo.Size = new System.Drawing.Size(595, 40);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Teorema de Norton e Thévenin";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -95,7 +95,7 @@ namespace Interface_Roteiros
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(160)))), ((int)(((byte)(161)))));
             this.panel2.Location = new System.Drawing.Point(0, 40);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(396, 5);
+            this.panel2.Size = new System.Drawing.Size(595, 5);
             this.panel2.TabIndex = 3;
             // 
             // panTitulo
@@ -106,7 +106,7 @@ namespace Interface_Roteiros
             this.panTitulo.Controls.Add(this.lblTitulo);
             this.panTitulo.Location = new System.Drawing.Point(0, 0);
             this.panTitulo.Name = "panTitulo";
-            this.panTitulo.Size = new System.Drawing.Size(396, 40);
+            this.panTitulo.Size = new System.Drawing.Size(595, 40);
             this.panTitulo.TabIndex = 1;
             // 
             // btnPdf
@@ -115,7 +115,7 @@ namespace Interface_Roteiros
             this.btnPdf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPdf.FlatAppearance.BorderSize = 0;
             this.btnPdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPdf.Location = new System.Drawing.Point(355, 8);
+            this.btnPdf.Location = new System.Drawing.Point(550, 8);
             this.btnPdf.Name = "btnPdf";
             this.btnPdf.Size = new System.Drawing.Size(24, 24);
             this.btnPdf.TabIndex = 2;
@@ -139,10 +139,11 @@ namespace Interface_Roteiros
             this.Controls.Add(this.panTitulo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.MaximumSize = new System.Drawing.Size(396, 265);
-            this.MinimumSize = new System.Drawing.Size(396, 45);
+            this.MaximumSize = new System.Drawing.Size(595, 245);
+            this.MinimumSize = new System.Drawing.Size(595, 45);
             this.Name = "EscolhaRoteiro";
-            this.Size = new System.Drawing.Size(396, 45);
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Size = new System.Drawing.Size(595, 45);
             this.Load += new System.EventHandler(this.EscolhaRoteiro_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro)).EndInit();

@@ -272,5 +272,8 @@
   <ItemGroup>
     <None Include="Resources\plus-sign.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito_icone.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

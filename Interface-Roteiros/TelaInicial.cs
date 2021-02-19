@@ -109,11 +109,12 @@ namespace Interface_Roteiros
         private void TelaInicial_Load(object sender, EventArgs e)
         {
             TelaSimulador = new TelaSimulador() { Tela = this, };
-            TelaPdf = new TelaPDF();
+            TelaPdf = new TelaPDF() { TelaInicial = this, };
         }
 
         private void lblPDF_Click(object sender, EventArgs e)
         {
+            this.Hide();
             TelaPdf.Show(); 
         }
     }

@@ -136,8 +136,14 @@
   <data name="minimize_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimize_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="power_danger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\power_danger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="battery2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battery2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minus-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minus-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circuito6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circuito6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="battery" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\battery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,11 +154,8 @@
   <data name="circuito2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circuito2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="battery2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\battery2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="power_danger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\power_danger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="circuito3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circuito3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,6 +166,9 @@
   <data name="cancel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="plus-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="minimize2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimize2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,16 +178,13 @@
   <data name="circuito_eletrico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circuito_eletrico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="circuito6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\circuito6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="circuito4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circuito4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minus-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minus-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plus-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="circuito_icone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circuito_icone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
