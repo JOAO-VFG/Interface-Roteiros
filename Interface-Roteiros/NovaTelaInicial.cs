@@ -18,6 +18,8 @@ namespace Interface_Roteiros
         private void NovaTelaInicial_Load(object sender, EventArgs e)
         {
             boxSimulador.Tela = new TelaSimulador();
+            boxSobre.Tela = new TelaSobre();
+            boxPdf.Tela = new TelaPDF();
         }
     }
 }

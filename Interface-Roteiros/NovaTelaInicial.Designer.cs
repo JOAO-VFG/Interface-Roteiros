@@ -90,7 +90,7 @@ namespace Interface_Roteiros
             // 
             // boxPdf
             // 
-            this.boxPdf.ColorOnEnter = System.Drawing.Color.Aqua;
+            this.boxPdf.ColorOnEnter = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(51)))), ((int)(((byte)(161)))));
             this.boxPdf.ColorOnLeave = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(149)))), ((int)(((byte)(212)))));
             this.boxPdf.ImagemDaCaixa = global::Interface_Roteiros.Properties.Resources.pdf;
             this.boxPdf.Location = new System.Drawing.Point(185, 343);
@@ -105,9 +105,9 @@ namespace Interface_Roteiros
             // 
             // boxSobre
             // 
-            this.boxSobre.ColorOnEnter = System.Drawing.Color.Aqua;
+            this.boxSobre.ColorOnEnter = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(230)))), ((int)(((byte)(106)))));
             this.boxSobre.ColorOnLeave = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(179)))), ((int)(((byte)(114)))));
-            this.boxSobre.ImagemDaCaixa = null;
+            this.boxSobre.ImagemDaCaixa = global::Interface_Roteiros.Properties.Resources.sobre_icone;
             this.boxSobre.Location = new System.Drawing.Point(0, 343);
             this.boxSobre.Name = "boxSobre";
             this.boxSobre.Size = new System.Drawing.Size(180, 140);
@@ -120,9 +120,9 @@ namespace Interface_Roteiros
             // 
             // boxSimulador
             // 
-            this.boxSimulador.ColorOnEnter = System.Drawing.Color.Aqua;
+            this.boxSimulador.ColorOnEnter = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(36)))), ((int)(((byte)(240)))));
             this.boxSimulador.ColorOnLeave = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(83)))), ((int)(((byte)(252)))));
-            this.boxSimulador.ImagemDaCaixa = null;
+            this.boxSimulador.ImagemDaCaixa = global::Interface_Roteiros.Properties.Resources.simulation;
             this.boxSimulador.Location = new System.Drawing.Point(370, 343);
             this.boxSimulador.Name = "boxSimulador";
             this.boxSimulador.Size = new System.Drawing.Size(180, 140);

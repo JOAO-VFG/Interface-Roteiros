@@ -56,7 +56,6 @@ namespace Interface_Roteiros
 
         private void lblTexto_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Funcinou!");
             Tela.Show();
         }
 
