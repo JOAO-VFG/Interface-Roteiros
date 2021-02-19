@@ -117,5 +117,10 @@ namespace Interface_Roteiros
             this.Hide();
             TelaPdf.Show(); 
         }
+
+        private void lblSobre_Click(object sender, EventArgs e)
+        {
+            new TelaSobre().Show();
+        }
     }
 }
