@@ -272,9 +272,9 @@ namespace Interface_Roteiros
             this.lblPDF.BackColor = System.Drawing.Color.Transparent;
             this.lblPDF.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPDF.ForeColor = System.Drawing.Color.Black;
-            this.lblPDF.Location = new System.Drawing.Point(6, 35);
+            this.lblPDF.Location = new System.Drawing.Point(0, 35);
             this.lblPDF.Name = "lblPDF";
-            this.lblPDF.Size = new System.Drawing.Size(173, 92);
+            this.lblPDF.Size = new System.Drawing.Size(190, 100);
             this.lblPDF.TabIndex = 1;
             this.lblPDF.Text = "Cada tópico dispõe de um PDF para auxiliar o aluno em seus estudos";
             this.lblPDF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
