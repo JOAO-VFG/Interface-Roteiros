@@ -133,6 +133,16 @@ namespace Interface_Roteiros.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap circuito_icone {
+            get {
+                object obj = ResourceManager.GetObject("circuito_icone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap circuito1 {
             get {
                 object obj = ResourceManager.GetObject("circuito1", resourceCulture);
@@ -226,6 +236,26 @@ namespace Interface_Roteiros.Properties {
         internal static System.Drawing.Bitmap minimize2 {
             get {
                 object obj = ResourceManager.GetObject("minimize2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minus_sign {
+            get {
+                object obj = ResourceManager.GetObject("minus-sign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_sign {
+            get {
+                object obj = ResourceManager.GetObject("plus-sign", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

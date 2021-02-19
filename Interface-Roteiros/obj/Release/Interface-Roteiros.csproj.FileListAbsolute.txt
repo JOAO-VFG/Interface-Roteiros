@@ -21,4 +21,6 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Releas
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface-Roteiros.pdb
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.TelaInicial.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.TelaSimulador.resources
+C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.EscolhaRoteiro.resources
+C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.TelaPDF.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface-Roteiros.csprojAssemblyReference.cache
