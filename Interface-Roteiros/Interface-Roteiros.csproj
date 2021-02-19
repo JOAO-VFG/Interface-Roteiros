@@ -143,6 +143,12 @@
     <Compile Include="TelaSimulador.Designer.cs">
       <DependentUpon>TelaSimulador.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaSobre.Designer.cs">
+      <DependentUpon>TelaSobre.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BotaoPersonalizado.resx">
       <DependentUpon>BotaoPersonalizado.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaSimulador.resx">
       <DependentUpon>TelaSimulador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaSobre.resx">
+      <DependentUpon>TelaSobre.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
