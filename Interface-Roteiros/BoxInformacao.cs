@@ -20,8 +20,8 @@ namespace Interface_Roteiros
         }
         public Image ImagemDaCaixa
         {
-            get { return imgImagem.Image; }
-            set { imgImagem.Image = value; }
+            get { return imgImagem.BackgroundImage; }
+            set { imgImagem.BackgroundImage = value; }
         }
         public string TextoDaCaixa
         {

@@ -32,12 +32,12 @@ namespace Interface_Roteiros
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BoxInformacao));
             this.panTitulo = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.imgImagem = new System.Windows.Forms.PictureBox();
             this.panTexto = new System.Windows.Forms.Panel();
             this.lblTexto = new System.Windows.Forms.Label();
+            this.imgImagem = new System.Windows.Forms.PictureBox();
             this.panTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).BeginInit();
             this.panTexto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).BeginInit();
             this.SuspendLayout();
             // 
             // panTitulo
@@ -54,22 +54,13 @@ namespace Interface_Roteiros
             // 
             this.lblTitulo.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(26, 4);
+            this.lblTitulo.Location = new System.Drawing.Point(33, 4);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(151, 25);
+            this.lblTitulo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lblTitulo.Size = new System.Drawing.Size(144, 25);
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "Simulador";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // imgImagem
-            // 
-            this.imgImagem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imgImagem.BackgroundImage")));
-            this.imgImagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.imgImagem.Location = new System.Drawing.Point(3, 5);
-            this.imgImagem.Name = "imgImagem";
-            this.imgImagem.Size = new System.Drawing.Size(24, 24);
-            this.imgImagem.TabIndex = 8;
-            this.imgImagem.TabStop = false;
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panTexto
             // 
@@ -97,6 +88,17 @@ namespace Interface_Roteiros
             this.lblTexto.MouseEnter += new System.EventHandler(this.lblTexto_MouseEnter);
             this.lblTexto.MouseLeave += new System.EventHandler(this.lblTexto_MouseLeave);
             // 
+            // imgImagem
+            // 
+            this.imgImagem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imgImagem.BackgroundImage")));
+            this.imgImagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.imgImagem.Location = new System.Drawing.Point(3, 0);
+            this.imgImagem.Name = "imgImagem";
+            this.imgImagem.Size = new System.Drawing.Size(32, 32);
+            this.imgImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgImagem.TabIndex = 8;
+            this.imgImagem.TabStop = false;
+            // 
             // BoxInformacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,8 +109,8 @@ namespace Interface_Roteiros
             this.Size = new System.Drawing.Size(180, 140);
             this.Load += new System.EventHandler(this.BoxInformacao_Load);
             this.panTitulo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).EndInit();
             this.panTexto.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).EndInit();
             this.ResumeLayout(false);
 
         }
