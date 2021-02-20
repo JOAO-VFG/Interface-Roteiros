@@ -31,6 +31,7 @@ namespace Interface_Roteiros
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCircuito));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.btnRetornar = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnResistor3 = new Interface_Roteiros.BotaoPersonalizado();
@@ -50,7 +51,6 @@ namespace Interface_Roteiros
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -96,6 +96,14 @@ namespace Interface_Roteiros
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(600, 100);
             this.panel1.TabIndex = 4;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.panel7.Location = new System.Drawing.Point(100, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 100);
+            this.panel7.TabIndex = 5;
             // 
             // btnRetornar
             // 
@@ -284,14 +292,6 @@ namespace Interface_Roteiros
             this.label8.Size = new System.Drawing.Size(15, 16);
             this.label8.TabIndex = 14;
             this.label8.Text = "3";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.panel7.Location = new System.Drawing.Point(100, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(5, 100);
-            this.panel7.TabIndex = 5;
             // 
             // TelaCircuito
             // 

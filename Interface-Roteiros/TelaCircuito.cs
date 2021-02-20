@@ -70,6 +70,7 @@ namespace Interface_Roteiros
 
         private void btnFonte_Click(object sender, EventArgs e)
         {
+            telaFonte.CarregarValores();
             telaFonte.Show();
         }
 

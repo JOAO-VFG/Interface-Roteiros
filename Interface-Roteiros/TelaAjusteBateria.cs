@@ -39,5 +39,12 @@ namespace Interface_Roteiros
             lblPotencia.Text = FormatarValor(Circuito.Fonte.Potencia, "W");
             LabelV0.Text = FormatarValor(Circuito.V0, "V");
         }
+
+        // Atualiza os valores presentes na tela
+        public void CarregarValores()
+        {
+            lblCorrente.Text = FormatarValor(Circuito.Fonte.Corrente, "A");
+            lblPotencia.Text = FormatarValor(Circuito.Fonte.Potencia, "W");
+        }
     }
 }
