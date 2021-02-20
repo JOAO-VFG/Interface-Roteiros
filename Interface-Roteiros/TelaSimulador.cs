@@ -16,10 +16,15 @@ namespace Interface_Roteiros
             InitializeComponent();
         }
 
-        private void TelaSimulador_Load(object sender, EventArgs e)
+        private void btnRetornar_Click(object sender, EventArgs e)
         {
-            telaRoteiros1.TelaAtual = this;
-            telaRoteiros1.TelaInicio = TelaDeInicio;
+            this.Hide();
+            TelaDeInicio.Show();
+        }
+
+        private void rtrLeisOhm_Click(object sender, EventArgs e)
+        {
+            new TelaCircuito().Show();
         }
     }
 }

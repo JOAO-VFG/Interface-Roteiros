@@ -33,7 +33,6 @@ namespace Interface_Roteiros
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.escolhaRoteiro1 = new Interface_Roteiros.EscolhaRoteiro();
             this.btnRetornar = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -44,7 +43,7 @@ namespace Interface_Roteiros
             // 
             // lblTitulo
             // 
-            this.lblTitulo.Size = new System.Drawing.Size(615, 35);
+            this.lblTitulo.Size = new System.Drawing.Size(595, 35);
             this.lblTitulo.Text = "Simulador Eletrônico";
             // 
             // btnSair
@@ -52,14 +51,14 @@ namespace Interface_Roteiros
             this.btnSair.FlatAppearance.BorderSize = 0;
             this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
-            this.btnSair.Location = new System.Drawing.Point(585, 5);
+            this.btnSair.Location = new System.Drawing.Point(558, 5);
             // 
             // btnMinimizar
             // 
             this.btnMinimizar.FlatAppearance.BorderSize = 0;
             this.btnMinimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
-            this.btnMinimizar.Location = new System.Drawing.Point(546, 5);
+            this.btnMinimizar.Location = new System.Drawing.Point(519, 5);
             // 
             // imgIcone
             // 
@@ -72,7 +71,7 @@ namespace Interface_Roteiros
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(615, 125);
+            this.panel1.Size = new System.Drawing.Size(595, 125);
             this.panel1.TabIndex = 5;
             // 
             // panel2
@@ -89,23 +88,15 @@ namespace Interface_Roteiros
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(23, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(580, 100);
+            this.label1.Size = new System.Drawing.Size(547, 100);
             this.label1.TabIndex = 0;
             this.label1.Text = "Há uma previa sobre qual tipo de exércicio será discutido e exemplificado clicand" +
     "o-se sobre o nome do assunto.\r\n\r\nAbaixo clique sobre o ícone de pdf para abrir.";
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(27)))), ((int)(((byte)(61)))));
-            this.panel3.Location = new System.Drawing.Point(0, 205);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(20, 311);
-            this.panel3.TabIndex = 6;
-            // 
             // escolhaRoteiro1
             // 
             this.escolhaRoteiro1.ImageRoteiro = ((System.Drawing.Image)(resources.GetObject("escolhaRoteiro1.ImageRoteiro")));
-            this.escolhaRoteiro1.Location = new System.Drawing.Point(20, 205);
+            this.escolhaRoteiro1.Location = new System.Drawing.Point(0, 205);
             this.escolhaRoteiro1.MaximumSize = new System.Drawing.Size(595, 245);
             this.escolhaRoteiro1.MinimumSize = new System.Drawing.Size(595, 45);
             this.escolhaRoteiro1.Name = "escolhaRoteiro1";
@@ -113,7 +104,7 @@ namespace Interface_Roteiros
             this.escolhaRoteiro1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.escolhaRoteiro1.Size = new System.Drawing.Size(595, 45);
             this.escolhaRoteiro1.TabIndex = 7;
-            this.escolhaRoteiro1.TituloRoteiro = "Teorema de Norton e Thévenin";
+            this.escolhaRoteiro1.TituloRoteiro = "Leis de Kirchhof";
             // 
             // btnRetornar
             // 
@@ -140,16 +131,15 @@ namespace Interface_Roteiros
             this.panel4.Controls.Add(this.btnRetornar);
             this.panel4.Location = new System.Drawing.Point(0, 35);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(615, 45);
+            this.panel4.Size = new System.Drawing.Size(595, 45);
             this.panel4.TabIndex = 9;
             // 
             // TelaPDF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(615, 515);
+            this.ClientSize = new System.Drawing.Size(595, 515);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.escolhaRoteiro1);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "TelaPDF";
             this.Controls.SetChildIndex(this.lblTitulo, 0);
@@ -157,7 +147,6 @@ namespace Interface_Roteiros
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
             this.Controls.SetChildIndex(this.imgIcone, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
-            this.Controls.SetChildIndex(this.panel3, 0);
             this.Controls.SetChildIndex(this.escolhaRoteiro1, 0);
             this.Controls.SetChildIndex(this.panel4, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
@@ -171,7 +160,6 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
         private EscolhaRoteiro escolhaRoteiro1;
         private System.Windows.Forms.Button btnRetornar;
         private System.Windows.Forms.Panel panel4;
