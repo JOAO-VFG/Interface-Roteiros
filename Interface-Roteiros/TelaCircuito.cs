@@ -63,9 +63,16 @@ namespace Interface_Roteiros
             };
         }
 
+        // Abre alguma janela de ajuste
+        private void ResistorClicado(TelaAjusteResistor tela)
+        {
+            tela.Show();
+            tela.CarregarValores();
+        }
+
         private void btnResistor1_Click(object sender, EventArgs e)
         {
-            telaResistor[0].Show();
+            ResistorClicado(telaResistor[0]);
         }
 
         private void btnFonte_Click(object sender, EventArgs e)
@@ -76,12 +83,12 @@ namespace Interface_Roteiros
 
         private void btnResistor2_Click(object sender, EventArgs e)
         {
-            telaResistor[1].Show();
+            ResistorClicado(telaResistor[1]);
         }
 
         private void btnResistor3_Click(object sender, EventArgs e)
         {
-            telaResistor[2].Show();
+            ResistorClicado(telaResistor[2]);
         }
 
         private void btnRetornar_Click(object sender, EventArgs e)

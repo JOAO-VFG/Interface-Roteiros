@@ -44,5 +44,12 @@ namespace Interface_Roteiros
             lblPotencia.Text = FormatarValor(Resistor.Potencia, "W");
             LabelVo.Text = FormatarValor(Circuito.V0, "V");
         }
+
+        // Carrega os valores do circuito para a tela quando clicada
+        public void CarregarValores()
+        {
+            lblCorrente.Text = FormatarValor(Resistor.Corrente, "A");
+            lblPotencia.Text = FormatarValor(Resistor.Potencia, "W");
+        }
     }
 }
