@@ -12,14 +12,6 @@ namespace Interface_Roteiros
 {
     public partial class SubRoteiro : UserControl
     {
-        private Control roteiro;
-
-        public Control Roteiro
-        {
-            get { return roteiro; }
-            set { roteiro = value; }
-        }
-
         public Image ImagemRoteiro
         {
             get { return imgImagem.Image; }
@@ -41,9 +33,6 @@ namespace Interface_Roteiros
         public SubRoteiro()
         {
             InitializeComponent();
-
-            this.Roteiro = new Roteiro();
-            Controls.Add(this.Roteiro);
         }
 
         private void imgImagem_MouseEnter(object sender, EventArgs e)
