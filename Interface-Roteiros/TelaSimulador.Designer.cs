@@ -130,6 +130,8 @@ namespace Interface_Roteiros
             this.btnRetornar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRetornar.BackgroundImage")));
             this.btnRetornar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnRetornar.FlatAppearance.BorderSize = 0;
+            this.btnRetornar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnRetornar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnRetornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRetornar.Location = new System.Drawing.Point(23, 38);
             this.btnRetornar.Name = "btnRetornar";
@@ -137,6 +139,8 @@ namespace Interface_Roteiros
             this.btnRetornar.TabIndex = 16;
             this.btnRetornar.UseVisualStyleBackColor = false;
             this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
+            this.btnRetornar.MouseEnter += new System.EventHandler(this.btnRetornar_MouseEnter);
+            this.btnRetornar.MouseLeave += new System.EventHandler(this.btnRetornar_MouseLeave);
             // 
             // TelaSimulador
             // 

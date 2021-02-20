@@ -10,6 +10,8 @@ namespace Interface_Roteiros
 {
     public partial class TelaCircuito : Interface_Roteiros.TelaInicialPadrao
     {
+        // Tela anterior
+        public TelaSimulador TelaRetorno { get; set; }
         // Tela de configuração dos resistores
         private TelaAjusteResistor[] telaResistor = new TelaAjusteResistor[3];
         // Tela da fonte
@@ -79,6 +81,12 @@ namespace Interface_Roteiros
         private void btnResistor3_Click(object sender, EventArgs e)
         {
             telaResistor[2].Show();
+        }
+
+        private void btnRetornar_Click(object sender, EventArgs e)
+        {
+            TelaRetorno.Show();
+            this.Close();
         }
     }
 }

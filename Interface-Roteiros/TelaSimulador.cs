@@ -16,6 +16,7 @@ namespace Interface_Roteiros
             InitializeComponent();
         }
 
+        // Sai do controle atual
         private void btnRetornar_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -24,7 +25,23 @@ namespace Interface_Roteiros
 
         private void rtrLeisOhm_Click(object sender, EventArgs e)
         {
-            new TelaCircuito().Show();
+            this.Hide();
+            new TelaCircuito() { TelaRetorno = this, }.Show();
         }
+
+        /*
+         * Dá um feedback visual para o usuário identificiar que o mouse está
+         * sobre o botão de sair
+         ====================================================================*/
+        private void btnRetornar_MouseEnter(object sender, EventArgs e)
+        {
+            btnRetornar.Cursor = Cursors.Hand;
+        }
+
+        private void btnRetornar_MouseLeave(object sender, EventArgs e)
+        {
+            btnRetornar.Cursor = Cursors.Default;
+        }
+        // =====================================================================
     }
 }

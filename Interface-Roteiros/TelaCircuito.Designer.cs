@@ -31,6 +31,7 @@ namespace Interface_Roteiros
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCircuito));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRetornar = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnResistor3 = new Interface_Roteiros.BotaoPersonalizado();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -74,6 +75,7 @@ namespace Interface_Roteiros
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
+            this.panel1.Controls.Add(this.btnRetornar);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.btnResistor3);
             this.panel1.Controls.Add(this.panel5);
@@ -87,10 +89,22 @@ namespace Interface_Roteiros
             this.panel1.Size = new System.Drawing.Size(715, 100);
             this.panel1.TabIndex = 4;
             // 
+            // btnRetornar
+            // 
+            this.btnRetornar.FlatAppearance.BorderSize = 0;
+            this.btnRetornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRetornar.Image = global::Interface_Roteiros.Properties.Resources.left_arrow;
+            this.btnRetornar.Location = new System.Drawing.Point(0, 0);
+            this.btnRetornar.Name = "btnRetornar";
+            this.btnRetornar.Size = new System.Drawing.Size(100, 100);
+            this.btnRetornar.TabIndex = 5;
+            this.btnRetornar.UseVisualStyleBackColor = true;
+            this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.panel6.Location = new System.Drawing.Point(415, 0);
+            this.panel6.Location = new System.Drawing.Point(518, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(5, 100);
             this.panel6.TabIndex = 4;
@@ -99,7 +113,7 @@ namespace Interface_Roteiros
             // 
             this.btnResistor3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(54)))));
             this.btnResistor3.Image = global::Interface_Roteiros.Properties.Resources.resistor2;
-            this.btnResistor3.Location = new System.Drawing.Point(315, 0);
+            this.btnResistor3.Location = new System.Drawing.Point(418, 0);
             this.btnResistor3.Name = "btnResistor3";
             this.btnResistor3.Size = new System.Drawing.Size(100, 100);
             this.btnResistor3.TabIndex = 4;
@@ -109,7 +123,7 @@ namespace Interface_Roteiros
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.panel5.Location = new System.Drawing.Point(310, 0);
+            this.panel5.Location = new System.Drawing.Point(413, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(5, 100);
             this.panel5.TabIndex = 3;
@@ -118,7 +132,7 @@ namespace Interface_Roteiros
             // 
             this.btnResistor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(54)))));
             this.btnResistor2.Image = global::Interface_Roteiros.Properties.Resources.resistor2;
-            this.btnResistor2.Location = new System.Drawing.Point(210, 0);
+            this.btnResistor2.Location = new System.Drawing.Point(313, 0);
             this.btnResistor2.Name = "btnResistor2";
             this.btnResistor2.Size = new System.Drawing.Size(100, 100);
             this.btnResistor2.TabIndex = 3;
@@ -128,7 +142,7 @@ namespace Interface_Roteiros
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.panel4.Location = new System.Drawing.Point(205, 0);
+            this.panel4.Location = new System.Drawing.Point(308, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(5, 100);
             this.panel4.TabIndex = 2;
@@ -137,7 +151,7 @@ namespace Interface_Roteiros
             // 
             this.btnResistor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(54)))));
             this.btnResistor1.Image = global::Interface_Roteiros.Properties.Resources.resistor2;
-            this.btnResistor1.Location = new System.Drawing.Point(105, 0);
+            this.btnResistor1.Location = new System.Drawing.Point(208, 0);
             this.btnResistor1.Name = "btnResistor1";
             this.btnResistor1.Size = new System.Drawing.Size(100, 100);
             this.btnResistor1.TabIndex = 2;
@@ -147,7 +161,7 @@ namespace Interface_Roteiros
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.panel3.Location = new System.Drawing.Point(100, 0);
+            this.panel3.Location = new System.Drawing.Point(203, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(5, 100);
             this.panel3.TabIndex = 1;
@@ -156,7 +170,7 @@ namespace Interface_Roteiros
             // 
             this.btnFonte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(54)))));
             this.btnFonte.Image = global::Interface_Roteiros.Properties.Resources.battery2;
-            this.btnFonte.Location = new System.Drawing.Point(0, 0);
+            this.btnFonte.Location = new System.Drawing.Point(103, 0);
             this.btnFonte.Name = "btnFonte";
             this.btnFonte.Size = new System.Drawing.Size(100, 100);
             this.btnFonte.TabIndex = 0;
@@ -327,5 +341,6 @@ namespace Interface_Roteiros
         private BotaoPersonalizado btnResistor2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button btnRetornar;
     }
 }
