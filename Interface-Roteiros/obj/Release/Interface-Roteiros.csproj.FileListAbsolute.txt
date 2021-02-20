@@ -8,7 +8,6 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Releas
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.BoxInformacao.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.EscolhaRoteiro.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.NovaTelaInicial.resources
-C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.TelaInicial.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.Properties.Resources.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.Roteiro.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.SubRoteiro.resources

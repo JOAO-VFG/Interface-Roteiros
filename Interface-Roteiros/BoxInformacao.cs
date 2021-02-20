@@ -46,7 +46,7 @@ namespace Interface_Roteiros
         }
         // Tela a ser carregada quando clicar no botão
         public TelaInicialPadrao Tela { get; set; }
-        public TelaInicialPadrao TelaDeInicio { get; set; }
+        public NovaTelaInicial TelaDeRetorno { get; set; }
 
         private readonly Color cinzaClaro = Color.FromArgb(58, 56, 59);
         private readonly Color cinzaEscuro = Color.FromArgb(28, 28, 28);
@@ -55,8 +55,13 @@ namespace Interface_Roteiros
             InitializeComponent();
         }
 
+        // Abre uma janela
         private void lblTexto_Click(object sender, EventArgs e)
         {
+            if(TelaDeRetorno != null)
+            {
+                TelaDeRetorno.Hide();
+            }
             Tela.Show();
         }
 

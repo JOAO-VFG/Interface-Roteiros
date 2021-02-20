@@ -16,11 +16,6 @@ namespace Interface_Roteiros
             InitializeComponent();
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void TelaSimulador_Load(object sender, EventArgs e)
         {
             telaRoteiros1.TelaAtual = this;

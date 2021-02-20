@@ -44,7 +44,6 @@ namespace Interface_Roteiros
             this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.btnSair.Location = new System.Drawing.Point(543, 5);
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnMinimizar
             // 

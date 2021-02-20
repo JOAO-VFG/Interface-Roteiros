@@ -36,9 +36,9 @@ namespace Interface_Roteiros
             }
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
+        public virtual void btnSair_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)

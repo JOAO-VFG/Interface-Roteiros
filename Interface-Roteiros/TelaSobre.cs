@@ -14,5 +14,10 @@ namespace Interface_Roteiros
         {
             InitializeComponent();
         }
+
+        public override void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
