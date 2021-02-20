@@ -44,6 +44,7 @@ namespace Interface_Roteiros
             // btnPersonalizado
             // 
             this.btnPersonalizado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnPersonalizado.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(54)))));
             this.btnPersonalizado.FlatAppearance.BorderSize = 0;
             this.btnPersonalizado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPersonalizado.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
