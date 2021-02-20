@@ -32,7 +32,7 @@ namespace Interface_Roteiros
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaSimulador));
             this.subRoteiro1 = new Interface_Roteiros.SubRoteiro();
             this.rtrLeisOhm = new Interface_Roteiros.SubRoteiro();
-            this.subRoteiro3 = new Interface_Roteiros.SubRoteiro();
+            this.rtrKirchhof = new Interface_Roteiros.SubRoteiro();
             this.subRoteiro4 = new Interface_Roteiros.SubRoteiro();
             this.subRoteiro5 = new Interface_Roteiros.SubRoteiro();
             this.subRoteiro6 = new Interface_Roteiros.SubRoteiro();
@@ -82,17 +82,17 @@ namespace Interface_Roteiros
             this.rtrLeisOhm.TabIndex = 5;
             this.rtrLeisOhm.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtrLeisOhm.TextoRoteiro = "Leis de Ohm";
-            this.rtrLeisOhm.Click += new System.EventHandler(this.rtrLeisOhm_Click);
             // 
-            // subRoteiro3
+            // rtrKirchhof
             // 
-            this.subRoteiro3.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito3;
-            this.subRoteiro3.Location = new System.Drawing.Point(389, 94);
-            this.subRoteiro3.Name = "subRoteiro3";
-            this.subRoteiro3.Size = new System.Drawing.Size(163, 172);
-            this.subRoteiro3.TabIndex = 6;
-            this.subRoteiro3.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subRoteiro3.TextoRoteiro = "Leis de Kirchhof";
+            this.rtrKirchhof.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito3;
+            this.rtrKirchhof.Location = new System.Drawing.Point(389, 94);
+            this.rtrKirchhof.Name = "rtrKirchhof";
+            this.rtrKirchhof.Size = new System.Drawing.Size(163, 172);
+            this.rtrKirchhof.TabIndex = 6;
+            this.rtrKirchhof.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtrKirchhof.TextoRoteiro = "Leis de Kirchhof";
+            this.rtrKirchhof.Click += new System.EventHandler(this.rtrKirchhof_Click);
             // 
             // subRoteiro4
             // 
@@ -151,7 +151,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.subRoteiro6);
             this.Controls.Add(this.subRoteiro5);
             this.Controls.Add(this.subRoteiro4);
-            this.Controls.Add(this.subRoteiro3);
+            this.Controls.Add(this.rtrKirchhof);
             this.Controls.Add(this.rtrLeisOhm);
             this.Controls.Add(this.subRoteiro1);
             this.Name = "TelaSimulador";
@@ -161,7 +161,7 @@ namespace Interface_Roteiros
             this.Controls.SetChildIndex(this.imgIcone, 0);
             this.Controls.SetChildIndex(this.subRoteiro1, 0);
             this.Controls.SetChildIndex(this.rtrLeisOhm, 0);
-            this.Controls.SetChildIndex(this.subRoteiro3, 0);
+            this.Controls.SetChildIndex(this.rtrKirchhof, 0);
             this.Controls.SetChildIndex(this.subRoteiro4, 0);
             this.Controls.SetChildIndex(this.subRoteiro5, 0);
             this.Controls.SetChildIndex(this.subRoteiro6, 0);
@@ -175,7 +175,7 @@ namespace Interface_Roteiros
 
         private SubRoteiro subRoteiro1;
         private SubRoteiro rtrLeisOhm;
-        private SubRoteiro subRoteiro3;
+        private SubRoteiro rtrKirchhof;
         private SubRoteiro subRoteiro4;
         private SubRoteiro subRoteiro5;
         private SubRoteiro subRoteiro6;

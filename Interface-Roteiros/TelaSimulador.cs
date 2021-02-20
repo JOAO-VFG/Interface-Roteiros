@@ -23,12 +23,6 @@ namespace Interface_Roteiros
             TelaDeInicio.Show();
         }
 
-        private void rtrLeisOhm_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new TelaCircuito() { TelaRetorno = this, }.Show();
-        }
-
         /*
          * Dá um feedback visual para o usuário identificiar que o mouse está
          * sobre o botão de sair
@@ -41,6 +35,12 @@ namespace Interface_Roteiros
         private void btnRetornar_MouseLeave(object sender, EventArgs e)
         {
             btnRetornar.Cursor = Cursors.Default;
+        }
+
+        private void rtrKirchhof_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new TelaCircuito() { TelaRetorno = this, }.Show();
         }
         // =====================================================================
     }

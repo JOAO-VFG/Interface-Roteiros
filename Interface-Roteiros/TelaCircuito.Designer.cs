@@ -50,22 +50,29 @@ namespace Interface_Roteiros
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Size = new System.Drawing.Size(600, 35);
             // 
             // btnSair
             // 
             this.btnSair.FlatAppearance.BorderSize = 0;
             this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
+            this.btnSair.Location = new System.Drawing.Point(557, 5);
             // 
             // btnMinimizar
             // 
             this.btnMinimizar.FlatAppearance.BorderSize = 0;
             this.btnMinimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
+            this.btnMinimizar.Location = new System.Drawing.Point(518, 5);
             // 
             // imgIcone
             // 
@@ -74,7 +81,8 @@ namespace Interface_Roteiros
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(46)))), ((int)(((byte)(66)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(54)))));
+            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.btnRetornar);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.btnResistor3);
@@ -86,7 +94,7 @@ namespace Interface_Roteiros
             this.panel1.Controls.Add(this.btnFonte);
             this.panel1.Location = new System.Drawing.Point(0, 350);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(715, 100);
+            this.panel1.Size = new System.Drawing.Size(600, 100);
             this.panel1.TabIndex = 4;
             // 
             // btnRetornar
@@ -182,13 +190,13 @@ namespace Interface_Roteiros
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.panel2.Location = new System.Drawing.Point(0, 345);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(715, 7);
+            this.panel2.Size = new System.Drawing.Size(600, 7);
             this.panel2.TabIndex = 5;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Interface_Roteiros.Properties.Resources.circuito_eletrico1;
-            this.pictureBox1.Location = new System.Drawing.Point(103, 68);
+            this.pictureBox1.Location = new System.Drawing.Point(52, 86);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(471, 207);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -199,7 +207,7 @@ namespace Interface_Roteiros
             // 
             this.lblFonte.AutoSize = true;
             this.lblFonte.Font = new System.Drawing.Font("Bahnschrift", 12F);
-            this.lblFonte.Location = new System.Drawing.Point(176, 168);
+            this.lblFonte.Location = new System.Drawing.Point(125, 186);
             this.lblFonte.Name = "lblFonte";
             this.lblFonte.Size = new System.Drawing.Size(36, 19);
             this.lblFonte.TabIndex = 7;
@@ -209,7 +217,7 @@ namespace Interface_Roteiros
             // 
             this.lblResistor1.AutoSize = true;
             this.lblResistor1.Font = new System.Drawing.Font("Bahnschrift", 12F);
-            this.lblResistor1.Location = new System.Drawing.Point(319, 168);
+            this.lblResistor1.Location = new System.Drawing.Point(268, 186);
             this.lblResistor1.Name = "lblResistor1";
             this.lblResistor1.Size = new System.Drawing.Size(28, 19);
             this.lblResistor1.TabIndex = 8;
@@ -219,7 +227,7 @@ namespace Interface_Roteiros
             // 
             this.lblResistor3.AutoSize = true;
             this.lblResistor3.Font = new System.Drawing.Font("Bahnschrift", 12F);
-            this.lblResistor3.Location = new System.Drawing.Point(492, 168);
+            this.lblResistor3.Location = new System.Drawing.Point(441, 186);
             this.lblResistor3.Name = "lblResistor3";
             this.lblResistor3.Size = new System.Drawing.Size(28, 19);
             this.lblResistor3.TabIndex = 9;
@@ -230,7 +238,7 @@ namespace Interface_Roteiros
             // 
             this.lblResistor2.AutoSize = true;
             this.lblResistor2.Font = new System.Drawing.Font("Bahnschrift", 12F);
-            this.lblResistor2.Location = new System.Drawing.Point(406, 46);
+            this.lblResistor2.Location = new System.Drawing.Point(355, 64);
             this.lblResistor2.Name = "lblResistor2";
             this.lblResistor2.Size = new System.Drawing.Size(32, 19);
             this.lblResistor2.TabIndex = 10;
@@ -240,7 +248,7 @@ namespace Interface_Roteiros
             // 
             this.lblV0.AutoSize = true;
             this.lblV0.Font = new System.Drawing.Font("Bahnschrift", 12F);
-            this.lblV0.Location = new System.Drawing.Point(559, 168);
+            this.lblV0.Location = new System.Drawing.Point(508, 186);
             this.lblV0.Name = "lblV0";
             this.lblV0.Size = new System.Drawing.Size(27, 19);
             this.lblV0.TabIndex = 11;
@@ -250,7 +258,7 @@ namespace Interface_Roteiros
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(273, 203);
+            this.label6.Location = new System.Drawing.Point(222, 221);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(12, 16);
             this.label6.TabIndex = 12;
@@ -260,7 +268,7 @@ namespace Interface_Roteiros
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(416, 102);
+            this.label7.Location = new System.Drawing.Point(365, 120);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(15, 16);
             this.label7.TabIndex = 13;
@@ -271,17 +279,25 @@ namespace Interface_Roteiros
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(516, 206);
+            this.label8.Location = new System.Drawing.Point(465, 224);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(15, 16);
             this.label8.TabIndex = 14;
             this.label8.Text = "3";
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.panel7.Location = new System.Drawing.Point(100, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 100);
+            this.panel7.TabIndex = 5;
+            // 
             // TelaCircuito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(215)))));
-            this.ClientSize = new System.Drawing.Size(715, 450);
+            this.ClientSize = new System.Drawing.Size(600, 450);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -342,5 +358,6 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnRetornar;
+        private System.Windows.Forms.Panel panel7;
     }
 }
