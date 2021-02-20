@@ -102,7 +102,7 @@ namespace Interface_Roteiros
 
         private void TelaInicial_Load(object sender, EventArgs e)
         {
-            TelaSimulador = new TelaSimulador() { Tela = this, };
+            TelaSimulador = new TelaSimulador() { TelaDeInicio = this, };
             TelaPdf = new TelaPDF() { TelaInicial = this, };
         }
 

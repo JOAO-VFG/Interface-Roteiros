@@ -10,7 +10,7 @@ namespace Interface_Roteiros
 {
     public partial class TelaSimulador : Interface_Roteiros.TelaInicialPadrao
     {
-        public TelaInicial Tela { get; set; }
+        public NovaTelaInicial TelaDeInicio { get; set; }
         public TelaSimulador()
         {
             InitializeComponent();
@@ -24,7 +24,7 @@ namespace Interface_Roteiros
         private void TelaSimulador_Load(object sender, EventArgs e)
         {
             telaRoteiros1.TelaAtual = this;
-            telaRoteiros1.TelaInicio = Tela;
+            telaRoteiros1.TelaInicio = TelaDeInicio;
         }
     }
 }

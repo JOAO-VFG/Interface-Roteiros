@@ -10,6 +10,9 @@ namespace Interface_Roteiros
 {
     public partial class NovaTelaInicial : Interface_Roteiros.TelaInicialPadrao
     {
+        public TelaSimulador TelaSimulador { get; set; }
+        public TelaPDF TelaPDF { get; set; }
+        public TelaSobre TelaSobre { get; set; }
         public NovaTelaInicial()
         {
             InitializeComponent();
@@ -17,7 +20,7 @@ namespace Interface_Roteiros
 
         private void NovaTelaInicial_Load(object sender, EventArgs e)
         {
-            boxSimulador.Tela = new TelaSimulador();
+            boxSimulador.Tela = new TelaSimulador() { TelaDeInicio = this, };
             boxSobre.Tela = new TelaSobre();
             boxPdf.Tela = new TelaPDF();
         }

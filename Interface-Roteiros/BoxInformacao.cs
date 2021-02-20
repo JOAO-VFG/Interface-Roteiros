@@ -46,6 +46,7 @@ namespace Interface_Roteiros
         }
         // Tela a ser carregada quando clicar no botão
         public TelaInicialPadrao Tela { get; set; }
+        public TelaInicialPadrao TelaDeInicio { get; set; }
 
         private readonly Color cinzaClaro = Color.FromArgb(58, 56, 59);
         private readonly Color cinzaEscuro = Color.FromArgb(28, 28, 28);
