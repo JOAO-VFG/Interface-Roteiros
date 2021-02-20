@@ -25,4 +25,3 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Releas
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface-Roteiros.csproj.CopyComplete
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface-Roteiros.exe
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface-Roteiros.pdb
-C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface-Roteiros.csprojAssemblyReference.cache
