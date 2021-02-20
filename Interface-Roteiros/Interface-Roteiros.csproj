@@ -80,11 +80,11 @@
     <Compile Include="EscolhaRoteiro.Designer.cs">
       <DependentUpon>EscolhaRoteiro.cs</DependentUpon>
     </Compile>
-    <Compile Include="NovaTelaInicial.cs">
+    <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NovaTelaInicial.Designer.cs">
-      <DependentUpon>NovaTelaInicial.cs</DependentUpon>
+    <Compile Include="TelaInicial.Designer.cs">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaPDF.cs">
       <SubType>Form</SubType>
@@ -158,8 +158,8 @@
     <EmbeddedResource Include="EscolhaRoteiro.resx">
       <DependentUpon>EscolhaRoteiro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NovaTelaInicial.resx">
-      <DependentUpon>NovaTelaInicial.cs</DependentUpon>
+    <EmbeddedResource Include="TelaInicial.resx">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -295,6 +295,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\software.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuito_background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

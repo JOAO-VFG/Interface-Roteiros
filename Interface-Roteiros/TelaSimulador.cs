@@ -10,7 +10,7 @@ namespace Interface_Roteiros
 {
     public partial class TelaSimulador : Interface_Roteiros.TelaInicialPadrao
     {
-        public NovaTelaInicial TelaDeInicio { get; set; }
+        public TelaInicial TelaDeInicio { get; set; }
         public TelaSimulador()
         {
             InitializeComponent();

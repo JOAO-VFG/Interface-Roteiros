@@ -2,7 +2,6 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Releas
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.BotaoPersonalizado.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.BoxInformacao.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.EscolhaRoteiro.resources
-C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.NovaTelaInicial.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.Properties.Resources.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.SubRoteiro.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.TelaAjustePadrao.resources
@@ -25,3 +24,4 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\bin\Releas
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface-Roteiros.csproj.CopyComplete
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface-Roteiros.exe
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface-Roteiros.pdb
+C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Release\Interface_Roteiros.TelaInicial.resources

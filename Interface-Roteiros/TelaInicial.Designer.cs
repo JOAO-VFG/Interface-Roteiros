@@ -1,7 +1,7 @@
 ﻿
 namespace Interface_Roteiros
 {
-    partial class NovaTelaInicial
+    partial class TelaInicial
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -29,7 +29,6 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NovaTelaInicial));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -65,7 +64,7 @@ namespace Interface_Roteiros
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::Interface_Roteiros.Properties.Resources.circuito_background;
             this.pictureBox1.Location = new System.Drawing.Point(0, 35);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(550, 311);
@@ -99,6 +98,7 @@ namespace Interface_Roteiros
             this.boxPdf.Size = new System.Drawing.Size(180, 140);
             this.boxPdf.TabIndex = 7;
             this.boxPdf.Tela = null;
+            this.boxPdf.TelaDeRetorno = null;
             this.boxPdf.TextoDaCaixa = "Cada tópico dispõe de um PDF para auxiliar o aluno em seus estudos";
             this.boxPdf.TextOnEnter = System.Drawing.Color.White;
             this.boxPdf.TextOnLeave = System.Drawing.Color.Black;
@@ -114,6 +114,7 @@ namespace Interface_Roteiros
             this.boxSobre.Size = new System.Drawing.Size(180, 140);
             this.boxSobre.TabIndex = 6;
             this.boxSobre.Tela = null;
+            this.boxSobre.TelaDeRetorno = null;
             this.boxSobre.TextoDaCaixa = "Este software visa o aprendizado do aluno em circuitos elétricos";
             this.boxSobre.TextOnEnter = System.Drawing.Color.White;
             this.boxSobre.TextOnLeave = System.Drawing.Color.Black;
@@ -129,13 +130,14 @@ namespace Interface_Roteiros
             this.boxSimulador.Size = new System.Drawing.Size(180, 140);
             this.boxSimulador.TabIndex = 5;
             this.boxSimulador.Tela = null;
+            this.boxSimulador.TelaDeRetorno = null;
             this.boxSimulador.TextoDaCaixa = "Cada tópico dispõe de um circuito organizado para que o aluno possa testar seus c" +
     "onhecimentos.";
             this.boxSimulador.TextOnEnter = System.Drawing.Color.White;
             this.boxSimulador.TextOnLeave = System.Drawing.Color.Black;
             this.boxSimulador.TituloDaCaixa = "Simulador";
             // 
-            // NovaTelaInicial
+            // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(550, 483);
@@ -145,7 +147,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.boxSobre);
             this.Controls.Add(this.boxSimulador);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "NovaTelaInicial";
+            this.Name = "TelaInicial";
             this.Load += new System.EventHandler(this.NovaTelaInicial_Load);
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);

@@ -113,6 +113,16 @@ namespace Interface_Roteiros.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap circuito_background {
+            get {
+                object obj = ResourceManager.GetObject("circuito_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap circuito_eletrico {
             get {
                 object obj = ResourceManager.GetObject("circuito_eletrico", resourceCulture);
@@ -206,6 +216,16 @@ namespace Interface_Roteiros.Properties {
         internal static System.Drawing.Bitmap circuito7 {
             get {
                 object obj = ResourceManager.GetObject("circuito7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap information {
+            get {
+                object obj = ResourceManager.GetObject("information", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +346,16 @@ namespace Interface_Roteiros.Properties {
         internal static System.Drawing.Bitmap sobre_icone {
             get {
                 object obj = ResourceManager.GetObject("sobre-icone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap software {
+            get {
+                object obj = ResourceManager.GetObject("software", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

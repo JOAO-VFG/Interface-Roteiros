@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Interface_Roteiros
 {
-    public partial class NovaTelaInicial : Interface_Roteiros.TelaInicialPadrao
+    public partial class TelaInicial : Interface_Roteiros.TelaInicialPadrao
     {
-        public NovaTelaInicial()
+        public TelaInicial()
         {
             InitializeComponent();
         }

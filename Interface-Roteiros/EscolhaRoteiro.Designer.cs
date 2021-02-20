@@ -46,19 +46,19 @@ namespace Interface_Roteiros
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(106)))), ((int)(((byte)(107)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.imgRoteiro);
             this.panel1.Location = new System.Drawing.Point(0, 45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(595, 200);
+            this.panel1.Size = new System.Drawing.Size(595, 197);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(146, 166);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(116, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(343, 23);
             this.label1.TabIndex = 5;
@@ -68,7 +68,7 @@ namespace Interface_Roteiros
             // imgRoteiro
             // 
             this.imgRoteiro.Image = global::Interface_Roteiros.Properties.Resources.circuito_eletrico1;
-            this.imgRoteiro.Location = new System.Drawing.Point(146, 1);
+            this.imgRoteiro.Location = new System.Drawing.Point(116, 3);
             this.imgRoteiro.Name = "imgRoteiro";
             this.imgRoteiro.Size = new System.Drawing.Size(343, 171);
             this.imgRoteiro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

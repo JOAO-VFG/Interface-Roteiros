@@ -117,13 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>É um programa didático para aprender o básico da disciplina de Circuitos Elétricos.
-
-Ele possui PDF's para auxilar o aprendizado e um simulador interno para praticar os exemplos e testar seu conhecimento.
-
-Por meio da simulação de cada circuito, o usuário poderá visualizar os roteiros de seis assuntos de suma importânncia para o aprendizado da disciplina.
-
-Versão: 1.0.0</value>
-  </data>
 </root>

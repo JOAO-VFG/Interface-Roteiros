@@ -12,7 +12,7 @@ namespace Interface_Roteiros
 {
     public partial class TelaRoteiros : UserControl
     {
-        public NovaTelaInicial TelaInicio { get; set; }
+        public TelaInicial TelaInicio { get; set; }
         public TelaSimulador TelaAtual { get; set; }
 
         public TelaRoteiros()

@@ -10,7 +10,7 @@ namespace Interface_Roteiros
 {
     public partial class TelaPDF : Interface_Roteiros.TelaInicialPadrao
     {
-        public NovaTelaInicial TelaInicial { get; set; }
+        public TelaInicial TelaInicial { get; set; }
         public TelaPDF()
         {
             InitializeComponent();
