@@ -156,6 +156,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.subRoteiro1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaSimulador";
+            this.Text = "Electrophorus";
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);
             this.Controls.SetChildIndex(this.btnMinimizar, 0);

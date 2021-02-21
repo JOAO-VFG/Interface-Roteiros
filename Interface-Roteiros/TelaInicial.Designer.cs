@@ -43,6 +43,7 @@ namespace Interface_Roteiros
             // lblTitulo
             // 
             this.lblTitulo.Size = new System.Drawing.Size(550, 35);
+            this.lblTitulo.Text = "Electrophorus";
             // 
             // btnSair
             // 
