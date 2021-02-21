@@ -15,12 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_4EDF4BBCAACE4EA0B616351D153325C8"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_934E6C99E90249E3ABEF0AB9671D3777"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -45,14 +39,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_9FA33E55B58E11CD57675F9014BAA01E"
-        "OwnerKey" = "8:_934E6C99E90249E3ABEF0AB9671D3777"
+        "MsmKey" = "8:_B0B4B42FD57047E6B552066039BDA58E"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B0B4B42FD57047E6B552066039BDA58E"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_CC034C08895B8E6CFF6C544AA5CE06D2"
+        "OwnerKey" = "8:_934E6C99E90249E3ABEF0AB9671D3777"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -100,7 +94,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9FA33E55B58E11CD57675F9014BAA01E"
+        "OwnerKey" = "8:_CC034C08895B8E6CFF6C544AA5CE06D2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -134,6 +128,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -196,26 +198,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4EDF4BBCAACE4EA0B616351D153325C8"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\icone2.ico"
-            "TargetName" = "8:icone2.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_1CDE471666884114B8FA5EB26D53F942"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9F78011C76978BCE9F326BBF528627B4"
             {
             "AssemblyRegister" = "3:1"
@@ -230,37 +212,6 @@
                     }
                 }
             "SourcePath" = "8:MetroFramework.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_1CDE471666884114B8FA5EB26D53F942"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9FA33E55B58E11CD57675F9014BAA01E"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:XanderUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_9FA33E55B58E11CD57675F9014BAA01E"
-                    {
-                    "Name" = "8:XanderUI.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:XanderUI.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_1CDE471666884114B8FA5EB26D53F942"
@@ -296,6 +247,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CC034C08895B8E6CFF6C544AA5CE06D2"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:XanderUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_CC034C08895B8E6CFF6C544AA5CE06D2"
+                    {
+                    "Name" = "8:XanderUI.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:XanderUI.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_1CDE471666884114B8FA5EB26D53F942"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CE385A62052289E6D683DA1A0B3975D9"
@@ -579,7 +561,7 @@
             "Target" = "8:_934E6C99E90249E3ABEF0AB9671D3777"
             "Folder" = "8:_E2B70753258D45EC8B2F5939D75E8C64"
             "WorkingFolder" = "8:_1CDE471666884114B8FA5EB26D53F942"
-            "Icon" = "8:_4EDF4BBCAACE4EA0B616351D153325C8"
+            "Icon" = "8:"
             "Feature" = "8:"
             }
         }
@@ -1095,7 +1077,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_934E6C99E90249E3ABEF0AB9671D3777"
             {
-            "SourcePath" = "8:..\\Interface-Roteiros\\obj\\Release\\Interface-Roteiros.exe"
+            "SourcePath" = "8:..\\Interface-Roteiros\\obj\\Debug\\Interface-Roteiros.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_1CDE471666884114B8FA5EB26D53F942"

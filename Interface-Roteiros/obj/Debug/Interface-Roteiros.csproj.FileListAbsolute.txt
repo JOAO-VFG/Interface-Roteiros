@@ -30,7 +30,6 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaAjusteResistor.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaInicialPadrao.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.BotaoPersonalizado.resources
-C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csprojAssemblyReference.cache
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaCircuito.resources
 C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\bin\Debug\Interface-Roteiros.exe.config
 C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\bin\Debug\Interface-Roteiros.exe
@@ -61,3 +60,4 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaPDF.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaSimulador.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaSobre.resources
+C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csprojAssemblyReference.cache

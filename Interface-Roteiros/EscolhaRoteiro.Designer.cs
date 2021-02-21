@@ -114,12 +114,17 @@ namespace Interface_Roteiros
             this.btnPdf.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPdf.BackgroundImage")));
             this.btnPdf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPdf.FlatAppearance.BorderSize = 0;
+            this.btnPdf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPdf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnPdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPdf.Location = new System.Drawing.Point(550, 8);
             this.btnPdf.Name = "btnPdf";
             this.btnPdf.Size = new System.Drawing.Size(24, 24);
             this.btnPdf.TabIndex = 2;
             this.btnPdf.UseVisualStyleBackColor = true;
+            this.btnPdf.Click += new System.EventHandler(this.btnPdf_Click);
+            this.btnPdf.MouseEnter += new System.EventHandler(this.btnPdf_MouseEnter);
+            this.btnPdf.MouseLeave += new System.EventHandler(this.btnPdf_MouseLeave);
             // 
             // imgImagem
             // 

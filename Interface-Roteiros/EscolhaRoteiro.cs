@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Interface_Roteiros
 {
@@ -70,6 +65,35 @@ namespace Interface_Roteiros
             // Atribui a imagem ao lado do texto
             sinalMais = Properties.Resources.plus_sign;
             sinalMenos = Properties.Resources.minus_sign;
+        }
+
+        /*
+         * Altera o ícone do curso do mouse para dar feedback visual 
+         * ao saiur/entrar de cima do componente*/
+        private void btnPdf_MouseEnter(object sender, EventArgs e)
+        {
+            btnPdf.Cursor = Cursors.Hand;
+        }
+
+        private void btnPdf_MouseLeave(object sender, EventArgs e)
+        {
+            btnPdf.Cursor = Cursors.Default;
+        }
+
+        private void btnPdf_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start("pdf-leis-kirchhof.pdf");
+            }
+            catch
+            {
+                var botao = MessageBoxButtons.OK;
+                var icon = MessageBoxIcon.Error;
+                var titulo = "PDF";
+                var mensagem = "Não foi possível abrir o pdf";
+                MessageBox.Show(mensagem, titulo, botao, icon);
+            }
         }
     }
 }
