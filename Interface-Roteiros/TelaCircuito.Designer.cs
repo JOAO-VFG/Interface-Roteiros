@@ -311,7 +311,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaCircuito";
-            this.Text = "S";
+            this.Text = "Electrophorus";
             this.Load += new System.EventHandler(this.TelaCircuitoTeste_Load);
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);

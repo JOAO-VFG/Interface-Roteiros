@@ -44,7 +44,7 @@ namespace Interface_Roteiros
             // lblTitulo
             // 
             this.lblTitulo.Size = new System.Drawing.Size(595, 35);
-            this.lblTitulo.Text = "Simulador Eletrônico";
+            this.lblTitulo.Text = "Electrophorus";
             // 
             // btnSair
             // 
@@ -143,6 +143,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaPDF";
+            this.Text = "Electrophorus";
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
