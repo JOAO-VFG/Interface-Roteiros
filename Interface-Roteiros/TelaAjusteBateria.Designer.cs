@@ -29,6 +29,7 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaAjusteBateria));
             ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tckSlider)).BeginInit();
             this.panPainel.SuspendLayout();
@@ -46,10 +47,15 @@ namespace Interface_Roteiros
             // 
             this.lblGrandeza.Text = "Tensão";
             // 
+            // panPainel
+            // 
+            this.panPainel.Size = new System.Drawing.Size(410, 239);
+            // 
             // TelaAjusteBateria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(410, 240);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaAjusteBateria";
             this.Load += new System.EventHandler(this.TelaAjusteBateria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).EndInit();

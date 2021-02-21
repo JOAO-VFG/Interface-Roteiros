@@ -154,6 +154,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.rtrKirchhof);
             this.Controls.Add(this.rtrLeisOhm);
             this.Controls.Add(this.subRoteiro1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaSimulador";
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);

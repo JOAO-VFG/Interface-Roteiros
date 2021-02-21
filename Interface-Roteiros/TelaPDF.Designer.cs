@@ -141,6 +141,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.escolhaRoteiro1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaPDF";
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);
