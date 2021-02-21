@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface-Roteiros", "Interface-Roteiros\Interface-Roteiros.csproj", "{BCE2363B-3C7D-4028-8104-4172286F4333}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador", "Instalador\Instalador.vdproj", "{A862F0CC-3D8C-4F72-BAF2-28BE0C2F6946}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{BCE2363B-3C7D-4028-8104-4172286F4333}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCE2363B-3C7D-4028-8104-4172286F4333}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCE2363B-3C7D-4028-8104-4172286F4333}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A862F0CC-3D8C-4F72-BAF2-28BE0C2F6946}.Debug|Any CPU.ActiveCfg = Debug
-		{A862F0CC-3D8C-4F72-BAF2-28BE0C2F6946}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
