@@ -119,11 +119,11 @@
     <Compile Include="EscolhaRoteiro.Designer.cs">
       <DependentUpon>EscolhaRoteiro.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaCircuito5.cs">
-      <SubType>Form</SubType>
+    <Compile Include="JanelaMenu.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TelaCircuito5.Designer.cs">
-      <DependentUpon>TelaCircuito5.cs</DependentUpon>
+    <Compile Include="JanelaMenu.Designer.cs">
+      <DependentUpon>JanelaMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
@@ -203,8 +203,8 @@
     <EmbeddedResource Include="EscolhaRoteiro.resx">
       <DependentUpon>EscolhaRoteiro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaCircuito5.resx">
-      <DependentUpon>TelaCircuito5.cs</DependentUpon>
+    <EmbeddedResource Include="JanelaMenu.resx">
+      <DependentUpon>JanelaMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
