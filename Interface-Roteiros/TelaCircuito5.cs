@@ -10,10 +10,17 @@ namespace Interface_Roteiros
 {
     public partial class TelaCircuito5 : Interface_Roteiros.TelaInicialPadrao
     {
-        public TelaSimulador TelaDeRetorno { get; set; }
+        public TelaSimulador TelaRetorno { get; set; }
         public TelaCircuito5()
         {
             InitializeComponent();
+        }
+
+        // Fecha a janela atual e exibe a anterior, antes oculta
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+            TelaRetorno.Show();
         }
     }
 }

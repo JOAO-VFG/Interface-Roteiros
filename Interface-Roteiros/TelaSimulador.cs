@@ -44,6 +44,7 @@ namespace Interface_Roteiros
             new TelaCircuito() { TelaRetorno = this, }.Show();
         }
 
+        // Abre a janela do cicuito do teorema de Norton e Thévenin
         private void rtrNortonThevenin_Click(object sender, EventArgs e)
         {
             this.Hide();
