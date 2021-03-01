@@ -48,7 +48,7 @@ namespace Interface_Roteiros
         private void rtrNortonThevenin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new TelaCircuito5().Show();
+            new TelaCircuito5() { TelaDeRetorno = this, }.Show();
         }
     }
 }

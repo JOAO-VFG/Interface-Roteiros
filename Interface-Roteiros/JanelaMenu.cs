@@ -77,7 +77,7 @@ namespace Interface_Roteiros
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             TelaDeRetorno.Show();
-            TelaDeRetorno.Close();
+            TelaAtual.Close();
         }
     }
 }

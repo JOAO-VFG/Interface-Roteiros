@@ -33,6 +33,10 @@ namespace Interface_Roteiros
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.SuspendLayout();
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Text = "Electrophorus";
+            // 
             // btnSair
             // 
             this.btnSair.FlatAppearance.BorderSize = 0;
@@ -45,10 +49,16 @@ namespace Interface_Roteiros
             this.btnMinimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             // 
+            // imgIcone
+            // 
+            this.imgIcone.Image = global::Interface_Roteiros.Properties.Resources.circuito_icone;
+            // 
             // janelaMenu1
             // 
             this.janelaMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.janelaMenu1.Location = new System.Drawing.Point(0, 35);
+            this.janelaMenu1.MaximumSize = new System.Drawing.Size(120, 375);
+            this.janelaMenu1.MinimumSize = new System.Drawing.Size(38, 375);
             this.janelaMenu1.Name = "janelaMenu1";
             this.janelaMenu1.Size = new System.Drawing.Size(120, 375);
             this.janelaMenu1.TabIndex = 4;
@@ -59,6 +69,7 @@ namespace Interface_Roteiros
             this.ClientSize = new System.Drawing.Size(715, 410);
             this.Controls.Add(this.janelaMenu1);
             this.Name = "TelaCircuito5";
+            this.Load += new System.EventHandler(this.TelaCircuito5_Load);
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
