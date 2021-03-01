@@ -125,6 +125,12 @@
     <Compile Include="JanelaMenu.Designer.cs">
       <DependentUpon>JanelaMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaCircuito5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaCircuito5.Designer.cs">
+      <DependentUpon>TelaCircuito5.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JanelaMenu.resx">
       <DependentUpon>JanelaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaCircuito5.resx">
+      <DependentUpon>TelaCircuito5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
@@ -369,6 +378,8 @@
   <ItemGroup>
     <Content Include="icone.ico" />
     <Content Include="icone2.ico" />
+    <None Include="Resources\toggleOn.png" />
+    <None Include="Resources\toggleOff.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
