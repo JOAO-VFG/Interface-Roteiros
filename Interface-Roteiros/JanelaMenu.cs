@@ -69,8 +69,12 @@ namespace Interface_Roteiros
         // Ao criar a janela, a imagem dos botões são carregadas
         private void JanelaMenu_Load(object sender, EventArgs e)
         {
+            this.BringToFront();
             btnPainel.Image = botaoOn;
             btnTexto.Image = botaoOn;
+            // Fecha a Janela
+            panMenu.Hide();
+            this.Size = this.MinimumSize;
         }
 
         // Retornar a tela inicial
