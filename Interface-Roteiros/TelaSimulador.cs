@@ -37,11 +37,17 @@ namespace Interface_Roteiros
             btnRetornar.Cursor = Cursors.Default;
         }
 
+        // Abre a janela do circuito das leis de Kirchhof
         private void rtrKirchhof_Click(object sender, EventArgs e)
         {
             this.Hide();
             new TelaCircuito() { TelaRetorno = this, }.Show();
         }
-        // =====================================================================
+
+        private void rtrNortonThevenin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new TelaCircuito5() { TelaRetorno = this, }.Show();
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace Interface_Roteiros
             this.rtrLeisOhm = new Interface_Roteiros.SubRoteiro();
             this.rtrKirchhof = new Interface_Roteiros.SubRoteiro();
             this.subRoteiro4 = new Interface_Roteiros.SubRoteiro();
-            this.subRoteiro5 = new Interface_Roteiros.SubRoteiro();
+            this.rtrNortonThevenin = new Interface_Roteiros.SubRoteiro();
             this.subRoteiro6 = new Interface_Roteiros.SubRoteiro();
             this.btnRetornar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
@@ -104,15 +104,16 @@ namespace Interface_Roteiros
             this.subRoteiro4.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subRoteiro4.TextoRoteiro = "Super Nós e Super Malhas";
             // 
-            // subRoteiro5
+            // rtrNortonThevenin
             // 
-            this.subRoteiro5.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito5;
-            this.subRoteiro5.Location = new System.Drawing.Point(207, 291);
-            this.subRoteiro5.Name = "subRoteiro5";
-            this.subRoteiro5.Size = new System.Drawing.Size(163, 172);
-            this.subRoteiro5.TabIndex = 8;
-            this.subRoteiro5.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subRoteiro5.TextoRoteiro = "Teorema de Northon e Thévenin";
+            this.rtrNortonThevenin.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito5;
+            this.rtrNortonThevenin.Location = new System.Drawing.Point(207, 291);
+            this.rtrNortonThevenin.Name = "rtrNortonThevenin";
+            this.rtrNortonThevenin.Size = new System.Drawing.Size(163, 172);
+            this.rtrNortonThevenin.TabIndex = 8;
+            this.rtrNortonThevenin.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtrNortonThevenin.TextoRoteiro = "Teorema de Northon e Thévenin";
+            this.rtrNortonThevenin.Click += new System.EventHandler(this.rtrNortonThevenin_Click);
             // 
             // subRoteiro6
             // 
@@ -149,7 +150,7 @@ namespace Interface_Roteiros
             this.ClientSize = new System.Drawing.Size(575, 493);
             this.Controls.Add(this.btnRetornar);
             this.Controls.Add(this.subRoteiro6);
-            this.Controls.Add(this.subRoteiro5);
+            this.Controls.Add(this.rtrNortonThevenin);
             this.Controls.Add(this.subRoteiro4);
             this.Controls.Add(this.rtrKirchhof);
             this.Controls.Add(this.rtrLeisOhm);
@@ -165,7 +166,7 @@ namespace Interface_Roteiros
             this.Controls.SetChildIndex(this.rtrLeisOhm, 0);
             this.Controls.SetChildIndex(this.rtrKirchhof, 0);
             this.Controls.SetChildIndex(this.subRoteiro4, 0);
-            this.Controls.SetChildIndex(this.subRoteiro5, 0);
+            this.Controls.SetChildIndex(this.rtrNortonThevenin, 0);
             this.Controls.SetChildIndex(this.subRoteiro6, 0);
             this.Controls.SetChildIndex(this.btnRetornar, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
@@ -179,7 +180,7 @@ namespace Interface_Roteiros
         private SubRoteiro rtrLeisOhm;
         private SubRoteiro rtrKirchhof;
         private SubRoteiro subRoteiro4;
-        private SubRoteiro subRoteiro5;
+        private SubRoteiro rtrNortonThevenin;
         private SubRoteiro subRoteiro6;
         private System.Windows.Forms.Button btnRetornar;
     }
