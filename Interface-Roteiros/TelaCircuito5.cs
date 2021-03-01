@@ -20,6 +20,9 @@ namespace Interface_Roteiros
         {
             janelaMenu1.TelaDeRetorno = this.TelaDeRetorno;
             janelaMenu1.TelaAtual = this;
+            Label[] array = { lblCorrente, lblResistor1, lblResistor2, lblResistor3};
+            janelaMenu1.Textos = array;
+            janelaMenu1.Painel = panPainel;
         }
     }
 }

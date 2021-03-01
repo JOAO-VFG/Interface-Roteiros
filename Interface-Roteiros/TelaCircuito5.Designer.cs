@@ -46,6 +46,10 @@ namespace Interface_Roteiros
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblCorrente = new System.Windows.Forms.Label();
+            this.lblResistor1 = new System.Windows.Forms.Label();
+            this.lblResistor3 = new System.Windows.Forms.Label();
+            this.lblResistor2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panPainel.SuspendLayout();
@@ -86,6 +90,7 @@ namespace Interface_Roteiros
             this.janelaMenu1.TabIndex = 4;
             this.janelaMenu1.TelaAtual = null;
             this.janelaMenu1.TelaDeRetorno = null;
+            this.janelaMenu1.Textos = null;
             // 
             // pictureBox1
             // 
@@ -113,7 +118,9 @@ namespace Interface_Roteiros
             this.panPainel.Controls.Add(this.label3);
             this.panPainel.Controls.Add(this.label2);
             this.panPainel.Controls.Add(this.label1);
-            this.panPainel.Location = new System.Drawing.Point(433, 273);
+            this.panPainel.Location = new System.Drawing.Point(400, 273);
+            this.panPainel.MaximumSize = new System.Drawing.Size(282, 137);
+            this.panPainel.MinimumSize = new System.Drawing.Size(282, 29);
             this.panPainel.Name = "panPainel";
             this.panPainel.Size = new System.Drawing.Size(282, 137);
             this.panPainel.TabIndex = 6;
@@ -151,7 +158,7 @@ namespace Interface_Roteiros
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(119)))), ((int)(((byte)(120)))));
-            this.panel4.Location = new System.Drawing.Point(125, 28);
+            this.panel4.Location = new System.Drawing.Point(125, 29);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(2, 106);
             this.panel4.TabIndex = 7;
@@ -179,9 +186,9 @@ namespace Interface_Roteiros
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(136, 109);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 19);
+            this.label6.Size = new System.Drawing.Size(32, 19);
             this.label6.TabIndex = 9;
-            this.label6.Text = "0 W";
+            this.label6.Text = "0 A";
             // 
             // label5
             // 
@@ -211,9 +218,9 @@ namespace Interface_Roteiros
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(31, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 19);
+            this.label4.Size = new System.Drawing.Size(74, 19);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Potência";
+            this.label4.Text = "Corrente";
             // 
             // label3
             // 
@@ -249,14 +256,60 @@ namespace Interface_Roteiros
             this.label1.Text = "Resistor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblCorrente
+            // 
+            this.lblCorrente.AutoSize = true;
+            this.lblCorrente.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorrente.Location = new System.Drawing.Point(135, 156);
+            this.lblCorrente.Name = "lblCorrente";
+            this.lblCorrente.Size = new System.Drawing.Size(30, 23);
+            this.lblCorrente.TabIndex = 7;
+            this.lblCorrente.Text = "4A";
+            // 
+            // lblResistor1
+            // 
+            this.lblResistor1.AutoSize = true;
+            this.lblResistor1.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistor1.Location = new System.Drawing.Point(327, 165);
+            this.lblResistor1.Name = "lblResistor1";
+            this.lblResistor1.Size = new System.Drawing.Size(39, 23);
+            this.lblResistor1.TabIndex = 8;
+            this.lblResistor1.Text = "10 Ω";
+            // 
+            // lblResistor3
+            // 
+            this.lblResistor3.AutoSize = true;
+            this.lblResistor3.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistor3.Location = new System.Drawing.Point(502, 165);
+            this.lblResistor3.Name = "lblResistor3";
+            this.lblResistor3.Size = new System.Drawing.Size(33, 23);
+            this.lblResistor3.TabIndex = 9;
+            this.lblResistor3.Text = "5 Ω";
+            this.lblResistor3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblResistor2
+            // 
+            this.lblResistor2.AutoSize = true;
+            this.lblResistor2.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistor2.Location = new System.Drawing.Point(421, 44);
+            this.lblResistor2.Name = "lblResistor2";
+            this.lblResistor2.Size = new System.Drawing.Size(39, 23);
+            this.lblResistor2.TabIndex = 10;
+            this.lblResistor2.Text = "10 Ω";
+            // 
             // TelaCircuito5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(715, 410);
+            this.Controls.Add(this.lblResistor2);
+            this.Controls.Add(this.lblResistor3);
+            this.Controls.Add(this.lblResistor1);
+            this.Controls.Add(this.lblCorrente);
             this.Controls.Add(this.panPainel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.janelaMenu1);
             this.Name = "TelaCircuito5";
+            this.Text = "Electrophorus";
             this.Load += new System.EventHandler(this.TelaCircuito5_Load);
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);
@@ -265,6 +318,10 @@ namespace Interface_Roteiros
             this.Controls.SetChildIndex(this.janelaMenu1, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
             this.Controls.SetChildIndex(this.panPainel, 0);
+            this.Controls.SetChildIndex(this.lblCorrente, 0);
+            this.Controls.SetChildIndex(this.lblResistor1, 0);
+            this.Controls.SetChildIndex(this.lblResistor3, 0);
+            this.Controls.SetChildIndex(this.lblResistor2, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panPainel.ResumeLayout(false);
@@ -296,5 +353,9 @@ namespace Interface_Roteiros
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblCorrente;
+        private System.Windows.Forms.Label lblResistor1;
+        private System.Windows.Forms.Label lblResistor3;
+        private System.Windows.Forms.Label lblResistor2;
     }
 }
