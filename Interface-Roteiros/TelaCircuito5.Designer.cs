@@ -205,6 +205,8 @@ namespace Interface_Roteiros
             // 
             this.trackBar1.AutoSize = false;
             this.trackBar1.Location = new System.Drawing.Point(125, 37);
+            this.trackBar1.Maximum = 100;
+            this.trackBar1.Minimum = 1;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(154, 27);
             this.trackBar1.TabIndex = 7;
