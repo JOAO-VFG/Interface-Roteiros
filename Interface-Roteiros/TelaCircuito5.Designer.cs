@@ -86,6 +86,7 @@ namespace Interface_Roteiros
             this.janelaMenu1.MaximumSize = new System.Drawing.Size(120, 375);
             this.janelaMenu1.MinimumSize = new System.Drawing.Size(38, 375);
             this.janelaMenu1.Name = "janelaMenu1";
+            this.janelaMenu1.Painel = null;
             this.janelaMenu1.Size = new System.Drawing.Size(38, 375);
             this.janelaMenu1.TabIndex = 4;
             this.janelaMenu1.TelaAtual = null;
@@ -95,9 +96,9 @@ namespace Interface_Roteiros
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(90, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(102, 74);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(491, 212);
+            this.pictureBox1.Size = new System.Drawing.Size(484, 205);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -262,7 +263,7 @@ namespace Interface_Roteiros
             // 
             this.lblCorrente.AutoSize = true;
             this.lblCorrente.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorrente.Location = new System.Drawing.Point(135, 156);
+            this.lblCorrente.Location = new System.Drawing.Point(147, 175);
             this.lblCorrente.Name = "lblCorrente";
             this.lblCorrente.Size = new System.Drawing.Size(30, 23);
             this.lblCorrente.TabIndex = 7;
@@ -272,7 +273,7 @@ namespace Interface_Roteiros
             // 
             this.lblResistor1.AutoSize = true;
             this.lblResistor1.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResistor1.Location = new System.Drawing.Point(327, 165);
+            this.lblResistor1.Location = new System.Drawing.Point(341, 170);
             this.lblResistor1.Name = "lblResistor1";
             this.lblResistor1.Size = new System.Drawing.Size(39, 23);
             this.lblResistor1.TabIndex = 8;
@@ -282,7 +283,7 @@ namespace Interface_Roteiros
             // 
             this.lblResistor3.AutoSize = true;
             this.lblResistor3.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResistor3.Location = new System.Drawing.Point(502, 165);
+            this.lblResistor3.Location = new System.Drawing.Point(521, 170);
             this.lblResistor3.Name = "lblResistor3";
             this.lblResistor3.Size = new System.Drawing.Size(33, 23);
             this.lblResistor3.TabIndex = 9;
@@ -293,7 +294,7 @@ namespace Interface_Roteiros
             // 
             this.lblResistor2.AutoSize = true;
             this.lblResistor2.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResistor2.Location = new System.Drawing.Point(421, 44);
+            this.lblResistor2.Location = new System.Drawing.Point(439, 54);
             this.lblResistor2.Name = "lblResistor2";
             this.lblResistor2.Size = new System.Drawing.Size(39, 23);
             this.lblResistor2.TabIndex = 10;
