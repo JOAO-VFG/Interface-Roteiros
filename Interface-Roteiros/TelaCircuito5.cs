@@ -18,11 +18,12 @@ namespace Interface_Roteiros
 
         private void TelaCircuito5_Load(object sender, EventArgs e)
         {
-            janelaMenu1.TelaDeRetorno = this.TelaDeRetorno;
-            janelaMenu1.TelaAtual = this;
-            Label[] array = { lblCorrente, lblResistor1, lblResistor2, lblResistor3};
-            janelaMenu1.Textos = array;
-            janelaMenu1.Painel = panPainel;
+        }
+
+        private void btnRetornar_Click(object sender, EventArgs e)
+        {
+            TelaDeRetorno.Show();
+            this.Close();
         }
     }
 }

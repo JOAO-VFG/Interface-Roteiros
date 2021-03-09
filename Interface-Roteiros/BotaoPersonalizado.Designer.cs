@@ -51,7 +51,7 @@ namespace Interface_Roteiros
             this.btnPersonalizado.ForeColor = System.Drawing.Color.White;
             this.btnPersonalizado.Location = new System.Drawing.Point(0, 0);
             this.btnPersonalizado.Name = "btnPersonalizado";
-            this.btnPersonalizado.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
+            this.btnPersonalizado.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.btnPersonalizado.Size = new System.Drawing.Size(100, 96);
             this.btnPersonalizado.TabIndex = 2;
             this.btnPersonalizado.Text = "Text";
