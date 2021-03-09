@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Interface_Roteiros
 {
-    public partial class TelaCircuito : Interface_Roteiros.TelaInicialPadrao
+    public partial class TelaLeisDeKirchhof : Interface_Roteiros.TelaInicialPadrao
     {
         // Tela anterior
         public TelaSimulador TelaRetorno { get; set; }
@@ -22,7 +22,7 @@ namespace Interface_Roteiros
         private Resistor[] resistor = new Resistor[3];
         // Circuito
         private Circuito circuito;
-        public TelaCircuito()
+        public TelaLeisDeKirchhof()
         {
             InitializeComponent();
         }

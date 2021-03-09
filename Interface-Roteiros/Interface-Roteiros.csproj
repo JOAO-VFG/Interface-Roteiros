@@ -126,11 +126,11 @@
     <Compile Include="JanelaMenu.Designer.cs">
       <DependentUpon>JanelaMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaCircuito5.cs">
+    <Compile Include="TelaNortonThevenin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaCircuito5.Designer.cs">
-      <DependentUpon>TelaCircuito5.cs</DependentUpon>
+    <Compile Include="TelaNortonThevenin.Designer.cs">
+      <DependentUpon>TelaNortonThevenin.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
@@ -171,11 +171,11 @@
     <Compile Include="TelaAjusteResistor.Designer.cs">
       <DependentUpon>TelaAjusteResistor.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaCircuito.cs">
+    <Compile Include="TelaLeisDeKirchhof.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaCircuito.Designer.cs">
-      <DependentUpon>TelaCircuito.cs</DependentUpon>
+    <Compile Include="TelaLeisDeKirchhof.Designer.cs">
+      <DependentUpon>TelaLeisDeKirchhof.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaInicialPadrao.cs">
       <SubType>Form</SubType>
@@ -213,8 +213,8 @@
     <EmbeddedResource Include="JanelaMenu.resx">
       <DependentUpon>JanelaMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaCircuito5.resx">
-      <DependentUpon>TelaCircuito5.cs</DependentUpon>
+    <EmbeddedResource Include="TelaNortonThevenin.resx">
+      <DependentUpon>TelaNortonThevenin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
@@ -241,8 +241,8 @@
     <EmbeddedResource Include="TelaAjusteResistor.resx">
       <DependentUpon>TelaAjusteResistor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaCircuito.resx">
-      <DependentUpon>TelaCircuito.cs</DependentUpon>
+    <EmbeddedResource Include="TelaLeisDeKirchhof.resx">
+      <DependentUpon>TelaLeisDeKirchhof.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaInicialPadrao.resx">
       <DependentUpon>TelaInicialPadrao.cs</DependentUpon>

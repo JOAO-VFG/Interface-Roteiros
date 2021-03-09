@@ -1,7 +1,7 @@
 ﻿
 namespace Interface_Roteiros
 {
-    partial class TelaCircuito5
+    partial class TelaNortonThevenin
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -29,7 +29,7 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCircuito5));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaNortonThevenin));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblCorrente = new System.Windows.Forms.Label();
             this.lblResistor1 = new System.Windows.Forms.Label();
@@ -144,7 +144,7 @@ namespace Interface_Roteiros
             this.panel1.Controls.Add(this.btnRetornar);
             this.panel1.Location = new System.Drawing.Point(0, 310);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(610, 100);
+            this.panel1.Size = new System.Drawing.Size(600, 100);
             this.panel1.TabIndex = 11;
             // 
             // panel7

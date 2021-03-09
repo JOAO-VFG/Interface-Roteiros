@@ -8,10 +8,10 @@ using System.Windows.Forms;
 
 namespace Interface_Roteiros
 {
-    public partial class TelaCircuito5 : Interface_Roteiros.TelaInicialPadrao
+    public partial class TelaNortonThevenin : Interface_Roteiros.TelaInicialPadrao
     {
         public TelaSimulador TelaDeRetorno { get; set; }
-        public TelaCircuito5()
+        public TelaNortonThevenin()
         {
             InitializeComponent();
         }

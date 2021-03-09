@@ -1,7 +1,7 @@
 ﻿
 namespace Interface_Roteiros
 {
-    partial class TelaCircuito
+    partial class TelaLeisDeKirchhof
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -29,7 +29,7 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCircuito));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLeisDeKirchhof));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnRetornar = new System.Windows.Forms.Button();

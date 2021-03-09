@@ -41,14 +41,14 @@ namespace Interface_Roteiros
         private void rtrKirchhof_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new TelaCircuito() { TelaRetorno = this, }.Show();
+            new TelaLeisDeKirchhof() { TelaRetorno = this, }.Show();
         }
 
         // Abre a janela do cicuito do teorema de Norton e Thévenin
         private void rtrNortonThevenin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new TelaCircuito5() { TelaDeRetorno = this, }.Show();
+            new TelaNortonThevenin() { TelaDeRetorno = this, }.Show();
         }
     }
 }
