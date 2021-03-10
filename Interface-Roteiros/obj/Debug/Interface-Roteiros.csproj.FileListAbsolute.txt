@@ -68,4 +68,3 @@ C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaLeisDeKirchhof.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaLeisDeOhm.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.CaixaComponente.resources
-C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.MenuComponentes.resources

@@ -12,45 +12,29 @@ namespace Interface_Roteiros
 {
     public partial class CaixaComponente : UserControl
     {
+        private Color _panCorHover;
+
+        public Color PanelCorHover
+        {
+            get { return _panCorHover; }
+            set { _panCorHover = value; }
+        }
+
         public string Nome
         {
-            get { return lblNomeCompoenente.Text; }
-            set { lblNomeCompoenente.Text = value; }
+            get { return lblNomeComponente.Text; }
+            set { lblNomeComponente.Text = value; }
         }
-        public Color CorOnSelected
-        {
-            get { return panSelecionado.BackColor; }
-            set { panSelecionado.BackColor = value; }
-        }
+        
         public Image ImagemComponent
         {
             get { return imgImagem.Image; }
             set { imgImagem.Image = value; }
         }
-        public override Color ForeColor
-        {
-            get { return lblNomeCompoenente.ForeColor; }
-            set { lblNomeCompoenente.ForeColor = value; }
-        }
-
-        public override Color BackColor
-        {
-            get { return lblNomeCompoenente.BackColor; }
-            set
-            {
-                lblNomeCompoenente.BackColor = value;
-                imgImagem.BackColor = value;
-            }
-        }
-
-        // Cor do componente quando o mouse sai do campo
-        private Color BackColorLeave;
 
         public bool IsOpen { get; private set; }
-        private readonly Color corPadrao = Color.Transparent;
         // Campos privados para evento Enter
         private readonly Color corRosa = Color.FromArgb(193, 27, 222);
-        private readonly Color corBranca = Color.White;
 
         public CaixaComponente()
         {
@@ -76,46 +60,42 @@ namespace Interface_Roteiros
         // Ocorre quando o mouse passa por cima
         private void lblNomeCompoenente_MouseEnter(object sender, EventArgs e)
         {
-            lblNomeCompoenente.BackColor = corRosa;
-            panSelecionado.BackColor = corBranca;
-            imgImagem.BackColor = corRosa;
+            panSelecionado.BackColor = Color.White;
+            lblNomeComponente.BackColor = corRosa;
         }
 
         private void lblNomeCompoenente_MouseLeave(object sender, EventArgs e)
         {
             if(IsOpen)
             {
-                panSelecionado.BackColor = CorOnSelected;
+                panSelecionado.BackColor = PanelCorHover;
             }
             else
             {
-                panSelecionado.BackColor = corPadrao;
+                panSelecionado.BackColor = Color.Transparent;
             }
-
-            lblNomeCompoenente.BackColor = BackColorLeave;
-            imgImagem.BackColor = BackColorLeave;
         }
 
         private void FecharJanela()
         {
             this.Size = this.MinimumSize;
-            panSelecionado.BackColor = BackColorLeave;
-            lblNomeCompoenente.Padding = new Padding(30, 0, 0, 0);
+            panSelecionado.BackColor = Color.Transparent;
+            lblNomeComponente.Padding = new Padding(30, 0, 0, 0);
             imgImagem.Location = new Point(6, 12);
         }
 
         private void AbrirJanela()
         {
             this.Size = this.MaximumSize;
-            panSelecionado.BackColor = CorOnSelected;
-            lblNomeCompoenente.Padding = new Padding(35, 0, 0, 0);
+            panSelecionado.BackColor = PanelCorHover;
+            lblNomeComponente.Padding = new Padding(35, 0, 0, 0);
             imgImagem.Location = new Point(10, 12);
         }
 
         private void CaixaComponente_Load(object sender, EventArgs e)
         {
             IsOpen = false;
-            BackColorLeave = BackColor;
+            _panCorHover = Color.FromArgb(21, 232, 46);
         }
 
         private void tckResistencia_Scroll(object sender, EventArgs e)

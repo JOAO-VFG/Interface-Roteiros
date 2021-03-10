@@ -39,9 +39,13 @@ namespace Interface_Roteiros
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.caixaComponente1 = new Interface_Roteiros.CaixaComponente();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -169,11 +173,48 @@ namespace Interface_Roteiros
             this.label1.TabIndex = 6;
             this.label1.Text = "1Ω";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(28)))));
+            this.panel2.Controls.Add(this.caixaComponente1);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Location = new System.Drawing.Point(0, 35);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(150, 575);
+            this.panel2.TabIndex = 7;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label8.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(7)))), ((int)(((byte)(154)))));
+            this.label8.Location = new System.Drawing.Point(0, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(150, 40);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "INFORMAÇÕES";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // caixaComponente1
+            // 
+            this.caixaComponente1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.caixaComponente1.ImagemComponent = ((System.Drawing.Image)(resources.GetObject("caixaComponente1.ImagemComponent")));
+            this.caixaComponente1.Location = new System.Drawing.Point(0, 65);
+            this.caixaComponente1.MaximumSize = new System.Drawing.Size(150, 370);
+            this.caixaComponente1.MinimumSize = new System.Drawing.Size(150, 40);
+            this.caixaComponente1.Name = "caixaComponente1";
+            this.caixaComponente1.Nome = "Resistor";
+            this.caixaComponente1.PanelCorHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(232)))), ((int)(((byte)(46)))));
+            this.caixaComponente1.Size = new System.Drawing.Size(150, 370);
+            this.caixaComponente1.TabIndex = 2;
+            // 
             // TelaLeisDeOhm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
             this.ClientSize = new System.Drawing.Size(855, 610);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "TelaLeisDeOhm";
             this.Text = "Electrophorus";
@@ -183,10 +224,12 @@ namespace Interface_Roteiros
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
             this.Controls.SetChildIndex(this.imgIcone, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.panel2, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -202,5 +245,8 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label8;
+        private CaixaComponente caixaComponente1;
     }
 }

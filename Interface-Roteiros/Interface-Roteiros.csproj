@@ -132,12 +132,6 @@
     <Compile Include="JanelaMenu.Designer.cs">
       <DependentUpon>JanelaMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuComponentes.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MenuComponentes.Designer.cs">
-      <DependentUpon>MenuComponentes.cs</DependentUpon>
-    </Compile>
     <Compile Include="TelaLeisDeOhm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,9 +227,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JanelaMenu.resx">
       <DependentUpon>JanelaMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuComponentes.resx">
-      <DependentUpon>MenuComponentes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaLeisDeOhm.resx">
       <DependentUpon>TelaLeisDeOhm.cs</DependentUpon>
