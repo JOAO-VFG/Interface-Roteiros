@@ -81,5 +81,12 @@ namespace Interface_Roteiros
         private void CaixaComponente_Load(object sender, EventArgs e)
         {
         }
+
+        private void tckResistencia_Scroll(object sender, EventArgs e)
+        {
+            var valor = tckResistencia.Value;
+            cpbResistencia.Percentage = valor;
+            lblResistencia.Text = $"{valor}Ω";
+        }
     }
 }

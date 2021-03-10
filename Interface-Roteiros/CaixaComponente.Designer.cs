@@ -39,16 +39,17 @@ namespace Interface_Roteiros
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.tckResistencia = new System.Windows.Forms.TrackBar();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.cbrResistencia = new XanderUI.XUICircleProgressBar();
+            this.cpbResistencia = new XanderUI.XUICircleProgressBar();
+            this.lblResistencia = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).BeginInit();
             this.panInformacoes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tckResistencia)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNomeCompoenente
@@ -89,13 +90,14 @@ namespace Interface_Roteiros
             // panInformacoes
             // 
             this.panInformacoes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.panInformacoes.Controls.Add(this.cbrResistencia);
+            this.panInformacoes.Controls.Add(this.lblResistencia);
+            this.panInformacoes.Controls.Add(this.cpbResistencia);
             this.panInformacoes.Controls.Add(this.panel3);
             this.panInformacoes.Controls.Add(this.panel2);
             this.panInformacoes.Controls.Add(this.panel1);
             this.panInformacoes.Controls.Add(this.label7);
             this.panInformacoes.Controls.Add(this.label6);
-            this.panInformacoes.Controls.Add(this.trackBar1);
+            this.panInformacoes.Controls.Add(this.tckResistencia);
             this.panInformacoes.Controls.Add(this.label5);
             this.panInformacoes.Controls.Add(this.label4);
             this.panInformacoes.Controls.Add(this.label3);
@@ -144,7 +146,7 @@ namespace Interface_Roteiros
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(32, 130);
+            this.label4.Location = new System.Drawing.Point(32, 133);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 19);
             this.label4.TabIndex = 3;
@@ -161,14 +163,18 @@ namespace Interface_Roteiros
             this.label5.TabIndex = 4;
             this.label5.Text = "0V";
             // 
-            // trackBar1
+            // tckResistencia
             // 
-            this.trackBar1.AutoSize = false;
-            this.trackBar1.Location = new System.Drawing.Point(0, 300);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(150, 27);
-            this.trackBar1.TabIndex = 5;
-            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.tckResistencia.AutoSize = false;
+            this.tckResistencia.Location = new System.Drawing.Point(0, 292);
+            this.tckResistencia.Maximum = 100;
+            this.tckResistencia.Minimum = 1;
+            this.tckResistencia.Name = "tckResistencia";
+            this.tckResistencia.Size = new System.Drawing.Size(150, 27);
+            this.tckResistencia.TabIndex = 5;
+            this.tckResistencia.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.tckResistencia.Value = 1;
+            this.tckResistencia.Scroll += new System.EventHandler(this.tckResistencia_Scroll);
             // 
             // label6
             // 
@@ -216,23 +222,34 @@ namespace Interface_Roteiros
             this.panel3.Size = new System.Drawing.Size(150, 3);
             this.panel3.TabIndex = 10;
             // 
-            // cbrResistencia
+            // cpbResistencia
             // 
-            this.cbrResistencia.AnimationSpeed = 5;
-            this.cbrResistencia.FilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(220)))), ((int)(((byte)(210)))));
-            this.cbrResistencia.FilledColorAlpha = 130;
-            this.cbrResistencia.FilledThickness = 40;
-            this.cbrResistencia.IsAnimated = false;
-            this.cbrResistencia.Location = new System.Drawing.Point(0, 152);
-            this.cbrResistencia.Name = "cbrResistencia";
-            this.cbrResistencia.Percentage = 63;
-            this.cbrResistencia.ShowText = true;
-            this.cbrResistencia.Size = new System.Drawing.Size(147, 142);
-            this.cbrResistencia.TabIndex = 11;
-            this.cbrResistencia.TextColor = System.Drawing.Color.Gray;
-            this.cbrResistencia.TextSize = 10;
-            this.cbrResistencia.UnFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
-            this.cbrResistencia.UnfilledThickness = 24;
+            this.cpbResistencia.AnimationSpeed = 5;
+            this.cpbResistencia.FilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(220)))), ((int)(((byte)(210)))));
+            this.cpbResistencia.FilledColorAlpha = 130;
+            this.cpbResistencia.FilledThickness = 25;
+            this.cpbResistencia.IsAnimated = false;
+            this.cpbResistencia.Location = new System.Drawing.Point(11, 161);
+            this.cpbResistencia.Name = "cpbResistencia";
+            this.cpbResistencia.Percentage = 20;
+            this.cpbResistencia.ShowText = false;
+            this.cpbResistencia.Size = new System.Drawing.Size(130, 120);
+            this.cpbResistencia.TabIndex = 11;
+            this.cpbResistencia.TextColor = System.Drawing.Color.Gray;
+            this.cpbResistencia.TextSize = 25;
+            this.cpbResistencia.UnFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
+            this.cpbResistencia.UnfilledThickness = 12;
+            // 
+            // lblResistencia
+            // 
+            this.lblResistencia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistencia.ForeColor = System.Drawing.Color.White;
+            this.lblResistencia.Location = new System.Drawing.Point(46, 201);
+            this.lblResistencia.Name = "lblResistencia";
+            this.lblResistencia.Size = new System.Drawing.Size(57, 36);
+            this.lblResistencia.TabIndex = 12;
+            this.lblResistencia.Text = "0";
+            this.lblResistencia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CaixaComponente
             // 
@@ -251,7 +268,7 @@ namespace Interface_Roteiros
             ((System.ComponentModel.ISupportInitialize)(this.imgImagem)).EndInit();
             this.panInformacoes.ResumeLayout(false);
             this.panInformacoes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tckResistencia)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -266,12 +283,13 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar tckResistencia;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private XanderUI.XUICircleProgressBar cbrResistencia;
+        private XanderUI.XUICircleProgressBar cpbResistencia;
+        private System.Windows.Forms.Label lblResistencia;
     }
 }
