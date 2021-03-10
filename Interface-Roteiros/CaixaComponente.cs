@@ -14,6 +14,8 @@ namespace Interface_Roteiros
     {
         private Color _panCorHover;
 
+        public Color ColorOnClick { get; set; } = Color.FromArgb(1, 15, 71);
+
         // Cor do painel quando clicado
         public Color PanelCorHover
         {
@@ -93,13 +95,13 @@ namespace Interface_Roteiros
             if(IsOpen)
             {
                 panSelecionado.BackColor = PanelCorHover;
+                BackColorLeave = ColorOnClick;
             }
             else
             {
                 panSelecionado.BackColor = _backColorName;
+                BackColorLeave = _backColorName;
             }
-
-            BackColorLeave = _backColorName;
         }
 
         private void FecharJanela()
@@ -117,7 +119,7 @@ namespace Interface_Roteiros
             panSelecionado.BackColor = PanelCorHover;
             lblNomeComponente.Padding = new Padding(35, 0, 0, 0);
             imgImagem.Location = new Point(10, 12);
-            BackColorLeave = _backColorName;
+            BackColorLeave = ColorOnClick;
         }
 
         private void CaixaComponente_Load(object sender, EventArgs e)
