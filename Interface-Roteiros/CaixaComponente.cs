@@ -22,6 +22,11 @@ namespace Interface_Roteiros
             get { return panSelecionado.BackColor; }
             set { panSelecionado.BackColor = value; }
         }
+        public Image ImagemComponent
+        {
+            get { return imgImagem.Image; }
+            set { imgImagem.Image = value; }
+        }
 
         private readonly Color corVerde = Color.FromArgb(21, 232, 46);
         private readonly Color corPadrao = Color.Transparent;
@@ -39,13 +44,17 @@ namespace Interface_Roteiros
             if (alturaAtual == this.MaximumSize.Height)
             {
                 this.Size = this.MinimumSize;
-                panSelecionado.BackColor = corVerde;
+                panSelecionado.BackColor = corPadrao;
+                lblNomeCompoenente.Padding = new Padding(25, 0, 0, 0);
+                imgImagem.Location = new Point(3, 12);
             }
             // Controle fechado, abre ele
             else
             {
                 this.Size = this.MaximumSize;
-                panSelecionado.BackColor = corPadrao;
+                panSelecionado.BackColor = corVerde;
+                lblNomeCompoenente.Padding = new Padding(30, 0, 0, 0);
+                imgImagem.Location = new Point(10, 12);
             }
         }
     }

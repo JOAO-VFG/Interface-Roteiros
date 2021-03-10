@@ -82,7 +82,7 @@ namespace Interface_Roteiros
             // menuComponentes1
             // 
             this.menuComponentes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(28)))));
-            this.menuComponentes1.Location = new System.Drawing.Point(4, 35);
+            this.menuComponentes1.Location = new System.Drawing.Point(0, 35);
             this.menuComponentes1.Name = "menuComponentes1";
             this.menuComponentes1.Size = new System.Drawing.Size(150, 592);
             this.menuComponentes1.TabIndex = 7;
@@ -90,6 +90,7 @@ namespace Interface_Roteiros
             // TelaLeisDeOhm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
             this.ClientSize = new System.Drawing.Size(855, 610);
             this.Controls.Add(this.menuComponentes1);
             this.Controls.Add(this.panel1);
