@@ -82,6 +82,7 @@ namespace Interface_Roteiros
             this.rtrLeisOhm.TabIndex = 5;
             this.rtrLeisOhm.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtrLeisOhm.TextoRoteiro = "Leis de Ohm";
+            this.rtrLeisOhm.Click += new System.EventHandler(this.rtrLeisOhm_Click);
             // 
             // rtrKirchhof
             // 

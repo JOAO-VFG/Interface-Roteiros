@@ -3,22 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Interface_Roteiros
 {
-    public partial class TelaLeisDeOhm : Interface_Roteiros.TelaInicialPadrao
+    public partial class MenuComponentes : UserControl
     {
-        public TelaSimulador TelaDeRetorno { get; set; }
-        public TelaLeisDeOhm()
+        public MenuComponentes()
         {
             InitializeComponent();
-        }
-
-        private void TelaLeisDeOhm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

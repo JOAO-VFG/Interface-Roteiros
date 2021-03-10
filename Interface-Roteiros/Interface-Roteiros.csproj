@@ -112,6 +112,12 @@
     <Compile Include="BoxInformacao.Designer.cs">
       <DependentUpon>BoxInformacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="CaixaComponente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaixaComponente.Designer.cs">
+      <DependentUpon>CaixaComponente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Circuito.cs" />
     <Compile Include="Circuito5.cs" />
     <Compile Include="EscolhaRoteiro.cs">
@@ -125,6 +131,18 @@
     </Compile>
     <Compile Include="JanelaMenu.Designer.cs">
       <DependentUpon>JanelaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuComponentes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuComponentes.Designer.cs">
+      <DependentUpon>MenuComponentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaLeisDeOhm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaLeisDeOhm.Designer.cs">
+      <DependentUpon>TelaLeisDeOhm.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaNortonThevenin.cs">
       <SubType>Form</SubType>
@@ -207,11 +225,20 @@
     <EmbeddedResource Include="BoxInformacao.resx">
       <DependentUpon>BoxInformacao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CaixaComponente.resx">
+      <DependentUpon>CaixaComponente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EscolhaRoteiro.resx">
       <DependentUpon>EscolhaRoteiro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JanelaMenu.resx">
       <DependentUpon>JanelaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuComponentes.resx">
+      <DependentUpon>MenuComponentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaLeisDeOhm.resx">
+      <DependentUpon>TelaLeisDeOhm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaNortonThevenin.resx">
       <DependentUpon>TelaNortonThevenin.cs</DependentUpon>

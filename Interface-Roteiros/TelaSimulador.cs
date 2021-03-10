@@ -50,5 +50,11 @@ namespace Interface_Roteiros
             this.Hide();
             new TelaNortonThevenin() { TelaDeRetorno = this, }.Show();
         }
+
+        private void rtrLeisOhm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new TelaLeisDeOhm() { TelaDeRetorno = this, }.Show();
+        }
     }
 }
