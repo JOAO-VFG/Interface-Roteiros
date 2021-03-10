@@ -199,8 +199,9 @@ namespace Interface_Roteiros
             // caixaComponente1
             // 
             this.caixaComponente1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.caixaComponente1.BackColorLeave = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(64)))));
             this.caixaComponente1.ImagemComponent = ((System.Drawing.Image)(resources.GetObject("caixaComponente1.ImagemComponent")));
-            this.caixaComponente1.Location = new System.Drawing.Point(0, 65);
+            this.caixaComponente1.Location = new System.Drawing.Point(0, 40);
             this.caixaComponente1.MaximumSize = new System.Drawing.Size(150, 370);
             this.caixaComponente1.MinimumSize = new System.Drawing.Size(150, 40);
             this.caixaComponente1.Name = "caixaComponente1";

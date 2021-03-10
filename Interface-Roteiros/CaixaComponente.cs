@@ -17,7 +17,23 @@ namespace Interface_Roteiros
         public Color PanelCorHover
         {
             get { return _panCorHover; }
-            set { _panCorHover = value; }
+            set
+            {
+                _panCorHover = value;
+                panSelecionado.BackColor = _panCorHover;
+            }
+        }
+
+        private Color _backColorName;
+
+        public Color BackColorLeave
+        {
+            get { return lblNomeComponente.BackColor; }
+            set
+            {
+                lblNomeComponente.BackColor = value;
+                imgImagem.BackColor = value;
+            }
         }
 
         public string Nome
@@ -61,7 +77,7 @@ namespace Interface_Roteiros
         private void lblNomeCompoenente_MouseEnter(object sender, EventArgs e)
         {
             panSelecionado.BackColor = Color.White;
-            lblNomeComponente.BackColor = corRosa;
+            BackColorLeave = corRosa;
         }
 
         private void lblNomeCompoenente_MouseLeave(object sender, EventArgs e)
@@ -72,16 +88,19 @@ namespace Interface_Roteiros
             }
             else
             {
-                panSelecionado.BackColor = Color.Transparent;
+                panSelecionado.BackColor = _backColorName;
             }
+
+            BackColorLeave = _backColorName;
         }
 
         private void FecharJanela()
         {
             this.Size = this.MinimumSize;
-            panSelecionado.BackColor = Color.Transparent;
+            panSelecionado.BackColor = _backColorName;
             lblNomeComponente.Padding = new Padding(30, 0, 0, 0);
             imgImagem.Location = new Point(6, 12);
+            BackColorLeave = _backColorName;
         }
 
         private void AbrirJanela()
@@ -90,12 +109,14 @@ namespace Interface_Roteiros
             panSelecionado.BackColor = PanelCorHover;
             lblNomeComponente.Padding = new Padding(35, 0, 0, 0);
             imgImagem.Location = new Point(10, 12);
+            BackColorLeave = _backColorName;
         }
 
         private void CaixaComponente_Load(object sender, EventArgs e)
         {
             IsOpen = false;
             _panCorHover = Color.FromArgb(21, 232, 46);
+            _backColorName = BackColorLeave;
         }
 
         private void tckResistencia_Scroll(object sender, EventArgs e)
