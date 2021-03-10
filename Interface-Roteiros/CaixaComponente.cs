@@ -30,6 +30,11 @@ namespace Interface_Roteiros
 
         private readonly Color corVerde = Color.FromArgb(21, 232, 46);
         private readonly Color corPadrao = Color.Transparent;
+        // Campos privados para evento Enter
+        private readonly Color corRosa = Color.FromArgb(193, 27, 222);
+        private readonly Color corBranca = Color.White;
+        // Campo privado para evento Leave
+        private readonly Color corEscura = Color.FromArgb(18, 18, 18);
 
         public CaixaComponente()
         {
@@ -45,17 +50,36 @@ namespace Interface_Roteiros
             {
                 this.Size = this.MinimumSize;
                 panSelecionado.BackColor = corPadrao;
-                lblNomeCompoenente.Padding = new Padding(25, 0, 0, 0);
-                imgImagem.Location = new Point(3, 12);
+                lblNomeCompoenente.Padding = new Padding(30, 0, 0, 0);
+                imgImagem.Location = new Point(6, 12);
             }
             // Controle fechado, abre ele
             else
             {
                 this.Size = this.MaximumSize;
                 panSelecionado.BackColor = corVerde;
-                lblNomeCompoenente.Padding = new Padding(30, 0, 0, 0);
+                lblNomeCompoenente.Padding = new Padding(35, 0, 0, 0);
                 imgImagem.Location = new Point(10, 12);
             }
+        }
+
+        // Ocorre quando o mouse passa por cima
+        private void lblNomeCompoenente_MouseEnter(object sender, EventArgs e)
+        {
+            lblNomeCompoenente.BackColor = corRosa;
+            panSelecionado.BackColor = corBranca;
+            imgImagem.BackColor = corRosa;
+        }
+
+        private void lblNomeCompoenente_MouseLeave(object sender, EventArgs e)
+        {
+            lblNomeCompoenente.BackColor = corEscura;
+            panSelecionado.BackColor = corPadrao;
+            imgImagem.BackColor = corPadrao;
+        }
+
+        private void CaixaComponente_Load(object sender, EventArgs e)
+        {
         }
     }
 }

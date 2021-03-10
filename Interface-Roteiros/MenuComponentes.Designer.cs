@@ -37,11 +37,12 @@ namespace Interface_Roteiros
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(7)))), ((int)(((byte)(154)))));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 38);
+            this.label1.Size = new System.Drawing.Size(150, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "INFORMAÇÕES";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -51,12 +52,12 @@ namespace Interface_Roteiros
             this.caixaComponente1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.caixaComponente1.CorOnSelected = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(232)))), ((int)(((byte)(46)))));
             this.caixaComponente1.ImagemComponent = ((System.Drawing.Image)(resources.GetObject("caixaComponente1.ImagemComponent")));
-            this.caixaComponente1.Location = new System.Drawing.Point(0, 40);
-            this.caixaComponente1.MaximumSize = new System.Drawing.Size(150, 150);
+            this.caixaComponente1.Location = new System.Drawing.Point(0, 67);
+            this.caixaComponente1.MaximumSize = new System.Drawing.Size(150, 230);
             this.caixaComponente1.MinimumSize = new System.Drawing.Size(150, 40);
             this.caixaComponente1.Name = "caixaComponente1";
             this.caixaComponente1.Nome = "Resistor";
-            this.caixaComponente1.Size = new System.Drawing.Size(150, 150);
+            this.caixaComponente1.Size = new System.Drawing.Size(150, 230);
             this.caixaComponente1.TabIndex = 1;
             // 
             // MenuComponentes
