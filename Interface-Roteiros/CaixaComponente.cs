@@ -28,6 +28,7 @@ namespace Interface_Roteiros
             set { imgImagem.Image = value; }
         }
 
+        public bool IsOpen { get; private set; }
         private readonly Color corVerde = Color.FromArgb(21, 232, 46);
         private readonly Color corPadrao = Color.Transparent;
         // Campos privados para evento Enter
@@ -43,23 +44,16 @@ namespace Interface_Roteiros
 
         private void lblNomeCompoenente_Click(object sender, EventArgs e)
         {
-            var alturaAtual = this.Size.Height;
-
-            // Se o controle está aberto, então fecha 
-            if (alturaAtual == this.MaximumSize.Height)
+            if (IsOpen)
             {
-                this.Size = this.MinimumSize;
-                panSelecionado.BackColor = corPadrao;
-                lblNomeCompoenente.Padding = new Padding(30, 0, 0, 0);
-                imgImagem.Location = new Point(6, 12);
+                IsOpen = false;
+                FecharJanela();
             }
             // Controle fechado, abre ele
             else
             {
-                this.Size = this.MaximumSize;
-                panSelecionado.BackColor = corVerde;
-                lblNomeCompoenente.Padding = new Padding(35, 0, 0, 0);
-                imgImagem.Location = new Point(10, 12);
+                IsOpen = true;
+                AbrirJanela();
             }
         }
 
@@ -73,13 +67,37 @@ namespace Interface_Roteiros
 
         private void lblNomeCompoenente_MouseLeave(object sender, EventArgs e)
         {
+            if(IsOpen)
+            {
+                panSelecionado.BackColor = corVerde;
+            }
+            else
+            {
+                panSelecionado.BackColor = corPadrao;
+            }
             lblNomeCompoenente.BackColor = corEscura;
+            imgImagem.BackColor = corEscura;
+        }
+
+        private void FecharJanela()
+        {
+            this.Size = this.MinimumSize;
             panSelecionado.BackColor = corPadrao;
-            imgImagem.BackColor = corPadrao;
+            lblNomeCompoenente.Padding = new Padding(30, 0, 0, 0);
+            imgImagem.Location = new Point(6, 12);
+        }
+
+        private void AbrirJanela()
+        {
+            this.Size = this.MaximumSize;
+            panSelecionado.BackColor = corVerde;
+            lblNomeCompoenente.Padding = new Padding(35, 0, 0, 0);
+            imgImagem.Location = new Point(10, 12);
         }
 
         private void CaixaComponente_Load(object sender, EventArgs e)
         {
+            IsOpen = false;
         }
 
         private void tckResistencia_Scroll(object sender, EventArgs e)
