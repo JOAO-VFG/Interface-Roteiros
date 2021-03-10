@@ -44,14 +44,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electrophorus.exe" size="553952">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electrophorus.exe" size="554464">
       <assemblyIdentity name="Electrophorus" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>M5ndyDWpfzWd3q1qAyS/OQ3uJ6km3Sq5J5T1C+BoUW0=</dsig:DigestValue>
+        <dsig:DigestValue>nTXVCU70FEOD0Ej1TypnfmKqeBT09NmwIMGYHgS3Dck=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

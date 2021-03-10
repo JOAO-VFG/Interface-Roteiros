@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="panCircuito.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlMAAAGFCAYAAADZznZHAAABgmlDQ1BJQ0MgcHJvZmlsZQAAKM+VkU0o
         RFEcxX9myEdkYZJk8RRWpoRkqSFSpjRGGSy898YMNe+Z3hvZWCpbZeFjY7CwsWZrYauU8lGys7MiNtLz
@@ -284,22 +284,6 @@
         AP0oFqBF5qbnTsrU6Ns/t1iAFpnmtAAA+lEsQMtIofgsI81pAQD0o1h8lpFC8VlGmtMCAOhHsfgsI4Xi
         s4w0pwUA0I9i8VlGCsVnGWlOCwCgH8Xis4wUis8y0pwWAEA/ouj80TnFZxkpFJ+F52XXPNWcFgBAf4rl
         Z9EplZ8FpzkdAAAAAAAAAAAAAACAC9lFF/1/gUjxiP71FbgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="caixaComponente1.ImagemComponent" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABhWlDQ1BJQ0MgcHJvZmlsZQAAKM+VkT1I
-        w1AUhU9TpVIqDlYQcchQHcSCqIijRLEIFkpboVUHk5f+QZOGJMXFUXAtOPizWHVwcdbVwVUQBH9A3Nyc
-        FF2kxPuSQotQwQeX93HeO4f77gOEeplpVtcEoOm2mYxJYia7KgZe4UcQA1RjMrOMeGoxjY7r6x4+vt9F
-        eRb+t3rVnMUAn0g8xwzTJt4gntm0Dc77xGFWlFXic+JxkxokfuS64vEb54LLAs8Mm+nkPHGYWCy0sdLG
-        rGhqxNPEEVXTKV/IeKxy3uKslaus2Sd/YSinr6S4TjWMGJYQRwIiFFRRQhk2orTrpFhI0rnUwT/k+hPk
-        UshVAiPHAirQILt+8D/4PVsrPzXpJYUkoPvFcT5GgMAu0Kg5zvex4zROAP8zcKW3/JU6MPtJeq2lRY6A
-        vm3g4rqlKXvA5Q4w+GTIpuxKfiohnwfez+ibskD/LRBc8+bWPMfpA5CmWS3fAAeHwGiBstc7vLunfW5/
-        3nHnB+kHY3FyoXaYmhkAAAAJcEhZcwAAALEAAACxAcYtSY0AAAAHdElNRQflAwoVDyFzXNcvAAAApUlE
-        QVRIS7XPQQ6DMAwEwPz/0y2spggKVMWYOcVLvBHjKS+MvXSHqI/eEPXRG6I+ekNUp+eQK3V6liJjiOr0
-        LMS7R8vWJWmcGO8/Yn9TIErmWHtgvfhdMs8fomvs7kod6w/Y2fApRCH6n73DQmNmx2vSMjFu+BSi634t
-        p3lirNFx+geOdWlHFKLeB2brLBfu0HPKtRodIeqjN0R99Iaol+5nyscYb7kGrmCZNj+dAAAAAElFTkSu
-        QmCC
 </value>
   </data>
 </root>

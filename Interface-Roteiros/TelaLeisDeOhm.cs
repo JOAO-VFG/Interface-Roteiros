@@ -18,7 +18,6 @@ namespace Interface_Roteiros
 
         private void TelaLeisDeOhm_Load(object sender, EventArgs e)
         {
-
         }
     }
 }
