@@ -36,9 +36,9 @@ namespace Interface_Roteiros
             this.panInformacoes = new System.Windows.Forms.Panel();
             this.lblResistencia = new System.Windows.Forms.Label();
             this.cpbResistencia = new XanderUI.XUICircleProgressBar();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.linha3 = new System.Windows.Forms.Panel();
+            this.linha2 = new System.Windows.Forms.Panel();
+            this.linha1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tckResistencia = new System.Windows.Forms.TrackBar();
@@ -59,7 +59,7 @@ namespace Interface_Roteiros
             this.lblNomeComponente.ForeColor = System.Drawing.Color.White;
             this.lblNomeComponente.Location = new System.Drawing.Point(0, 0);
             this.lblNomeComponente.Name = "lblNomeComponente";
-            this.lblNomeComponente.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.lblNomeComponente.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.lblNomeComponente.Size = new System.Drawing.Size(150, 40);
             this.lblNomeComponente.TabIndex = 1;
             this.lblNomeComponente.Text = "Resistor";
@@ -80,7 +80,7 @@ namespace Interface_Roteiros
             // 
             this.imgImagem.BackColor = System.Drawing.Color.Transparent;
             this.imgImagem.Image = ((System.Drawing.Image)(resources.GetObject("imgImagem.Image")));
-            this.imgImagem.Location = new System.Drawing.Point(10, 12);
+            this.imgImagem.Location = new System.Drawing.Point(20, 12);
             this.imgImagem.Name = "imgImagem";
             this.imgImagem.Size = new System.Drawing.Size(20, 20);
             this.imgImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -92,9 +92,9 @@ namespace Interface_Roteiros
             this.panInformacoes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.panInformacoes.Controls.Add(this.lblResistencia);
             this.panInformacoes.Controls.Add(this.cpbResistencia);
-            this.panInformacoes.Controls.Add(this.panel3);
-            this.panInformacoes.Controls.Add(this.panel2);
-            this.panInformacoes.Controls.Add(this.panel1);
+            this.panInformacoes.Controls.Add(this.linha3);
+            this.panInformacoes.Controls.Add(this.linha2);
+            this.panInformacoes.Controls.Add(this.linha1);
             this.panInformacoes.Controls.Add(this.label7);
             this.panInformacoes.Controls.Add(this.label6);
             this.panInformacoes.Controls.Add(this.tckResistencia);
@@ -137,29 +137,29 @@ namespace Interface_Roteiros
             this.cpbResistencia.UnFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
             this.cpbResistencia.UnfilledThickness = 12;
             // 
-            // panel3
+            // linha3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.panel3.Location = new System.Drawing.Point(0, 120);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(150, 3);
-            this.panel3.TabIndex = 10;
+            this.linha3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.linha3.Location = new System.Drawing.Point(0, 120);
+            this.linha3.Name = "linha3";
+            this.linha3.Size = new System.Drawing.Size(150, 3);
+            this.linha3.TabIndex = 10;
             // 
-            // panel2
+            // linha2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.panel2.Location = new System.Drawing.Point(0, 80);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(150, 3);
-            this.panel2.TabIndex = 9;
+            this.linha2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.linha2.Location = new System.Drawing.Point(0, 80);
+            this.linha2.Name = "linha2";
+            this.linha2.Size = new System.Drawing.Size(150, 3);
+            this.linha2.TabIndex = 9;
             // 
-            // panel1
+            // linha1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.panel1.Location = new System.Drawing.Point(0, 35);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(150, 3);
-            this.panel1.TabIndex = 8;
+            this.linha1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.linha1.Location = new System.Drawing.Point(0, 35);
+            this.linha1.Name = "linha1";
+            this.linha1.Size = new System.Drawing.Size(150, 3);
+            this.linha1.TabIndex = 8;
             // 
             // label7
             // 
@@ -186,11 +186,11 @@ namespace Interface_Roteiros
             // tckResistencia
             // 
             this.tckResistencia.AutoSize = false;
-            this.tckResistencia.Location = new System.Drawing.Point(0, 292);
+            this.tckResistencia.Location = new System.Drawing.Point(3, 292);
             this.tckResistencia.Maximum = 100;
             this.tckResistencia.Minimum = 1;
             this.tckResistencia.Name = "tckResistencia";
-            this.tckResistencia.Size = new System.Drawing.Size(150, 27);
+            this.tckResistencia.Size = new System.Drawing.Size(138, 27);
             this.tckResistencia.TabIndex = 5;
             this.tckResistencia.TickStyle = System.Windows.Forms.TickStyle.None;
             this.tckResistencia.Value = 1;
@@ -278,9 +278,9 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Panel panSelecionado;
         private System.Windows.Forms.PictureBox imgImagem;
         private System.Windows.Forms.Panel panInformacoes;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel linha3;
+        private System.Windows.Forms.Panel linha2;
+        private System.Windows.Forms.Panel linha1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TrackBar tckResistencia;

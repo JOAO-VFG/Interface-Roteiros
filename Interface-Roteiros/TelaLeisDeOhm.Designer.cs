@@ -83,6 +83,7 @@ namespace Interface_Roteiros
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(59)))));
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -91,7 +92,7 @@ namespace Interface_Roteiros
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(186, 35);
+            this.panel1.Location = new System.Drawing.Point(165, 35);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(676, 575);
             this.panel1.TabIndex = 6;
@@ -175,7 +176,7 @@ namespace Interface_Roteiros
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(28)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(87)))));
             this.panel2.Controls.Add(this.caixaComponente1);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Location = new System.Drawing.Point(0, 35);
@@ -199,22 +200,24 @@ namespace Interface_Roteiros
             // caixaComponente1
             // 
             this.caixaComponente1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.caixaComponente1.BackColorLeave = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(82)))));
-            this.caixaComponente1.ColorOnClick = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(15)))), ((int)(((byte)(71)))));
+            this.caixaComponente1.BackColorLeave = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(28)))));
+            this.caixaComponente1.ColorOnClick = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(204)))));
             this.caixaComponente1.ImagemComponent = ((System.Drawing.Image)(resources.GetObject("caixaComponente1.ImagemComponent")));
-            this.caixaComponente1.Location = new System.Drawing.Point(0, 56);
+            this.caixaComponente1.Location = new System.Drawing.Point(0, 38);
             this.caixaComponente1.MaximumSize = new System.Drawing.Size(150, 370);
             this.caixaComponente1.MinimumSize = new System.Drawing.Size(150, 40);
             this.caixaComponente1.Name = "caixaComponente1";
             this.caixaComponente1.Nome = "Resistor";
+            this.caixaComponente1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(48)))));
             this.caixaComponente1.PanelCorHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(232)))), ((int)(((byte)(46)))));
+            this.caixaComponente1.PanelLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(219)))));
             this.caixaComponente1.Size = new System.Drawing.Size(150, 370);
             this.caixaComponente1.TabIndex = 2;
             // 
             // TelaLeisDeOhm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(855, 610);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

@@ -27,6 +27,28 @@ namespace Interface_Roteiros
             }
         }
 
+        public Color PanelColor
+        {
+            get { return panInformacoes.BackColor; }
+            set
+            {
+                panInformacoes.BackColor = value;
+            }
+        }
+
+        public Color PanelLineColor
+        {
+            get { return linha1.BackColor; }
+            set
+            {
+                Panel[] linhas = { linha1, linha2, linha3 };
+                foreach (Panel linhaBackcolor in linhas)
+                {
+                    linhaBackcolor.BackColor = value;
+                }
+            }
+        }
+
         private Color _backColorName;
         // Cor do fundo do texto e da imagem quando o mouse sai do componente
         public Color BackColorLeave
@@ -108,8 +130,8 @@ namespace Interface_Roteiros
         {
             this.Size = this.MinimumSize;
             panSelecionado.BackColor = _backColorName;
-            lblNomeComponente.Padding = new Padding(30, 0, 0, 0);
-            imgImagem.Location = new Point(6, 12);
+            lblNomeComponente.Padding = new Padding(45, 0, 0, 0);
+            imgImagem.Location = new Point(20, 12);
             BackColorLeave = _backColorName;
         }
 
@@ -117,8 +139,8 @@ namespace Interface_Roteiros
         {
             this.Size = this.MaximumSize;
             panSelecionado.BackColor = PanelCorHover;
-            lblNomeComponente.Padding = new Padding(35, 0, 0, 0);
-            imgImagem.Location = new Point(10, 12);
+            lblNomeComponente.Padding = new Padding(50, 0, 0, 0);
+            imgImagem.Location = new Point(24, 12);
             BackColorLeave = ColorOnClick;
         }
 
