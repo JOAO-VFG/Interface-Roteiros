@@ -124,6 +124,10 @@ namespace Interface_Roteiros
         {
             IsOpen = false;
             _backColorName = BackColorLeave;
+            if (PanelCorHover == Color.Empty)
+            {
+                PanelCorHover = Color.FromArgb(21, 232, 46); // verde
+            }
         }
 
         private void tckResistencia_Scroll(object sender, EventArgs e)

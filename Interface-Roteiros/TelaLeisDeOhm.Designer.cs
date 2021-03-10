@@ -42,6 +42,7 @@ namespace Interface_Roteiros
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.caixaComponente1 = new Interface_Roteiros.CaixaComponente();
+            this.caixaComponente2 = new Interface_Roteiros.CaixaComponente();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -176,6 +177,7 @@ namespace Interface_Roteiros
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(28)))));
+            this.panel2.Controls.Add(this.caixaComponente2);
             this.panel2.Controls.Add(this.caixaComponente1);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Location = new System.Drawing.Point(0, 35);
@@ -199,16 +201,32 @@ namespace Interface_Roteiros
             // caixaComponente1
             // 
             this.caixaComponente1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.caixaComponente1.BackColorLeave = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(97)))));
+            this.caixaComponente1.BackColorLeave = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.caixaComponente1.Dock = System.Windows.Forms.DockStyle.Top;
             this.caixaComponente1.ImagemComponent = ((System.Drawing.Image)(resources.GetObject("caixaComponente1.ImagemComponent")));
-            this.caixaComponente1.Location = new System.Drawing.Point(0, 52);
+            this.caixaComponente1.Location = new System.Drawing.Point(0, 40);
             this.caixaComponente1.MaximumSize = new System.Drawing.Size(150, 370);
             this.caixaComponente1.MinimumSize = new System.Drawing.Size(150, 40);
             this.caixaComponente1.Name = "caixaComponente1";
             this.caixaComponente1.Nome = "Resistor";
-            this.caixaComponente1.PanelCorHover = System.Drawing.Color.Yellow;
+            this.caixaComponente1.PanelCorHover = System.Drawing.Color.Empty;
             this.caixaComponente1.Size = new System.Drawing.Size(150, 40);
             this.caixaComponente1.TabIndex = 2;
+            // 
+            // caixaComponente2
+            // 
+            this.caixaComponente2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.caixaComponente2.BackColorLeave = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.caixaComponente2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.caixaComponente2.ImagemComponent = ((System.Drawing.Image)(resources.GetObject("caixaComponente2.ImagemComponent")));
+            this.caixaComponente2.Location = new System.Drawing.Point(0, 80);
+            this.caixaComponente2.MaximumSize = new System.Drawing.Size(150, 370);
+            this.caixaComponente2.MinimumSize = new System.Drawing.Size(150, 40);
+            this.caixaComponente2.Name = "caixaComponente2";
+            this.caixaComponente2.Nome = "Resistor";
+            this.caixaComponente2.PanelCorHover = System.Drawing.Color.Empty;
+            this.caixaComponente2.Size = new System.Drawing.Size(150, 40);
+            this.caixaComponente2.TabIndex = 3;
             // 
             // TelaLeisDeOhm
             // 
@@ -248,6 +266,7 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
+        private CaixaComponente caixaComponente2;
         private CaixaComponente caixaComponente1;
     }
 }
