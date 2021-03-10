@@ -199,15 +199,15 @@ namespace Interface_Roteiros
             // caixaComponente1
             // 
             this.caixaComponente1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.caixaComponente1.BackColorLeave = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(64)))));
+            this.caixaComponente1.BackColorLeave = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(97)))));
             this.caixaComponente1.ImagemComponent = ((System.Drawing.Image)(resources.GetObject("caixaComponente1.ImagemComponent")));
-            this.caixaComponente1.Location = new System.Drawing.Point(0, 40);
+            this.caixaComponente1.Location = new System.Drawing.Point(0, 52);
             this.caixaComponente1.MaximumSize = new System.Drawing.Size(150, 370);
             this.caixaComponente1.MinimumSize = new System.Drawing.Size(150, 40);
             this.caixaComponente1.Name = "caixaComponente1";
             this.caixaComponente1.Nome = "Resistor";
-            this.caixaComponente1.PanelCorHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(232)))), ((int)(((byte)(46)))));
-            this.caixaComponente1.Size = new System.Drawing.Size(150, 370);
+            this.caixaComponente1.PanelCorHover = System.Drawing.Color.Yellow;
+            this.caixaComponente1.Size = new System.Drawing.Size(150, 40);
             this.caixaComponente1.TabIndex = 2;
             // 
             // TelaLeisDeOhm

@@ -14,18 +14,19 @@ namespace Interface_Roteiros
     {
         private Color _panCorHover;
 
+        // Cor do painel quando clicado
         public Color PanelCorHover
         {
             get { return _panCorHover; }
             set
             {
                 _panCorHover = value;
-                panSelecionado.BackColor = _panCorHover;
+                panSelecionado.BackColor = value;
             }
         }
 
         private Color _backColorName;
-
+        // Cor do fundo do texto e da imagem quando o mouse sai do componente
         public Color BackColorLeave
         {
             get { return lblNomeComponente.BackColor; }
@@ -34,6 +35,12 @@ namespace Interface_Roteiros
                 lblNomeComponente.BackColor = value;
                 imgImagem.BackColor = value;
             }
+        }
+
+        public override Color ForeColor
+        {
+            get { return lblNomeComponente.ForeColor; }
+            set { lblNomeComponente.ForeColor = value; }
         }
 
         public string Nome
@@ -80,6 +87,7 @@ namespace Interface_Roteiros
             BackColorLeave = corRosa;
         }
 
+        // Acontece quando o mouse sai do componente
         private void lblNomeCompoenente_MouseLeave(object sender, EventArgs e)
         {
             if(IsOpen)
@@ -115,7 +123,6 @@ namespace Interface_Roteiros
         private void CaixaComponente_Load(object sender, EventArgs e)
         {
             IsOpen = false;
-            _panCorHover = Color.FromArgb(21, 232, 46);
             _backColorName = BackColorLeave;
         }
 
