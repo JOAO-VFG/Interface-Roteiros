@@ -32,11 +32,11 @@ namespace Interface_Roteiros
             lblCorrente.Text = Circuito2.ConverterGrandeza(Resistor.Corrente, "A");
             lblTensao.Text = Circuito2.ConverterGrandeza(Resistor.Potencia, "V");
             lblPotencia.Text = Circuito2.ConverterGrandeza(Resistor.Potencia, "W");
+            trackResistencia.Value = Resistor.Resistencia;
         }
 
         private void PainelResistor_Load(object sender, EventArgs e)
         {
-            //ExibirDados();
             xuiCircleProgressBar1.IsAnimated = true;
         }
 
@@ -44,6 +44,7 @@ namespace Interface_Roteiros
         {
             string valor = trackResistencia.Value.ToString() + "Ω";
             LabelDoResistor.Text = lblResistencia.Text = valor;
+            Resistor.Resistencia = trackResistencia.Value;
         }
     }
 }

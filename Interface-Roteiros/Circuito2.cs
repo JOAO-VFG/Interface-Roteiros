@@ -45,6 +45,12 @@ namespace Interface_Roteiros
         public void CalcularCircuito()
         {
             CalcularCorrentes();
+
+            foreach (var resistor in Resistores)
+            {
+                resistor.CalcularTensao();
+                resistor.CalcularPotencia();
+            }
         }
 
         /// <summary>

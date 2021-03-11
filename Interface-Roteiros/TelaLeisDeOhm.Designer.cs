@@ -420,6 +420,7 @@ namespace Interface_Roteiros
             this.lblResistor6.Name = "lblResistor6";
             this.lblResistor6.Size = new System.Drawing.Size(56, 21);
             this.lblResistor6.TabIndex = 16;
+            this.lblResistor6.Click += new System.EventHandler(this.lblResistor6_Click);
             // 
             // lblResistor5_2
             // 
@@ -428,6 +429,7 @@ namespace Interface_Roteiros
             this.lblResistor5_2.Name = "lblResistor5_2";
             this.lblResistor5_2.Size = new System.Drawing.Size(56, 21);
             this.lblResistor5_2.TabIndex = 15;
+            this.lblResistor5_2.Click += new System.EventHandler(this.lblResistor5_2_Click);
             // 
             // lblResistor4_2
             // 
@@ -436,6 +438,7 @@ namespace Interface_Roteiros
             this.lblResistor4_2.Name = "lblResistor4_2";
             this.lblResistor4_2.Size = new System.Drawing.Size(56, 21);
             this.lblResistor4_2.TabIndex = 14;
+            this.lblResistor4_2.Click += new System.EventHandler(this.lblResistor4_2_Click);
             // 
             // lblResistor1
             // 
@@ -457,6 +460,7 @@ namespace Interface_Roteiros
             this.lblResistor3_2.Name = "lblResistor3_2";
             this.lblResistor3_2.Size = new System.Drawing.Size(56, 21);
             this.lblResistor3_2.TabIndex = 13;
+            this.lblResistor3_2.Click += new System.EventHandler(this.lblResistor3_2_Click);
             // 
             // lblFonte
             // 
