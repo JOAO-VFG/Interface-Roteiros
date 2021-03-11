@@ -14,6 +14,10 @@ namespace Interface_Roteiros
     {
         public Resistor Resistor { get; set; }
         public Label LabelDoResistor { get; set; }
+        public int Resistencia
+        {
+            set { lblResistencia.Text = value.ToString() + "Ω"; }
+        }
 
         public PainelResistor()
         {
@@ -33,6 +37,7 @@ namespace Interface_Roteiros
         private void PainelResistor_Load(object sender, EventArgs e)
         {
             //ExibirDados();
+            xuiCircleProgressBar1.IsAnimated = true;
         }
 
         private void trackResistencia_Scroll(object sender, EventArgs e)

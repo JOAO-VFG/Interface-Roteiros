@@ -40,5 +40,22 @@ namespace Interface_Roteiros
             TelaDeRetorno.Show();
             this.Close();
         }
+
+        // Atualiza o painel com as informações do resistor
+        private void AtualizarPainelResistor(int resistencia, Label label)
+        {
+            painelResistor.Resistencia = resistencia;
+            painelResistor.LabelDoResistor = label;
+        }
+
+        private void lblResistor1_2_Click(object sender, EventArgs e)
+        {
+            AtualizarPainelResistor(Circuito.Resistores[0].Resistencia, lblResistor1);
+        }
+
+        private void lblResistor2_2_Click(object sender, EventArgs e)
+        {
+            AtualizarPainelResistor(Circuito.Resistores[1].Resistencia, lblResistor2);
+        }
     }
 }

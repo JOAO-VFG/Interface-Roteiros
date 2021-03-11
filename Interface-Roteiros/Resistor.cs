@@ -10,8 +10,17 @@ namespace Interface_Roteiros
     {
         private double _corrente;
         private double _potencia;
+        private double _tensao;
         public int Resistencia { get; set; }
-        public double Tensao { get; set; }
+        public double Tensao
+        {
+            get
+            {
+                CalcularTensao();
+                return _tensao;
+            }
+            set => _tensao = value;
+        }
         public double Corrente
         {
             get { return _corrente; }
@@ -26,6 +35,18 @@ namespace Interface_Roteiros
         public Resistor(int resistencia)
         {
             this.Resistencia = resistencia;
+        }
+
+        public void CalcularTensao()
+        {
+            if (Corrente != 0)
+            {
+                _tensao = Potencia / Corrente;
+            }
+            else if (Resistencia != 0)
+            {
+                _tensao = Math.Sqrt(Potencia * Resistencia);
+            }
         }
 
         public void CalcularCorrente()

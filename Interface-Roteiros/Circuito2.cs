@@ -44,7 +44,31 @@ namespace Interface_Roteiros
 
         public void CalcularCircuito()
         {
-            
+            CalcularCorrentes();
+        }
+
+        /// <summary>
+        /// Calcula e atribui todas as correntes que passam para cada resistor
+        /// </summary>
+        private void CalcularCorrentes()
+        {
+            Resistores[0].Corrente = Resistores[1].Corrente = CorrenteTotal;
+
+            double iRamoSuperior;
+            double iRamoInferior;
+            int reqRamoSuperior = Resistores[2].Resistencia + Resistores[3].Resistencia;
+            int reqRamoInferior = Resistores[4].Resistencia + Resistores[5].Resistencia;
+
+            DivisorDeCorrente(CorrenteTotal, out iRamoSuperior, out iRamoInferior, reqRamoSuperior, reqRamoInferior);
+
+            Resistores[2].Corrente = Resistores[3].Corrente = iRamoSuperior;
+            Resistores[4].Corrente = Resistores[5].Corrente = iRamoInferior;
+        }
+
+        private void DivisorDeCorrente(double iTotal, out double i1, out double i2, double r1, double r2)
+        {
+            i1 = (r2 / (r1 + r2)) * iTotal;
+            i2 = (r1 / (r1 + r2)) * iTotal;
         }
 
         /// <summary>

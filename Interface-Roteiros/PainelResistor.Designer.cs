@@ -74,9 +74,9 @@ namespace Interface_Roteiros
             // 
             this.lblResistencia.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResistencia.ForeColor = System.Drawing.Color.White;
-            this.lblResistencia.Location = new System.Drawing.Point(36, 59);
+            this.lblResistencia.Location = new System.Drawing.Point(45, 59);
             this.lblResistencia.Name = "lblResistencia";
-            this.lblResistencia.Size = new System.Drawing.Size(63, 29);
+            this.lblResistencia.Size = new System.Drawing.Size(54, 29);
             this.lblResistencia.TabIndex = 1;
             this.lblResistencia.Text = "0Ω";
             this.lblResistencia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -259,7 +259,6 @@ namespace Interface_Roteiros
         #endregion
 
         private XanderUI.XUICircleProgressBar xuiCircleProgressBar1;
-        private System.Windows.Forms.Label lblResistencia;
         private System.Windows.Forms.TrackBar trackResistencia;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -274,5 +273,6 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label lblPotencia;
         private System.Windows.Forms.Label lblCorrente;
         private System.Windows.Forms.Label lblTensao;
+        private System.Windows.Forms.Label lblResistencia;
     }
 }
