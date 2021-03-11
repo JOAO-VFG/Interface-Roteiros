@@ -112,12 +112,6 @@
     <Compile Include="BoxInformacao.Designer.cs">
       <DependentUpon>BoxInformacao.cs</DependentUpon>
     </Compile>
-    <Compile Include="CaixaComponente.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CaixaComponente.Designer.cs">
-      <DependentUpon>CaixaComponente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Circuito.cs" />
     <Compile Include="Circuito5.cs" />
     <Compile Include="EscolhaRoteiro.cs">
@@ -126,11 +120,11 @@
     <Compile Include="EscolhaRoteiro.Designer.cs">
       <DependentUpon>EscolhaRoteiro.cs</DependentUpon>
     </Compile>
-    <Compile Include="JanelaMenu.cs">
+    <Compile Include="PainelResistor.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="JanelaMenu.Designer.cs">
-      <DependentUpon>JanelaMenu.cs</DependentUpon>
+    <Compile Include="PainelResistor.Designer.cs">
+      <DependentUpon>PainelResistor.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaLeisDeOhm.cs">
       <SubType>Form</SubType>
@@ -219,14 +213,11 @@
     <EmbeddedResource Include="BoxInformacao.resx">
       <DependentUpon>BoxInformacao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CaixaComponente.resx">
-      <DependentUpon>CaixaComponente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EscolhaRoteiro.resx">
       <DependentUpon>EscolhaRoteiro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JanelaMenu.resx">
-      <DependentUpon>JanelaMenu.cs</DependentUpon>
+    <EmbeddedResource Include="PainelResistor.resx">
+      <DependentUpon>PainelResistor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaLeisDeOhm.resx">
       <DependentUpon>TelaLeisDeOhm.cs</DependentUpon>
@@ -397,6 +388,7 @@
   <ItemGroup>
     <Content Include="icone.ico" />
     <Content Include="icone2.ico" />
+    <None Include="Resources\current.png" />
     <None Include="Resources\toggleOn.png" />
     <None Include="Resources\toggleOff.png" />
   </ItemGroup>
