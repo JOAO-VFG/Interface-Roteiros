@@ -51,23 +51,23 @@ namespace Interface_Roteiros
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.painelResistor1 = new Interface_Roteiros.PainelResistor();
+            this.painelResistor = new Interface_Roteiros.PainelResistor();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panCircuito = new System.Windows.Forms.Panel();
+            this.lblFonte_2 = new System.Windows.Forms.Label();
+            this.lblResistor2_2 = new System.Windows.Forms.Label();
+            this.lblResistor1_2 = new System.Windows.Forms.Label();
+            this.lblResistor6 = new System.Windows.Forms.Label();
+            this.lblResistor5_2 = new System.Windows.Forms.Label();
+            this.lblResistor4_2 = new System.Windows.Forms.Label();
+            this.lblResistor1 = new System.Windows.Forms.Label();
+            this.lblResistor3_2 = new System.Windows.Forms.Label();
             this.lblFonte = new System.Windows.Forms.Label();
             this.lblResistor2 = new System.Windows.Forms.Label();
-            this.lblResistor1 = new System.Windows.Forms.Label();
-            this.lblResistor6 = new System.Windows.Forms.Label();
+            this.lblResistor6_2 = new System.Windows.Forms.Label();
             this.lblResistor5 = new System.Windows.Forms.Label();
             this.lblResistor4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.lblResistor3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.panel2.SuspendLayout();
@@ -115,7 +115,7 @@ namespace Interface_Roteiros
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.painelResistor1);
+            this.panel2.Controls.Add(this.painelResistor);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(0, 35);
             this.panel2.Name = "panel2";
@@ -334,13 +334,15 @@ namespace Interface_Roteiros
             this.label8.Text = "Resistor";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // painelResistor1
+            // painelResistor
             // 
-            this.painelResistor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.painelResistor1.Location = new System.Drawing.Point(13, 52);
-            this.painelResistor1.Name = "painelResistor1";
-            this.painelResistor1.Size = new System.Drawing.Size(385, 200);
-            this.painelResistor1.TabIndex = 1;
+            this.painelResistor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.painelResistor.LabelDoResistor = null;
+            this.painelResistor.Location = new System.Drawing.Point(13, 52);
+            this.painelResistor.Name = "painelResistor";
+            this.painelResistor.Resistor = null;
+            this.painelResistor.Size = new System.Drawing.Size(385, 200);
+            this.painelResistor.TabIndex = 1;
             // 
             // panel3
             // 
@@ -355,48 +357,48 @@ namespace Interface_Roteiros
             // 
             this.panCircuito.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panCircuito.BackgroundImage")));
             this.panCircuito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panCircuito.Controls.Add(this.lblFonte_2);
+            this.panCircuito.Controls.Add(this.lblResistor2_2);
+            this.panCircuito.Controls.Add(this.lblResistor1_2);
+            this.panCircuito.Controls.Add(this.lblResistor6);
+            this.panCircuito.Controls.Add(this.lblResistor5_2);
+            this.panCircuito.Controls.Add(this.lblResistor4_2);
+            this.panCircuito.Controls.Add(this.lblResistor1);
+            this.panCircuito.Controls.Add(this.lblResistor3_2);
             this.panCircuito.Controls.Add(this.lblFonte);
             this.panCircuito.Controls.Add(this.lblResistor2);
-            this.panCircuito.Controls.Add(this.lblResistor1);
-            this.panCircuito.Controls.Add(this.lblResistor6);
+            this.panCircuito.Controls.Add(this.lblResistor6_2);
             this.panCircuito.Controls.Add(this.lblResistor5);
             this.panCircuito.Controls.Add(this.lblResistor4);
-            this.panCircuito.Controls.Add(this.label7);
             this.panCircuito.Controls.Add(this.lblResistor3);
-            this.panCircuito.Controls.Add(this.label6);
-            this.panCircuito.Controls.Add(this.label5);
-            this.panCircuito.Controls.Add(this.label4);
-            this.panCircuito.Controls.Add(this.label2);
-            this.panCircuito.Controls.Add(this.label1);
-            this.panCircuito.Controls.Add(this.label3);
             this.panCircuito.Location = new System.Drawing.Point(21, 65);
             this.panCircuito.Name = "panCircuito";
             this.panCircuito.Size = new System.Drawing.Size(602, 456);
             this.panCircuito.TabIndex = 14;
             // 
-            // lblFonte
+            // lblFonte_2
             // 
-            this.lblFonte.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblFonte.Location = new System.Drawing.Point(361, 378);
-            this.lblFonte.Name = "lblFonte";
-            this.lblFonte.Size = new System.Drawing.Size(56, 34);
-            this.lblFonte.TabIndex = 19;
+            this.lblFonte_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblFonte_2.Location = new System.Drawing.Point(361, 378);
+            this.lblFonte_2.Name = "lblFonte_2";
+            this.lblFonte_2.Size = new System.Drawing.Size(56, 34);
+            this.lblFonte_2.TabIndex = 19;
             // 
-            // lblResistor2
+            // lblResistor2_2
             // 
-            this.lblResistor2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblResistor2.Location = new System.Drawing.Point(14, 225);
-            this.lblResistor2.Name = "lblResistor2";
-            this.lblResistor2.Size = new System.Drawing.Size(25, 67);
-            this.lblResistor2.TabIndex = 18;
+            this.lblResistor2_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblResistor2_2.Location = new System.Drawing.Point(14, 225);
+            this.lblResistor2_2.Name = "lblResistor2_2";
+            this.lblResistor2_2.Size = new System.Drawing.Size(25, 67);
+            this.lblResistor2_2.TabIndex = 18;
             // 
-            // lblResistor1
+            // lblResistor1_2
             // 
-            this.lblResistor1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblResistor1.Location = new System.Drawing.Point(178, 360);
-            this.lblResistor1.Name = "lblResistor1";
-            this.lblResistor1.Size = new System.Drawing.Size(65, 34);
-            this.lblResistor1.TabIndex = 17;
+            this.lblResistor1_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblResistor1_2.Location = new System.Drawing.Point(178, 360);
+            this.lblResistor1_2.Name = "lblResistor1_2";
+            this.lblResistor1_2.Size = new System.Drawing.Size(65, 34);
+            this.lblResistor1_2.TabIndex = 17;
             // 
             // lblResistor6
             // 
@@ -406,118 +408,118 @@ namespace Interface_Roteiros
             this.lblResistor6.Size = new System.Drawing.Size(56, 21);
             this.lblResistor6.TabIndex = 16;
             // 
+            // lblResistor5_2
+            // 
+            this.lblResistor5_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblResistor5_2.Location = new System.Drawing.Point(204, 125);
+            this.lblResistor5_2.Name = "lblResistor5_2";
+            this.lblResistor5_2.Size = new System.Drawing.Size(56, 21);
+            this.lblResistor5_2.TabIndex = 15;
+            // 
+            // lblResistor4_2
+            // 
+            this.lblResistor4_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblResistor4_2.Location = new System.Drawing.Point(361, 48);
+            this.lblResistor4_2.Name = "lblResistor4_2";
+            this.lblResistor4_2.Size = new System.Drawing.Size(56, 21);
+            this.lblResistor4_2.TabIndex = 14;
+            // 
+            // lblResistor1
+            // 
+            this.lblResistor1.AutoSize = true;
+            this.lblResistor1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblResistor1.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistor1.ForeColor = System.Drawing.Color.White;
+            this.lblResistor1.Location = new System.Drawing.Point(194, 337);
+            this.lblResistor1.Name = "lblResistor1";
+            this.lblResistor1.Size = new System.Drawing.Size(28, 23);
+            this.lblResistor1.TabIndex = 13;
+            this.lblResistor1.Text = "1Ω";
+            this.lblResistor1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblResistor3_2
+            // 
+            this.lblResistor3_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblResistor3_2.Location = new System.Drawing.Point(204, 48);
+            this.lblResistor3_2.Name = "lblResistor3_2";
+            this.lblResistor3_2.Size = new System.Drawing.Size(56, 21);
+            this.lblResistor3_2.TabIndex = 13;
+            // 
+            // lblFonte
+            // 
+            this.lblFonte.AutoSize = true;
+            this.lblFonte.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFonte.ForeColor = System.Drawing.Color.White;
+            this.lblFonte.Location = new System.Drawing.Point(376, 422);
+            this.lblFonte.Name = "lblFonte";
+            this.lblFonte.Size = new System.Drawing.Size(27, 23);
+            this.lblFonte.TabIndex = 11;
+            this.lblFonte.Text = "1V";
+            // 
+            // lblResistor2
+            // 
+            this.lblResistor2.AutoSize = true;
+            this.lblResistor2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblResistor2.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistor2.ForeColor = System.Drawing.Color.White;
+            this.lblResistor2.Location = new System.Drawing.Point(45, 245);
+            this.lblResistor2.Name = "lblResistor2";
+            this.lblResistor2.Size = new System.Drawing.Size(28, 23);
+            this.lblResistor2.TabIndex = 12;
+            this.lblResistor2.Text = "1Ω";
+            this.lblResistor2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblResistor6_2
+            // 
+            this.lblResistor6_2.AutoSize = true;
+            this.lblResistor6_2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblResistor6_2.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistor6_2.ForeColor = System.Drawing.Color.White;
+            this.lblResistor6_2.Location = new System.Drawing.Point(376, 157);
+            this.lblResistor6_2.Name = "lblResistor6_2";
+            this.lblResistor6_2.Size = new System.Drawing.Size(28, 23);
+            this.lblResistor6_2.TabIndex = 11;
+            this.lblResistor6_2.Text = "1Ω";
+            this.lblResistor6_2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // lblResistor5
             // 
-            this.lblResistor5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblResistor5.Location = new System.Drawing.Point(204, 125);
+            this.lblResistor5.AutoSize = true;
+            this.lblResistor5.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblResistor5.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistor5.ForeColor = System.Drawing.Color.White;
+            this.lblResistor5.Location = new System.Drawing.Point(215, 157);
             this.lblResistor5.Name = "lblResistor5";
-            this.lblResistor5.Size = new System.Drawing.Size(56, 21);
-            this.lblResistor5.TabIndex = 15;
+            this.lblResistor5.Size = new System.Drawing.Size(28, 23);
+            this.lblResistor5.TabIndex = 10;
+            this.lblResistor5.Text = "1Ω";
+            this.lblResistor5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblResistor4
             // 
-            this.lblResistor4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblResistor4.Location = new System.Drawing.Point(361, 48);
+            this.lblResistor4.AutoSize = true;
+            this.lblResistor4.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblResistor4.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistor4.ForeColor = System.Drawing.Color.White;
+            this.lblResistor4.Location = new System.Drawing.Point(376, 16);
             this.lblResistor4.Name = "lblResistor4";
-            this.lblResistor4.Size = new System.Drawing.Size(56, 21);
-            this.lblResistor4.TabIndex = 14;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label7.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(194, 337);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(28, 23);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "1Ω";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblResistor4.Size = new System.Drawing.Size(28, 23);
+            this.lblResistor4.TabIndex = 9;
+            this.lblResistor4.Text = "1Ω";
+            this.lblResistor4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblResistor3
             // 
-            this.lblResistor3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblResistor3.Location = new System.Drawing.Point(204, 48);
+            this.lblResistor3.AutoSize = true;
+            this.lblResistor3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblResistor3.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistor3.ForeColor = System.Drawing.Color.White;
+            this.lblResistor3.Location = new System.Drawing.Point(215, 16);
             this.lblResistor3.Name = "lblResistor3";
-            this.lblResistor3.Size = new System.Drawing.Size(56, 21);
-            this.lblResistor3.TabIndex = 13;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(376, 422);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 23);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "1V";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label5.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(45, 245);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 23);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "1Ω";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(376, 157);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 23);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "1Ω";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(215, 157);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 23);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "1Ω";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(376, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 23);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "1Ω";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(215, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 23);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "1Ω";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblResistor3.Size = new System.Drawing.Size(28, 23);
+            this.lblResistor3.TabIndex = 8;
+            this.lblResistor3.Text = "1Ω";
+            this.lblResistor3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel1
             // 
@@ -568,22 +570,22 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panCircuito;
+        private System.Windows.Forms.Label lblFonte_2;
+        private System.Windows.Forms.Label lblResistor2_2;
+        private System.Windows.Forms.Label lblResistor1_2;
+        private System.Windows.Forms.Label lblResistor6;
+        private System.Windows.Forms.Label lblResistor5_2;
+        private System.Windows.Forms.Label lblResistor4_2;
+        private System.Windows.Forms.Label lblResistor1;
+        private System.Windows.Forms.Label lblResistor3_2;
         private System.Windows.Forms.Label lblFonte;
         private System.Windows.Forms.Label lblResistor2;
-        private System.Windows.Forms.Label lblResistor1;
-        private System.Windows.Forms.Label lblResistor6;
+        private System.Windows.Forms.Label lblResistor6_2;
         private System.Windows.Forms.Label lblResistor5;
         private System.Windows.Forms.Label lblResistor4;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblResistor3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
-        private PainelResistor painelResistor1;
+        private PainelResistor painelResistor;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnVoltar;
