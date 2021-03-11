@@ -20,6 +20,7 @@ namespace Interface_Roteiros
         {
         }
 
+        // Fecha a atual janela e retorna a tela de seleção
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             TelaDeRetorno.Show();
