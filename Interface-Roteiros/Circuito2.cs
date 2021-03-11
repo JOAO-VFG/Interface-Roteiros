@@ -80,5 +80,22 @@ namespace Interface_Roteiros
         {
             _potenciaTotal = Bateria.Tensao * CorrenteTotal;
         }
+
+        /// <summary>
+        /// Pega um valor e, se necessário, transforma a unidade a medida.
+        /// </summary>
+        /// <param name="valor"></param>
+        /// <param name="unidade"></param>
+        /// <returns>O valor formatado</returns>
+        public static string ConverterGrandeza(double valor, string unidade)
+        {
+            // Valor é menor que o módulo de 1 e sua unidade é atualizada para 'mili' (m)
+            if (valor > -1 && valor < 1)
+            {
+                valor *= 1000;
+                unidade = "m" + unidade;
+            }
+            return Math.Round(valor, 2).ToString() + unidade;
+        }
     }
 }

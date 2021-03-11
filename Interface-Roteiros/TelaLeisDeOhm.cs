@@ -27,9 +27,9 @@ namespace Interface_Roteiros
             Bateria fonte = new Bateria(1);
 
             Circuito = new Circuito2(resistores, fonte);
-            lblResistencia.Text = Circuito.ResistenciaEquivalente.ToString() + "Ω";
-            lblCorrente.Text = Circuito.CorrenteTotal.ToString() + "A";
-            lblPotencia.Text = Circuito.PotenciaTotal.ToString() + "W";
+            lblResistencia.Text = Circuito2.ConverterGrandeza(Circuito.ResistenciaEquivalente, "Ω");
+            lblCorrente.Text = Circuito2.ConverterGrandeza(Circuito.CorrenteTotal, "A");
+            lblPotencia.Text = Circuito2.ConverterGrandeza(Circuito.PotenciaTotal, "W");
         }
 
         // Fecha a atual janela e retorna a tela de seleção
