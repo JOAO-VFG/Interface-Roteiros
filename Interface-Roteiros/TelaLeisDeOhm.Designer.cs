@@ -33,17 +33,17 @@ namespace Interface_Roteiros
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblPotencia = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblResistencia = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblCorrente = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -141,7 +141,7 @@ namespace Interface_Roteiros
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(59)))));
-            this.panel8.Controls.Add(this.label15);
+            this.panel8.Controls.Add(this.lblPotencia);
             this.panel8.Controls.Add(this.label12);
             this.panel8.Controls.Add(this.pictureBox3);
             this.panel8.Controls.Add(this.panel11);
@@ -150,16 +150,16 @@ namespace Interface_Roteiros
             this.panel8.Size = new System.Drawing.Size(110, 122);
             this.panel8.TabIndex = 8;
             // 
-            // label15
+            // lblPotencia
             // 
-            this.label15.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(4, 79);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(104, 26);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "0W";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPotencia.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPotencia.ForeColor = System.Drawing.Color.White;
+            this.lblPotencia.Location = new System.Drawing.Point(4, 79);
+            this.lblPotencia.Name = "lblPotencia";
+            this.lblPotencia.Size = new System.Drawing.Size(104, 26);
+            this.lblPotencia.TabIndex = 5;
+            this.lblPotencia.Text = "0W";
+            this.lblPotencia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
@@ -193,7 +193,7 @@ namespace Interface_Roteiros
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(59)))));
-            this.panel7.Controls.Add(this.label14);
+            this.panel7.Controls.Add(this.lblResistencia);
             this.panel7.Controls.Add(this.label11);
             this.panel7.Controls.Add(this.pictureBox2);
             this.panel7.Controls.Add(this.panel10);
@@ -202,16 +202,16 @@ namespace Interface_Roteiros
             this.panel7.Size = new System.Drawing.Size(110, 122);
             this.panel7.TabIndex = 7;
             // 
-            // label14
+            // lblResistencia
             // 
-            this.label14.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(3, 77);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(104, 26);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "0Ω";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblResistencia.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistencia.ForeColor = System.Drawing.Color.White;
+            this.lblResistencia.Location = new System.Drawing.Point(3, 77);
+            this.lblResistencia.Name = "lblResistencia";
+            this.lblResistencia.Size = new System.Drawing.Size(104, 26);
+            this.lblResistencia.TabIndex = 4;
+            this.lblResistencia.Text = "0Ω";
+            this.lblResistencia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
@@ -244,7 +244,7 @@ namespace Interface_Roteiros
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(59)))));
-            this.panel6.Controls.Add(this.label13);
+            this.panel6.Controls.Add(this.lblCorrente);
             this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.pictureBox1);
             this.panel6.Controls.Add(this.panel9);
@@ -253,27 +253,27 @@ namespace Interface_Roteiros
             this.panel6.Size = new System.Drawing.Size(110, 122);
             this.panel6.TabIndex = 6;
             // 
-            // label13
+            // lblCorrente
             // 
-            this.label13.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(3, 79);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(104, 26);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "0V";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCorrente.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorrente.ForeColor = System.Drawing.Color.White;
+            this.lblCorrente.Location = new System.Drawing.Point(3, 79);
+            this.lblCorrente.Name = "lblCorrente";
+            this.lblCorrente.Size = new System.Drawing.Size(104, 26);
+            this.lblCorrente.TabIndex = 3;
+            this.lblCorrente.Text = "0V";
+            this.lblCorrente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(143)))), ((int)(((byte)(168)))));
-            this.label10.Location = new System.Drawing.Point(33, 22);
+            this.label10.Location = new System.Drawing.Point(29, 22);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(46, 23);
+            this.label10.Size = new System.Drawing.Size(85, 23);
             this.label10.TabIndex = 2;
-            this.label10.Text = "DDP";
+            this.label10.Text = "Corrente";
             // 
             // pictureBox1
             // 
@@ -588,17 +588,17 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblPotencia;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblResistencia;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblCorrente;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel9;

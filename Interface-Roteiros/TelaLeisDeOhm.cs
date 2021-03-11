@@ -10,6 +10,7 @@ namespace Interface_Roteiros
 {
     public partial class TelaLeisDeOhm : Interface_Roteiros.TelaInicialPadrao
     {
+        public Circuito2 Circuito { get; private set; }
         public TelaSimulador TelaDeRetorno { get; set; }
         public TelaLeisDeOhm()
         {
@@ -18,6 +19,17 @@ namespace Interface_Roteiros
 
         private void TelaLeisDeOhm_Load(object sender, EventArgs e)
         {
+            Resistor[] resistores =
+            {
+                new Resistor(1), new Resistor(1), new Resistor(1),
+                new Resistor(1), new Resistor(1), new Resistor(1)
+            };
+            Bateria fonte = new Bateria(1);
+
+            Circuito = new Circuito2(resistores, fonte);
+            lblResistencia.Text = Circuito.ResistenciaEquivalente.ToString() + "Ω";
+            lblCorrente.Text = Circuito.CorrenteTotal.ToString() + "A";
+            lblPotencia.Text = Circuito.PotenciaTotal.ToString() + "W";
         }
 
         // Fecha a atual janela e retorna a tela de seleção

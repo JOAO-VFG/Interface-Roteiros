@@ -63,10 +63,12 @@ namespace Interface_Roteiros
             // Série
             var req1 = Resistores[0].Resistencia + Resistores[1].Resistencia;
             // Paralelo ramo superior
-            var req2 = ResistorEmParalelo(Resistores[2].Resistencia, Resistores[3].Resistencia);
+            var reqRamoSuperior = Resistores[2].Resistencia + Resistores[3].Resistencia;
             // Paralelo ramo inferior
-            var req3 = ResistorEmParalelo(Resistores[4].Resistencia, Resistores[5].Resistencia);
-            _resistenciaEquivalente = req1 + ResistorEmParalelo(req2, req3);
+            var reqRamoInferior = Resistores[4].Resistencia + Resistores[5].Resistencia;
+            // Equivalente do ramo superior e inferior em paralelo
+            var req2 = ResistorEmParalelo(reqRamoSuperior, reqRamoInferior);
+            _resistenciaEquivalente = req1 + req2;
         }
 
         private void CalcularCorrenteTotal()
