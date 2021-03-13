@@ -206,7 +206,7 @@ namespace Interface_Roteiros
             this.lblPotencia.AutoSize = true;
             this.lblPotencia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPotencia.ForeColor = System.Drawing.Color.White;
-            this.lblPotencia.Location = new System.Drawing.Point(154, 163);
+            this.lblPotencia.Location = new System.Drawing.Point(145, 164);
             this.lblPotencia.Name = "lblPotencia";
             this.lblPotencia.Size = new System.Drawing.Size(32, 19);
             this.lblPotencia.TabIndex = 11;
@@ -217,7 +217,7 @@ namespace Interface_Roteiros
             this.lblCorrente.AutoSize = true;
             this.lblCorrente.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorrente.ForeColor = System.Drawing.Color.White;
-            this.lblCorrente.Location = new System.Drawing.Point(155, 99);
+            this.lblCorrente.Location = new System.Drawing.Point(146, 100);
             this.lblCorrente.Name = "lblCorrente";
             this.lblCorrente.Size = new System.Drawing.Size(28, 19);
             this.lblCorrente.TabIndex = 10;
@@ -228,7 +228,7 @@ namespace Interface_Roteiros
             this.lblTensao.AutoSize = true;
             this.lblTensao.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTensao.ForeColor = System.Drawing.Color.White;
-            this.lblTensao.Location = new System.Drawing.Point(155, 27);
+            this.lblTensao.Location = new System.Drawing.Point(146, 28);
             this.lblTensao.Name = "lblTensao";
             this.lblTensao.Size = new System.Drawing.Size(27, 19);
             this.lblTensao.TabIndex = 9;

@@ -10,7 +10,7 @@ namespace Interface_Roteiros
 {
     public partial class TelaAjusteResistor : Interface_Roteiros.TelaAjustePadrao
     {
-        public Circuito Circuito { get; set; }
+        public Circuito1 Circuito { get; set; }
         public Resistor Resistor { get; set; }
         public Label LabelTexto { get; set; }
         public Label LabelVo { get; set; }

@@ -12,6 +12,25 @@ namespace Interface_Roteiros
     {
         public Circuito2 Circuito { get; private set; }
         public TelaSimulador TelaDeRetorno { get; set; }
+
+        public Label LabelCorrente
+        {
+            get => lblCorrente;
+            set => lblCorrente = value;
+        }
+
+        public Label LabelResistencia
+        {
+            get => lblResistencia;
+            set => lblResistencia = value;
+        }
+
+        public Label LabelPotencia
+        {
+            get => lblPotencia;
+            set => lblPotencia = value;
+        }
+
         public TelaLeisDeOhm()
         {
             InitializeComponent();
@@ -24,14 +43,16 @@ namespace Interface_Roteiros
                 new Resistor(1), new Resistor(1), new Resistor(1),
                 new Resistor(1), new Resistor(1), new Resistor(1)
             };
-            Bateria fonte = new Bateria(1);
+            Bateria fonte = new Bateria(15);
 
             Circuito = new Circuito2(resistores, fonte);
-            Circuito.CalcularCircuito();
+            Circuito.ResolverCircuito();
 
-            painelResistor.Resistor = resistores[0];
-            painelResistor.LabelDoResistor = lblResistor1;
-            painelResistor.ExibirDados();
+            painelResistor.TelaPrincipal = this;
+            painelResistor.Circuito = this.Circuito;
+
+            AtualizarPainelResistor(Circuito.Resistores[0], lblResistor1);
+
             lblResistencia.Text = Circuito2.ConverterGrandeza(Circuito.ResistenciaEquivalente, "Ω");
             lblCorrente.Text = Circuito2.ConverterGrandeza(Circuito.CorrenteTotal, "A");
             lblPotencia.Text = Circuito2.ConverterGrandeza(Circuito.PotenciaTotal, "W");
@@ -59,22 +80,22 @@ namespace Interface_Roteiros
 
         private void lblResistor3_2_Click(object sender, EventArgs e)
         {
-            AtualizarPainelResistor(Circuito.Resistores[2], lblResistor3_2);
+            AtualizarPainelResistor(Circuito.Resistores[2], lblResistor3);
         }
 
         private void lblResistor4_2_Click(object sender, EventArgs e)
         {
-            AtualizarPainelResistor(Circuito.Resistores[3], lblResistor4_2);
+            AtualizarPainelResistor(Circuito.Resistores[3], lblResistor4);
         }
 
         private void lblResistor5_2_Click(object sender, EventArgs e)
         {
-            AtualizarPainelResistor(Circuito.Resistores[4], lblResistor5_2);
+            AtualizarPainelResistor(Circuito.Resistores[4], lblResistor5);
         }
 
         private void lblResistor6_Click(object sender, EventArgs e)
         {
-            AtualizarPainelResistor(Circuito.Resistores[5], lblResistor6_2);
+            AtualizarPainelResistor(Circuito.Resistores[5], lblResistor6);
         }
         // ==================================================
 

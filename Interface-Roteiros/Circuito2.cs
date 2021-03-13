@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace Interface_Roteiros
 {
@@ -42,11 +43,14 @@ namespace Interface_Roteiros
             this.Bateria = bateria;
         }
 
-        public void CalcularCircuito()
+        /// <summary>
+        /// Calcula o valor da corrente, tensão e potência de todos os componentes
+        /// </summary>
+        public void ResolverCircuito()
         {
             CalcularCorrentes();
 
-            foreach (var resistor in Resistores)
+            foreach(var resistor in Resistores)
             {
                 resistor.CalcularTensao();
                 resistor.CalcularPotencia();

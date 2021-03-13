@@ -112,7 +112,7 @@
     <Compile Include="BoxInformacao.Designer.cs">
       <DependentUpon>BoxInformacao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Circuito.cs" />
+    <Compile Include="Circuito1.cs" />
     <Compile Include="Circuito2.cs" />
     <Compile Include="Circuito5.cs" />
     <Compile Include="EscolhaRoteiro.cs">

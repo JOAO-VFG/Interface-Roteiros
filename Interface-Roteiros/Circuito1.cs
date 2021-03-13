@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interface_Roteiros
 {
-    public class Circuito
+    public class Circuito1
     {
         public Bateria Fonte { get; set; }
         public Resistor[] Resistores { get; set; }
@@ -15,7 +15,7 @@ namespace Interface_Roteiros
         private double V1 { get; set; }
         public double[] Correntes { get; set; } = new double[3];
 
-        public Circuito(Resistor[] resistores, Bateria fonte)
+        public Circuito1(Resistor[] resistores, Bateria fonte)
         {
             this.Resistores = resistores;
             this.Fonte = fonte;
@@ -25,10 +25,6 @@ namespace Interface_Roteiros
         public void ResolverCircuto()
         {
             CalcularCorrentes();
-            foreach(var resistor in Resistores)
-            {
-                resistor.CalcularPotencia();
-            }
             Fonte.CalcularPotencia();
             var r2 = Resistores[1].Resistencia;
             var r3 = Resistores[2].Resistencia;

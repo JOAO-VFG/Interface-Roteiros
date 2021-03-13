@@ -52,24 +52,24 @@ namespace Interface_Roteiros
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.painelResistor = new Interface_Roteiros.PainelResistor();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panCircuito = new System.Windows.Forms.Panel();
             this.lblFonte_2 = new System.Windows.Forms.Label();
             this.lblResistor2_2 = new System.Windows.Forms.Label();
             this.lblResistor1_2 = new System.Windows.Forms.Label();
-            this.lblResistor6 = new System.Windows.Forms.Label();
+            this.lblResistor6_2 = new System.Windows.Forms.Label();
             this.lblResistor5_2 = new System.Windows.Forms.Label();
             this.lblResistor4_2 = new System.Windows.Forms.Label();
             this.lblResistor1 = new System.Windows.Forms.Label();
             this.lblResistor3_2 = new System.Windows.Forms.Label();
             this.lblFonte = new System.Windows.Forms.Label();
             this.lblResistor2 = new System.Windows.Forms.Label();
-            this.lblResistor6_2 = new System.Windows.Forms.Label();
+            this.lblResistor6 = new System.Windows.Forms.Label();
             this.lblResistor5 = new System.Windows.Forms.Label();
             this.lblResistor4 = new System.Windows.Forms.Label();
             this.lblResistor3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.painelResistor = new Interface_Roteiros.PainelResistor();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -110,6 +110,7 @@ namespace Interface_Roteiros
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.panel2.Controls.Add(this.painelResistor);
             this.panel2.Controls.Add(this.panel12);
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.panel7);
@@ -117,7 +118,6 @@ namespace Interface_Roteiros
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.painelResistor);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(0, 35);
             this.panel2.Name = "panel2";
@@ -345,16 +345,6 @@ namespace Interface_Roteiros
             this.label8.Text = "Resistor";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // painelResistor
-            // 
-            this.painelResistor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.painelResistor.LabelDoResistor = null;
-            this.painelResistor.Location = new System.Drawing.Point(11, 104);
-            this.painelResistor.Name = "painelResistor";
-            this.painelResistor.Resistor = null;
-            this.painelResistor.Size = new System.Drawing.Size(385, 200);
-            this.painelResistor.TabIndex = 1;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(33)))));
@@ -371,14 +361,14 @@ namespace Interface_Roteiros
             this.panCircuito.Controls.Add(this.lblFonte_2);
             this.panCircuito.Controls.Add(this.lblResistor2_2);
             this.panCircuito.Controls.Add(this.lblResistor1_2);
-            this.panCircuito.Controls.Add(this.lblResistor6);
+            this.panCircuito.Controls.Add(this.lblResistor6_2);
             this.panCircuito.Controls.Add(this.lblResistor5_2);
             this.panCircuito.Controls.Add(this.lblResistor4_2);
             this.panCircuito.Controls.Add(this.lblResistor1);
             this.panCircuito.Controls.Add(this.lblResistor3_2);
             this.panCircuito.Controls.Add(this.lblFonte);
             this.panCircuito.Controls.Add(this.lblResistor2);
-            this.panCircuito.Controls.Add(this.lblResistor6_2);
+            this.panCircuito.Controls.Add(this.lblResistor6);
             this.panCircuito.Controls.Add(this.lblResistor5);
             this.panCircuito.Controls.Add(this.lblResistor4);
             this.panCircuito.Controls.Add(this.lblResistor3);
@@ -413,14 +403,14 @@ namespace Interface_Roteiros
             this.lblResistor1_2.TabIndex = 17;
             this.lblResistor1_2.Click += new System.EventHandler(this.lblResistor1_2_Click);
             // 
-            // lblResistor6
+            // lblResistor6_2
             // 
-            this.lblResistor6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblResistor6.Location = new System.Drawing.Point(361, 125);
-            this.lblResistor6.Name = "lblResistor6";
-            this.lblResistor6.Size = new System.Drawing.Size(56, 21);
-            this.lblResistor6.TabIndex = 16;
-            this.lblResistor6.Click += new System.EventHandler(this.lblResistor6_Click);
+            this.lblResistor6_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblResistor6_2.Location = new System.Drawing.Point(361, 125);
+            this.lblResistor6_2.Name = "lblResistor6_2";
+            this.lblResistor6_2.Size = new System.Drawing.Size(56, 21);
+            this.lblResistor6_2.TabIndex = 16;
+            this.lblResistor6_2.Click += new System.EventHandler(this.lblResistor6_Click);
             // 
             // lblResistor5_2
             // 
@@ -469,9 +459,9 @@ namespace Interface_Roteiros
             this.lblFonte.ForeColor = System.Drawing.Color.White;
             this.lblFonte.Location = new System.Drawing.Point(376, 422);
             this.lblFonte.Name = "lblFonte";
-            this.lblFonte.Size = new System.Drawing.Size(27, 23);
+            this.lblFonte.Size = new System.Drawing.Size(37, 23);
             this.lblFonte.TabIndex = 11;
-            this.lblFonte.Text = "1V";
+            this.lblFonte.Text = "15V";
             // 
             // lblResistor2
             // 
@@ -486,18 +476,18 @@ namespace Interface_Roteiros
             this.lblResistor2.Text = "1Ω";
             this.lblResistor2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lblResistor6_2
+            // lblResistor6
             // 
-            this.lblResistor6_2.AutoSize = true;
-            this.lblResistor6_2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.lblResistor6_2.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResistor6_2.ForeColor = System.Drawing.Color.White;
-            this.lblResistor6_2.Location = new System.Drawing.Point(376, 157);
-            this.lblResistor6_2.Name = "lblResistor6_2";
-            this.lblResistor6_2.Size = new System.Drawing.Size(28, 23);
-            this.lblResistor6_2.TabIndex = 11;
-            this.lblResistor6_2.Text = "1Ω";
-            this.lblResistor6_2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblResistor6.AutoSize = true;
+            this.lblResistor6.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblResistor6.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResistor6.ForeColor = System.Drawing.Color.White;
+            this.lblResistor6.Location = new System.Drawing.Point(376, 157);
+            this.lblResistor6.Name = "lblResistor6";
+            this.lblResistor6.Size = new System.Drawing.Size(28, 23);
+            this.lblResistor6.TabIndex = 11;
+            this.lblResistor6.Text = "1Ω";
+            this.lblResistor6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblResistor5
             // 
@@ -547,6 +537,18 @@ namespace Interface_Roteiros
             this.panel1.Size = new System.Drawing.Size(622, 575);
             this.panel1.TabIndex = 6;
             // 
+            // painelResistor
+            // 
+            this.painelResistor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.painelResistor.Circuito = null;
+            this.painelResistor.LabelDoResistor = null;
+            this.painelResistor.Location = new System.Drawing.Point(11, 104);
+            this.painelResistor.Name = "painelResistor";
+            this.painelResistor.Resistor = null;
+            this.painelResistor.Size = new System.Drawing.Size(385, 200);
+            this.painelResistor.TabIndex = 10;
+            this.painelResistor.TelaPrincipal = null;
+            // 
             // TelaLeisDeOhm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -591,19 +593,18 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label lblFonte_2;
         private System.Windows.Forms.Label lblResistor2_2;
         private System.Windows.Forms.Label lblResistor1_2;
-        private System.Windows.Forms.Label lblResistor6;
+        private System.Windows.Forms.Label lblResistor6_2;
         private System.Windows.Forms.Label lblResistor5_2;
         private System.Windows.Forms.Label lblResistor4_2;
         private System.Windows.Forms.Label lblResistor1;
         private System.Windows.Forms.Label lblResistor3_2;
         private System.Windows.Forms.Label lblFonte;
         private System.Windows.Forms.Label lblResistor2;
-        private System.Windows.Forms.Label lblResistor6_2;
+        private System.Windows.Forms.Label lblResistor6;
         private System.Windows.Forms.Label lblResistor5;
         private System.Windows.Forms.Label lblResistor4;
         private System.Windows.Forms.Label lblResistor3;
         private System.Windows.Forms.Panel panel1;
-        private PainelResistor painelResistor;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnVoltar;
@@ -625,5 +626,6 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel12;
+        private PainelResistor painelResistor;
     }
 }

@@ -21,7 +21,7 @@ namespace Interface_Roteiros
         // Resistores
         private Resistor[] resistor = new Resistor[3];
         // Circuito
-        private Circuito circuito;
+        private Circuito1 circuito;
         public TelaLeisDeKirchhof()
         {
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace Interface_Roteiros
             resistor[1] = new Resistor(12);
             resistor[2] = new Resistor(8);
             // Circuito
-            circuito = new Circuito(resistor, fonte);
+            circuito = new Circuito1(resistor, fonte);
 
             // Array para iterar o label de cada resistor na tela
             Label[] textos = { lblResistor1, lblResistor2, lblResistor3 };

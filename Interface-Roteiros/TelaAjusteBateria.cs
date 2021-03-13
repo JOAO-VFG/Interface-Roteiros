@@ -10,7 +10,7 @@ namespace Interface_Roteiros
 {
     public partial class TelaAjusteBateria : Interface_Roteiros.TelaAjustePadrao
     {
-        public Circuito Circuito { get; set; }
+        public Circuito1 Circuito { get; set; }
         public Label LabelTexto { get; set; }
         public Label LabelV0 { get; set; }
         public TelaAjusteBateria()

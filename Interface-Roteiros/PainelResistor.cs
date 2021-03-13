@@ -14,6 +14,8 @@ namespace Interface_Roteiros
     {
         public Resistor Resistor { get; set; }
         public Label LabelDoResistor { get; set; }
+        public Circuito2 Circuito { get; set; }
+        public TelaLeisDeOhm TelaPrincipal { get; set; }
         public int Resistencia
         {
             set { lblResistencia.Text = value.ToString() + "Ω"; }
@@ -29,9 +31,16 @@ namespace Interface_Roteiros
         /// </summary>
         public void ExibirDados()
         {
+            Circuito.ResolverCircuito(); // Calcula o circuito
+            // Exibe os dados
             lblCorrente.Text = Circuito2.ConverterGrandeza(Resistor.Corrente, "A");
-            lblTensao.Text = Circuito2.ConverterGrandeza(Resistor.Potencia, "V");
+            lblTensao.Text = Circuito2.ConverterGrandeza(Resistor.Tensao, "V");
             lblPotencia.Text = Circuito2.ConverterGrandeza(Resistor.Potencia, "W");
+            // Exibe também os dados principais
+            TelaPrincipal.LabelCorrente.Text = Circuito2.ConverterGrandeza(Circuito.CorrenteTotal, "A");
+            TelaPrincipal.LabelResistencia.Text = Circuito2.ConverterGrandeza(Circuito.ResistenciaEquivalente, "Ω");
+            TelaPrincipal.LabelPotencia.Text = Circuito2.ConverterGrandeza(Circuito.PotenciaTotal, "W");
+            // Muda o valor da barra de resistência
             trackResistencia.Value = Resistor.Resistencia;
         }
 
@@ -45,6 +54,7 @@ namespace Interface_Roteiros
             string valor = trackResistencia.Value.ToString() + "Ω";
             LabelDoResistor.Text = lblResistencia.Text = valor;
             Resistor.Resistencia = trackResistencia.Value;
+            ExibirDados();
         }
     }
 }
