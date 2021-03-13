@@ -45,11 +45,14 @@ namespace Interface_Roteiros
             this.lblPotencia = new System.Windows.Forms.Label();
             this.lblCorrente = new System.Windows.Forms.Label();
             this.lblTensao = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackResistencia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // xuiCircleProgressBar1
@@ -59,7 +62,7 @@ namespace Interface_Roteiros
             this.xuiCircleProgressBar1.FilledColorAlpha = 200;
             this.xuiCircleProgressBar1.FilledThickness = 30;
             this.xuiCircleProgressBar1.IsAnimated = false;
-            this.xuiCircleProgressBar1.Location = new System.Drawing.Point(3, 12);
+            this.xuiCircleProgressBar1.Location = new System.Drawing.Point(3, 49);
             this.xuiCircleProgressBar1.Name = "xuiCircleProgressBar1";
             this.xuiCircleProgressBar1.Percentage = 63;
             this.xuiCircleProgressBar1.ShowText = false;
@@ -74,7 +77,7 @@ namespace Interface_Roteiros
             // 
             this.lblResistencia.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResistencia.ForeColor = System.Drawing.Color.White;
-            this.lblResistencia.Location = new System.Drawing.Point(45, 59);
+            this.lblResistencia.Location = new System.Drawing.Point(45, 96);
             this.lblResistencia.Name = "lblResistencia";
             this.lblResistencia.Size = new System.Drawing.Size(54, 29);
             this.lblResistencia.TabIndex = 1;
@@ -84,7 +87,7 @@ namespace Interface_Roteiros
             // trackResistencia
             // 
             this.trackResistencia.AutoSize = false;
-            this.trackResistencia.Location = new System.Drawing.Point(3, 160);
+            this.trackResistencia.Location = new System.Drawing.Point(3, 197);
             this.trackResistencia.Maximum = 100;
             this.trackResistencia.Minimum = 1;
             this.trackResistencia.Name = "trackResistencia";
@@ -172,7 +175,7 @@ namespace Interface_Roteiros
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(161, 0);
+            this.panel1.Location = new System.Drawing.Point(161, 37);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(221, 200);
             this.panel1.TabIndex = 9;
@@ -234,17 +237,41 @@ namespace Interface_Roteiros
             this.lblTensao.TabIndex = 9;
             this.lblTensao.Text = "0V";
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(385, 40);
+            this.panel5.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(22)))), ((int)(((byte)(171)))));
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label1.Size = new System.Drawing.Size(385, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Resistor";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // PainelResistor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.trackResistencia);
             this.Controls.Add(this.lblResistencia);
             this.Controls.Add(this.xuiCircleProgressBar1);
+            this.MaximumSize = new System.Drawing.Size(381, 235);
             this.Name = "PainelResistor";
-            this.Size = new System.Drawing.Size(385, 200);
+            this.Size = new System.Drawing.Size(381, 235);
             this.Load += new System.EventHandler(this.PainelResistor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackResistencia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -252,6 +279,7 @@ namespace Interface_Roteiros
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -274,5 +302,7 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label lblCorrente;
         private System.Windows.Forms.Label lblTensao;
         private System.Windows.Forms.Label lblResistencia;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label1;
     }
 }

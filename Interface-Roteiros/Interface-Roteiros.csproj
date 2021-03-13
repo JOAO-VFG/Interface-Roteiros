@@ -121,6 +121,12 @@
     <Compile Include="EscolhaRoteiro.Designer.cs">
       <DependentUpon>EscolhaRoteiro.cs</DependentUpon>
     </Compile>
+    <Compile Include="PainelBateria.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PainelBateria.Designer.cs">
+      <DependentUpon>PainelBateria.cs</DependentUpon>
+    </Compile>
     <Compile Include="PainelResistor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -216,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EscolhaRoteiro.resx">
       <DependentUpon>EscolhaRoteiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PainelBateria.resx">
+      <DependentUpon>PainelBateria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PainelResistor.resx">
       <DependentUpon>PainelResistor.cs</DependentUpon>
