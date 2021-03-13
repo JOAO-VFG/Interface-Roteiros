@@ -442,14 +442,14 @@ namespace Interface_Roteiros
             // 
             // lblFonte
             // 
-            this.lblFonte.AutoSize = true;
             this.lblFonte.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFonte.ForeColor = System.Drawing.Color.White;
-            this.lblFonte.Location = new System.Drawing.Point(376, 422);
+            this.lblFonte.Location = new System.Drawing.Point(356, 423);
             this.lblFonte.Name = "lblFonte";
-            this.lblFonte.Size = new System.Drawing.Size(37, 23);
+            this.lblFonte.Size = new System.Drawing.Size(61, 23);
             this.lblFonte.TabIndex = 11;
             this.lblFonte.Text = "15V";
+            this.lblFonte.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblResistor2
             // 

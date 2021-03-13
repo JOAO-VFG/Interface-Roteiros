@@ -55,6 +55,9 @@ namespace Interface_Roteiros
                 resistor.CalcularTensao();
                 resistor.CalcularPotencia();
             }
+
+            Bateria.Corrente = CorrenteTotal;
+            Bateria.CalcularPotencia();
         }
 
         /// <summary>

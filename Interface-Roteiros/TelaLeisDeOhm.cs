@@ -55,7 +55,9 @@ namespace Interface_Roteiros
             painelBateria = new PainelBateria();
             painelBateria.Location = painelResistor.Location;
             painelBateria.Hide();
+            painelBateria.TelaPrincipal = this;
             painelBateria.BringToFront();
+            painelBateria.Circuito = this.Circuito;
             panInformacoes.Controls.Add(painelBateria);
 
             painelResistor.TelaPrincipal = this;
@@ -87,6 +89,7 @@ namespace Interface_Roteiros
 
             painelBateria.LabelFonte = label;
             painelBateria.Bateria = fonte;
+            painelBateria.ExibirDados();
         }
 
         // Evento de quando o usuário clicar na fonte
