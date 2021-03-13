@@ -67,6 +67,7 @@ namespace Interface_Roteiros
             // 
             // imgRoteiro
             // 
+            this.imgRoteiro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.imgRoteiro.Image = global::Interface_Roteiros.Properties.Resources.circuito_eletrico1;
             this.imgRoteiro.Location = new System.Drawing.Point(116, 3);
             this.imgRoteiro.Name = "imgRoteiro";

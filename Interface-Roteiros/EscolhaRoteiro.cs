@@ -25,6 +25,14 @@ namespace Interface_Roteiros
             set { imgRoteiro.Image = value; }
         }
         public string PathPdf { get; set; }
+        public override Color BackColor
+        {
+            get => lblTitulo.BackColor;
+            set
+            {
+                lblTitulo.BackColor = btnPdf.BackColor = value;
+            }
+        }
         public EscolhaRoteiro()
         {
             InitializeComponent();
