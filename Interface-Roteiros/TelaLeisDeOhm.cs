@@ -10,6 +10,8 @@ namespace Interface_Roteiros
 {
     public partial class TelaLeisDeOhm : Interface_Roteiros.TelaInicialPadrao
     {
+        private PainelBateria painelBateria;
+
         public Circuito2 Circuito { get; private set; }
         public TelaSimulador TelaDeRetorno { get; set; }
 
@@ -38,6 +40,7 @@ namespace Interface_Roteiros
 
         private void TelaLeisDeOhm_Load(object sender, EventArgs e)
         {
+            // Cria o circuito
             Resistor[] resistores =
             {
                 new Resistor(1), new Resistor(1), new Resistor(1),
@@ -47,6 +50,13 @@ namespace Interface_Roteiros
 
             Circuito = new Circuito2(resistores, fonte);
             Circuito.ResolverCircuito();
+
+            // Cria o painel para a bateria
+            painelBateria = new PainelBateria();
+            painelBateria.Location = painelResistor.Location;
+            painelBateria.Hide();
+            painelBateria.BringToFront();
+            panInformacoes.Controls.Add(painelBateria);
 
             painelResistor.TelaPrincipal = this;
             painelResistor.Circuito = this.Circuito;
@@ -61,10 +71,28 @@ namespace Interface_Roteiros
         // Atualiza o painel com as informações do resistor
         private void AtualizarPainelResistor(Resistor resistor, Label label)
         {
+            painelBateria.Hide();
+            painelResistor.Show();
+
             painelResistor.Resistor = resistor;
             painelResistor.Resistencia = resistor.Resistencia;
             painelResistor.LabelDoResistor = label;
             painelResistor.ExibirDados();
+        }
+
+        private void AtualizarPainelBateria(Bateria fonte, Label label)
+        {
+            painelResistor.Hide();
+            painelBateria.Show();
+
+            painelBateria.LabelFonte = label;
+            painelBateria.Bateria = fonte;
+        }
+
+        // Evento de quando o usuário clicar na fonte
+        private void lblFonte_2_Click(object sender, EventArgs e)
+        {
+            AtualizarPainelBateria(Circuito.Bateria, lblFonte);
         }
 
         // Eventos de quando o usuário clica no resistor
@@ -105,5 +133,7 @@ namespace Interface_Roteiros
             TelaDeRetorno.Show();
             this.Close();
         }
+
+        
     }
 }

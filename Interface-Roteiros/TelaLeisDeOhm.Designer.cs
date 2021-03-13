@@ -30,7 +30,7 @@ namespace Interface_Roteiros
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLeisDeOhm));
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panInformacoes = new System.Windows.Forms.Panel();
             this.painelResistor = new Interface_Roteiros.PainelResistor();
             this.panel12 = new System.Windows.Forms.Panel();
             this.btnVoltar = new System.Windows.Forms.Button();
@@ -69,7 +69,7 @@ namespace Interface_Roteiros
             this.lblResistor3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.panInformacoes.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -104,21 +104,21 @@ namespace Interface_Roteiros
             // 
             this.imgIcone.Image = global::Interface_Roteiros.Properties.Resources.circuito_icone;
             // 
-            // panel2
+            // panInformacoes
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
-            this.panel2.Controls.Add(this.painelResistor);
-            this.panel2.Controls.Add(this.panel12);
-            this.panel2.Controls.Add(this.panel8);
-            this.panel2.Controls.Add(this.panel7);
-            this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(0, 35);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(418, 578);
-            this.panel2.TabIndex = 7;
+            this.panInformacoes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.panInformacoes.Controls.Add(this.painelResistor);
+            this.panInformacoes.Controls.Add(this.panel12);
+            this.panInformacoes.Controls.Add(this.panel8);
+            this.panInformacoes.Controls.Add(this.panel7);
+            this.panInformacoes.Controls.Add(this.panel6);
+            this.panInformacoes.Controls.Add(this.label9);
+            this.panInformacoes.Controls.Add(this.panel5);
+            this.panInformacoes.Controls.Add(this.panel3);
+            this.panInformacoes.Location = new System.Drawing.Point(0, 35);
+            this.panInformacoes.Name = "panInformacoes";
+            this.panInformacoes.Size = new System.Drawing.Size(418, 578);
+            this.panInformacoes.TabIndex = 7;
             // 
             // painelResistor
             // 
@@ -371,6 +371,7 @@ namespace Interface_Roteiros
             this.lblFonte_2.Name = "lblFonte_2";
             this.lblFonte_2.Size = new System.Drawing.Size(56, 34);
             this.lblFonte_2.TabIndex = 19;
+            this.lblFonte_2.Click += new System.EventHandler(this.lblFonte_2_Click);
             // 
             // lblResistor2_2
             // 
@@ -529,20 +530,20 @@ namespace Interface_Roteiros
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(29)))), ((int)(((byte)(87)))));
             this.ClientSize = new System.Drawing.Size(1046, 610);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panInformacoes);
             this.Controls.Add(this.panel1);
             this.Name = "TelaLeisDeOhm";
             this.Text = "Electrophorus";
             this.Load += new System.EventHandler(this.TelaLeisDeOhm_Load);
             this.Controls.SetChildIndex(this.panel1, 0);
-            this.Controls.SetChildIndex(this.panel2, 0);
+            this.Controls.SetChildIndex(this.panInformacoes, 0);
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
             this.Controls.SetChildIndex(this.imgIcone, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panInformacoes.ResumeLayout(false);
+            this.panInformacoes.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
@@ -561,7 +562,7 @@ namespace Interface_Roteiros
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panInformacoes;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panCircuito;
         private System.Windows.Forms.Label lblFonte_2;
