@@ -105,6 +105,7 @@ namespace Interface_Roteiros
             this.escolhaRoteiro1.Size = new System.Drawing.Size(595, 45);
             this.escolhaRoteiro1.TabIndex = 7;
             this.escolhaRoteiro1.TituloRoteiro = "Leis de Kirchhof";
+            this.escolhaRoteiro1.URL = "https://github.com/JOAO-VFG/Interface-Roteiros/blob/main/PDF\'s/leis-kirchhof.pdf";
             // 
             // btnRetornar
             // 

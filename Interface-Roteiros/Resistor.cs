@@ -70,7 +70,7 @@ namespace Interface_Roteiros
         public void CalcularPotencia()
         {
             // P = U²/R
-            if (Tensao != 0 && Resistencia != 0 && Resistencia != 0)
+            if (Tensao != 0 && Resistencia != 0)
             {
                 _potencia = Math.Pow(Tensao, 2) / Resistencia;
             }

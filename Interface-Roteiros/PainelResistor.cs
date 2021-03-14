@@ -18,7 +18,7 @@ namespace Interface_Roteiros
         public TelaLeisDeOhm TelaPrincipal { get; set; }
         public int Resistencia
         {
-            set { lblResistencia.Text = value.ToString() + "Ω"; }
+            set { lblResistencia.Text = $"{value}Ω"; }
         }
 
         public PainelResistor()
