@@ -14,6 +14,7 @@ namespace Interface_Roteiros
         private readonly Color cinzaEscuro = Color.FromArgb(52, 53, 54);
         private readonly Color cinzaClaro = Color.FromArgb(105, 106, 107);
         // Propriedades
+        public string URL { get; set; }
         public string TituloRoteiro
         {
             get { return lblTitulo.Text; }
@@ -92,7 +93,7 @@ namespace Interface_Roteiros
         {
             try
             {
-                Process.Start("pdf-leis-kirchhof.pdf");
+                Process.Start(URL);
             }
             catch
             {
