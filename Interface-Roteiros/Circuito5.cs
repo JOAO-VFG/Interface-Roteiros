@@ -23,7 +23,8 @@ namespace Interface_Roteiros
         public Double i { get; set; }
 
         public void CalculaCircuito()
-        { 
+        {
+            fonte = 4;
             Rth = r1 + r2;
             i = Vth / (Rth + r3);
         }

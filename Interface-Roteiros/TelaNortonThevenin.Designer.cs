@@ -164,6 +164,7 @@ namespace Interface_Roteiros
             this.botaoPersonalizado4.Size = new System.Drawing.Size(100, 100);
             this.botaoPersonalizado4.TabIndex = 6;
             this.botaoPersonalizado4.Texto = "Resistor 3";
+            this.botaoPersonalizado4.Load += new System.EventHandler(this.botaoPersonalizado4_Load);
             // 
             // panel6
             // 
@@ -182,6 +183,7 @@ namespace Interface_Roteiros
             this.botaoPersonalizado3.Size = new System.Drawing.Size(100, 100);
             this.botaoPersonalizado3.TabIndex = 5;
             this.botaoPersonalizado3.Texto = "Resistor 2";
+            this.botaoPersonalizado3.Load += new System.EventHandler(this.botaoPersonalizado3_Load);
             // 
             // panel5
             // 
@@ -200,6 +202,7 @@ namespace Interface_Roteiros
             this.botaoPersonalizado2.Size = new System.Drawing.Size(100, 100);
             this.botaoPersonalizado2.TabIndex = 4;
             this.botaoPersonalizado2.Texto = "Resistor 1";
+            this.botaoPersonalizado2.Load += new System.EventHandler(this.botaoPersonalizado2_Load);
             // 
             // panel4
             // 
@@ -226,6 +229,7 @@ namespace Interface_Roteiros
             this.botaoPersonalizado1.Size = new System.Drawing.Size(100, 100);
             this.botaoPersonalizado1.TabIndex = 1;
             this.botaoPersonalizado1.Texto = "Fonte";
+            this.botaoPersonalizado1.Load += new System.EventHandler(this.botaoPersonalizado1_Load);
             // 
             // btnRetornar
             // 
@@ -278,7 +282,7 @@ namespace Interface_Roteiros
             this.label3.TabIndex = 14;
             this.label3.Text = "3";
             // 
-            // TelaCircuito5
+            // TelaNortonThevenin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(600, 410);
@@ -292,7 +296,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.lblResistor1);
             this.Controls.Add(this.lblCorrente);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "TelaCircuito5";
+            this.Name = "TelaNortonThevenin";
             this.Text = "Electrophorus";
             this.Load += new System.EventHandler(this.TelaCircuito5_Load);
             this.Controls.SetChildIndex(this.lblTitulo, 0);

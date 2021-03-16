@@ -293,7 +293,7 @@ namespace Interface_Roteiros
             this.label8.TabIndex = 14;
             this.label8.Text = "3";
             // 
-            // TelaCircuito
+            // TelaLeisDeKirchhof
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(215)))));
@@ -310,7 +310,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "TelaCircuito";
+            this.Name = "TelaLeisDeKirchhof";
             this.Text = "Electrophorus";
             this.Load += new System.EventHandler(this.TelaCircuitoTeste_Load);
             this.Controls.SetChildIndex(this.lblTitulo, 0);
