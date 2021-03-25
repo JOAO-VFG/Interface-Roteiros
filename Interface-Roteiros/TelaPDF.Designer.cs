@@ -38,6 +38,7 @@ namespace Interface_Roteiros
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.escolhaRoteiro2 = new Interface_Roteiros.EscolhaRoteiro();
+            this.escolhaRoteiro3 = new Interface_Roteiros.EscolhaRoteiro();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -109,7 +110,8 @@ namespace Interface_Roteiros
             this.escolhaRoteiro1.Size = new System.Drawing.Size(595, 45);
             this.escolhaRoteiro1.TabIndex = 7;
             this.escolhaRoteiro1.TituloRoteiro = "Leis de Kirchhof";
-            this.escolhaRoteiro1.URL = "https://github.com/JOAO-VFG/Interface-Roteiros/blob/main/PDF\'s/leis-kirchhof.pdf";
+            this.escolhaRoteiro1.URL = "https://github.com/JOAO-VFG/Interface-Roteiros/blob/main/PDF\'s/03-Roteiro-Leis-de" +
+    "-Kirchhoff.pdf";
             // 
             // btnRetornar
             // 
@@ -143,6 +145,7 @@ namespace Interface_Roteiros
             // 
             this.panel3.AutoScroll = true;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(16)))), ((int)(((byte)(51)))));
+            this.panel3.Controls.Add(this.escolhaRoteiro3);
             this.panel3.Controls.Add(this.escolhaRoteiro2);
             this.panel3.Controls.Add(this.escolhaRoteiro1);
             this.panel3.Location = new System.Drawing.Point(0, 205);
@@ -162,8 +165,25 @@ namespace Interface_Roteiros
             this.escolhaRoteiro2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.escolhaRoteiro2.Size = new System.Drawing.Size(595, 45);
             this.escolhaRoteiro2.TabIndex = 8;
-            this.escolhaRoteiro2.TituloRoteiro = "Leis de Ohm";
-            this.escolhaRoteiro2.URL = null;
+            this.escolhaRoteiro2.TituloRoteiro = "Potência e Divisor de Corrente";
+            this.escolhaRoteiro2.URL = "https://github.com/JOAO-VFG/Interface-Roteiros/blob/main/PDF\'s/02-Roteiro%20-%20P" +
+    "otencia-e-divisor-de-corrente.pdf";
+            // 
+            // escolhaRoteiro3
+            // 
+            this.escolhaRoteiro3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.escolhaRoteiro3.ImageRoteiro = ((System.Drawing.Image)(resources.GetObject("escolhaRoteiro3.ImageRoteiro")));
+            this.escolhaRoteiro3.Location = new System.Drawing.Point(0, 90);
+            this.escolhaRoteiro3.MaximumSize = new System.Drawing.Size(595, 245);
+            this.escolhaRoteiro3.MinimumSize = new System.Drawing.Size(595, 45);
+            this.escolhaRoteiro3.Name = "escolhaRoteiro3";
+            this.escolhaRoteiro3.PathPdf = null;
+            this.escolhaRoteiro3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.escolhaRoteiro3.Size = new System.Drawing.Size(595, 45);
+            this.escolhaRoteiro3.TabIndex = 9;
+            this.escolhaRoteiro3.TituloRoteiro = "Cargas";
+            this.escolhaRoteiro3.URL = "https://github.com/JOAO-VFG/Interface-Roteiros/blob/main/PDF\'s/01-Roteiro-Cargas-" +
+    "e-Corrente.pdf";
             // 
             // TelaPDF
             // 
@@ -199,5 +219,6 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private EscolhaRoteiro escolhaRoteiro2;
+        private EscolhaRoteiro escolhaRoteiro3;
     }
 }
