@@ -12,6 +12,7 @@ namespace Interface_Roteiros
     {
         public TelaSimulador TelaDeRetorno { get; set; }
         private TelaAjusteBateria telaFonte5;
+        // Propriedade que armazena a janela de configuração do resistor
         private Circuito5 circuito5;
         public TelaNortonThevenin()
         {
@@ -20,14 +21,7 @@ namespace Interface_Roteiros
 
         private void TelaCircuito5_Load(object sender, EventArgs e)
         {
-            telaFonte5 = new TelaAjusteBateria()
-            {
-                Titulo = " Fonte ",
-                ImagemTitulo = Properties.Resources.battery,
- 
-
-
-            };
+            telaFonte5 = new TelaAjusteBateria();
         }
 
         private void btnRetornar_Click(object sender, EventArgs e)
@@ -38,7 +32,7 @@ namespace Interface_Roteiros
 
         private void botaoPersonalizado1_Load(object sender, EventArgs e)
         {
-            TelaAjusteBateria.Show();
+            telaFonte5.Show();
             this.Close();
         }
 
@@ -55,6 +49,12 @@ namespace Interface_Roteiros
         private void botaoPersonalizado4_Load(object sender, EventArgs e)
         {
 
+        }
+
+        // Acontece quando o botão da fonte é clicado
+        private void btnFonte_Click(object sender, EventArgs e)
+        {
+            telaFonte5.Show();
         }
     }
 }

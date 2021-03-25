@@ -40,6 +40,7 @@ namespace Interface_Roteiros
             cpbProgresso.Percentage = valor;
             Resistor.Resistencia = valor;
             Circuito.ResolverCircuto();
+            Resistor.CalcularPotencia();
             lblCorrente.Text = FormatarValor(Resistor.Corrente, "A");
             lblPotencia.Text = FormatarValor(Resistor.Potencia, "W");
             LabelVo.Text = FormatarValor(Circuito.V0, "V");

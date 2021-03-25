@@ -44,7 +44,7 @@ namespace Interface_Roteiros
             this.botaoPersonalizado2 = new Interface_Roteiros.BotaoPersonalizado();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.botaoPersonalizado1 = new Interface_Roteiros.BotaoPersonalizado();
+            this.btnFonte = new Interface_Roteiros.BotaoPersonalizado();
             this.btnRetornar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -140,7 +140,7 @@ namespace Interface_Roteiros
             this.panel1.Controls.Add(this.botaoPersonalizado2);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.botaoPersonalizado1);
+            this.panel1.Controls.Add(this.btnFonte);
             this.panel1.Controls.Add(this.btnRetornar);
             this.panel1.Location = new System.Drawing.Point(0, 310);
             this.panel1.Name = "panel1";
@@ -220,16 +220,16 @@ namespace Interface_Roteiros
             this.panel3.Size = new System.Drawing.Size(5, 100);
             this.panel3.TabIndex = 2;
             // 
-            // botaoPersonalizado1
+            // btnFonte
             // 
-            this.botaoPersonalizado1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(54)))));
-            this.botaoPersonalizado1.Image = global::Interface_Roteiros.Properties.Resources.battery2;
-            this.botaoPersonalizado1.Location = new System.Drawing.Point(105, 0);
-            this.botaoPersonalizado1.Name = "botaoPersonalizado1";
-            this.botaoPersonalizado1.Size = new System.Drawing.Size(100, 100);
-            this.botaoPersonalizado1.TabIndex = 1;
-            this.botaoPersonalizado1.Texto = "Fonte";
-            this.botaoPersonalizado1.Load += new System.EventHandler(this.botaoPersonalizado1_Load);
+            this.btnFonte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(54)))));
+            this.btnFonte.Image = global::Interface_Roteiros.Properties.Resources.battery2;
+            this.btnFonte.Location = new System.Drawing.Point(105, 0);
+            this.btnFonte.Name = "btnFonte";
+            this.btnFonte.Size = new System.Drawing.Size(100, 100);
+            this.btnFonte.TabIndex = 1;
+            this.btnFonte.Texto = "Fonte";
+            this.btnFonte.Click += new System.EventHandler(this.btnFonte_Click);
             // 
             // btnRetornar
             // 
@@ -331,7 +331,7 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Button btnRetornar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private BotaoPersonalizado botaoPersonalizado1;
+        private BotaoPersonalizado btnFonte;
         private BotaoPersonalizado botaoPersonalizado2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel7;
