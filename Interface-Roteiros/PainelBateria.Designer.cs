@@ -151,7 +151,7 @@ namespace Interface_Roteiros
             this.lblPotencia.AutoSize = true;
             this.lblPotencia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPotencia.ForeColor = System.Drawing.Color.White;
-            this.lblPotencia.Location = new System.Drawing.Point(144, 84);
+            this.lblPotencia.Location = new System.Drawing.Point(131, 87);
             this.lblPotencia.Name = "lblPotencia";
             this.lblPotencia.Size = new System.Drawing.Size(32, 19);
             this.lblPotencia.TabIndex = 11;
@@ -162,7 +162,7 @@ namespace Interface_Roteiros
             this.lblCorrente.AutoSize = true;
             this.lblCorrente.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorrente.ForeColor = System.Drawing.Color.White;
-            this.lblCorrente.Location = new System.Drawing.Point(145, 20);
+            this.lblCorrente.Location = new System.Drawing.Point(132, 23);
             this.lblCorrente.Name = "lblCorrente";
             this.lblCorrente.Size = new System.Drawing.Size(28, 19);
             this.lblCorrente.TabIndex = 10;
@@ -171,7 +171,7 @@ namespace Interface_Roteiros
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Interface_Roteiros.Properties.Resources.current;
-            this.pictureBox3.Location = new System.Drawing.Point(28, 16);
+            this.pictureBox3.Location = new System.Drawing.Point(15, 19);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 24);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -183,7 +183,7 @@ namespace Interface_Roteiros
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift", 14.25F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(58, 17);
+            this.label3.Location = new System.Drawing.Point(45, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 23);
             this.label3.TabIndex = 4;
@@ -192,7 +192,7 @@ namespace Interface_Roteiros
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Interface_Roteiros.Properties.Resources.power_danger;
-            this.pictureBox2.Location = new System.Drawing.Point(28, 80);
+            this.pictureBox2.Location = new System.Drawing.Point(15, 83);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -204,7 +204,7 @@ namespace Interface_Roteiros
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift", 14.25F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(58, 81);
+            this.label4.Location = new System.Drawing.Point(45, 84);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 23);
             this.label4.TabIndex = 5;

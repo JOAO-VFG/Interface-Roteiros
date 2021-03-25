@@ -36,8 +36,8 @@ namespace Interface_Roteiros
             this.subRoteiro5 = new Interface_Roteiros.SubRoteiro();
             this.subRoteiro4 = new Interface_Roteiros.SubRoteiro();
             this.subRoteiro3 = new Interface_Roteiros.SubRoteiro();
-            this.subRoteiro2 = new Interface_Roteiros.SubRoteiro();
             this.subRoteiro1 = new Interface_Roteiros.SubRoteiro();
+            this.subRoteiro2 = new Interface_Roteiros.SubRoteiro();
             this.panRoteiros.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,17 +114,6 @@ namespace Interface_Roteiros
             this.subRoteiro3.TextoRoteiro = "Leis de Kirchhof";
             this.subRoteiro3.Click += new System.EventHandler(this.subRoteiro3_Click);
             // 
-            // subRoteiro2
-            // 
-            this.subRoteiro2.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito2;
-            this.subRoteiro2.Location = new System.Drawing.Point(212, 20);
-            this.subRoteiro2.Name = "subRoteiro2";
-            this.subRoteiro2.Size = new System.Drawing.Size(163, 172);
-            this.subRoteiro2.TabIndex = 10;
-            this.subRoteiro2.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subRoteiro2.TextoRoteiro = "Potência e Divisor de Corrente";
-            this.subRoteiro2.Click += new System.EventHandler(this.subRoteiro2_Click);
-            // 
             // subRoteiro1
             // 
             this.subRoteiro1.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito7;
@@ -136,6 +125,17 @@ namespace Interface_Roteiros
             this.subRoteiro1.TextoRoteiro = "Cargas";
             this.subRoteiro1.Click += new System.EventHandler(this.subRoteiro1_Click);
             // 
+            // subRoteiro2
+            // 
+            this.subRoteiro2.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito2;
+            this.subRoteiro2.Location = new System.Drawing.Point(212, 20);
+            this.subRoteiro2.Name = "subRoteiro2";
+            this.subRoteiro2.Size = new System.Drawing.Size(163, 172);
+            this.subRoteiro2.TabIndex = 10;
+            this.subRoteiro2.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subRoteiro2.TextoRoteiro = "Potência e Divisor de Corrente";
+            this.subRoteiro2.Click += new System.EventHandler(this.subRoteiro2_Click);
+            // 
             // TelaRoteiros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,6 +143,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.panRoteiros);
             this.Name = "TelaRoteiros";
             this.Size = new System.Drawing.Size(580, 430);
+            this.Load += new System.EventHandler(this.TelaRoteiros_Load);
             this.panRoteiros.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -152,11 +153,11 @@ namespace Interface_Roteiros
 
         private System.Windows.Forms.Panel panRoteiros;
         private SubRoteiro subRoteiro1;
-        private SubRoteiro subRoteiro2;
         private SubRoteiro subRoteiro3;
         private SubRoteiro subRoteiro4;
         private SubRoteiro subRoteiro5;
         private SubRoteiro subRoteiro6;
         private System.Windows.Forms.Button btnRetornar;
+        private SubRoteiro subRoteiro2;
     }
 }

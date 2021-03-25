@@ -59,6 +59,7 @@ namespace Interface_Roteiros
             // lblTitulo
             // 
             this.lblTitulo.Size = new System.Drawing.Size(600, 35);
+            this.lblTitulo.Text = "Leis de Kirchhof | Simulador";
             // 
             // btnSair
             // 

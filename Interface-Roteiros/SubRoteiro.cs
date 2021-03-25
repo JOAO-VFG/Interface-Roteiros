@@ -20,8 +20,8 @@ namespace Interface_Roteiros
 
         public string TextoRoteiro
         {
-            get { return textoRoteiro.Text; }
-            set { textoRoteiro.Text = value; }
+            get => textoRoteiro.Text;
+            set => textoRoteiro.Text = value;
         }
         
         public Font TextoFont

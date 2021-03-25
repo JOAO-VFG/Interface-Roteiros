@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Interface_Roteiros
@@ -56,6 +49,11 @@ namespace Interface_Roteiros
             {
                 MessageBox.Show(exception.Message, "Exceção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void TelaRoteiros_Load(object sender, EventArgs e)
+        {
+            subRoteiro2.TextoRoteiro = "Potência e Divisor de Corrente";
         }
     }
 }

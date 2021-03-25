@@ -36,9 +36,12 @@ namespace Interface_Roteiros
             this.escolhaRoteiro1 = new Interface_Roteiros.EscolhaRoteiro();
             this.btnRetornar = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.escolhaRoteiro2 = new Interface_Roteiros.EscolhaRoteiro();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -95,8 +98,9 @@ namespace Interface_Roteiros
             // 
             // escolhaRoteiro1
             // 
+            this.escolhaRoteiro1.Dock = System.Windows.Forms.DockStyle.Top;
             this.escolhaRoteiro1.ImageRoteiro = ((System.Drawing.Image)(resources.GetObject("escolhaRoteiro1.ImageRoteiro")));
-            this.escolhaRoteiro1.Location = new System.Drawing.Point(0, 205);
+            this.escolhaRoteiro1.Location = new System.Drawing.Point(0, 0);
             this.escolhaRoteiro1.MaximumSize = new System.Drawing.Size(595, 245);
             this.escolhaRoteiro1.MinimumSize = new System.Drawing.Size(595, 45);
             this.escolhaRoteiro1.Name = "escolhaRoteiro1";
@@ -135,12 +139,38 @@ namespace Interface_Roteiros
             this.panel4.Size = new System.Drawing.Size(595, 45);
             this.panel4.TabIndex = 9;
             // 
+            // panel3
+            // 
+            this.panel3.AutoScroll = true;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(16)))), ((int)(((byte)(51)))));
+            this.panel3.Controls.Add(this.escolhaRoteiro2);
+            this.panel3.Controls.Add(this.escolhaRoteiro1);
+            this.panel3.Location = new System.Drawing.Point(0, 205);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(595, 311);
+            this.panel3.TabIndex = 10;
+            // 
+            // escolhaRoteiro2
+            // 
+            this.escolhaRoteiro2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.escolhaRoteiro2.ImageRoteiro = ((System.Drawing.Image)(resources.GetObject("escolhaRoteiro2.ImageRoteiro")));
+            this.escolhaRoteiro2.Location = new System.Drawing.Point(0, 45);
+            this.escolhaRoteiro2.MaximumSize = new System.Drawing.Size(595, 245);
+            this.escolhaRoteiro2.MinimumSize = new System.Drawing.Size(595, 45);
+            this.escolhaRoteiro2.Name = "escolhaRoteiro2";
+            this.escolhaRoteiro2.PathPdf = null;
+            this.escolhaRoteiro2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.escolhaRoteiro2.Size = new System.Drawing.Size(595, 45);
+            this.escolhaRoteiro2.TabIndex = 8;
+            this.escolhaRoteiro2.TituloRoteiro = "Leis de Ohm";
+            this.escolhaRoteiro2.URL = null;
+            // 
             // TelaPDF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(595, 515);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.escolhaRoteiro1);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaPDF";
@@ -150,11 +180,12 @@ namespace Interface_Roteiros
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
             this.Controls.SetChildIndex(this.imgIcone, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
-            this.Controls.SetChildIndex(this.escolhaRoteiro1, 0);
             this.Controls.SetChildIndex(this.panel4, 0);
+            this.Controls.SetChildIndex(this.panel3, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -166,5 +197,7 @@ namespace Interface_Roteiros
         private EscolhaRoteiro escolhaRoteiro1;
         private System.Windows.Forms.Button btnRetornar;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private EscolhaRoteiro escolhaRoteiro2;
     }
 }

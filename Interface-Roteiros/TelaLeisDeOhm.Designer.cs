@@ -84,7 +84,7 @@ namespace Interface_Roteiros
             // lblTitulo
             // 
             this.lblTitulo.Size = new System.Drawing.Size(1046, 35);
-            this.lblTitulo.Text = "Leis de Ohm - Simulador";
+            this.lblTitulo.Text = "Potência e Divisor de Corrente | Simulador";
             // 
             // btnSair
             // 
