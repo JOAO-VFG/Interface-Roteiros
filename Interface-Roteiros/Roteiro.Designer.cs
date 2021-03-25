@@ -1,7 +1,7 @@
 ﻿
 namespace Interface_Roteiros
 {
-    partial class SubRoteiro
+    partial class Roteiro
     {
         /// <summary> 
         /// Variável de designer necessária.

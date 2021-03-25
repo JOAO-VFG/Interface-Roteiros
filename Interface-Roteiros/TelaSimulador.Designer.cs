@@ -30,12 +30,12 @@ namespace Interface_Roteiros
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaSimulador));
-            this.subRoteiro1 = new Interface_Roteiros.SubRoteiro();
-            this.rtrLeisOhm = new Interface_Roteiros.SubRoteiro();
-            this.rtrKirchhof = new Interface_Roteiros.SubRoteiro();
-            this.subRoteiro4 = new Interface_Roteiros.SubRoteiro();
-            this.rtrNortonThevenin = new Interface_Roteiros.SubRoteiro();
-            this.subRoteiro6 = new Interface_Roteiros.SubRoteiro();
+            this.subRoteiro1 = new Interface_Roteiros.Roteiro();
+            this.rtrLeisOhm = new Interface_Roteiros.Roteiro();
+            this.rtrKirchhof = new Interface_Roteiros.Roteiro();
+            this.subRoteiro4 = new Interface_Roteiros.Roteiro();
+            this.rtrNortonThevenin = new Interface_Roteiros.Roteiro();
+            this.subRoteiro6 = new Interface_Roteiros.Roteiro();
             this.btnRetornar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.SuspendLayout();
@@ -177,12 +177,12 @@ namespace Interface_Roteiros
 
         #endregion
 
-        private SubRoteiro subRoteiro1;
-        private SubRoteiro rtrLeisOhm;
-        private SubRoteiro rtrKirchhof;
-        private SubRoteiro subRoteiro4;
-        private SubRoteiro rtrNortonThevenin;
-        private SubRoteiro subRoteiro6;
+        private Roteiro subRoteiro1;
+        private Roteiro rtrLeisOhm;
+        private Roteiro rtrKirchhof;
+        private Roteiro subRoteiro4;
+        private Roteiro rtrNortonThevenin;
+        private Roteiro subRoteiro6;
         private System.Windows.Forms.Button btnRetornar;
     }
 }

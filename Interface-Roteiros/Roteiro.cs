@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Interface_Roteiros
 {
-    public partial class SubRoteiro : UserControl
+    public partial class Roteiro : UserControl
     {
         public Image ImagemRoteiro
         {
@@ -30,7 +30,7 @@ namespace Interface_Roteiros
             set { textoRoteiro.Font = value; }
         }
 
-        public SubRoteiro()
+        public Roteiro()
         {
             InitializeComponent();
         }
