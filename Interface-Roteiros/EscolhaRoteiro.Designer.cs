@@ -71,7 +71,7 @@ namespace Interface_Roteiros
             this.imgRoteiro.Image = global::Interface_Roteiros.Properties.Resources.circuito_eletrico1;
             this.imgRoteiro.Location = new System.Drawing.Point(116, 3);
             this.imgRoteiro.Name = "imgRoteiro";
-            this.imgRoteiro.Size = new System.Drawing.Size(343, 171);
+            this.imgRoteiro.Size = new System.Drawing.Size(343, 160);
             this.imgRoteiro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgRoteiro.TabIndex = 4;
             this.imgRoteiro.TabStop = false;
@@ -149,7 +149,7 @@ namespace Interface_Roteiros
             this.MinimumSize = new System.Drawing.Size(595, 45);
             this.Name = "EscolhaRoteiro";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Size = new System.Drawing.Size(595, 45);
+            this.Size = new System.Drawing.Size(595, 245);
             this.Load += new System.EventHandler(this.EscolhaRoteiro_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgRoteiro)).EndInit();
