@@ -95,8 +95,8 @@ namespace Interface_Roteiros
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(547, 100);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Há uma previa sobre qual tipo de exércicio será discutido e exemplificado clicand" +
-    "o-se sobre o nome do assunto.\r\n\r\nAbaixo clique sobre o ícone de pdf para abrir.";
+            this.label1.Text = "Demonstração prévia dos exemplos que serão abordados nos respectivos roteiros.\r\n\r" +
+    "\nAbaixo clique sobre o ícone de pdf para abrir.";
             // 
             // escolhaRoteiro1
             // 

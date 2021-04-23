@@ -100,7 +100,8 @@ namespace Interface_Roteiros
             this.boxPdf.TabIndex = 7;
             this.boxPdf.Tela = null;
             this.boxPdf.TelaDeRetorno = null;
-            this.boxPdf.TextoDaCaixa = "Cada tópico dispõe de um PDF para auxiliar o aluno em seus estudos";
+            this.boxPdf.TextoDaCaixa = "Cada roteiro tem seu pdf anexado no programa visando auxiliar nos estudos de circ" +
+    "uítos elétricos.";
             this.boxPdf.TextOnEnter = System.Drawing.Color.White;
             this.boxPdf.TextOnLeave = System.Drawing.Color.Black;
             this.boxPdf.TituloDaCaixa = "PDF\'s";
@@ -116,7 +117,7 @@ namespace Interface_Roteiros
             this.boxSobre.TabIndex = 6;
             this.boxSobre.Tela = null;
             this.boxSobre.TelaDeRetorno = null;
-            this.boxSobre.TextoDaCaixa = "Este software visa o aprendizado do aluno em circuitos elétricos";
+            this.boxSobre.TextoDaCaixa = "Software voltado para o estudo e aplicação dos assuntos de circuítos elétricos.";
             this.boxSobre.TextOnEnter = System.Drawing.Color.White;
             this.boxSobre.TextOnLeave = System.Drawing.Color.Black;
             this.boxSobre.TituloDaCaixa = "Sobre";
@@ -132,8 +133,7 @@ namespace Interface_Roteiros
             this.boxSimulador.TabIndex = 5;
             this.boxSimulador.Tela = null;
             this.boxSimulador.TelaDeRetorno = null;
-            this.boxSimulador.TextoDaCaixa = "Cada tópico dispõe de um circuito organizado para que o aluno possa testar seus c" +
-    "onhecimentos.";
+            this.boxSimulador.TextoDaCaixa = "Roteiros dispõem de circuíto elétrico para o aluno exercitar seus conhecimentos.";
             this.boxSimulador.TextOnEnter = System.Drawing.Color.White;
             this.boxSimulador.TextOnLeave = System.Drawing.Color.Black;
             this.boxSimulador.TituloDaCaixa = "Simulador";
