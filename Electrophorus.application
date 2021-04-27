@@ -8,7 +8,7 @@
         <beforeApplicationStartup />
       </update>
     </subscription>
-    <deploymentProvider codebase="https://github.com/JOAO-VFG/Interface-Roteiros/Electrophorus.application" />
+    <deploymentProvider codebase="https://github.com/JOAO-VFG/Interface-Roteiros/edit/main/Electrophorus.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
