@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Electrophorus.exe" version="1.0.0.14" publicKeyToken="89ae3c24b0c000c8" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="icone2.ico" asmv2:publisher="Electrophorus" asmv2:product="Electrophorus" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Electrophorus" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Electrophorus.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opções de Manifesto do UAC
+          Para alterar o nível de Controle de Conta de Usuário do Windows, substitua o nó
+          requestedExecutionLevel por um dos seguintes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Para utilizar a Virtualização de Arquivos e Registro para manter a compatibilidade com versões anteriores,
+         exclua o nó requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Electrophorus.exe" size="585184">
+      <assemblyIdentity name="Electrophorus" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>E49IhRtLX8DS8Fd+gSndCJOPK/DY8tK1eMPYid39vr4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.dll" size="353280">
+      <assemblyIdentity name="MetroFramework" version="1.4.0.0" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wsEtMbSETineMVlPyWMqNypVNjHeCgoEyK+RZo43z0k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.Design.dll" size="16896">
+      <assemblyIdentity name="MetroFramework.Design" version="1.4.0.0" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>CkqWCC4ldn5GlwM2SbFsdqZS4SB1eizsq4CSrQ1xa2U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.Fonts.dll" size="672256">
+      <assemblyIdentity name="MetroFramework.Fonts" version="1.4.0.0" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yEOGmqylE1wtRylphfNcccqK9EMSiNBNSBxORsyT7iY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XanderUI.dll" size="189440">
+      <assemblyIdentity name="XanderUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zfL/jAlw9BRFAMgcVngFXe1wwFKFuj0/8E5E+njZzmQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Electrophorus.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icone.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MfBBIo/1Til75X92l6USDaHaJJ6WoG63091Lf3GB+NQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icone2.ico" size="16958">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T4o80RSpJYW2iWvW2X013dXp9nP9CTDB/HFknEp9aK0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-5I9B7GR\Gabri" issuerKeyHash="885c8f255678024d8db9f08f7d02270d5c32b42e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fH1hsJ8WDgRaQR0Gm0kBlxqNbvb/9faVd09QMtvEzVI=</DigestValue></Reference></SignedInfo><SignatureValue>Va+ofksV0XK6VpJAMkRHrikwsyO/Kxqq3NQ+cM7wuoPfqerE5QF6kypDOW2S0bsfrUTjUbdNmtb2UrABRZhZcMuMHCsYS/jmsFmuNDUXMm64bllofZ6Eoo0Azkqf1RLH5TY1RWqgoNSLYQfwMknDYipn/AMbS95eqiZj29toybs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2X3B/hzS7SPG07APiJCAe8Wp5WbozVcxLVqx8syaw8OA4e90knBZKN9PSg0dQWFn6NVXopGRdNluCs+Zd/e+P/Zs79wlcNGD3O7AcqpzDX9cjkX8Pd+OEi/YE7+z1vw906iBMCo3sT7LUO9V14ih3gKIWxjYeyqd2f08z2Kadb0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="52cdc4db32504f7795f6f5fff66e8d1a9701499b061d415a040e169fb0617d7c" Description="" Url=""><as:assemblyIdentity name="Electrophorus.exe" version="1.0.0.14" publicKeyToken="89ae3c24b0c000c8" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-5I9B7GR\Gabri</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>868OesqgifEDzOkANQ834IniFZuipjuo1sE8kF4viwk=</DigestValue></Reference></SignedInfo><SignatureValue>Nxxu9M35cxCrdGL7gkK82YUDL49a+kAATi6gY6HBx13mlEwNJkEIwxTljw8yARaBN8xCkYihnaNU1CBrFJq93BJuXsb4YaSmEZSW/pEXYiFgGSAu5eD2MG1u3LquHcdx3gbely7+BessPnOpQqVvHYJm9uD5N37dUwznGKDT7Q4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2X3B/hzS7SPG07APiJCAe8Wp5WbozVcxLVqx8syaw8OA4e90knBZKN9PSg0dQWFn6NVXopGRdNluCs+Zd/e+P/Zs79wlcNGD3O7AcqpzDX9cjkX8Pd+OEi/YE7+z1vw906iBMCo3sT7LUO9V14ih3gKIWxjYeyqd2f08z2Kadb0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQarwyknQEu5xMgyrkINCHOjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADUASQA5AEIANwBHAFIAXABHAGEAYgByAGkwHhcNMjEwMjIxMDA0OTUyWhcNMjIwMjIxMDY0OTUyWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADUASQA5AEIANwBHAFIAXABHAGEAYgByAGkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANl9wf4c0u0jxtOwD4iQgHvFqeVm6M1XMS1asfLMmsPDgOHvdJJwWSjfT0oNHUFhZ+jVV6KRkXTZbgrPmXf3vj/2bO/cJXDRg9zuwHKqcw1/XI5F/D3fjhIv2BO/s9b8PdOogTAqN7E+y1DvVdeIod4CiFsY2Hsqndn9PM9imnW9AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAx38BMFb4ucLhX5imTSslqBET8PvG8siQ54fG2bKYV8fbg7V1g+UjTBBuEH6aoewH9k2Ogsngkzlkgt0X9IH0soDms3OqvBpvNLbwDrWh5tSCbAb6vBTckGwOQ5C8JbkoZstRPtHPTGhrI+wlBrcvwuXcDgjKWwg0SNJRTt4dM5I=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
