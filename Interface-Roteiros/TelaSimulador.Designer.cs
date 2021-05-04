@@ -36,8 +36,8 @@ namespace Interface_Roteiros
             this.rtrNosEMalhas = new Interface_Roteiros.Roteiro();
             this.btnRetornar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -78,7 +78,7 @@ namespace Interface_Roteiros
             // rtrLeisOhm
             // 
             this.rtrLeisOhm.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito2;
-            this.rtrLeisOhm.Location = new System.Drawing.Point(119, 31);
+            this.rtrLeisOhm.Location = new System.Drawing.Point(118, 49);
             this.rtrLeisOhm.Name = "rtrLeisOhm";
             this.rtrLeisOhm.Size = new System.Drawing.Size(28, 26);
             this.rtrLeisOhm.TabIndex = 5;
@@ -89,7 +89,7 @@ namespace Interface_Roteiros
             // rtrKirchhof
             // 
             this.rtrKirchhof.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito3;
-            this.rtrKirchhof.Location = new System.Drawing.Point(119, 168);
+            this.rtrKirchhof.Location = new System.Drawing.Point(119, 195);
             this.rtrKirchhof.Name = "rtrKirchhof";
             this.rtrKirchhof.Size = new System.Drawing.Size(26, 26);
             this.rtrKirchhof.TabIndex = 6;
@@ -100,7 +100,7 @@ namespace Interface_Roteiros
             // rtrNosEMalhas
             // 
             this.rtrNosEMalhas.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito4;
-            this.rtrNosEMalhas.Location = new System.Drawing.Point(119, 104);
+            this.rtrNosEMalhas.Location = new System.Drawing.Point(119, 122);
             this.rtrNosEMalhas.Name = "rtrNosEMalhas";
             this.rtrNosEMalhas.Size = new System.Drawing.Size(26, 26);
             this.rtrNosEMalhas.TabIndex = 7;
@@ -127,7 +127,7 @@ namespace Interface_Roteiros
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.panel1.Controls.Add(this.btnPrev);
             this.panel1.Controls.Add(this.btnNext);
             this.panel1.Controls.Add(this.rtrCargas);
@@ -138,6 +138,21 @@ namespace Interface_Roteiros
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(575, 261);
             this.panel1.TabIndex = 17;
+            // 
+            // btnPrev
+            // 
+            this.btnPrev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(214)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            this.btnPrev.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPrev.BackgroundImage")));
+            this.btnPrev.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnPrev.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnPrev.FlatAppearance.BorderSize = 0;
+            this.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrev.Location = new System.Drawing.Point(39, 49);
+            this.btnPrev.Name = "btnPrev";
+            this.btnPrev.Size = new System.Drawing.Size(34, 172);
+            this.btnPrev.TabIndex = 8;
+            this.btnPrev.UseVisualStyleBackColor = false;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // btnNext
             // 
@@ -155,21 +170,6 @@ namespace Interface_Roteiros
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             this.btnNext.MouseEnter += new System.EventHandler(this.btnNext_MouseEnter);
             this.btnNext.MouseLeave += new System.EventHandler(this.btnNext_MouseLeave);
-            // 
-            // btnPrev
-            // 
-            this.btnPrev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(214)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-            this.btnPrev.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPrev.BackgroundImage")));
-            this.btnPrev.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnPrev.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnPrev.FlatAppearance.BorderSize = 0;
-            this.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrev.Location = new System.Drawing.Point(39, 49);
-            this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(34, 172);
-            this.btnPrev.TabIndex = 8;
-            this.btnPrev.UseVisualStyleBackColor = false;
-            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // TelaSimulador
             // 
