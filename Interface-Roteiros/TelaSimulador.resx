@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="subRoteiro1.ImagemRoteiro" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="rtrCargas.ImagemRoteiro" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AADgNklEQVR4Xuy9B5gUR5omfDOr3Vvtf7s7
@@ -1095,6 +1095,18 @@
         T8OFZOyH+DfCfpJZe0+9sCHd+BYADZy3SHEjQCNNwofpIpWrReI42wN1175FzJDCVpK0H7vh76i84tAf
         m6So1cQZH4EFQEO7Z6QgCiqnMBxSZDIKVFOazJ0lk1FCBqOEDEaH1N4BRZ9J+PB3ScUAAAAASUVORK5C
         YII=
+</value>
+  </data>
+  <data name="btnNext.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAOcAAADnAfAbWLUAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABHElEQVRYR8WXywqCQBhGg4KS7otIy1ubNhn1Ar1IFNU6yYKClr1yBS0zRxKG+MzG0f7F2RwH/oOW
+        zhR834/lZPen43r16um9ObqeBVBGXGy7NQkCmqXiM68IKHm8waDL7kJeEVB+wke4urZAa9ICJWJvWVoe
+        EVDG8Y64ZRkB5TeiiEYQsTO1JVojApRJZBkB5S+wCKeuSEdA+St8xNZUV2hNElCKcBjqfZkIKEUJI2rK
+        PU0ElGngI1xD3aA1CCjTwiJGghFQyiAaAaUsfMTRMBy0JgJKWUgDSB8B6Y+QDSf7G/LD//4iCodTvYpJ
+        P0akn2PSDUmWwxlQxhENJ9mUvofTbMtJDyakR7OzabZJD6drrTOzKuVHfsdzv/AC/IP7970eTR4AAAAA
+        SUVORK5CYII=
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -30,14 +30,15 @@ namespace Interface_Roteiros
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaSimulador));
-            this.subRoteiro1 = new Interface_Roteiros.Roteiro();
+            this.rtrCargas = new Interface_Roteiros.Roteiro();
             this.rtrLeisOhm = new Interface_Roteiros.Roteiro();
             this.rtrKirchhof = new Interface_Roteiros.Roteiro();
-            this.subRoteiro4 = new Interface_Roteiros.Roteiro();
-            this.rtrNortonThevenin = new Interface_Roteiros.Roteiro();
-            this.subRoteiro6 = new Interface_Roteiros.Roteiro();
+            this.rtrNosEMalhas = new Interface_Roteiros.Roteiro();
             this.btnRetornar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnNext = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -63,20 +64,20 @@ namespace Interface_Roteiros
             // 
             this.imgIcone.Image = global::Interface_Roteiros.Properties.Resources.circuito_icone;
             // 
-            // subRoteiro1
+            // rtrCargas
             // 
-            this.subRoteiro1.ImagemRoteiro = ((System.Drawing.Image)(resources.GetObject("subRoteiro1.ImagemRoteiro")));
-            this.subRoteiro1.Location = new System.Drawing.Point(23, 94);
-            this.subRoteiro1.Name = "subRoteiro1";
-            this.subRoteiro1.Size = new System.Drawing.Size(163, 172);
-            this.subRoteiro1.TabIndex = 4;
-            this.subRoteiro1.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subRoteiro1.TextoRoteiro = "Cargas";
+            this.rtrCargas.ImagemRoteiro = ((System.Drawing.Image)(resources.GetObject("rtrCargas.ImagemRoteiro")));
+            this.rtrCargas.Location = new System.Drawing.Point(207, 31);
+            this.rtrCargas.Name = "rtrCargas";
+            this.rtrCargas.Size = new System.Drawing.Size(163, 172);
+            this.rtrCargas.TabIndex = 4;
+            this.rtrCargas.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtrCargas.TextoRoteiro = "Cargas";
             // 
             // rtrLeisOhm
             // 
             this.rtrLeisOhm.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito2;
-            this.rtrLeisOhm.Location = new System.Drawing.Point(207, 94);
+            this.rtrLeisOhm.Location = new System.Drawing.Point(352, 434);
             this.rtrLeisOhm.Name = "rtrLeisOhm";
             this.rtrLeisOhm.Size = new System.Drawing.Size(163, 172);
             this.rtrLeisOhm.TabIndex = 5;
@@ -87,7 +88,7 @@ namespace Interface_Roteiros
             // rtrKirchhof
             // 
             this.rtrKirchhof.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito3;
-            this.rtrKirchhof.Location = new System.Drawing.Point(389, 94);
+            this.rtrKirchhof.Location = new System.Drawing.Point(521, 434);
             this.rtrKirchhof.Name = "rtrKirchhof";
             this.rtrKirchhof.Size = new System.Drawing.Size(163, 172);
             this.rtrKirchhof.TabIndex = 6;
@@ -95,36 +96,15 @@ namespace Interface_Roteiros
             this.rtrKirchhof.TextoRoteiro = "Leis de Kirchhof";
             this.rtrKirchhof.Click += new System.EventHandler(this.rtrKirchhof_Click);
             // 
-            // subRoteiro4
+            // rtrNosEMalhas
             // 
-            this.subRoteiro4.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito4;
-            this.subRoteiro4.Location = new System.Drawing.Point(23, 291);
-            this.subRoteiro4.Name = "subRoteiro4";
-            this.subRoteiro4.Size = new System.Drawing.Size(163, 172);
-            this.subRoteiro4.TabIndex = 7;
-            this.subRoteiro4.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subRoteiro4.TextoRoteiro = "Super Nós e Super Malhas";
-            // 
-            // rtrNortonThevenin
-            // 
-            this.rtrNortonThevenin.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito5;
-            this.rtrNortonThevenin.Location = new System.Drawing.Point(207, 291);
-            this.rtrNortonThevenin.Name = "rtrNortonThevenin";
-            this.rtrNortonThevenin.Size = new System.Drawing.Size(163, 172);
-            this.rtrNortonThevenin.TabIndex = 8;
-            this.rtrNortonThevenin.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtrNortonThevenin.TextoRoteiro = "Teorema de Northon e Thévenin";
-            this.rtrNortonThevenin.Click += new System.EventHandler(this.rtrNortonThevenin_Click);
-            // 
-            // subRoteiro6
-            // 
-            this.subRoteiro6.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito6;
-            this.subRoteiro6.Location = new System.Drawing.Point(389, 291);
-            this.subRoteiro6.Name = "subRoteiro6";
-            this.subRoteiro6.Size = new System.Drawing.Size(163, 172);
-            this.subRoteiro6.TabIndex = 9;
-            this.subRoteiro6.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subRoteiro6.TextoRoteiro = "Teorema da Superposição";
+            this.rtrNosEMalhas.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito4;
+            this.rtrNosEMalhas.Location = new System.Drawing.Point(0, 434);
+            this.rtrNosEMalhas.Name = "rtrNosEMalhas";
+            this.rtrNosEMalhas.Size = new System.Drawing.Size(163, 172);
+            this.rtrNosEMalhas.TabIndex = 7;
+            this.rtrNosEMalhas.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtrNosEMalhas.TextoRoteiro = "Super Nós e Super Malhas";
             // 
             // btnRetornar
             // 
@@ -144,18 +124,42 @@ namespace Interface_Roteiros
             this.btnRetornar.MouseEnter += new System.EventHandler(this.btnRetornar_MouseEnter);
             this.btnRetornar.MouseLeave += new System.EventHandler(this.btnRetornar_MouseLeave);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
+            this.panel1.Controls.Add(this.btnNext);
+            this.panel1.Controls.Add(this.rtrCargas);
+            this.panel1.Location = new System.Drawing.Point(0, 120);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(575, 227);
+            this.panel1.TabIndex = 17;
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(214)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            this.btnNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNext.BackgroundImage")));
+            this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNext.FlatAppearance.BorderSize = 0;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Location = new System.Drawing.Point(466, 31);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(34, 172);
+            this.btnNext.TabIndex = 5;
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.MouseEnter += new System.EventHandler(this.btnNext_MouseEnter);
+            this.btnNext.MouseLeave += new System.EventHandler(this.btnNext_MouseLeave);
+            // 
             // TelaSimulador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
             this.ClientSize = new System.Drawing.Size(575, 493);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRetornar);
-            this.Controls.Add(this.subRoteiro6);
-            this.Controls.Add(this.rtrNortonThevenin);
-            this.Controls.Add(this.subRoteiro4);
+            this.Controls.Add(this.rtrNosEMalhas);
             this.Controls.Add(this.rtrKirchhof);
             this.Controls.Add(this.rtrLeisOhm);
-            this.Controls.Add(this.subRoteiro1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaSimulador";
             this.Text = "Electrophorus";
@@ -163,26 +167,25 @@ namespace Interface_Roteiros
             this.Controls.SetChildIndex(this.btnSair, 0);
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
             this.Controls.SetChildIndex(this.imgIcone, 0);
-            this.Controls.SetChildIndex(this.subRoteiro1, 0);
             this.Controls.SetChildIndex(this.rtrLeisOhm, 0);
             this.Controls.SetChildIndex(this.rtrKirchhof, 0);
-            this.Controls.SetChildIndex(this.subRoteiro4, 0);
-            this.Controls.SetChildIndex(this.rtrNortonThevenin, 0);
-            this.Controls.SetChildIndex(this.subRoteiro6, 0);
+            this.Controls.SetChildIndex(this.rtrNosEMalhas, 0);
             this.Controls.SetChildIndex(this.btnRetornar, 0);
+            this.Controls.SetChildIndex(this.panel1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Roteiro subRoteiro1;
+        private Roteiro rtrCargas;
         private Roteiro rtrLeisOhm;
         private Roteiro rtrKirchhof;
-        private Roteiro subRoteiro4;
-        private Roteiro rtrNortonThevenin;
-        private Roteiro subRoteiro6;
+        private Roteiro rtrNosEMalhas;
         private System.Windows.Forms.Button btnRetornar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnNext;
     }
 }

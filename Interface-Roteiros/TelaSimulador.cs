@@ -44,17 +44,21 @@ namespace Interface_Roteiros
             new TelaLeisDeKirchhof() { TelaRetorno = this, }.Show();
         }
 
-        // Abre a janela do cicuito do teorema de Norton e Thévenin
-        private void rtrNortonThevenin_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new TelaNortonThevenin() { TelaDeRetorno = this, }.Show();
-        }
-
+        // Abre a janela do circuito das Leis de Ohm
         private void rtrLeisOhm_Click(object sender, EventArgs e)
         {
             this.Hide();
             new TelaLeisDeOhm() { TelaDeRetorno = this, }.Show();
+        }
+
+        private void btnNext_MouseEnter(object sender, EventArgs e)
+        {
+            btnNext.BackColor = Color.FromArgb(214, 210, 210);
+        }
+
+        private void btnNext_MouseLeave(object sender, EventArgs e)
+        {
+            btnNext.BackColor = Color.FromArgb(25, 214, 210, 210);
         }
     }
 }
