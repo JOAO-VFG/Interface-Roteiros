@@ -37,6 +37,7 @@ namespace Interface_Roteiros
             this.btnRetornar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnNext = new System.Windows.Forms.Button();
+            this.btnPrev = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +68,7 @@ namespace Interface_Roteiros
             // rtrCargas
             // 
             this.rtrCargas.ImagemRoteiro = ((System.Drawing.Image)(resources.GetObject("rtrCargas.ImagemRoteiro")));
-            this.rtrCargas.Location = new System.Drawing.Point(207, 31);
+            this.rtrCargas.Location = new System.Drawing.Point(190, 31);
             this.rtrCargas.Name = "rtrCargas";
             this.rtrCargas.Size = new System.Drawing.Size(163, 172);
             this.rtrCargas.TabIndex = 4;
@@ -77,9 +78,9 @@ namespace Interface_Roteiros
             // rtrLeisOhm
             // 
             this.rtrLeisOhm.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito2;
-            this.rtrLeisOhm.Location = new System.Drawing.Point(352, 434);
+            this.rtrLeisOhm.Location = new System.Drawing.Point(119, 31);
             this.rtrLeisOhm.Name = "rtrLeisOhm";
-            this.rtrLeisOhm.Size = new System.Drawing.Size(163, 172);
+            this.rtrLeisOhm.Size = new System.Drawing.Size(28, 26);
             this.rtrLeisOhm.TabIndex = 5;
             this.rtrLeisOhm.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtrLeisOhm.TextoRoteiro = "Potência e Divisor de Corrente";
@@ -88,9 +89,9 @@ namespace Interface_Roteiros
             // rtrKirchhof
             // 
             this.rtrKirchhof.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito3;
-            this.rtrKirchhof.Location = new System.Drawing.Point(521, 434);
+            this.rtrKirchhof.Location = new System.Drawing.Point(119, 168);
             this.rtrKirchhof.Name = "rtrKirchhof";
-            this.rtrKirchhof.Size = new System.Drawing.Size(163, 172);
+            this.rtrKirchhof.Size = new System.Drawing.Size(26, 26);
             this.rtrKirchhof.TabIndex = 6;
             this.rtrKirchhof.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtrKirchhof.TextoRoteiro = "Leis de Kirchhof";
@@ -99,9 +100,9 @@ namespace Interface_Roteiros
             // rtrNosEMalhas
             // 
             this.rtrNosEMalhas.ImagemRoteiro = global::Interface_Roteiros.Properties.Resources.circuito4;
-            this.rtrNosEMalhas.Location = new System.Drawing.Point(0, 434);
+            this.rtrNosEMalhas.Location = new System.Drawing.Point(119, 104);
             this.rtrNosEMalhas.Name = "rtrNosEMalhas";
-            this.rtrNosEMalhas.Size = new System.Drawing.Size(163, 172);
+            this.rtrNosEMalhas.Size = new System.Drawing.Size(26, 26);
             this.rtrNosEMalhas.TabIndex = 7;
             this.rtrNosEMalhas.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtrNosEMalhas.TextoRoteiro = "Super Nós e Super Malhas";
@@ -127,8 +128,12 @@ namespace Interface_Roteiros
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
+            this.panel1.Controls.Add(this.btnPrev);
             this.panel1.Controls.Add(this.btnNext);
             this.panel1.Controls.Add(this.rtrCargas);
+            this.panel1.Controls.Add(this.rtrKirchhof);
+            this.panel1.Controls.Add(this.rtrNosEMalhas);
+            this.panel1.Controls.Add(this.rtrLeisOhm);
             this.panel1.Location = new System.Drawing.Point(0, 120);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(575, 227);
@@ -139,16 +144,32 @@ namespace Interface_Roteiros
             this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(214)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
             this.btnNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNext.BackgroundImage")));
             this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNext.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnNext.FlatAppearance.BorderSize = 0;
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNext.Location = new System.Drawing.Point(466, 31);
+            this.btnNext.Location = new System.Drawing.Point(494, 31);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(34, 172);
             this.btnNext.TabIndex = 5;
             this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             this.btnNext.MouseEnter += new System.EventHandler(this.btnNext_MouseEnter);
             this.btnNext.MouseLeave += new System.EventHandler(this.btnNext_MouseLeave);
+            // 
+            // btnPrev
+            // 
+            this.btnPrev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(214)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            this.btnPrev.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPrev.BackgroundImage")));
+            this.btnPrev.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnPrev.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnPrev.FlatAppearance.BorderSize = 0;
+            this.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrev.Location = new System.Drawing.Point(39, 31);
+            this.btnPrev.Name = "btnPrev";
+            this.btnPrev.Size = new System.Drawing.Size(34, 172);
+            this.btnPrev.TabIndex = 8;
+            this.btnPrev.UseVisualStyleBackColor = false;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // TelaSimulador
             // 
@@ -157,19 +178,14 @@ namespace Interface_Roteiros
             this.ClientSize = new System.Drawing.Size(575, 493);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRetornar);
-            this.Controls.Add(this.rtrNosEMalhas);
-            this.Controls.Add(this.rtrKirchhof);
-            this.Controls.Add(this.rtrLeisOhm);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaSimulador";
             this.Text = "Electrophorus";
+            this.Load += new System.EventHandler(this.TelaSimulador_Load);
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
             this.Controls.SetChildIndex(this.imgIcone, 0);
-            this.Controls.SetChildIndex(this.rtrLeisOhm, 0);
-            this.Controls.SetChildIndex(this.rtrKirchhof, 0);
-            this.Controls.SetChildIndex(this.rtrNosEMalhas, 0);
             this.Controls.SetChildIndex(this.btnRetornar, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
@@ -187,5 +203,6 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Button btnRetornar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnPrev;
     }
 }

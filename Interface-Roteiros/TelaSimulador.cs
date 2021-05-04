@@ -11,9 +11,33 @@ namespace Interface_Roteiros
     public partial class TelaSimulador : Interface_Roteiros.TelaInicialPadrao
     {
         public TelaInicial TelaDeInicio { get; set; }
+        private Roteiro[] roteiros;
+        // Roteiro que está sendo apresentando para o usuário clicar
+        private int roteiroSelecionado;
         public TelaSimulador()
         {
             InitializeComponent();
+        }
+
+        private void TelaSimulador_Load(object sender, EventArgs e)
+        {
+            roteiros = new Roteiro[4] { rtrCargas, rtrLeisOhm, rtrKirchhof, rtrNosEMalhas };
+            roteiroSelecionado = 0;
+
+            var location = rtrCargas.Location;
+            var size = rtrCargas.Size;
+
+            // Oculta todos os roteiros, com exceção do 1°
+            for (var i = 1; i < roteiros.Length; i++)
+            {
+                roteiros[i].Hide();
+                // Coloca todos os componentes encaixados na mesma localização
+                roteiros[i].Location = location;
+                // Faz com que todos tenham o mesmo tamanho
+                roteiros[i].Size = size;
+            }
+
+            
         }
 
         // Sai do controle atual
@@ -59,6 +83,30 @@ namespace Interface_Roteiros
         private void btnNext_MouseLeave(object sender, EventArgs e)
         {
             btnNext.BackColor = Color.FromArgb(25, 214, 210, 210);
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            // Oculta o atual o exibe o próximo
+            roteiros[roteiroSelecionado].Hide();
+            // Último elemento
+            if (roteiroSelecionado == roteiros.Length - 1)
+            {
+                roteiroSelecionado = -1;
+            }
+            roteiros[roteiroSelecionado++ + 1].Show();
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            // Oculta o atual o exibe o próximo
+            roteiros[roteiroSelecionado].Hide();
+            // Primeiro elemento
+            if (roteiroSelecionado == 0)
+            {
+                roteiroSelecionado = 4;
+            }
+            roteiros[roteiroSelecionado-- - 1].Show();
         }
     }
 }
