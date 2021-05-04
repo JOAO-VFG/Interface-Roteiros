@@ -68,7 +68,7 @@ namespace Interface_Roteiros
             // rtrCargas
             // 
             this.rtrCargas.ImagemRoteiro = ((System.Drawing.Image)(resources.GetObject("rtrCargas.ImagemRoteiro")));
-            this.rtrCargas.Location = new System.Drawing.Point(190, 31);
+            this.rtrCargas.Location = new System.Drawing.Point(190, 49);
             this.rtrCargas.Name = "rtrCargas";
             this.rtrCargas.Size = new System.Drawing.Size(163, 172);
             this.rtrCargas.TabIndex = 4;
@@ -116,7 +116,7 @@ namespace Interface_Roteiros
             this.btnRetornar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnRetornar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnRetornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRetornar.Location = new System.Drawing.Point(23, 38);
+            this.btnRetornar.Location = new System.Drawing.Point(12, 51);
             this.btnRetornar.Name = "btnRetornar";
             this.btnRetornar.Size = new System.Drawing.Size(50, 50);
             this.btnRetornar.TabIndex = 16;
@@ -136,7 +136,7 @@ namespace Interface_Roteiros
             this.panel1.Controls.Add(this.rtrLeisOhm);
             this.panel1.Location = new System.Drawing.Point(0, 120);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(575, 227);
+            this.panel1.Size = new System.Drawing.Size(575, 261);
             this.panel1.TabIndex = 17;
             // 
             // btnNext
@@ -147,7 +147,7 @@ namespace Interface_Roteiros
             this.btnNext.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnNext.FlatAppearance.BorderSize = 0;
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNext.Location = new System.Drawing.Point(494, 31);
+            this.btnNext.Location = new System.Drawing.Point(494, 49);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(34, 172);
             this.btnNext.TabIndex = 5;
@@ -164,7 +164,7 @@ namespace Interface_Roteiros
             this.btnPrev.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnPrev.FlatAppearance.BorderSize = 0;
             this.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrev.Location = new System.Drawing.Point(39, 31);
+            this.btnPrev.Location = new System.Drawing.Point(39, 49);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(34, 172);
             this.btnPrev.TabIndex = 8;
