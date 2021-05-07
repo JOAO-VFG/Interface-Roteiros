@@ -29,6 +29,7 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCoresResistor));
             this.imgResistor = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,9 +46,14 @@ namespace Interface_Roteiros
             this.boxResultado = new System.Windows.Forms.ComboBox();
             this.boxFaixa5 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnApagar = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgResistor)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -300,11 +306,55 @@ namespace Interface_Roteiros
             this.label6.TabIndex = 17;
             this.label6.Text = "Tolerância (faixa 5)";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.panel3.Controls.Add(this.btnVoltar);
+            this.panel3.Controls.Add(this.btnApagar);
+            this.panel3.Location = new System.Drawing.Point(0, 595);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(715, 75);
+            this.panel3.TabIndex = 10;
+            // 
+            // btnApagar
+            // 
+            this.btnApagar.BackColor = System.Drawing.Color.Transparent;
+            this.btnApagar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnApagar.BackgroundImage")));
+            this.btnApagar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnApagar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnApagar.FlatAppearance.BorderSize = 0;
+            this.btnApagar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnApagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnApagar.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApagar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(235)))), ((int)(((byte)(242)))));
+            this.btnApagar.Location = new System.Drawing.Point(628, 6);
+            this.btnApagar.Name = "btnApagar";
+            this.btnApagar.Size = new System.Drawing.Size(56, 56);
+            this.btnApagar.TabIndex = 0;
+            this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackgroundImage = global::Interface_Roteiros.Properties.Resources.left_arrow;
+            this.btnVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVoltar.FlatAppearance.BorderSize = 0;
+            this.btnVoltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVoltar.Location = new System.Drawing.Point(12, 6);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(56, 56);
+            this.btnVoltar.TabIndex = 1;
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // TelaCoresResistor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(76)))), ((int)(((byte)(217)))));
-            this.ClientSize = new System.Drawing.Size(715, 593);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(105)))), ((int)(((byte)(107)))));
+            this.ClientSize = new System.Drawing.Size(715, 667);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.imgResistor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -317,10 +367,12 @@ namespace Interface_Roteiros
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
             this.Controls.SetChildIndex(this.imgIcone, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.panel3, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgResistor)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -343,5 +395,9 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox boxFaixa5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnApagar;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

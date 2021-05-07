@@ -18,8 +18,8 @@ namespace Interface_Roteiros
         private SolidBrush brush;
         private Rectangle rect;
 
-        double multiplicador;
-        string tolerancia;
+        private double multiplicador;
+        private string tolerancia;
 
         enum Estado
         {
@@ -38,6 +38,13 @@ namespace Interface_Roteiros
             {
                 i.SelectedIndex = 0;
             }
+
+            // Informações ao colocar o mouse por cima desses componentes
+            toolTip.SetToolTip(btnApagar, "Configura o valor padrão para todos os campos");
+            toolTip.SetToolTip(boxFaixa1, "Centena");
+            toolTip.SetToolTip(boxFaixa2, "Dezena");
+            toolTip.SetToolTip(boxFaixa3, "Unidade");
+            toolTip.SetToolTip(boxFaixa5, "Margem de erro");
         }
 
         // Desenha em alguma das faixas
@@ -275,6 +282,21 @@ namespace Interface_Roteiros
             {
                 return $"{valor}";
             }
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            TelaDeRetorno.Show();
+            this.Close();
+        }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            foreach(var box in faixas)
+            {
+                box.SelectedIndex = 0;
+            }
+            boxResultado.Text = null;
         }
     }
 }
