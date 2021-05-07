@@ -16,7 +16,8 @@ namespace Interface_Roteiros
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaInicial());
+            //Application.Run(new TelaInicial());
+            Application.Run(new TelaCoresResistor());
         }
     }
 }

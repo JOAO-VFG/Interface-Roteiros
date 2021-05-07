@@ -13,29 +13,57 @@ namespace Interface_Roteiros
         public TelaSimulador TelaDeRetorno { get; set; }
         private Graphics g;
         private Pen pen;
+        private SolidBrush brush;
+        private Rectangle rect;
 
         public TelaCoresResistor()
         {
             InitializeComponent();
         }
 
-        private void TelaCoresResistor_Load(object sender, EventArgs e)
+        // Desenha em alguma das faixas
+        private void Desenhar(Color cor, int faixa)
         {
             g = imgResistor.CreateGraphics();
-        }
-
-        // Desenha algo na primeira faixa do resistor 
-        private void DesenharPrimeiraFaixa(Color cor)
-        {
+            brush = new SolidBrush(cor);
             pen = new Pen(cor, 1);
-            var rectShape = new Rectangle(new Point(42, 2), new Size(12, 80));
+            rect = new Rectangle();
 
-            g.DrawRectangle(pen, rectShape);
+            switch (faixa)
+            {
+                case 1:
+                    //rect = new Rectangle(new Point(42, 2), new Size(12, 79));
+                    rect = new Rectangle(new Point(79, 4), new Size(24, 159));
+                    break;
+                case 2:
+                    //rect = new Rectangle(new Point(74, 14), new Size(16, 55));
+                    rect = new Rectangle(new Point(143, 28), new Size(32, 111));
+                    break;
+                case 3:
+                    //rect = new Rectangle(new Point(110, 14), new Size(16, 55));
+                    rect = new Rectangle(new Point(215, 28), new Size(32, 111));
+                    break;
+                case 4:
+                    //rect = new Rectangle(new Point(146, 14), new Size(16, 55));
+                    rect = new Rectangle(new Point(287, 28), new Size(32, 111));
+                    break;
+                case 5:
+                    //rect = new Rectangle(new Point(182, 2), new Size(12, 79));
+                    rect = new Rectangle(new Point(359, 4), new Size(24, 159));
+                    break;
+            }
+
+            g.DrawRectangle(pen, rect);
+            g.FillRectangle(brush, rect);
+
+            pen.Dispose();
+            brush.Dispose();
+            g.Dispose();
         }
 
         private void btnClick_Click(object sender, EventArgs e)
         {
-            DesenharPrimeiraFaixa(Color.Black);
+            Desenhar(Color.Black, 4);
         }
     }
 }
