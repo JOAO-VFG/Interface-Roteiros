@@ -155,6 +155,7 @@ namespace Interface_Roteiros
             // 
             // boxFaixa1
             // 
+            this.boxFaixa1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.boxFaixa1.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxFaixa1.FormattingEnabled = true;
             this.boxFaixa1.Items.AddRange(new object[] {
@@ -176,6 +177,7 @@ namespace Interface_Roteiros
             // 
             // boxFaixa2
             // 
+            this.boxFaixa2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.boxFaixa2.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxFaixa2.FormattingEnabled = true;
             this.boxFaixa2.Items.AddRange(new object[] {
@@ -197,6 +199,7 @@ namespace Interface_Roteiros
             // 
             // boxFaixa3
             // 
+            this.boxFaixa3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.boxFaixa3.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxFaixa3.FormattingEnabled = true;
             this.boxFaixa3.Items.AddRange(new object[] {
@@ -218,6 +221,7 @@ namespace Interface_Roteiros
             // 
             // boxFaixa4
             // 
+            this.boxFaixa4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.boxFaixa4.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxFaixa4.FormattingEnabled = true;
             this.boxFaixa4.Items.AddRange(new object[] {
@@ -279,6 +283,7 @@ namespace Interface_Roteiros
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaCoresResistor";
             this.Text = "Cores";
+            this.Load += new System.EventHandler(this.TelaCoresResistor_Load);
             this.Controls.SetChildIndex(this.imgResistor, 0);
             this.Controls.SetChildIndex(this.lblTitulo, 0);
             this.Controls.SetChildIndex(this.btnSair, 0);

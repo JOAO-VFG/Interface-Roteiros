@@ -21,6 +21,11 @@ namespace Interface_Roteiros
             InitializeComponent();
         }
 
+        private void TelaCoresResistor_Load(object sender, EventArgs e)
+        {
+            boxFaixa1.Text = "sfdgf";
+        }
+
         // Desenha em alguma das faixas
         private void Desenhar(Color cor, int faixa)
         {
@@ -53,9 +58,11 @@ namespace Interface_Roteiros
                     break;
             }
 
+            // Desenha e preenche o retângulo
             g.DrawRectangle(pen, rect);
             g.FillRectangle(brush, rect);
 
+            // Elimina o que não é mais usado
             pen.Dispose();
             brush.Dispose();
             g.Dispose();
@@ -65,5 +72,6 @@ namespace Interface_Roteiros
         {
             Desenhar(Color.Black, 4);
         }
+        
     }
 }
