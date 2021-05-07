@@ -31,6 +31,7 @@ namespace Interface_Roteiros
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCoresResistor));
             this.imgResistor = new System.Windows.Forms.PictureBox();
+            this.btnClick = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgResistor)).BeginInit();
             this.SuspendLayout();
@@ -65,10 +66,21 @@ namespace Interface_Roteiros
             this.imgResistor.TabIndex = 4;
             this.imgResistor.TabStop = false;
             // 
+            // btnClick
+            // 
+            this.btnClick.Location = new System.Drawing.Point(272, 385);
+            this.btnClick.Name = "btnClick";
+            this.btnClick.Size = new System.Drawing.Size(141, 58);
+            this.btnClick.TabIndex = 5;
+            this.btnClick.Text = "Desenhar";
+            this.btnClick.UseVisualStyleBackColor = true;
+            this.btnClick.Click += new System.EventHandler(this.btnClick_Click);
+            // 
             // TelaCoresResistor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(715, 568);
+            this.Controls.Add(this.btnClick);
             this.Controls.Add(this.imgResistor);
             this.Name = "TelaCoresResistor";
             this.Load += new System.EventHandler(this.TelaCoresResistor_Load);
@@ -77,6 +89,7 @@ namespace Interface_Roteiros
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
             this.Controls.SetChildIndex(this.imgIcone, 0);
             this.Controls.SetChildIndex(this.imgResistor, 0);
+            this.Controls.SetChildIndex(this.btnClick, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgResistor)).EndInit();
             this.ResumeLayout(false);
@@ -87,5 +100,6 @@ namespace Interface_Roteiros
         #endregion
 
         private System.Windows.Forms.PictureBox imgResistor;
+        private System.Windows.Forms.Button btnClick;
     }
 }

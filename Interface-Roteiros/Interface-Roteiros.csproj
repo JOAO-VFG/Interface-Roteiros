@@ -138,6 +138,12 @@
     <Compile Include="PainelResistor.Designer.cs">
       <DependentUpon>PainelResistor.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaCoresResistor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaCoresResistor.Designer.cs">
+      <DependentUpon>TelaCoresResistor.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaLeisDeOhm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PainelResistor.resx">
       <DependentUpon>PainelResistor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaCoresResistor.resx">
+      <DependentUpon>TelaCoresResistor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaLeisDeOhm.resx">
       <DependentUpon>TelaLeisDeOhm.cs</DependentUpon>

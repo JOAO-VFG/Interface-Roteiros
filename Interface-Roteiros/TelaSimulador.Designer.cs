@@ -38,6 +38,7 @@ namespace Interface_Roteiros
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPrev = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
+            this.rtrCoresResistor = new Interface_Roteiros.Roteiro();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -128,6 +129,7 @@ namespace Interface_Roteiros
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.panel1.Controls.Add(this.rtrCoresResistor);
             this.panel1.Controls.Add(this.btnPrev);
             this.panel1.Controls.Add(this.btnNext);
             this.panel1.Controls.Add(this.rtrCargas);
@@ -171,6 +173,17 @@ namespace Interface_Roteiros
             this.btnNext.MouseEnter += new System.EventHandler(this.btnNext_MouseEnter);
             this.btnNext.MouseLeave += new System.EventHandler(this.btnNext_MouseLeave);
             // 
+            // rtrCoresResistor
+            // 
+            this.rtrCoresResistor.ImagemRoteiro = ((System.Drawing.Image)(resources.GetObject("rtrCoresResistor.ImagemRoteiro")));
+            this.rtrCoresResistor.Location = new System.Drawing.Point(393, 49);
+            this.rtrCoresResistor.Name = "rtrCoresResistor";
+            this.rtrCoresResistor.Size = new System.Drawing.Size(25, 25);
+            this.rtrCoresResistor.TabIndex = 18;
+            this.rtrCoresResistor.TextoFont = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtrCoresResistor.TextoRoteiro = "Cores do Resistor";
+            this.rtrCoresResistor.Click += new System.EventHandler(this.rtrCoresResistor_Click);
+            // 
             // TelaSimulador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,5 +217,6 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
+        private Roteiro rtrCoresResistor;
     }
 }

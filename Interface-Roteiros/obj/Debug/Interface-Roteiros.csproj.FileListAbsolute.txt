@@ -79,3 +79,4 @@ C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\El
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Roteiro.resources
 C:\Users\João Victor\Desktop\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.Roteiro.resources
 C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface-Roteiros.csprojAssemblyReference.cache
+C:\Users\Gabri\Documents\GitHub\Interface-Roteiros\Interface-Roteiros\obj\Debug\Interface_Roteiros.TelaCoresResistor.resources

@@ -10,8 +10,9 @@ namespace Interface_Roteiros
 {
     public partial class TelaCoresResistor : Interface_Roteiros.TelaInicialPadrao
     {
-        Graphics g;
-        Pen pen;
+        public TelaSimulador TelaDeRetorno { get; set; }
+        private Graphics g;
+        private Pen pen;
 
         public TelaCoresResistor()
         {
@@ -32,6 +33,9 @@ namespace Interface_Roteiros
             g.DrawRectangle(pen, rectShape);
         }
 
-        
+        private void btnClick_Click(object sender, EventArgs e)
+        {
+            DesenharPrimeiraFaixa(Color.Black);
+        }
     }
 }
