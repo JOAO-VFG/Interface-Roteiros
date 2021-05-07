@@ -18,6 +18,14 @@ namespace Interface_Roteiros
         private SolidBrush brush;
         private Rectangle rect;
 
+        double multiplicador;
+        string tolerancia;
+
+        enum Estado
+        {
+            Faixa, Multiplicador, Tolerancia
+        }
+
         public TelaCoresResistor()
         {
             InitializeComponent();
@@ -25,7 +33,7 @@ namespace Interface_Roteiros
 
         private void TelaCoresResistor_Load(object sender, EventArgs e)
         {
-            faixas = new ComboBox[4]{ boxFaixa1, boxFaixa2, boxFaixa3, boxFaixa4 };
+            faixas = new ComboBox[5]{ boxFaixa1, boxFaixa2, boxFaixa3, boxFaixa4, boxFaixa5 };
             foreach (var i in faixas)
             {
                 i.SelectedIndex = 0;
@@ -74,11 +82,6 @@ namespace Interface_Roteiros
             g.Dispose();
         }
 
-        private void btnClick_Click(object sender, EventArgs e)
-        {
-            Desenhar(Color.Black, 4);
-        }
-
         // Cor para os dígitos
         private Color CorEscolhida(int posicaoNaLista)
         {
@@ -108,34 +111,75 @@ namespace Interface_Roteiros
         }
 
         // Cor para o multiplicador
+        // E já calcula o multiplicador baseado na cor
         private Color CorMultiplicador(int posicao)
         {
             switch(posicao)
             {
                 case 1:
+                    multiplicador = Math.Pow(10, -2);
                     return Color.Silver;
                 case 2:
+                    multiplicador = Math.Pow(10, -1);
                     return Color.Gold;
                 case 3:
+                    multiplicador = 1;
                     return Color.Black;
                 case 4:
+                    multiplicador = 10;
                     return Color.Brown;
                 case 5:
+                    multiplicador = Math.Pow(10, 2);
                     return Color.Red;
                 case 6:
+                    multiplicador = Math.Pow(10, 3);
                     return Color.Orange;
                 case 7:
+                    multiplicador = Math.Pow(10, 4);
                     return Color.Yellow;
                 case 8:
+                    multiplicador = Math.Pow(10, 5);
                     return Color.Green;
                 case 9:
+                    multiplicador = Math.Pow(10, 6);
                     return Color.Blue;
                 default:
+                    multiplicador = Math.Pow(10, 7);
                     return Color.Violet;
             }
         }
 
-        private void TrocarCorDoResistor(ComboBox boxFaixa, int faixa, bool multiplicador = false)
+        // Escolhe a cor para tolerância baseado na posição
+        // E salva o valor associado a ela em um campo
+        private Color CorTolerancia(int posicao)
+        {
+            switch(posicao)
+            {
+                case 1:
+                    tolerancia = "10%";
+                    return Color.Silver;
+                case 2:
+                    tolerancia = "5%";
+                    return Color.Gold;
+                case 3:
+                    tolerancia = "1%";
+                    return Color.Brown;
+                case 4:
+                    tolerancia = "2%";
+                    return Color.Red;
+                case 5:
+                    tolerancia = "0.5%";
+                    return Color.Green;
+                case 6:
+                    tolerancia = "0.25%";
+                    return Color.Blue;
+                default:
+                    tolerancia = "0.1%";
+                    return Color.Violet;
+            }
+        }
+
+        private void TrocarCorDoResistor(ComboBox boxFaixa, int faixa, Estado modo)
         {
             // Index é quando o usuário seleciono 'Selecione uma cor'
             // Como essa opção não é valida n faz nada
@@ -144,12 +188,15 @@ namespace Interface_Roteiros
                 /*
                  * Caso seja o multiplicador, então a cor para pintura será diferente das anteriores
                  */
-                if (multiplicador)
+                if (modo == Estado.Multiplicador)
                 {
                     Desenhar(CorMultiplicador(boxFaixa.SelectedIndex), faixa);
-                } else
+                } else if (modo == Estado.Faixa)
                 {
                     Desenhar(CorEscolhida(boxFaixa.SelectedIndex), faixa);
+                } else if (modo == Estado.Tolerancia)
+                {
+                    Desenhar(CorTolerancia(boxFaixa.SelectedIndex), faixa);
                 }
             }
         }
@@ -157,24 +204,77 @@ namespace Interface_Roteiros
         // Desenha algo na 1° faixa
         private void boxFaixa1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TrocarCorDoResistor(boxFaixa1, 1);
+            AtualizarInterface(boxFaixa1, 1, Estado.Faixa);
         }
 
         // Desenha algo na 2° faixa
         private void boxFaixa2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TrocarCorDoResistor(boxFaixa2, 2);
+            AtualizarInterface(boxFaixa2, 2, Estado.Faixa);
         }
 
         // Desenha algo na 3° Faixa
         private void boxFaixa3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TrocarCorDoResistor(boxFaixa3, 3);
+            AtualizarInterface(boxFaixa3, 3, Estado.Faixa);
         }
 
         private void boxFaixa4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TrocarCorDoResistor(boxFaixa4, 4, true);
+            AtualizarInterface(boxFaixa4, 4, Estado.Multiplicador);
+        }
+
+        private void boxFaixa5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AtualizarInterface(boxFaixa5, 5, Estado.Tolerancia);
+        }
+
+        // Calcula o valor da resistência
+        private void CalcularResistencia()
+        {
+            int centena = (boxFaixa1.SelectedIndex - 1) * 100;
+            int dezena = (boxFaixa2.SelectedIndex - 1) * 10;
+            int unidade = boxFaixa3.SelectedIndex - 1;
+            double valor = (centena + dezena + unidade) * multiplicador;
+
+            boxResultado.Text = $"{AjustarValor(valor)}Ω {tolerancia}";
+        }
+
+        // Atualiza os dados presentes na janela
+        private void AtualizarInterface(ComboBox box, int faixa, Estado estado)
+        {
+            TrocarCorDoResistor(box, faixa, estado);
+
+            int selecionadas = 0;
+            foreach (var comboBox in faixas)
+            {
+                if (comboBox.SelectedIndex != 0)
+                {
+                    selecionadas++;
+                }
+            }
+
+            if (selecionadas == faixas.Length)
+            {
+                CalcularResistencia();
+            }
+        }
+
+        // Converte número muitos grandes para a notação correspondente
+        private string AjustarValor(double valor)
+        {
+            if (valor >= Math.Pow(10, 6))
+            {
+                valor /= Math.Pow(10, 6);
+                return $"{valor} M";
+            } else if (valor >= Math.Pow(10, 3))
+            {
+                valor /= Math.Pow(10, 3);
+                return $"{valor} K";
+            } else
+            {
+                return $"{valor}";
+            }
         }
     }
 }
