@@ -11,6 +11,8 @@ namespace Interface_Roteiros
     public partial class TelaCoresResistor : Interface_Roteiros.TelaInicialPadrao
     {
         public TelaSimulador TelaDeRetorno { get; set; }
+        ComboBox[] faixas;
+        // Desenho
         private Graphics g;
         private Pen pen;
         private SolidBrush brush;
@@ -23,7 +25,11 @@ namespace Interface_Roteiros
 
         private void TelaCoresResistor_Load(object sender, EventArgs e)
         {
-            boxFaixa1.Text = "sfdgf";
+            faixas = new ComboBox[4]{ boxFaixa1, boxFaixa2, boxFaixa3, boxFaixa4 };
+            foreach (var i in faixas)
+            {
+                i.SelectedIndex = 0;
+            }
         }
 
         // Desenha em alguma das faixas
@@ -72,6 +78,60 @@ namespace Interface_Roteiros
         {
             Desenhar(Color.Black, 4);
         }
-        
+
+        private Color CorEscolhida(int posicaoNaLista)
+        {
+            switch(posicaoNaLista)
+            {
+                case 1:
+                    return Color.Black;
+                case 2:
+                    return Color.Brown;
+                case 3:
+                    return Color.Red;
+                case 4:
+                    return Color.Orange;
+                case 5:
+                    return Color.Yellow;
+                case 6:
+                    return Color.Green;
+                case 7:
+                    return Color.Blue;
+                case 8:
+                    return Color.Violet;
+                case 9:
+                    return Color.Gray;
+                default:
+                    return Color.White;
+            }
+        }
+
+        private void TrocarCorDoResistor(ComboBox boxFaixa, int faixa)
+        {
+            // Index é quando o usuário seleciono 'Selecione uma cor'
+            // Como essa opção não é valida n faz nada
+            if (boxFaixa.SelectedIndex != 0)
+            {
+                Desenhar(CorEscolhida(boxFaixa.SelectedIndex), faixa);
+            }
+        }
+
+        // Desenha algo na 1° faixa
+        private void boxFaixa1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TrocarCorDoResistor(boxFaixa1, 1);
+        }
+
+        // Desenha algo na 2° faixa
+        private void boxFaixa2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TrocarCorDoResistor(boxFaixa2, 2);
+        }
+
+        // Desenha algo na 3° Faixa
+        private void boxFaixa3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TrocarCorDoResistor(boxFaixa3, 3);
+        }
     }
 }

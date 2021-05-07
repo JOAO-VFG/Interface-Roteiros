@@ -174,6 +174,7 @@ namespace Interface_Roteiros
             this.boxFaixa1.Name = "boxFaixa1";
             this.boxFaixa1.Size = new System.Drawing.Size(185, 31);
             this.boxFaixa1.TabIndex = 10;
+            this.boxFaixa1.SelectedIndexChanged += new System.EventHandler(this.boxFaixa1_SelectedIndexChanged);
             // 
             // boxFaixa2
             // 
@@ -196,6 +197,7 @@ namespace Interface_Roteiros
             this.boxFaixa2.Name = "boxFaixa2";
             this.boxFaixa2.Size = new System.Drawing.Size(185, 31);
             this.boxFaixa2.TabIndex = 11;
+            this.boxFaixa2.SelectedIndexChanged += new System.EventHandler(this.boxFaixa2_SelectedIndexChanged);
             // 
             // boxFaixa3
             // 
@@ -218,6 +220,7 @@ namespace Interface_Roteiros
             this.boxFaixa3.Name = "boxFaixa3";
             this.boxFaixa3.Size = new System.Drawing.Size(185, 31);
             this.boxFaixa3.TabIndex = 12;
+            this.boxFaixa3.SelectedIndexChanged += new System.EventHandler(this.boxFaixa3_SelectedIndexChanged);
             // 
             // boxFaixa4
             // 
