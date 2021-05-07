@@ -10,9 +10,28 @@ namespace Interface_Roteiros
 {
     public partial class TelaCoresResistor : Interface_Roteiros.TelaInicialPadrao
     {
+        Graphics g;
+        Pen pen;
+
         public TelaCoresResistor()
         {
             InitializeComponent();
         }
+
+        private void TelaCoresResistor_Load(object sender, EventArgs e)
+        {
+            g = imgResistor.CreateGraphics();
+        }
+
+        // Desenha algo na primeira faixa do resistor 
+        private void DesenharPrimeiraFaixa(Color cor)
+        {
+            pen = new Pen(cor, 1);
+            var rectShape = new Rectangle(new Point(42, 2), new Size(12, 80));
+
+            g.DrawRectangle(pen, rectShape);
+        }
+
+        
     }
 }
