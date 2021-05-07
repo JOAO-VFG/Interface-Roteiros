@@ -79,6 +79,7 @@ namespace Interface_Roteiros
             Desenhar(Color.Black, 4);
         }
 
+        // Cor para os dígitos
         private Color CorEscolhida(int posicaoNaLista)
         {
             switch(posicaoNaLista)
@@ -106,13 +107,50 @@ namespace Interface_Roteiros
             }
         }
 
-        private void TrocarCorDoResistor(ComboBox boxFaixa, int faixa)
+        // Cor para o multiplicador
+        private Color CorMultiplicador(int posicao)
+        {
+            switch(posicao)
+            {
+                case 1:
+                    return Color.Silver;
+                case 2:
+                    return Color.Gold;
+                case 3:
+                    return Color.Black;
+                case 4:
+                    return Color.Brown;
+                case 5:
+                    return Color.Red;
+                case 6:
+                    return Color.Orange;
+                case 7:
+                    return Color.Yellow;
+                case 8:
+                    return Color.Green;
+                case 9:
+                    return Color.Blue;
+                default:
+                    return Color.Violet;
+            }
+        }
+
+        private void TrocarCorDoResistor(ComboBox boxFaixa, int faixa, bool multiplicador = false)
         {
             // Index é quando o usuário seleciono 'Selecione uma cor'
             // Como essa opção não é valida n faz nada
             if (boxFaixa.SelectedIndex != 0)
             {
-                Desenhar(CorEscolhida(boxFaixa.SelectedIndex), faixa);
+                /*
+                 * Caso seja o multiplicador, então a cor para pintura será diferente das anteriores
+                 */
+                if (multiplicador)
+                {
+                    Desenhar(CorMultiplicador(boxFaixa.SelectedIndex), faixa);
+                } else
+                {
+                    Desenhar(CorEscolhida(boxFaixa.SelectedIndex), faixa);
+                }
             }
         }
 
@@ -132,6 +170,11 @@ namespace Interface_Roteiros
         private void boxFaixa3_SelectedIndexChanged(object sender, EventArgs e)
         {
             TrocarCorDoResistor(boxFaixa3, 3);
+        }
+
+        private void boxFaixa4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TrocarCorDoResistor(boxFaixa4, 4, true);
         }
     }
 }

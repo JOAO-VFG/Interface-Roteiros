@@ -243,6 +243,7 @@ namespace Interface_Roteiros
             this.boxFaixa4.Name = "boxFaixa4";
             this.boxFaixa4.Size = new System.Drawing.Size(185, 31);
             this.boxFaixa4.TabIndex = 13;
+            this.boxFaixa4.SelectedIndexChanged += new System.EventHandler(this.boxFaixa4_SelectedIndexChanged);
             // 
             // panel2
             // 
