@@ -10,6 +10,7 @@ namespace Interface_Roteiros
 {
     public partial class TelaInicial : Interface_Roteiros.TelaInicialPadrao
     {
+        private Image[] imgFotos;
         public TelaInicial()
         {
             InitializeComponent();
@@ -23,11 +24,25 @@ namespace Interface_Roteiros
 
             boxPdf.TelaDeRetorno = this;
             boxSimulador.TelaDeRetorno = this;
+
+            // Carrega as fotos
+            var ft1 = Properties.Resources.thumb;
+            var ft2 = Properties.Resources.thumb2;
+            imgFotos = new Image[2] { ft1, ft2 };
+            imgFundo.Image = imgFotos[0];
+            // Inicia o timer
+            tmMudarFundo.Start();
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
+        private void tmMudarFundo_Tick(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (imgFundo.Image == imgFotos[0])
+            {
+                imgFundo.Image = imgFotos[1];
+            } else
+            {
+                imgFundo.Image = imgFotos[0];
+            }
         }
     }
 }

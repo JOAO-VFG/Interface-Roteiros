@@ -373,6 +373,26 @@ namespace Interface_Roteiros.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap thumb {
+            get {
+                object obj = ResourceManager.GetObject("thumb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thumb2 {
+            get {
+                object obj = ResourceManager.GetObject("thumb2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap toggleOff {
             get {
                 object obj = ResourceManager.GetObject("toggleOff", resourceCulture);

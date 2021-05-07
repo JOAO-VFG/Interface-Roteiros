@@ -394,6 +394,8 @@
   <ItemGroup>
     <Content Include="icone.ico" />
     <Content Include="icone2.ico" />
+    <None Include="Resources\thumb2.jpg" />
+    <None Include="Resources\thumb.jpg" />
     <None Include="Resources\current.png" />
     <None Include="Resources\toggleOn.png" />
     <None Include="Resources\toggleOff.png" />

@@ -29,15 +29,17 @@ namespace Interface_Roteiros
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInicial));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgFundo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.boxPdf = new Interface_Roteiros.BoxInformacao();
             this.boxSobre = new Interface_Roteiros.BoxInformacao();
             this.boxSimulador = new Interface_Roteiros.BoxInformacao();
+            this.tmMudarFundo = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgFundo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -63,15 +65,15 @@ namespace Interface_Roteiros
             // 
             this.imgIcone.Image = global::Interface_Roteiros.Properties.Resources.circuito_icone;
             // 
-            // pictureBox1
+            // imgFundo
             // 
-            this.pictureBox1.Image = global::Interface_Roteiros.Properties.Resources.circuito_background;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 35);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(550, 311);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.imgFundo.Image = global::Interface_Roteiros.Properties.Resources.thumb;
+            this.imgFundo.Location = new System.Drawing.Point(0, 35);
+            this.imgFundo.Name = "imgFundo";
+            this.imgFundo.Size = new System.Drawing.Size(550, 309);
+            this.imgFundo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgFundo.TabIndex = 4;
+            this.imgFundo.TabStop = false;
             // 
             // panel1
             // 
@@ -138,6 +140,11 @@ namespace Interface_Roteiros
             this.boxSimulador.TextOnLeave = System.Drawing.Color.Black;
             this.boxSimulador.TituloDaCaixa = "Simulador";
             // 
+            // tmMudarFundo
+            // 
+            this.tmMudarFundo.Interval = 5000;
+            this.tmMudarFundo.Tick += new System.EventHandler(this.tmMudarFundo_Tick);
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,7 +154,7 @@ namespace Interface_Roteiros
             this.Controls.Add(this.boxPdf);
             this.Controls.Add(this.boxSobre);
             this.Controls.Add(this.boxSimulador);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.imgFundo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaInicial";
             this.Text = "Electrophorus";
@@ -156,25 +163,26 @@ namespace Interface_Roteiros
             this.Controls.SetChildIndex(this.btnSair, 0);
             this.Controls.SetChildIndex(this.btnMinimizar, 0);
             this.Controls.SetChildIndex(this.imgIcone, 0);
-            this.Controls.SetChildIndex(this.pictureBox1, 0);
+            this.Controls.SetChildIndex(this.imgFundo, 0);
             this.Controls.SetChildIndex(this.boxSimulador, 0);
             this.Controls.SetChildIndex(this.boxSobre, 0);
             this.Controls.SetChildIndex(this.boxPdf, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
             this.Controls.SetChildIndex(this.panel2, 0);
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgFundo)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgFundo;
         private BoxInformacao boxSimulador;
         private BoxInformacao boxSobre;
         private BoxInformacao boxPdf;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Timer tmMudarFundo;
     }
 }

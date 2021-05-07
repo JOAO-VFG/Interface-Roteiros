@@ -532,6 +532,7 @@ namespace Interface_Roteiros
             this.ClientSize = new System.Drawing.Size(1046, 610);
             this.Controls.Add(this.panInformacoes);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaLeisDeOhm";
             this.Text = "Electrophorus";
             this.Load += new System.EventHandler(this.TelaLeisDeOhm_Load);
