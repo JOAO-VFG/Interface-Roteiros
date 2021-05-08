@@ -21,12 +21,15 @@ namespace Interface_Roteiros
 
         private void TelaSimulador_Load(object sender, EventArgs e)
         {
-            roteiros = new Roteiro[5] { rtrCargas, rtrLeisOhm, rtrKirchhof, 
-            rtrCoresResistor, rtrNosEMalhas};
+            roteiros = new Roteiro[3] { rtrLeisOhm, rtrKirchhof, 
+            rtrCoresResistor };
             roteiroSelecionado = 0;
 
-            var location = rtrCargas.Location;
-            var size = rtrCargas.Size;
+            var location = rtrLeisOhm.Location;
+            var size = rtrLeisOhm.Size;
+
+            rtrCargas.Hide();
+            rtrNosEMalhas.Hide();
 
             // Oculta todos os roteiros, com exceção do 1°
             for (var i = 1; i < roteiros.Length; i++)
