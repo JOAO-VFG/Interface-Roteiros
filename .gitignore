@@ -1,1 +1,11 @@
+Publish/
+Interface-Roteiros/bin/
+Interface-Roteiros/obj/
+Interface-Roteiros/Debug
 .vs/
+*.suo
+*.cache
+Publish/Electrophorus.application
+Interface-Roteiros/obj/Debug/Interface-Roteiros.csprojAssemblyReference.cache
+Interface-Roteiros/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+.vs/Interface-Roteiros/v16/.suo
