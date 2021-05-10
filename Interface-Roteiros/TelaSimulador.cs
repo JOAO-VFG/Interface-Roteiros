@@ -21,11 +21,15 @@ namespace Interface_Roteiros
 
         private void TelaSimulador_Load(object sender, EventArgs e)
         {
-            roteiros = new Roteiro[4] { rtrCargas, rtrLeisOhm, rtrKirchhof, rtrNosEMalhas };
+            roteiros = new Roteiro[3] { rtrLeisOhm, rtrKirchhof, 
+            rtrCoresResistor };
             roteiroSelecionado = 0;
 
-            var location = rtrCargas.Location;
-            var size = rtrCargas.Size;
+            var location = rtrLeisOhm.Location;
+            var size = rtrLeisOhm.Size;
+
+            rtrCargas.Hide();
+            rtrNosEMalhas.Hide();
 
             // Oculta todos os roteiros, com exceção do 1°
             for (var i = 1; i < roteiros.Length; i++)
@@ -75,6 +79,12 @@ namespace Interface_Roteiros
             new TelaLeisDeOhm() { TelaDeRetorno = this, }.Show();
         }
 
+        private void rtrCoresResistor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new TelaCoresResistor() { TelaDeRetorno = this, }.Show();
+        }
+
         private void btnNext_MouseEnter(object sender, EventArgs e)
         {
             btnNext.BackColor = Color.FromArgb(214, 210, 210);
@@ -104,9 +114,10 @@ namespace Interface_Roteiros
             // Primeiro elemento
             if (roteiroSelecionado == 0)
             {
-                roteiroSelecionado = 4;
+                roteiroSelecionado = roteiros.Length;
             }
             roteiros[roteiroSelecionado-- - 1].Show();
         }
+
     }
 }

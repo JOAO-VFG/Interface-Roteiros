@@ -37,8 +37,6 @@ namespace Interface_Roteiros
             this.btnRetornar = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.escolhaRoteiro4 = new Interface_Roteiros.EscolhaRoteiro();
-            this.escolhaRoteiro3 = new Interface_Roteiros.EscolhaRoteiro();
             this.escolhaRoteiro2 = new Interface_Roteiros.EscolhaRoteiro();
             ((System.ComponentModel.ISupportInitialize)(this.imgIcone)).BeginInit();
             this.panel1.SuspendLayout();
@@ -146,46 +144,12 @@ namespace Interface_Roteiros
             // 
             this.panel3.AutoScroll = true;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(16)))), ((int)(((byte)(51)))));
-            this.panel3.Controls.Add(this.escolhaRoteiro4);
-            this.panel3.Controls.Add(this.escolhaRoteiro3);
             this.panel3.Controls.Add(this.escolhaRoteiro2);
             this.panel3.Controls.Add(this.escolhaRoteiro1);
             this.panel3.Location = new System.Drawing.Point(0, 205);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(595, 311);
             this.panel3.TabIndex = 10;
-            // 
-            // escolhaRoteiro4
-            // 
-            this.escolhaRoteiro4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.escolhaRoteiro4.ImageRoteiro = ((System.Drawing.Image)(resources.GetObject("escolhaRoteiro4.ImageRoteiro")));
-            this.escolhaRoteiro4.Location = new System.Drawing.Point(0, 135);
-            this.escolhaRoteiro4.MaximumSize = new System.Drawing.Size(595, 245);
-            this.escolhaRoteiro4.MinimumSize = new System.Drawing.Size(595, 45);
-            this.escolhaRoteiro4.Name = "escolhaRoteiro4";
-            this.escolhaRoteiro4.PathPdf = null;
-            this.escolhaRoteiro4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.escolhaRoteiro4.Size = new System.Drawing.Size(595, 45);
-            this.escolhaRoteiro4.TabIndex = 10;
-            this.escolhaRoteiro4.TituloRoteiro = "Supernós e Supermalhas";
-            this.escolhaRoteiro4.URL = "https://github.com/JOAO-VFG/Interface-Roteiros/blob/main/PDF\'s/04-Roteiro-%20Supe" +
-    "rnos-e-Supermalhas.pdf";
-            // 
-            // escolhaRoteiro3
-            // 
-            this.escolhaRoteiro3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.escolhaRoteiro3.ImageRoteiro = ((System.Drawing.Image)(resources.GetObject("escolhaRoteiro3.ImageRoteiro")));
-            this.escolhaRoteiro3.Location = new System.Drawing.Point(0, 90);
-            this.escolhaRoteiro3.MaximumSize = new System.Drawing.Size(595, 245);
-            this.escolhaRoteiro3.MinimumSize = new System.Drawing.Size(595, 45);
-            this.escolhaRoteiro3.Name = "escolhaRoteiro3";
-            this.escolhaRoteiro3.PathPdf = null;
-            this.escolhaRoteiro3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.escolhaRoteiro3.Size = new System.Drawing.Size(595, 45);
-            this.escolhaRoteiro3.TabIndex = 9;
-            this.escolhaRoteiro3.TituloRoteiro = "Cargas";
-            this.escolhaRoteiro3.URL = "https://github.com/JOAO-VFG/Interface-Roteiros/blob/main/PDF\'s/01-Roteiro-Cargas-" +
-    "e-Corrente.pdf";
             // 
             // escolhaRoteiro2
             // 
@@ -237,7 +201,5 @@ namespace Interface_Roteiros
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private EscolhaRoteiro escolhaRoteiro2;
-        private EscolhaRoteiro escolhaRoteiro3;
-        private EscolhaRoteiro escolhaRoteiro4;
     }
 }
